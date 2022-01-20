@@ -13,16 +13,17 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
             <TextView
                 android:id="@+id/firstFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home Page"
+                android:text="Pollinator Categories"
                 android:textColor="#306CB5"
                 android:textSize="40sp"
                 android:textStyle="italic|bold"
@@ -32,35 +33,337 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <TableLayout
                 android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
+                android:layout_height="match_parent">
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView83"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Alfalfa LeafCutter Bee"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imageView83"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView83"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/imageView84"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.985"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="7dp"
+                            android:text="Bees"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="44dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Apical LeafCutter Bee"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imageView84"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView84"
+                            app:layout_constraintVertical_bias="0.2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView85"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Beatles"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imageView85"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView85"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/imageView86"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.985"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="7dp"
+                            android:text="Beetles"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Lady Bug"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imageView86"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView86"
+                            app:layout_constraintVertical_bias="0.0" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/barkCentipede"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/barkCentipedes_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Bark Centipede"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/barkCentipede"
+                            app:layout_constraintTop_toBottomOf="@+id/barkCentipede"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/Centipedes"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.985"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/CentipedesAndMillipedes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="7dp"
+                            android:text="Centipedes and Millipedes"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/Centipedes_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Centipedes"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/Centipedes"
+                            app:layout_constraintTop_toBottomOf="@+id/Centipedes"
+                            app:layout_constraintVertical_bias="0.0" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/EasternCalligrapher"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/EasternCalligrapher_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Eastern Calligrapher"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/EasternCalligrapher"
+                            app:layout_constraintTop_toBottomOf="@+id/EasternCalligrapher"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/Hoverflies"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.985"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <TextView
+                            android:id="@+id/FliesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="7dp"
+                            android:text="Flies"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/Hoverflies_caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Hoverflies"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/Hoverflies"
+                            app:layout_constraintTop_toBottomOf="@+id/Hoverflies"
+                            app:layout_constraintVertical_bias="0.0" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </TableRow>
+            </TableLayout>
 
         </LinearLayout>
     </ScrollView>

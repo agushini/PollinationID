@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
+    //this needs to be edited, i was trying to figure out how to change the action bar
     private fun setCurrentFragment(fragment:Fragment)=
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flFragment,fragment)
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 supportActionBar?.title = "SECOND FRAGMENT";
             }
             else {
-                supportActionBar?.title = "What is happenin";
+                supportActionBar?.title = "PollinationID";
             }
 
             commit()
