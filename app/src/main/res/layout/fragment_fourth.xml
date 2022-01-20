@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  This is the Explore page  -->
+<!-- https://www.raywenderlich.com/155-android-listview-tutorial-with-kotlin
+    This link is going to help with making a menu
+-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"

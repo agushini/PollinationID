@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  This is the Home page  -->
+<!-- The bottom navigation menu has to be hidden on scroll, this will
+     Be figured out on a different day, right now the nav menu covers content
+     https://www.geeksforgeeks.org/how-to-hide-show-bottomnavigationview-on-scroll-in-android/
+-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,14 +20,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
             <TextView
                 android:id="@+id/firstFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pollinator Categories"
+                android:textAlignment="gravity"
                 android:textColor="#306CB5"
                 android:textSize="40sp"
                 android:textStyle="italic|bold"
@@ -35,8 +41,31 @@
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <ImageView
+                            android:id="@+id/HeadingImage"
+                            android:layout_width="390dp"
+                            android:layout_height="250dp"
+                            android:background="#c1c1c1"
+                            android:src="@drawable/ic_camera_foreground"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0">
+
+                        </ImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"

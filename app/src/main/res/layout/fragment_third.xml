@@ -14,6 +14,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:text="Photo ID"
         android:textColor="#306CB5"
         android:textSize="40sp"
@@ -26,7 +27,7 @@
         app:layout_constraintVertical_bias="0.004" />
 
     <Button
-        android:id="@+id/librarybutton"
+        android:id="@+id/libraryButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -40,25 +41,38 @@
 
         android:text="Library"
 
-        app:layout_constraintBottom_toTopOf="@+id/camerabutton"
+        app:layout_constraintBottom_toTopOf="@+id/cameraButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/camerabutton"
+        android:id="@+id/cameraButton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="79dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="79dp"
         android:backgroundTint="#306CB5"
-        android:backgroundTintMode="@color/black"
 
+        android:backgroundTintMode="@color/black"
         android:drawableLeft="@drawable/ic_camera_foreground"
         android:text="Camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/librarybutton" />
+        app:layout_constraintTop_toBottomOf="@id/libraryButton" />
+
+    <TextView
+        android:id="@+id/photoID_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:text="Select Photo Source"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
