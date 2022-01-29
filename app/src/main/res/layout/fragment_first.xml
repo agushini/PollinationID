@@ -11,7 +11,8 @@
     android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <ScrollView
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
@@ -28,7 +29,7 @@
                 android:id="@+id/firstFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pollinator Categories"
+                android:text="@string/pollinator_categories"
                 android:textAlignment="gravity"
                 android:textColor="#306CB5"
                 android:textSize="40sp"
@@ -54,14 +55,14 @@
                             android:id="@+id/HeadingImage"
                             android:layout_width="390dp"
                             android:layout_height="250dp"
-                            android:background="#c1c1c1"
+                            android:background="@color/grey_c1c1"
                             android:src="@drawable/ic_camera_foreground"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintHorizontal_bias="0.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0">
+                            app:layout_constraintVertical_bias="0.0">
 
                         </ImageView>
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -77,7 +78,7 @@
                         android:layout_weight="1">
 
                         <ImageView
-                            android:id="@+id/imageView83"
+                            android:id="@+id/alfafaBee"
                             android:layout_width="160dp"
                             android:layout_height="160dp"
                             android:layout_marginStart="20dp"
@@ -91,20 +92,20 @@
                             app:layout_constraintVertical_bias="1.0" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/alfafaBee_caption"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Alfalfa LeafCutter Bee"
+                            android:text="@string/alfalfa_leafcutter_bee"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/imageView83"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView83"
+                            app:layout_constraintStart_toStartOf="@+id/alfafaBee"
+                            app:layout_constraintTop_toBottomOf="@+id/alfafaBee"
                             app:layout_constraintVertical_bias="0.0" />
 
                         <ImageView
-                            android:id="@+id/imageView84"
+                            android:id="@+id/apicalBee"
                             android:layout_width="160dp"
                             android:layout_height="160dp"
                             android:layout_marginTop="45dp"
@@ -120,12 +121,12 @@
                             app:layout_constraintVertical_bias="1.0" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/Bees_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="7dp"
-                            android:text="Bees"
+                            android:text="@string/bees"
                             android:textColor="@color/white"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -133,18 +134,18 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/apicalBee_caption"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginEnd="44dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Apical LeafCutter Bee"
+                            android:text="@string/apical_leafcutter_bee"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/imageView84"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView84"
+                            app:layout_constraintStart_toStartOf="@+id/apicalBee"
+                            app:layout_constraintTop_toBottomOf="@+id/apicalBee"
                             app:layout_constraintVertical_bias="0.2" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -160,7 +161,7 @@
                         android:layout_weight="1">
 
                         <ImageView
-                            android:id="@+id/imageView85"
+                            android:id="@+id/beatles"
                             android:layout_width="160dp"
                             android:layout_height="160dp"
                             android:layout_marginStart="20dp"
@@ -174,20 +175,20 @@
                             app:layout_constraintVertical_bias="1.0" />
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/beatles_caption"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Beatles"
+                            android:text="@string/beatles"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/imageView85"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView85"
+                            app:layout_constraintStart_toStartOf="@+id/beatles"
+                            app:layout_constraintTop_toBottomOf="@+id/beatles"
                             app:layout_constraintVertical_bias="0.0" />
 
                         <ImageView
-                            android:id="@+id/imageView86"
+                            android:id="@+id/ladyBugs"
                             android:layout_width="160dp"
                             android:layout_height="160dp"
                             android:layout_marginTop="45dp"
@@ -203,12 +204,12 @@
                             app:layout_constraintVertical_bias="1.0" />
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/beatles_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="7dp"
-                            android:text="Beetles"
+                            android:text="@string/beetles"
                             android:textColor="@color/white"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -216,16 +217,16 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:id="@+id/textView7"
+                            android:id="@+id/ladybug_caption"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Lady Bug"
+                            android:text="@string/lady_bug"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/imageView86"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView86"
+                            app:layout_constraintStart_toStartOf="@+id/ladyBugs"
+                            app:layout_constraintTop_toBottomOf="@+id/ladyBugs"
                             app:layout_constraintVertical_bias="0.0" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -260,7 +261,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Bark Centipede"
+                            android:text="@string/bark_centipede"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/barkCentipede"
@@ -289,7 +290,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="7dp"
-                            android:text="Centipedes and Millipedes"
+                            android:text="@string/centipedes_and_millipedes"
                             android:textColor="@color/white"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -302,7 +303,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Centipedes"
+                            android:text="@string/centipedes"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/Centipedes"
@@ -341,7 +342,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Eastern Calligrapher"
+                            android:text="@string/eastern_calligrapher"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/EasternCalligrapher"
@@ -370,7 +371,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="7dp"
-                            android:text="Flies"
+                            android:text="@string/flies"
                             android:textColor="@color/white"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -383,7 +384,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="16dp"
-                            android:text="Hoverflies"
+                            android:text="@string/hoverflies"
                             android:textColor="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/Hoverflies"
@@ -395,6 +396,7 @@
             </TableLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>

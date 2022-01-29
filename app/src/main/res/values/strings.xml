@@ -4,4 +4,20 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pollinator_id">Pollinator ID</string>
     <string name="hotel_id">Hotel ID</string>
+    <string name="pollinator_categories">Pollinator Categories</string>
+    <string name="alfalfa_leafcutter_bee">Alfalfa LeafCutter Bee</string>
+    <string name="bees">Bees</string>
+    <string name="apical_leafcutter_bee">Apical LeafCutter Bee</string>
+    <string name="beatles">Beatles</string>
+    <string name="beetles">Beetles</string>
+    <string name="lady_bug">Lady Bug</string>
+    <string name="bark_centipede">Bark Centipede</string>
+    <string name="centipedes_and_millipedes">Centipedes and Millipedes</string>
+    <string name="centipedes">Centipedes</string>
+    <string name="eastern_calligrapher">Eastern Calligrapher</string>
+    <string name="flies">Flies</string>
+    <string name="hoverflies">Hoverflies</string>
+    <string name="explore">Explore</string>
+    <string name="textview">TextView</string>
+    <string name="recycler_1_title_text">Recycler 1 Title Text</string>
 </resources>

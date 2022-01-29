@@ -2,69 +2,43 @@
 <!--  This is the Explore page  -->
 <!-- https://www.raywenderlich.com/155-android-listview-tutorial-with-kotlin
     This link is going to help with making a menu
+
+    https://www.tutorialkart.com/kotlin-android/kotlin-android-recyclerview/
+    https://hinchman-amanda.medium.com/working-with-recyclerview-in-android-kotlin-84a62aef94ec
+
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <ScrollView
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+    <TextView
+        android:id="@+id/fourthFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/explore"
+        android:textColor="#306CB5"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+        android:layout_height="705dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthFragment" />
 
-            <TextView
-                android:id="@+id/fourthFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Explore"
-                android:textColor="#306CB5"
-                android:textSize="40sp"
-                android:textStyle="italic|bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:background="#c1c1c1"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/ic_camera_foreground"/>
-
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
