@@ -6,7 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListAdapter(private val list: List<Movie>)
+class ListAdapter(private val list: List<Insect>)
     : RecyclerView.Adapter<MovieViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
@@ -15,7 +15,7 @@ class ListAdapter(private val list: List<Movie>)
     }
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
-        val movie: Movie = list[position]
+        val movie: Insect = list[position]
         holder.bind(movie)
     }
 
@@ -35,9 +35,9 @@ class MovieViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         mImageView = itemView.findViewById((R.id.recycler1ImageView))
     }
 
-    fun bind(movie: Movie) {
+    fun bind(movie: Insect) {
         mTitleView?.text = movie.title
-        mYearView?.text = movie.year.toString()
+        mYearView?.text = movie.description
         mImageView?.setImageResource(movie.img)
     }
 

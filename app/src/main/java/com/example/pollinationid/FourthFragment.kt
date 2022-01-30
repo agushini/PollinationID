@@ -9,18 +9,19 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_fourth.*
 
-data class Movie(val title: String, val year: Int, val img: Int)
+data class Insect(val title: String, val description: String, val img: Int)
 
 class FourthFragment:Fragment(R.layout.fragment_fourth) {
-    private val mNicolasCageMovies = listOf(
-        Movie("Raising Arizona", 1987,R.drawable.ic_book_foreground),
-        Movie("Vampire's Kiss", 1988,R.drawable.ic_book_foreground),
-        Movie("Con Air", 1997,R.drawable.ic_book_foreground),
-        Movie("Gone in 60 Seconds", 1997,R.drawable.ic_book_foreground),
-        Movie("National Treasure", 2004,R.drawable.ic_book_foreground),
-        Movie("The Wicker Man", 2006,R.drawable.ic_book_foreground),
-        Movie("Ghost Rider", 2007,R.drawable.ic_book_foreground),
-        Movie("Knowing", 2009,R.drawable.ic_book_foreground)
+    private val mInsectList = listOf(
+        Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",R.drawable.alfalfa_leafcutter_bee_1),
+        Insect("American Grass Spider", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("Apical Leafcutter Bee", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("Bark Centipede", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("Beetles", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("Bellflower Resin Bee", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("Blue Orchard Mason Bee", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("Brown Lacewings", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,7 +43,7 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
             // RecyclerView behavior
             layoutManager = LinearLayoutManager(activity)
             // set the custom adapter to the RecyclerView
-            adapter = ListAdapter(mNicolasCageMovies)
+            adapter = ListAdapter(mInsectList)
         }
     }
 

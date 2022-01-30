@@ -14,389 +14,824 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <ScrollView
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/firstFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:text="@string/pollinator_categories"
                 android:textAlignment="gravity"
                 android:textColor="#306CB5"
                 android:textSize="40sp"
                 android:textStyle="italic|bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/Bee_ScrollView"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TableLayout
+            <ImageView
+                android:id="@+id/HeadingImage"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:background="@color/grey_c1c1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/michigan_hotel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstFragment"></ImageView>
+
+            <HorizontalScrollView
+                android:id="@+id/Bee_ScrollView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/HeadingImage">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/Bees_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/bees"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:id="@+id/HeadingImage"
-                            android:layout_width="390dp"
-                            android:layout_height="250dp"
-                            android:background="@color/grey_c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.0">
+                    <TextView
+                        android:id="@+id/apicalBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apical_leafcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/apicalBee"
+                        app:layout_constraintTop_toBottomOf="@+id/apicalBee" />
 
-                        </ImageView>
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </TableRow>
+                    <ImageView
+                        android:id="@+id/apicalBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/apical_leafcutter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/alfafaBee"
+                        app:layout_constraintTop_toTopOf="@+id/alfafaBee" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/alfafaBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/alfalfa_leafcutter_bee_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Bees_title" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/alfafaBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alfalfa_leafcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/alfafaBee"
+                        app:layout_constraintTop_toBottomOf="@+id/alfafaBee" />
 
-                        <ImageView
-                            android:id="@+id/alfafaBee"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
 
-                        <TextView
-                            android:id="@+id/alfafaBee_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/alfalfa_leafcutter_bee"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/alfafaBee"
-                            app:layout_constraintTop_toBottomOf="@+id/alfafaBee"
-                            app:layout_constraintVertical_bias="0.0" />
+            <HorizontalScrollView
+                android:id="@+id/Beetle_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Bee_ScrollView">
 
-                        <ImageView
-                            android:id="@+id/apicalBee"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.985"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/Bees_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="@string/bees"
-                            android:textColor="@color/white"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:id="@+id/beatles"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/beetles_1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/beatles_title"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                        <TextView
-                            android:id="@+id/apicalBee_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginEnd="44dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/apical_leafcutter_bee"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/apicalBee"
-                            app:layout_constraintTop_toBottomOf="@+id/apicalBee"
-                            app:layout_constraintVertical_bias="0.2" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/beatles_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beatles"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/beatles"
+                        app:layout_constraintTop_toBottomOf="@+id/beatles" />
 
-                </TableRow>
+                    <ImageView
+                        android:id="@+id/ladyBugs"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lady_bug_1"
+                        app:layout_constraintStart_toEndOf="@+id/beatles"
+                        app:layout_constraintTop_toTopOf="@+id/beatles" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/beatles_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/beetles"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/ladybug_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lady_bug"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/ladyBugs"
+                        app:layout_constraintTop_toBottomOf="@+id/ladyBugs" />
 
-                        <ImageView
-                            android:id="@+id/beatles"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
 
-                        <TextView
-                            android:id="@+id/beatles_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/beatles"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/beatles"
-                            app:layout_constraintTop_toBottomOf="@+id/beatles"
-                            app:layout_constraintVertical_bias="0.0" />
+            <HorizontalScrollView
+                android:id="@+id/Centipede_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Beetle_ScrollView">
 
-                        <ImageView
-                            android:id="@+id/ladyBugs"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.985"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                        <TextView
-                            android:id="@+id/beatles_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="@string/beetles"
-                            android:textColor="@color/white"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/CentipedesAndMillipedes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/centipedes_and_millipedes"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
-                            android:id="@+id/ladybug_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/lady_bug"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/ladyBugs"
-                            app:layout_constraintTop_toBottomOf="@+id/ladyBugs"
-                            app:layout_constraintVertical_bias="0.0" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/barkCentipede"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bark_centipede_1"
+                        app:layout_constraintStart_toStartOf="@+id/CentipedesAndMillipedes"
+                        app:layout_constraintTop_toBottomOf="@+id/CentipedesAndMillipedes" />
 
-                </TableRow>
+                    <TextView
+                        android:id="@+id/barkCentipedes_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/bark_centipede"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/barkCentipede"
+                        app:layout_constraintTop_toBottomOf="@+id/barkCentipede"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/Centipedes"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/centipedes_1"
+                        app:layout_constraintStart_toEndOf="@+id/barkCentipede"
+                        app:layout_constraintTop_toTopOf="@+id/barkCentipede" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/Centipedes_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/centipedes"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/Centipedes"
+                        app:layout_constraintTop_toBottomOf="@+id/Centipedes"
+                        app:layout_constraintVertical_bias="0.0" />
+                    <ImageView
+                        android:id="@+id/CommonPillWoodlouse"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/common_pill_woodlouse_1"
+                        app:layout_constraintStart_toEndOf="@+id/Centipedes"
+                        app:layout_constraintTop_toTopOf="@+id/Centipedes" />
 
-                        <ImageView
-                            android:id="@+id/barkCentipede"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                    <TextView
+                        android:id="@+id/CommonPillWoodlouse_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Common Pill Woodlouse"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/CommonPillWoodlouse"
+                        app:layout_constraintTop_toBottomOf="@+id/CommonPillWoodlouse"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                        <TextView
-                            android:id="@+id/barkCentipedes_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/bark_centipede"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/barkCentipede"
-                            app:layout_constraintTop_toBottomOf="@+id/barkCentipede"
-                            app:layout_constraintVertical_bias="0.0" />
+                    <ImageView
+                        android:id="@+id/HouseCentipede"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/house_centipede_1"
+                        app:layout_constraintStart_toEndOf="@+id/CommonPillWoodlouse"
+                        app:layout_constraintTop_toTopOf="@+id/CommonPillWoodlouse" />" />
 
-                        <ImageView
-                            android:id="@+id/Centipedes"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.985"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                    <TextView
+                        android:id="@+id/houseCentipede_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="House Centipede"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/HouseCentipede"
+                        app:layout_constraintTop_toBottomOf="@+id/HouseCentipede"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                        <TextView
-                            android:id="@+id/CentipedesAndMillipedes"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="@string/centipedes_and_millipedes"
-                            android:textColor="@color/white"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:id="@+id/Millipedes"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/millipedes_1"
+                        app:layout_constraintStart_toEndOf="@+id/HouseCentipede"
+                        app:layout_constraintTop_toTopOf="@+id/HouseCentipede" />" />
 
-                        <TextView
-                            android:id="@+id/Centipedes_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/centipedes"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/Centipedes"
-                            app:layout_constraintTop_toBottomOf="@+id/Centipedes"
-                            app:layout_constraintVertical_bias="0.0" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/Millipedes_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Millipedes"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/Millipedes"
+                        app:layout_constraintTop_toBottomOf="@+id/Millipedes"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                </TableRow>
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_weight="1">
+            <HorizontalScrollView
+                android:id="@+id/Flies_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Centipede_ScrollView">
 
-                        <ImageView
-                            android:id="@+id/EasternCalligrapher"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                        <TextView
-                            android:id="@+id/EasternCalligrapher_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/eastern_calligrapher"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/EasternCalligrapher"
-                            app:layout_constraintTop_toBottomOf="@+id/EasternCalligrapher"
-                            app:layout_constraintVertical_bias="0.0" />
+                    <TextView
+                        android:id="@+id/FliesTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/flies"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:id="@+id/Hoverflies"
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_marginTop="45dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="42dp"
-                            android:background="#c1c1c1"
-                            android:src="@drawable/ic_camera_foreground"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.985"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="1.0" />
+                    <ImageView
+                        android:id="@+id/EasternCalligrapher"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/eastern_caligrapher_bee_1"
+                        app:layout_constraintStart_toStartOf="@+id/FliesTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/FliesTitle" />" />
 
-                        <TextView
-                            android:id="@+id/FliesTitle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="7dp"
-                            android:text="@string/flies"
-                            android:textColor="@color/white"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/EasternCalligrapher_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/eastern_calligrapher"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/EasternCalligrapher"
+                        app:layout_constraintTop_toBottomOf="@+id/EasternCalligrapher"
+                        app:layout_constraintVertical_bias="0.0" />
 
-                        <TextView
-                            android:id="@+id/Hoverflies_caption"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="16dp"
-                            android:text="@string/hoverflies"
-                            android:textColor="@color/white"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/Hoverflies"
-                            app:layout_constraintTop_toBottomOf="@+id/Hoverflies"
-                            app:layout_constraintVertical_bias="0.0" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/Hoverflies"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hoverflies_1"
+                        app:layout_constraintStart_toEndOf="@+id/EasternCalligrapher"
+                        app:layout_constraintTop_toTopOf="@+id/EasternCalligrapher" />
 
-                </TableRow>
-            </TableLayout>
+                    <TextView
+                        android:id="@+id/Hoverflies_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/hoverflies"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/Hoverflies"
+                        app:layout_constraintTop_toBottomOf="@+id/Hoverflies"
+                        app:layout_constraintVertical_bias="0.0" />
 
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/MarginedCalligrapher"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/margined_calligrapher_1"
+                        app:layout_constraintStart_toEndOf="@+id/Hoverflies"
+                        app:layout_constraintTop_toTopOf="@+id/Hoverflies" />" />
 
+                    <TextView
+                        android:id="@+id/MarginedCalligrapher_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/margined_calligrapher"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/MarginedCalligrapher"
+                        app:layout_constraintTop_toBottomOf="@+id/MarginedCalligrapher"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/ScalyBeeFly"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/scaly_bee_fly_1"
+                        app:layout_constraintStart_toEndOf="@+id/MarginedCalligrapher"
+                        app:layout_constraintTop_toTopOf="@+id/MarginedCalligrapher" />" />
+
+                    <TextView
+                        android:id="@+id/ScalyBeeFly_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/scaly_bee_fly"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/ScalyBeeFly"
+                        app:layout_constraintTop_toBottomOf="@+id/ScalyBeeFly"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/TransverseBandedFlowerFly"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/transverse_banded_calligrapher_1"
+                        app:layout_constraintStart_toEndOf="@+id/ScalyBeeFly"
+                        app:layout_constraintTop_toTopOf="@+id/ScalyBeeFly" />" />
+
+                    <TextView
+                        android:id="@+id/TransverseBandedFlowerFly_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Transverse-Banded Flower Fly"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/TransverseBandedFlowerFly"
+                        app:layout_constraintTop_toBottomOf="@+id/TransverseBandedFlowerFly"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/Other_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Flies_ScrollView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/OthersTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Others"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/BrownLaceWings"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/brown_lacewings_1"
+                        app:layout_constraintStart_toStartOf="@+id/OthersTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/OthersTitle" />" />
+
+                    <TextView
+                        android:id="@+id/BrownLaceWings_Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/brown_lacewings"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/BrownLaceWings"
+                        app:layout_constraintTop_toBottomOf="@+id/BrownLaceWings"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/CommonBarklice"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/common_barklice_1"
+                        app:layout_constraintStart_toEndOf="@+id/BrownLaceWings"
+                        app:layout_constraintTop_toTopOf="@+id/BrownLaceWings" />
+
+                    <TextView
+                        android:id="@+id/CommonBarklice_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/common_barklice"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/CommonBarklice"
+                        app:layout_constraintTop_toBottomOf="@+id/CommonBarklice"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/GreenLacewings"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/green_lacewing_1"
+                        app:layout_constraintStart_toEndOf="@+id/CommonBarklice"
+                        app:layout_constraintTop_toTopOf="@+id/CommonBarklice" />" />
+
+                    <TextView
+                        android:id="@+id/GreenLacewings_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/green_lacewings"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/GreenLacewings"
+                        app:layout_constraintTop_toBottomOf="@+id/GreenLacewings"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/Spider_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Other_ScrollView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/SpiderTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/spiders"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/AmericanGrassSpider"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/american_grass_spiders_1"
+                        app:layout_constraintStart_toStartOf="@+id/SpiderTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/SpiderTitle" />" />
+
+                    <TextView
+                        android:id="@+id/AmericanGrassSpider_Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/american_grass_spider"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/AmericanGrassSpider"
+                        app:layout_constraintTop_toBottomOf="@+id/AmericanGrassSpider"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/Harvestmen"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/harvestmen_1"
+                        app:layout_constraintStart_toEndOf="@+id/AmericanGrassSpider"
+                        app:layout_constraintTop_toTopOf="@+id/AmericanGrassSpider" />
+
+                    <TextView
+                        android:id="@+id/harvestmen_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/harvestmen"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/Harvestmen"
+                        app:layout_constraintTop_toBottomOf="@+id/Harvestmen"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/JumpingSpiders"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jumping_spiders_1"
+                        app:layout_constraintStart_toEndOf="@+id/Harvestmen"
+                        app:layout_constraintTop_toTopOf="@+id/Harvestmen" />" />
+
+                    <TextView
+                        android:id="@+id/JumpingSpiders_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/jumping_spiders"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/JumpingSpiders"
+                        app:layout_constraintTop_toBottomOf="@+id/JumpingSpiders"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/Wasp_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Spider_ScrollView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/WaspsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/wasps"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/CarrotWasps"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/carrot_wasps_1"
+                        app:layout_constraintStart_toStartOf="@+id/WaspsTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/WaspsTitle" />" />
+
+                    <TextView
+                        android:id="@+id/CarrotWasps_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/carrot_wasps"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/CarrotWasps"
+                        app:layout_constraintTop_toBottomOf="@+id/CarrotWasps"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/FourToothedMasonWasps"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/four_toothed_mason_wasp_1"
+                        app:layout_constraintStart_toEndOf="@+id/CarrotWasps"
+                        app:layout_constraintTop_toTopOf="@+id/CarrotWasps" />
+
+                    <TextView
+                        android:id="@+id/FourToothedMasonWasps_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/four_toothed_mason_wasp"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/FourToothedMasonWasps"
+                        app:layout_constraintTop_toBottomOf="@+id/FourToothedMasonWasps"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/HornetsandYellowjackets"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hornets_and_yellowjackets_1"
+                        app:layout_constraintStart_toEndOf="@+id/FourToothedMasonWasps"
+                        app:layout_constraintTop_toTopOf="@+id/FourToothedMasonWasps" />" />
+
+                    <TextView
+                        android:id="@+id/HornetsandYellowjackets_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/margined_calligrapher"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/HornetsandYellowjackets"
+                        app:layout_constraintTop_toBottomOf="@+id/HornetsandYellowjackets"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/MetallicBluishGreenCucukooWasp"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/metallic_bluish_green_cuckoo_wasp_1"
+                        app:layout_constraintStart_toEndOf="@+id/HornetsandYellowjackets"
+                        app:layout_constraintTop_toTopOf="@+id/HornetsandYellowjackets" />" />
+
+                    <TextView
+                        android:id="@+id/MetallicBluishGreenCucukooWasp_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/metallic_bluish_green_cucukoo_wasp"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/MetallicBluishGreenCucukooWasp"
+                        app:layout_constraintTop_toBottomOf="@+id/MetallicBluishGreenCucukooWasp"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/MexicanGrassCarryingWasp"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mexican_grass_carrying_wasp_1"
+                        app:layout_constraintStart_toEndOf="@+id/MetallicBluishGreenCucukooWasp"
+                        app:layout_constraintTop_toTopOf="@+id/MetallicBluishGreenCucukooWasp" />" />
+
+                    <TextView
+                        android:id="@+id/MexicanGrassCarryingWasp_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/mexican_grass_carrying_wasp"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/MexicanGrassCarryingWasp"
+                        app:layout_constraintTop_toBottomOf="@+id/MexicanGrassCarryingWasp"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/HomePageSpacer"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Wasp_ScrollView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </LinearLayout>

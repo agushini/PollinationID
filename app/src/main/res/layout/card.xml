@@ -44,6 +44,7 @@
             android:layout_width="77dp"
             android:layout_height="77dp"
             android:background="@color/white"
+            android:scaleType="centerCrop"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

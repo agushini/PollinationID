@@ -20,4 +20,18 @@
     <string name="explore">Explore</string>
     <string name="textview">TextView</string>
     <string name="recycler_1_title_text">Recycler 1 Title Text</string>
+    <string name="scaly_bee_fly">Scaly Bee Fly</string>
+    <string name="margined_calligrapher">Margined Calligrapher</string>
+    <string name="common_barklice">Common Barklice</string>
+    <string name="brown_lacewings">Brown Lacewings</string>
+    <string name="green_lacewings">Green Lacewings</string>
+    <string name="spiders">Spiders</string>
+    <string name="wasps">Wasps</string>
+    <string name="american_grass_spider">American Grass Spider</string>
+    <string name="harvestmen">Harvestmen</string>
+    <string name="jumping_spiders">Jumping Spiders</string>
+    <string name="carrot_wasps">Carrot Wasps</string>
+    <string name="four_toothed_mason_wasp">Four-Toothed Mason Wasp</string>
+    <string name="metallic_bluish_green_cucukoo_wasp">Metallic Bluish Green Cucukoo Wasp</string>
+    <string name="mexican_grass_carrying_wasp">Mexican Grass-Carrying Wasp</string>
 </resources>
