@@ -114,6 +114,587 @@
                         app:layout_constraintStart_toStartOf="@+id/alfafaBee"
                         app:layout_constraintTop_toBottomOf="@+id/alfafaBee" />
 
+
+                    <ImageView
+                        android:id="@+id/BellflowerResinBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bellflower_resin_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/apicalBee"
+                        app:layout_constraintTop_toTopOf="@+id/apicalBee" />
+
+                    <TextView
+                        android:id="@+id/BellflowerResinBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bellflower_resin_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/BellflowerResinBee"
+                        app:layout_constraintTop_toBottomOf="@+id/BellflowerResinBee" />
+
+                    <ImageView
+                        android:id="@+id/BlueOrchardMasonBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/blue_orchard_mason_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/BellflowerResinBee"
+                        app:layout_constraintTop_toTopOf="@+id/BellflowerResinBee" />
+
+                    <TextView
+                        android:id="@+id/BlueOrchardMasonBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blue_orchard_mason_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/BlueOrchardMasonBee"
+                        app:layout_constraintTop_toBottomOf="@+id/BlueOrchardMasonBee" />
+
+                    <ImageView
+                        android:id="@+id/BuffleheadMasonBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bufflehead_mason_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/BlueOrchardMasonBee"
+                        app:layout_constraintTop_toTopOf="@+id/BlueOrchardMasonBee" />
+
+                    <TextView
+                        android:id="@+id/BuffleheadMasonBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bufflehead_mason_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/BuffleheadMasonBee"
+                        app:layout_constraintTop_toBottomOf="@+id/BuffleheadMasonBee" />
+
+                    <ImageView
+                        android:id="@+id/CommonEasterBumblebee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/common_eastern_bumblebee_1"
+                        app:layout_constraintStart_toEndOf="@+id/BuffleheadMasonBee"
+                        app:layout_constraintTop_toTopOf="@+id/BuffleheadMasonBee" />
+
+                    <TextView
+                        android:id="@+id/CommonEasterBumblebee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_eastern_bumblebee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/CommonEasterBumblebee"
+                        app:layout_constraintTop_toBottomOf="@+id/CommonEasterBumblebee" />
+
+                    <ImageView
+                        android:id="@+id/CuckooBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cuckoo_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/CommonEasterBumblebee"
+                        app:layout_constraintTop_toTopOf="@+id/CommonEasterBumblebee" />
+
+                    <TextView
+                        android:id="@+id/CuckooBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cuckoo_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/CuckooBees"
+                        app:layout_constraintTop_toBottomOf="@+id/CuckooBees" />
+
+                    <ImageView
+                        android:id="@+id/CuckooLeafcutterBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cuckoo_leaf_cutter_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/CuckooBees"
+                        app:layout_constraintTop_toTopOf="@+id/CuckooBees" />
+
+                    <TextView
+                        android:id="@+id/CuckooLeafcutterBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cuckoo_leafcutter_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/CuckooLeafcutterBees"
+                        app:layout_constraintTop_toBottomOf="@+id/CuckooLeafcutterBees" />
+
+                    <ImageView
+                        android:id="@+id/DwarfMasonBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dwarf_mason_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/CuckooLeafcutterBees"
+                        app:layout_constraintTop_toTopOf="@+id/CuckooLeafcutterBees" />
+
+                    <TextView
+                        android:id="@+id/DwarfMasonBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dwarf_mason_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/DwarfMasonBee"
+                        app:layout_constraintTop_toBottomOf="@+id/DwarfMasonBee" />
+
+                    <ImageView
+                        android:id="@+id/EasternCarpenterBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/eastern_carpenter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/DwarfMasonBee"
+                        app:layout_constraintTop_toTopOf="@+id/DwarfMasonBee" />
+
+                    <TextView
+                        android:id="@+id/EasternCarpenterBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eastern_carpenter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/EasternCarpenterBee"
+                        app:layout_constraintTop_toBottomOf="@+id/EasternCarpenterBee" />
+
+                    <ImageView
+                        android:id="@+id/EuropeanWoolCarderbee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/european_wool_carder_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/EasternCarpenterBee"
+                        app:layout_constraintTop_toTopOf="@+id/EasternCarpenterBee" />
+
+                    <TextView
+                        android:id="@+id/EuropeanWoolCarderbee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/european_wool_carder_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/EuropeanWoolCarderbee"
+                        app:layout_constraintTop_toBottomOf="@+id/EuropeanWoolCarderbee" />
+
+                    <ImageView
+                        android:id="@+id/FlatTailedLeafcutterBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/flat_tailed_leafcutter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/EuropeanWoolCarderbee"
+                        app:layout_constraintTop_toTopOf="@+id/EuropeanWoolCarderbee" />
+
+                    <TextView
+                        android:id="@+id/FlatTailedLeafcutterBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/flat_tailed_leafcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/FlatTailedLeafcutterBee"
+                        app:layout_constraintTop_toBottomOf="@+id/FlatTailedLeafcutterBee" />
+
+                    <ImageView
+                        android:id="@+id/HornfacedBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hornfaced_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/FlatTailedLeafcutterBee"
+                        app:layout_constraintTop_toTopOf="@+id/FlatTailedLeafcutterBee" />
+
+                    <TextView
+                        android:id="@+id/HornfacedBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hornfaced_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/HornfacedBee"
+                        app:layout_constraintTop_toBottomOf="@+id/HornfacedBee" />
+
+                    <ImageView
+                        android:id="@+id/LeafcutterBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/leafcutter_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/HornfacedBee"
+                        app:layout_constraintTop_toTopOf="@+id/HornfacedBee" />
+
+                    <TextView
+                        android:id="@+id/LeafcutterBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/leafcutter_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/LeafcutterBees"
+                        app:layout_constraintTop_toBottomOf="@+id/LeafcutterBees" />
+
+                    <ImageView
+                        android:id="@+id/MaineBlueberryBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/maine_blueberry_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/LeafcutterBees"
+                        app:layout_constraintTop_toTopOf="@+id/LeafcutterBees" />
+
+                    <TextView
+                        android:id="@+id/MaineBlueberryBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/maine_blueberry_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/MaineBlueberryBee"
+                        app:layout_constraintTop_toBottomOf="@+id/MaineBlueberryBee" />
+
+                    <ImageView
+                        android:id="@+id/MasonBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mason_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/MaineBlueberryBee"
+                        app:layout_constraintTop_toTopOf="@+id/MaineBlueberryBee" />
+
+                    <TextView
+                        android:id="@+id/MasonBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mason_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/MasonBees"
+                        app:layout_constraintTop_toBottomOf="@+id/MasonBees" />
+
+                    <ImageView
+                        android:id="@+id/ModestMaskedBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/modest_masked_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/MasonBees"
+                        app:layout_constraintTop_toTopOf="@+id/MasonBees" />
+
+                    <TextView
+                        android:id="@+id/ModestMaskedBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/modest_masked_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/ModestMaskedBee"
+                        app:layout_constraintTop_toBottomOf="@+id/ModestMaskedBee" />
+
+                    <ImageView
+                        android:id="@+id/OblongWoolCarderBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oblong_wool_carder_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/ModestMaskedBee"
+                        app:layout_constraintTop_toTopOf="@+id/ModestMaskedBee" />
+
+                    <TextView
+                        android:id="@+id/OblongWoolCarderBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oblong_wool_carder_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/OblongWoolCarderBee"
+                        app:layout_constraintTop_toBottomOf="@+id/OblongWoolCarderBee" />
+
+                    <ImageView
+                        android:id="@+id/OrangeTippedWoodDiggerBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/orange_tipped_wood_digger_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/OblongWoolCarderBee"
+                        app:layout_constraintTop_toTopOf="@+id/OblongWoolCarderBee" />
+
+                    <TextView
+                        android:id="@+id/OrangeTippedWoodDiggerBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/orange_tipped_wood_digger_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/OrangeTippedWoodDiggerBee"
+                        app:layout_constraintTop_toBottomOf="@+id/OrangeTippedWoodDiggerBee" />
+
+                    <ImageView
+                        android:id="@+id/PugnaciousLeafcutterBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pugnacious_leafcutter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/OrangeTippedWoodDiggerBee"
+                        app:layout_constraintTop_toTopOf="@+id/OrangeTippedWoodDiggerBee" />
+
+                    <TextView
+                        android:id="@+id/PugnaciousLeafcutterBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pugnacious_leafcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/PugnaciousLeafcutterBee"
+                        app:layout_constraintTop_toBottomOf="@+id/PugnaciousLeafcutterBee" />
+
+                    <ImageView
+                        android:id="@+id/PureGreenSweatBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pure_green_sweat_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/PugnaciousLeafcutterBee"
+                        app:layout_constraintTop_toTopOf="@+id/PugnaciousLeafcutterBee" />
+
+                    <TextView
+                        android:id="@+id/PureGreenSweatBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pure_green_sweat_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/PureGreenSweatBee"
+                        app:layout_constraintTop_toBottomOf="@+id/PureGreenSweatBee" />
+
+                    <ImageView
+                        android:id="@+id/SculpturedResinBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sculptured_resin_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/PureGreenSweatBee"
+                        app:layout_constraintTop_toTopOf="@+id/PureGreenSweatBee" />
+
+                    <TextView
+                        android:id="@+id/SculpturedResinBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sculptured_resin_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SculpturedResinBee"
+                        app:layout_constraintTop_toBottomOf="@+id/SculpturedResinBee" />
+
+                    <ImageView
+                        android:id="@+id/SilverTailedPetalCutterBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/silver_tailed_petalcutter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/SculpturedResinBee"
+                        app:layout_constraintTop_toTopOf="@+id/SculpturedResinBee" />
+
+                    <TextView
+                        android:id="@+id/SilverTailedPetalCutterBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/silver_tailed_petalcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SilverTailedPetalCutterBee"
+                        app:layout_constraintTop_toBottomOf="@+id/SilverTailedPetalCutterBee" />
+
+                    <ImageView
+                        android:id="@+id/SmallCarpenterBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/small_carpenter_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/SilverTailedPetalCutterBee"
+                        app:layout_constraintTop_toTopOf="@+id/SilverTailedPetalCutterBee" />
+
+                    <TextView
+                        android:id="@+id/SmallCarpenterBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small_carpenter_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SmallCarpenterBees"
+                        app:layout_constraintTop_toBottomOf="@+id/SmallCarpenterBees" />
+
+                    <ImageView
+                        android:id="@+id/SmallMasonBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/small_mason_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/SmallCarpenterBees"
+                        app:layout_constraintTop_toTopOf="@+id/SmallCarpenterBees" />
+
+                    <TextView
+                        android:id="@+id/SmallMasonBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small_mason_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SmallMasonBees"
+                        app:layout_constraintTop_toBottomOf="@+id/SmallMasonBees" />
+
+                    <ImageView
+                        android:id="@+id/SmallResinBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/small_resin_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/SmallMasonBees"
+                        app:layout_constraintTop_toTopOf="@+id/SmallMasonBees" />
+
+                    <TextView
+                        android:id="@+id/SmallResinBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small_resin_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SmallResinBees"
+                        app:layout_constraintTop_toBottomOf="@+id/SmallResinBees" />
+
+                    <ImageView
+                        android:id="@+id/SmallSweatBees"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/small_sweat_bees_1"
+                        app:layout_constraintStart_toEndOf="@+id/SmallResinBees"
+                        app:layout_constraintTop_toTopOf="@+id/SmallResinBees" />
+
+                    <TextView
+                        android:id="@+id/SmallSweatBees_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small_sweat_bees"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SmallSweatBees"
+                        app:layout_constraintTop_toBottomOf="@+id/SmallSweatBees" />
+
+                    <ImageView
+                        android:id="@+id/SmallHandedLeafCutterBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/small_handed_leafcutter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/SmallSweatBees"
+                        app:layout_constraintTop_toTopOf="@+id/SmallSweatBees" />
+
+                    <TextView
+                        android:id="@+id/SmallHandedLeafCutterBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/small_handed_leafcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/SmallHandedLeafCutterBee"
+                        app:layout_constraintTop_toBottomOf="@+id/SmallHandedLeafCutterBee" />
+
+                    <ImageView
+                        android:id="@+id/TaurusMasonBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/taurus_mason_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/SmallHandedLeafCutterBee"
+                        app:layout_constraintTop_toTopOf="@+id/SmallHandedLeafCutterBee" />
+
+                    <TextView
+                        android:id="@+id/TaurusMasonBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/taurus_mason_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/TaurusMasonBee"
+                        app:layout_constraintTop_toBottomOf="@+id/TaurusMasonBee" />
+
+                    <ImageView
+                        android:id="@+id/UnarmedLeafcutterBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/unarmed_leafcutter_bee_1"
+                        app:layout_constraintStart_toEndOf="@+id/TaurusMasonBee"
+                        app:layout_constraintTop_toTopOf="@+id/TaurusMasonBee" />
+
+                    <TextView
+                        android:id="@+id/UnarmedLeafcutterBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unarmed_leafcutter_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/UnarmedLeafcutterBee"
+                        app:layout_constraintTop_toBottomOf="@+id/UnarmedLeafcutterBee" />
+
+                    <ImageView
+                        android:id="@+id/WesternHoneyBee"
+                        android:layout_width="190dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="30dp"
+                        android:background="#c1c1c1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/western_honeybee_1"
+                        app:layout_constraintStart_toEndOf="@+id/UnarmedLeafcutterBee"
+                        app:layout_constraintTop_toTopOf="@+id/UnarmedLeafcutterBee" />
+
+                    <TextView
+                        android:id="@+id/WesternHoneyBee_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/western_honey_bee"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="@+id/WesternHoneyBee"
+                        app:layout_constraintTop_toBottomOf="@+id/WesternHoneyBee" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
 
@@ -196,8 +777,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/CentipedesAndMillipedes"
@@ -275,7 +855,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:layout_marginBottom="16dp"
-                        android:text="Common Pill Woodlouse"
+                        android:text="@string/common_pill_woodlouse"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/CommonPillWoodlouse"
@@ -291,7 +871,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/house_centipede_1"
                         app:layout_constraintStart_toEndOf="@+id/CommonPillWoodlouse"
-                        app:layout_constraintTop_toTopOf="@+id/CommonPillWoodlouse" />" />
+                        app:layout_constraintTop_toTopOf="@+id/CommonPillWoodlouse" />
 
                     <TextView
                         android:id="@+id/houseCentipede_caption"
@@ -299,7 +879,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:layout_marginBottom="16dp"
-                        android:text="House Centipede"
+                        android:text="@string/house_centipede"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/HouseCentipede"
@@ -315,7 +895,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/millipedes_1"
                         app:layout_constraintStart_toEndOf="@+id/HouseCentipede"
-                        app:layout_constraintTop_toTopOf="@+id/HouseCentipede" />" />
+                        app:layout_constraintTop_toTopOf="@+id/HouseCentipede" />
 
                     <TextView
                         android:id="@+id/Millipedes_caption"
@@ -323,7 +903,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:layout_marginBottom="16dp"
-                        android:text="Millipedes"
+                        android:text="@string/millipedes"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/Millipedes"
@@ -343,8 +923,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/FliesTitle"
@@ -367,7 +946,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/eastern_caligrapher_bee_1"
                         app:layout_constraintStart_toStartOf="@+id/FliesTitle"
-                        app:layout_constraintTop_toBottomOf="@+id/FliesTitle" />" />
+                        app:layout_constraintTop_toBottomOf="@+id/FliesTitle" />
 
                     <TextView
                         android:id="@+id/EasternCalligrapher_caption"
@@ -415,7 +994,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/margined_calligrapher_1"
                         app:layout_constraintStart_toEndOf="@+id/Hoverflies"
-                        app:layout_constraintTop_toTopOf="@+id/Hoverflies" />" />
+                        app:layout_constraintTop_toTopOf="@+id/Hoverflies" />
 
                     <TextView
                         android:id="@+id/MarginedCalligrapher_caption"
@@ -439,7 +1018,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/scaly_bee_fly_1"
                         app:layout_constraintStart_toEndOf="@+id/MarginedCalligrapher"
-                        app:layout_constraintTop_toTopOf="@+id/MarginedCalligrapher" />" />
+                        app:layout_constraintTop_toTopOf="@+id/MarginedCalligrapher" />
 
                     <TextView
                         android:id="@+id/ScalyBeeFly_caption"
@@ -463,7 +1042,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/transverse_banded_calligrapher_1"
                         app:layout_constraintStart_toEndOf="@+id/ScalyBeeFly"
-                        app:layout_constraintTop_toTopOf="@+id/ScalyBeeFly" />" />
+                        app:layout_constraintTop_toTopOf="@+id/ScalyBeeFly" />
 
                     <TextView
                         android:id="@+id/TransverseBandedFlowerFly_caption"
@@ -471,7 +1050,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
                         android:layout_marginBottom="16dp"
-                        android:text="Transverse-Banded Flower Fly"
+                        android:text="@string/transverse_banded_flower_fly"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/TransverseBandedFlowerFly"
@@ -490,8 +1069,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/OthersTitle"
@@ -499,7 +1077,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="7dp"
-                        android:text="Others"
+                        android:text="@string/others"
                         android:textColor="@color/white"
                         android:textSize="25sp"
                         android:textStyle="bold"
@@ -514,7 +1092,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/brown_lacewings_1"
                         app:layout_constraintStart_toStartOf="@+id/OthersTitle"
-                        app:layout_constraintTop_toBottomOf="@+id/OthersTitle" />" />
+                        app:layout_constraintTop_toBottomOf="@+id/OthersTitle" />
 
                     <TextView
                         android:id="@+id/BrownLaceWings_Caption"
@@ -562,7 +1140,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/green_lacewing_1"
                         app:layout_constraintStart_toEndOf="@+id/CommonBarklice"
-                        app:layout_constraintTop_toTopOf="@+id/CommonBarklice" />" />
+                        app:layout_constraintTop_toTopOf="@+id/CommonBarklice" />
 
                     <TextView
                         android:id="@+id/GreenLacewings_caption"
@@ -589,8 +1167,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/SpiderTitle"
@@ -613,7 +1190,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/american_grass_spiders_1"
                         app:layout_constraintStart_toStartOf="@+id/SpiderTitle"
-                        app:layout_constraintTop_toBottomOf="@+id/SpiderTitle" />" />
+                        app:layout_constraintTop_toBottomOf="@+id/SpiderTitle" />
 
                     <TextView
                         android:id="@+id/AmericanGrassSpider_Caption"
@@ -661,7 +1238,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/jumping_spiders_1"
                         app:layout_constraintStart_toEndOf="@+id/Harvestmen"
-                        app:layout_constraintTop_toTopOf="@+id/Harvestmen" />" />
+                        app:layout_constraintTop_toTopOf="@+id/Harvestmen" />
 
                     <TextView
                         android:id="@+id/JumpingSpiders_caption"
@@ -688,8 +1265,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="match_parent">
 
                     <TextView
                         android:id="@+id/WaspsTitle"
@@ -712,7 +1288,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/carrot_wasps_1"
                         app:layout_constraintStart_toStartOf="@+id/WaspsTitle"
-                        app:layout_constraintTop_toBottomOf="@+id/WaspsTitle" />" />
+                        app:layout_constraintTop_toBottomOf="@+id/WaspsTitle" />
 
                     <TextView
                         android:id="@+id/CarrotWasps_caption"
@@ -760,7 +1336,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/hornets_and_yellowjackets_1"
                         app:layout_constraintStart_toEndOf="@+id/FourToothedMasonWasps"
-                        app:layout_constraintTop_toTopOf="@+id/FourToothedMasonWasps" />" />
+                        app:layout_constraintTop_toTopOf="@+id/FourToothedMasonWasps" />
 
                     <TextView
                         android:id="@+id/HornetsandYellowjackets_caption"
@@ -784,7 +1360,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/metallic_bluish_green_cuckoo_wasp_1"
                         app:layout_constraintStart_toEndOf="@+id/HornetsandYellowjackets"
-                        app:layout_constraintTop_toTopOf="@+id/HornetsandYellowjackets" />" />
+                        app:layout_constraintTop_toTopOf="@+id/HornetsandYellowjackets" />
 
                     <TextView
                         android:id="@+id/MetallicBluishGreenCucukooWasp_caption"
@@ -808,7 +1384,7 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/mexican_grass_carrying_wasp_1"
                         app:layout_constraintStart_toEndOf="@+id/MetallicBluishGreenCucukooWasp"
-                        app:layout_constraintTop_toTopOf="@+id/MetallicBluishGreenCucukooWasp" />" />
+                        app:layout_constraintTop_toTopOf="@+id/MetallicBluishGreenCucukooWasp" />
 
                     <TextView
                         android:id="@+id/MexicanGrassCarryingWasp_caption"

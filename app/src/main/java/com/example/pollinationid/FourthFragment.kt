@@ -14,13 +14,13 @@ data class Insect(val title: String, val description: String, val img: Int)
 class FourthFragment:Fragment(R.layout.fragment_fourth) {
     private val mInsectList = listOf(
         Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",R.drawable.alfalfa_leafcutter_bee_1),
-        Insect("American Grass Spider", "PLACE HOLDER",R.drawable.ic_book_foreground),
-        Insect("Apical Leafcutter Bee", "PLACE HOLDER",R.drawable.ic_book_foreground),
-        Insect("Bark Centipede", "PLACE HOLDER",R.drawable.ic_book_foreground),
-        Insect("Beetles", "PLACE HOLDER",R.drawable.ic_book_foreground),
-        Insect("Bellflower Resin Bee", "PLACE HOLDER",R.drawable.ic_book_foreground),
-        Insect("Blue Orchard Mason Bee", "PLACE HOLDER",R.drawable.ic_book_foreground),
-        Insect("Brown Lacewings", "PLACE HOLDER",R.drawable.ic_book_foreground),
+        Insect("American Grass Spider", "(Agelenopsis spp.)",R.drawable.american_grass_spiders_1),
+        Insect("Apical Leafcutter Bee", "(Megachile apicalis)",R.drawable.apical_leafcutter_bee_1),
+        Insect("Bark Centipede", "(Scoloprcryptops sexspinosus)",R.drawable.bark_centipede_1),
+        Insect("Beetles", "Order: Coleoptera",R.drawable.beetles_1),
+        Insect("Bellflower Resin Bee", "(Megachile campanulae)",R.drawable.bellflower_resin_bee_1),
+        Insect("Blue Orchard Mason Bee", "(Osmia lignaria)",R.drawable.blue_orchard_mason_bee_1),
+        Insect("Brown Lacewings", "Family: Hemerobiidae",R.drawable.brown_lacewings_1),
         
     )
 
@@ -45,6 +45,7 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
             // set the custom adapter to the RecyclerView
             adapter = ListAdapter(mInsectList)
         }
+
     }
 
     companion object {
