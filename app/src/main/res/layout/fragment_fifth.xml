@@ -13,7 +13,7 @@
         android:id="@+id/fifthFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu"
+        android:text="@string/menu"
         android:textColor="#306CB5"
         android:textSize="40sp"
         android:textStyle="italic|bold"
@@ -23,4 +23,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="75dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

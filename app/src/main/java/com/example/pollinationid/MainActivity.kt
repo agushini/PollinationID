@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar?.title = "Home Page";
+        //supportActionBar?.title = "Home Page";
 
         val firstFragment=FirstFragment()
         val secondFragment=SecondFragment()
@@ -41,12 +41,12 @@ class MainActivity : AppCompatActivity() {
     private fun setCurrentFragment(fragment:Fragment)=
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flFragment,fragment)
-            if (fragment == FirstFragment()){
+           /* if (fragment == FirstFragment()){
                 supportActionBar?.title = "SECOND FRAGMENT";
             }
             else {
                 supportActionBar?.title = "PollinationID";
-            }
+            }*/
 
             commit()
         }
