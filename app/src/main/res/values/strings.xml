@@ -69,4 +69,8 @@
     <string name="others">Others</string>
     <string name="western_honey_bee">Western Honey Bee</string>
     <string name="menu">Menu</string>
+    <string name="about">About</string>
+    <string name="key_chars">Key Chars</string>
+    <string name="plants">Plants</string>
+    <string name="description">Description</string>
 </resources>

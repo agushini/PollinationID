@@ -26,27 +26,44 @@ class ListAdapter(private val list: List<Insect>)
 
 class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     RecyclerView.ViewHolder(inflater.inflate(R.layout.card, parent, false)) {
+
+    companion object{ //this is helps to avoid errors when passing code to the other activity
+        val NAV_BAR_KEY = "Nav_BAR"
+        val E_IMG_1_KEY = "E_IMG_1"
+        val E_IMG_2_KEY = "E_IMG_2"
+        val E_IMG_3_KEY = "E_IMG_3"
+        val E_IMG_4_KEY = "E_IMG_4"
+    }
+
+
     private var mTitleView: TextView? = null
-    private var mYearView: TextView? = null
+    private var mCaptionView: TextView? = null
     private  var mImageView: ImageView? = null
+
+    private var eExploreImage1: ImageView? = null
 
     init {
         mTitleView = itemView.findViewById(R.id.recycler1TextView)
-        mYearView = itemView.findViewById(R.id.recycler1TextView_caption)
+        mCaptionView = itemView.findViewById(R.id.recycler1TextView_caption)
         mImageView = itemView.findViewById(R.id.recycler1ImageView)
 
-
+        eExploreImage1 = itemView.findViewById(R.id.exploreimage1)
     }
 
     fun bind(bugInsect: Insect) {
         mTitleView?.text = bugInsect.title
-        mYearView?.text = bugInsect.description
-        mImageView?.setImageResource(bugInsect.img)
+        mCaptionView?.text = bugInsect.description
+        mImageView?.setImageResource(bugInsect.img1)
 
         itemView.setOnClickListener(){
-            println("TEST CLICK")
-
+            //handles the click for each encyclopedia entry
+            //on click pass the data for which one was clicked to the new activity to populate
             val intent = Intent(itemView.context, ExploreActivity::class.java)
+            intent.putExtra(NAV_BAR_KEY,bugInsect.title)
+            intent.putExtra(E_IMG_1_KEY,bugInsect.img1)
+            intent.putExtra(E_IMG_2_KEY,bugInsect.img2)
+            intent.putExtra(E_IMG_3_KEY,bugInsect.img3)
+            intent.putExtra(E_IMG_4_KEY,bugInsect.img4)
 
             itemView.context.startActivity(intent)
         }
