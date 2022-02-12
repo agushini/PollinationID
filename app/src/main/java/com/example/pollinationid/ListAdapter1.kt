@@ -33,7 +33,10 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         val E_IMG_2_KEY = "E_IMG_2"
         val E_IMG_3_KEY = "E_IMG_3"
         val E_IMG_4_KEY = "E_IMG_4"
-        val E_DESCRIPTION  = "E-DESCRIPTION"
+        val E_DESCRIPTION_KEY  = "E-DESCRIPTION"
+        val E_ABOUT_KEY = "E_ABOUT"
+        val E_KEYCHAR_KEY = "E_KEYCHAR"
+        val E_PLANT_KEY = "E_PLANT"
     }
 
 
@@ -41,14 +44,14 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     private var mCaptionView: TextView? = null
     private  var mImageView: ImageView? = null
 
-    private var eExploreImage1: ImageView? = null
+    //private var eExploreImage1: ImageView? = null
 
     init {
         mTitleView = itemView.findViewById(R.id.recycler1TextView)
         mCaptionView = itemView.findViewById(R.id.recycler1TextView_caption)
         mImageView = itemView.findViewById(R.id.recycler1ImageView)
 
-        eExploreImage1 = itemView.findViewById(R.id.exploreimage1)
+        //eExploreImage1 = itemView.findViewById(R.id.exploreimage1)
     }
 
     fun bind(bugInsect: Insect) {
@@ -65,7 +68,10 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
             intent.putExtra(E_IMG_2_KEY,bugInsect.img2)
             intent.putExtra(E_IMG_3_KEY,bugInsect.img3)
             intent.putExtra(E_IMG_4_KEY,bugInsect.img4)
-            intent.putExtra(E_DESCRIPTION,bugInsect.description)
+            intent.putExtra(E_DESCRIPTION_KEY,bugInsect.description)
+            intent.putExtra(E_ABOUT_KEY,bugInsect.about)
+            intent.putExtra(E_KEYCHAR_KEY,bugInsect.keyChar)
+            intent.putExtra(E_PLANT_KEY,bugInsect.plants)
 
             itemView.context.startActivity(intent)
         }

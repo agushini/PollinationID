@@ -12,7 +12,8 @@
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
         android:text="@string/about"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/keyCharButton"
         app:layout_constraintTop_toTopOf="@+id/keyCharButton" />
 
@@ -22,6 +23,8 @@
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
         android:text="@string/key_chars"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,6 +35,8 @@
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
         android:text="@string/plants"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/keyCharButton"
         app:layout_constraintTop_toTopOf="@+id/keyCharButton" />
 
@@ -116,7 +121,9 @@
                 android:id="@+id/ExploreDescription_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
                 android:text="@string/description"
                 android:textColor="@color/white"
                 android:textSize="16sp"
