@@ -33,6 +33,7 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         val E_IMG_2_KEY = "E_IMG_2"
         val E_IMG_3_KEY = "E_IMG_3"
         val E_IMG_4_KEY = "E_IMG_4"
+        val E_DESCRIPTION  = "E-DESCRIPTION"
     }
 
 
@@ -64,6 +65,7 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
             intent.putExtra(E_IMG_2_KEY,bugInsect.img2)
             intent.putExtra(E_IMG_3_KEY,bugInsect.img3)
             intent.putExtra(E_IMG_4_KEY,bugInsect.img4)
+            intent.putExtra(E_DESCRIPTION,bugInsect.description)
 
             itemView.context.startActivity(intent)
         }

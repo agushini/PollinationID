@@ -2,8 +2,11 @@ package com.example.pollinationid
 //this connects to the fourth fragment and handles the clicks for each entry in the encyclopedia
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_explore.*
 import kotlinx.android.synthetic.main.fragment_fourth.*
+import org.w3c.dom.Text
 
 class ExploreActivity : AppCompatActivity() {
 
@@ -13,8 +16,15 @@ class ExploreActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_explore)
         //get the intents that were sent over from the main activity
+
+        //set the nav bar to the correct name
         val navBarTitle = intent.getStringExtra(bugInsectViewHolder.NAV_BAR_KEY)
         supportActionBar?.title = navBarTitle
+
+        //set the technical name thingy
+        //val eDescription = intent.getStringExtra(bugInsectViewHolder.E_DESCRIPTION)
+        val eTechNameTextView: TextView = findViewById(R.id.Explore_technicalName_textview)
+        eTechNameTextView?.text = intent.getStringExtra(bugInsectViewHolder.E_DESCRIPTION)
 
         //set each image to be correct, must have a default value which is a camera icon right now
         val eImageView1: ImageView = findViewById(R.id.exploreimage1)
@@ -32,6 +42,21 @@ class ExploreActivity : AppCompatActivity() {
         val eImageView4: ImageView = findViewById(R.id.exploreimage4)
         val eimg4 = intent.getIntExtra(bugInsectViewHolder.E_IMG_4_KEY, R.drawable.ic_black_camera_foreground)
         eImageView4?.setImageResource(eimg4)
+
+        //set the text to change on the button click
+        aboutButton.setOnClickListener{
+            ExploreDescription_textView.text =  "About Button Clicked"
+        }
+
+        keyCharButton.setOnClickListener{
+            ExploreDescription_textView.text = "keyChar Button Clicked"
+        }
+
+        plantButton.setOnClickListener({
+            ExploreDescription_textView.text = "Plant Button Clicked"
+        })
+
+
 
     }
 }
