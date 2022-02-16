@@ -43,7 +43,6 @@ class ExploreActivity : AppCompatActivity() {
         eImageView4?.setImageResource(eimg4)
 
 
-
         ExploreDescription_textView.text = intent.getStringExtra(bugInsectViewHolder.E_ABOUT_KEY)
 
         //set the text to change on the button click

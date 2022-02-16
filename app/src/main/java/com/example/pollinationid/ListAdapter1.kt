@@ -51,7 +51,6 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         mCaptionView = itemView.findViewById(R.id.recycler1TextView_caption)
         mImageView = itemView.findViewById(R.id.recycler1ImageView)
 
-        //eExploreImage1 = itemView.findViewById(R.id.exploreimage1)
     }
 
     fun bind(bugInsect: Insect) {
