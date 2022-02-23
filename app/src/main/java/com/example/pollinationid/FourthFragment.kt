@@ -18,84 +18,24 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
     private val mInsectList = listOf(
         Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",
             R.drawable.alfalfa_leafcutter_bee_1,R.drawable.alfalfa_leafcutter_bee_2,R.drawable.alfalfa_leafcutter_bee_3,R.drawable.alfalfa_leafcutter_bee_4,
-                "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940sto pollinate alfalfa and carrots1\n" +
-                        ".\n" +
-                        "They are a solitary species that nest both above and below the ground in cavities. Above ground nesting\n" +
-                        "sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber\n" +
-                        "wasp nests1\n" +
+                "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests1. The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season3. After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber4. She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larva before pupating in spring(3).\n" +
                         "\n" +
-                        ". The females seem to prefer tunnels with a diameter between 4mm and 6mm2\n" +
+                        "The Alfalfa Leafcutter Bee faces three distinct challenges: chalkbrood, parasitism, and pesticide exposure(4). Chalkbrood is a fungal infection that impacts brood (bee eggs, larva, and/or pupa)(4). The parasitic wasp Ptesomalus venustus is a common threat to the Alfalfa Leafcutter Bee(4). As the bee larva begins to spin its cocoon in preparation to pupate, a female P. venustus wasp will sting and paralyze the larva before depositing her own eggs onto it(4). The wasp larva hatch within a day or two and consume the bee larva(4). The Alfalfa Leafcutter Bee larva also faces possible predation by the Checkered Flower Beetle, T. ornatus, which invades the nest and eats the developing brood(3). Pesticides and insecticides also challenge the Alfalfa Leafcutter Bee and pollinators in general. The toxins within pesticides do not discriminate between harmful and beneficial insects. Pollinators foraging in gardens or fields sprayed with chemicals can consume or carry the toxins back to their nests. This results in high mortality rates of bees and other pollinators that encounter these chemicals(5).\n" +
                         "\n" +
-                        "and lay eggs\n" +
+                        "While the Alfalfa Leafcutter Bee is not native to the U.S., it has been recognized as an important pollinator despite its range being limited to agricultural settings(6). \n" +
                         "\n" +
-                        "after the June/July mating season3\n" +
-                        "\n" +
-                        ". After finding a suitable nesting site, a female Alfalfa Leafcutter Bee\n" +
-                        "will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle\n" +
-                        "of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut\n" +
-                        "M. rotundata\n" +
-                        "6mm to\n" +
-                        "9mm long\n" +
-                        "\n" +
-                        "oval leaves from plants to seal off each chamber4\n" +
-                        "\n" +
-                        ". She repeats this process up to 24 times3 depending on\n" +
-                        "the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early\n" +
-                        "winter, consume the food bundle, and overwinter as mature larva before pupating in spring3\n" +
-                        ".\n" +
-                        "The Alfalfa Leafcutter Bee faces three distinct challenges: chalkbrood, parasitism, and pesticide\n" +
-                        "exposure4\n" +
-                        ". Chalkbrood is a fungal infection that impacts brood (bee eggs, larva, and/or pupa)4\n" +
-                        ". The\n" +
-                        "\n" +
-                        "parasitic wasp Ptesomalus venustus is a common threat to the Alfalfa Leafcutter Bee4\n" +
-                        "\n" +
-                        ". As the bee larva\n" +
-                        "begins to spin its cocoon in preparation to pupate, a female P. venustus wasp will sting and paralyze the\n" +
-                        "larva before depositing her own eggs onto it4\n" +
-                        "\n" +
-                        ". The wasp larva hatch within a day or two and consume the\n" +
-                        "\n" +
-                        "bee larva4\n" +
-                        ". The Alfalfa Leafcutter Bee larva also faces possible predation by the Checkered Flower Beetle,\n" +
-                        "T. ornatus, which invades the nest and eats the developing brood3\n" +
-                        "\n" +
-                        ". Pesticides and insecticides also\n" +
-                        "challenge the Alfalfa Leafcutter Bee and pollinators in general. The toxins within pesticides do not\n" +
-                        "discriminate between harmful and beneficial insects. Pollinators foraging in gardens or fields sprayed with\n" +
-                        "chemicals can consume or carry the toxins back to their nests. This results in high mortality rates of bees\n" +
-                        "and other pollinators that encounter these chemicals5\n" +
-                        ".\n" +
-                        "\n" +
-                        "While the Alfalfa Leafcutter Bee is not native to the U.S., it has been recognized as an important pollinator\n" +
-                        "despite its range being limited to agricultural settings6\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: June to August7\n" +
-                        "CONSERVATION STATUS: Not threatened3\n" +
+                        "SEASONALITY: June to August(7)\n" +
+                        "CONSERVATION STATUS: Not threatened(3)\n" +
                         "STATUS: Non-native\n" +
-                        "Sources: 1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                        "Pollination Press LLC.\n" +
-                        "2Osgood, C. E. (1964). Foraging and Nesting Behavior of the Leafcutter Bee Megachile rotundata\n" +
-                        "(Fabricius). Retrieved January 18, 2020 from https://ir.library.oregonstate.edu/downloads/dv13zx37q\n" +
-                        "3\n" +
-                        "Yajcaji, A. (2011). Megachile rotundata. Accessed January 18, 2020 at\n" +
-                        "https://animaldiversity.org/accounts/Megachile_rotundata/\n" +
-                        "4\n" +
-                        "Snyder, R. (2014, July). Alfalfa Leafcutter Bee (Megachile rotundata). Retrieved January 18, 2020 from\n" +
-                        "https://beeinformed.org/2014/07/30/alfalfa-leafcutter-bee-megachile-rotundata/\n" +
-                        "5University of Georgia. (n.d.). Protecting Pollinators from Pesticides. Retrieved January 18, 2020 from\n" +
                         "\n" +
-                        "https://bees.caes.uga.edu/bees-beekeeping-pollination/pollination/pollination-protecting-pollinators-\n" +
-                        "from-pesticides.html\n" +
-                        "\n" +
-                        "6Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., ... Redford, A. (2018, August).\n" +
-                        "Megachile. Retrieved January 17, 2020, from\n" +
-                        "http://idtools.org/id/bees/exotic/factsheet.php?name=16425\n" +
-                        "7Alfalfa Leafcutter Bee (Fabricius, 1787). (n.d.). Retrieved January 17, 2020, from\n" +
-                        "\n" +
-                        "https://www.inaturalist.org/taxa/47219-Apis-\n" +
-                        "melliferahttps://www.discoverlife.org/20/q?search=Megachile+rotundata",
+                        "Sources: \n" +
+                        "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                        "(2)Osgood, C. E. (1964). Foraging and Nesting Behavior of the Leafcutter Bee Megachile rotundata (Fabricius). Retrieved January 18, 2020 from https://ir.library.oregonstate.edu/downloads/dv13zx37q\n" +
+                        "(3)Yajcaji, A. (2011). Megachile rotundata. Accessed January 18, 2020 at https://animaldiversity.org/accounts/Megachile_rotundata/\n" +
+                        "(4)Snyder, R. (2014, July). Alfalfa Leafcutter Bee (Megachile rotundata). Retrieved January 18, 2020 from https://beeinformed.org/2014/07/30/alfalfa-leafcutter-bee-megachile-rotundata/\n" +
+                        "(5)University of Georgia. (n.d.). Protecting Pollinators from Pesticides. Retrieved January 18, 2020 from https://bees.caes.uga.edu/bees-beekeeping-pollination/pollination/pollination-protecting-pollinators-from-pesticides.html\n" +
+                        "(6)Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., … Redford, A. (2018, August). Megachile. Retrieved January 17, 2020, from http://idtools.org/id/bees/exotic/factsheet.php?name=16425\n" +
+                        "(7)Alfalfa Leafcutter Bee (Fabricius, 1787). (n.d.). Retrieved January 17, 2020, from https://www.inaturalist.org/taxa/47219-Apis-melliferahttps://www.discoverlife.org/20/q?search=Megachile+rotundata",
                 "• Black or gray with white/pale cream banding on abdomen\n" +
                         "• Females have rows of pale hair beneath abdomen (scopa)\n" +
                         "• Males with creamy white or yellow spots at end of abdomen",
@@ -134,72 +74,36 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Aster, Symphyotrichum spp."),
         Insect("American Grass Spider", "(Agelenopsis spp.)",
             R.drawable.american_grass_spiders_1,R.drawable.american_grass_spiders_2,R.drawable.american_grass_spiders_3,R.drawable.american_grass_spiders_4,
-                    "American Grass Spiders are some of the most common funnel weavers seen in the United States and\n" +
-                            "Canada1\n" +
-                            ". You’ve likely seen their webs in the grass in the early morning. They are a striking sight if\n" +
-                            "sprinkled with dew. American Grass Spider webs are flat and sheet-like with a tube (funnel) either in the\n" +
-                            "middle or off to the side. This funnel is where the American Grass Spider will wait to ambush its prey1\n" +
-                            ".\n" +
-                            "They wait until a prey item (flies, mosquitoes, moths, butterflies, etc.) lands on their web. The silk strands\n" +
-                            "ensnare the insect and alerts the spider, who will then dart out of its funnel. The spider quickly bites and\n" +
-                            "injects a fast-acting venom to paralyze the prey before dragging its meal back to the safety of its funnel1\n" +
-                            ".\n" +
-                            "The range of the American Grass Spiders extends throughout the United States and Canada and can be\n" +
-                            "found in some parts of Europe, Australia, and South America2\n" +
-                            ".\n" +
+                    "American Grass Spiders are some of the most common funnel weavers seen in the United States and Canada(1). You’ve likely seen their webs in the grass in the early morning. They are a striking sight if sprinkled with dew. American Grass Spider webs are flat and sheet-like with a tube (funnel) either in the middle or off to the side. This funnel is where the American Grass Spider will wait to ambush its prey(1). They wait until a prey item (flies, mosquitoes, moths, butterflies, etc.) lands on their web. The silk strands ensnare the insect and alerts the spider, who will then dart out of its funnel. The spider quickly bites and injects a fast-acting venom to paralyze the prey before dragging its meal back to the safety of its funnel(1). \n" +
                             "\n" +
-                            "Agelenopsis spp.\n" +
-                            "1mm to\n" +
-                            "35mm long\n" +
+                            "The range of the American Grass Spiders extends throughout the United States and Canada and can be found in some parts of Europe, Australia, and South America(2). \n" +
                             "\n" +
-                            "SEASONALITY: April to November2\n" +
-                            "EASTERN US AND CANADA: 131\n" +
+                            "SEASONALITY: April to November(2)\n" +
+                            "EASTERN US AND CANADA: 13(1)\n" +
+                            "\n" +
                             "Sources:\n" +
-                            "1Bartlett, T., Cotinis, McLeod, R., Elliott, L., Hunt, C., Entz, C., Howe, M., & P., L. (2004). Family\n" +
-                            "Agelenidae – Funnel Weavers. Retrieved March 7, 2020 from\n" +
-                            "https://bugguide.net/node/view/1974\n" +
-                            "2Grass Spiders (Genus Agelenopsis). (n.d.) Retrieved March 7, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/82116-Agelenopsis",
+                            "(1)Bartlett, T., Cotinis, McLeod, R., Elliott, L., Hunt, C., Entz, C., Howe, M., & P., L. (2004). Family Agelenidae – Funnel Weavers. Retrieved March 7, 2020 from https://bugguide.net/node/view/1974\n" +
+                            "(2)Grass Spiders (Genus Agelenopsis). (n.d.) Retrieved March 7, 2020 from https://www.inaturalist.org/taxa/82116-Agelenopsis",
                     "• (Web) Flat, sheet-like, horizontal web with a funnel near the middle or side\n" +
                             "• “small” brown body with vertical striping on cephalothorax (first major body segment)\n" +
                             "• Prominent spinnerets (organ at end of abdomen that allows spider to spin web)",
                     "American Grass Spiders are ambush predators and will commonly build their webs on grass or hedges."),
         Insect("Apical Leafcutter Bee", "(Megachile apicalis)",
             R.drawable.apical_leafcutter_bee_1,R.drawable.apical_leafcutter_bee_2,R.drawable.apical_leafcutter_bee_3,R.drawable.apical_leafcutter_bee_4,
-                    "The Apical Leafcutter Bee was introduced to the United States from Europe1\n" +
+                    "The Apical Leafcutter Bee was introduced to the United States from Europe(1). Part of their name comes from the behavior of cutting leaves with their mandibles (bee teeth) for nesting material. They are solitary bees that nest in pre-existing cavities in wood, rocks, or plant stems(2). After finding a suitable site, a female will gather leaf pieces and begin building chambers for each of her eggs, starting the furthest away from the nest opening(2). She will deposit a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. She then seals the chamber with chewed leaf bits and repeats the process, each time leaving one egg and food bundle per chamber and sealing it off with plant material(2).\n" +
                             "\n" +
-                            ". Part of their name comes\n" +
-                            "from the behavior of cutting leaves with their mandibles (bee teeth) for nesting material. They are solitary\n" +
-                            "bees that nest in pre-existing cavities in wood, rocks, or plant stems2\n" +
+                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(2). They immediately seek a mate and search for nesting sites to prepare the next generation which will overwinter and emerge in the next season(2).\n" +
                             "\n" +
-                            ". After finding a suitable site, a\n" +
-                            "female will gather leaf pieces and begin building chambers for each of her eggs, starting the furthest\n" +
-                            "away from the nest opening2\n" +
+                            "The range of the Apical Leafcutter Bee extends throughout Europe, though since its introduction into the U.S. it has been documented on both the northeast and northwestern states(4).\n" +
                             "\n" +
-                            ". She will deposit a single egg atop a bundle of pollen (and sometimes\n" +
-                            "nectar) that will feed the developing larva. She then seals the chamber with chewed leaf bits and repeats\n" +
-                            "the process, each time leaving one egg and food bundle per chamber and sealing it off with plant\n" +
-                            "material2\n" +
-                            ".\n" +
-                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer2\n" +
-                            ". They\n" +
-                            "immediately seek a mate and search for nesting sites to prepare the next generation which will\n" +
-                            "overwinter and emerge in the next season2"+
-                            "The range of the Apical Leafcutter Bee extends throughout Europe, though since its introduction into the\n" +
-                            "U.S. it has been documented on both the northeast and northwestern states4\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May to July3\n" +
+                            "SEASONALITY: May to July(3)\n" +
                             "STATUS: non-native\n" +
-                            "Sources:\n" +
-                            "1Ormes, M. & Schweitzer, D., F. (2015). Megachile apicalis - Spinola, 1808. Retrieved February 27, 2020\n" +
-                            "from http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile%20apicalis\n" +
-                            "2Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "3Apical Leaf-cutter Bee (Megachile apicalis). (n.d.). Retrieved February 27, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/335714-Megachile-apicalis\n" +
-                            "4Megachile apicalis Spinola, 1808. (n.d.) Retrieved February 29, 2020 from\n" +
-                            "https://www.discoverlife.org/20/q?search=Megachile+apicalis",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Ormes, M. & Schweitzer, D., F. (2015). Megachile apicalis - Spinola, 1808. Retrieved February 27, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile%20apicalis\n" +
+                            "(2)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(3)Apical Leaf-cutter Bee (Megachile apicalis). (n.d.). Retrieved February 27, 2020 from https://www.inaturalist.org/taxa/335714-Megachile-apicalis\n" +
+                            "(4)Megachile apicalis Spinola, 1808. (n.d.) Retrieved February 29, 2020 from https://www.discoverlife.org/20/q?search=Megachile+apicalis",
                     "• (females) white scopa (hair beneath abdomen) that" +
                             "becomes black on the last two abdominal segments" +
                             "(terga 5 & 6)\n" +
@@ -242,39 +146,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Bark Centipede", "(Scoloprcryptops sexspinosus)",
             R.drawable.bark_centipede_1,R.drawable.bark_centipede_2,R.drawable.bark_centipede_3,R.drawable.bark_centipede_4,
-                    "Bark Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per\n" +
-                            "body segment (Millipedes have two leg-pairs per segment) and a flat body shape. They are active hunters\n" +
-                            "and will eat any invertebrate their size or smaller, like insects and spiders1\n" +
+                    "Bark Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat body shape. They are active hunters and will eat any invertebrate their size or smaller, like insects and spiders(1). Bark Centipedes use venom to immobilize their prey and their bites can sting(2). If threatened, they can pinch with their hind legs(1). Bark Centipedes are found in areas with a lot of moisture like underneath rocks, logs, leaf litter, and debris piles(2). They may be found in an insect hotel filled with bark, twigs, and debris hunting the other invertebrates there.\n" +
                             "\n" +
-                            ". Bark Centipedes use venom to\n" +
+                            "While Bark Centipedes are not deadly, they can deliver a painful bite or pinch. It is advised to leave them be and not handle them. Bark Centipedes are important to the ecological community as they control the populations of other invertebrates. They are also a popular menu item for animals such as beetles, birds, toads, snakes, salamanders, and more.\n" +
                             "\n" +
-                            "immobilize their prey and their bites can sting2\n" +
+                            "The range of the Bark Centipede extends throughout the eastern United States as far west as Nebraska, Kansas, and Oklahoma(3).\n" +
                             "\n" +
-                            ". If threatened, they can pinch with their hind legs1\n" +
-                            ". Bark\n" +
-                            "Centipedes are found in areas with a lot of moisture like underneath rocks, logs, leaf litter, and debris\n" +
-                            "piles2\n" +
-                            ". They may be found in an insect hotel filled with bark, twigs, and debris hunting the other\n" +
-                            "invertebrates there.\n" +
-                            "While Bark Centipedes are not deadly, they can deliver a painful bite or pinch. It is advised to leave them\n" +
-                            "be and not handle them. Bark Centipedes are important to the ecological community as they control the\n" +
-                            "populations of other invertebrates. They are also a popular menu item for animals such as beetles, birds,\n" +
-                            "toads, snakes, salamanders, and more.\n" +
-                            "The range of the Bark Centipede extends throughout the eastern United States as far west as Nebraska,\n" +
-                            "Kansas, and Oklahoma3\n" +
-                            ".\n" +
-                            "SEASONALITY: year-round3\n" +
+                            "SEASONALITY: year-round(3)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
                             "STATUS: Native\n" +
-                            "Sources:\n" +
                             "\n" +
-                            "1Pest ID – Bark Centipede. (n.d.). Retrieved February 20, 2020 from https://proactivepestga.com/pest-id-\n" +
-                            "bark-centipede/\n" +
-                            "\n" +
-                            "2Bark Centipede (Scolopocryptops sexspinosus). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.insectidentification.org/insect-description.asp?identification=Bark-Centipede\n" +
-                            "3Eastern Fire Centipede (Scolopocryptops sexspinosus). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/123663-Scolopocryptops-sexspinosus",
+                            "Sources: \n" +
+                            "(1)Pest ID – Bark Centipede. (n.d.). Retrieved February 20, 2020 from https://proactivepestga.com/pest-id-bark-centipede/\n" +
+                            "(2)Bark Centipede (Scolopocryptops sexspinosus). (n.d.). Retrieved February 20, 2020 from https://www.insectidentification.org/insect-description.asp?identification=Bark-Centipede\n" +
+                            "(3)Eastern Fire Centipede (Scolopocryptops sexspinosus). (n.d.). Retrieved February 20, 2020 from https://www.inaturalist.org/taxa/123663-Scolopocryptops-sexspinosus",
                     "• 23 leg pairs\n" +
                             "• One leg-pair per body segment\n" +
                             "• Reddish-brown body, pale to yellow legs",
@@ -282,65 +167,35 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "rocks, leaf litter, etc.) with a higher activity at night."),
         Insect("Beetles", "(Order: Coleoptera)",
             R.drawable.beetles_1,R.drawable.beetles_2,R.drawable.beetles_3,R.drawable.beetles_4,
-                    "Beetles are some of the most diverse insects on the planet; they make up about 30% of all animals1\n" +
-                            ". They\n" +
-                            "live on every single continent except Antarctica and come in a wide range of sizes and colors. The smallest\n" +
-                            "beetles are under a millimeter while the largest tropical species can reach nearly 8 inches in length2\n" +
-                            ".\n" +
-                            "Some Beetles are predacious. Others eat living or dead plants, are scavengers, or are parasites3\n" +
-                            ".\n" +
-                            "Regardless, Beetles help maintain life on the planet. They serve as biological controls of pests,\n" +
-                            "decomposers, nutrient recyclers, and food resources for other animals3\n" +
+                    "Beetles are some of the most diverse insects on the planet; they make up about 30% of all animals(1). They live on every single continent except Antarctica and come in a wide range of sizes and colors. The smallest beetles are under a millimeter while the largest tropical species can reach nearly 8 inches in length(2). Some Beetles are predacious. Others eat living or dead plants, are scavengers, or are parasites(3). Regardless, Beetles help maintain life on the planet. They serve as biological controls of pests, decomposers, nutrient recyclers, and food resources for other animals(3). Not all beetles have positive impacts, however. Some species of bark beetles can kill thousands of trees. The Cotton Boll Weevil and other Rootworms threaten agriculture in the United States(3).\n" +
+                            "Given the wide variety of Beetles, you may find them on or in an insect hotel depending on the material used.\n" +
                             "\n" +
-                            ". Not all beetles have positive\n" +
-                            "impacts, however. Some species of bark beetles can kill thousands of trees. The Cotton Boll Weevil and\n" +
-                            "other Rootworms threaten agriculture in the United States3" +
-                            "Given the wide variety of Beetles, you may find them on or in an insect hotel depending on the material\n" +
-                            "used.\n" +
-                            "SEASONALITY: year-long4\n" +
-                            "UNITED STATES: 30,000 species3\n" +
-                            "Sources:\n" +
-                            "1Coleoptera: beetles and weevils. (n.d.) Retrieved March 7, 2020 from\n" +
-                            "http://www.ento.csiro.au/education/insects/coleoptera.html\n" +
-                            "2Bartlett, B., cotinis, Stephen_WV, McLeod, R., Harpootlian, P. Roth, M., McClarin, J., Wirth, C. C., Entz, C.,\n" +
-                            "Quinn, M., Belov, V., Parker, H. S., & Ruden, E. (2004). Order Coleoptera – Beetles. Retrieved March 7,\n" +
-                            "2020 from https://bugguide.net/node/view/60\n" +
-                            "3Beetles. (n.d.) Retrieved March 7, 2020 from https://www.si.edu/spotlight/buginfo/beetle\n" +
-                            "4Beetles (Order Coleoptera). (n.d.) Retrieved March 7, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/47208-Coleoptera",
+                            "SEASONALITY: year-long(4)\n" +
+                            "UNITED STATES: 30,000 species(3)\n" +
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Coleoptera: beetles and weevils. (n.d.) Retrieved March 7, 2020 from http://www.ento.csiro.au/education/insects/coleoptera.html\n" +
+                            "(2)Bartlett, B., cotinis, Stephen_WV, McLeod, R., Harpootlian, P. Roth, M., McClarin, J., Wirth, C. C., Entz, C., Quinn, M., Belov, V., Parker, H. S., & Ruden, E. (2004). Order Coleoptera – Beetles. Retrieved March 7, 2020 from https://bugguide.net/node/view/60\n" +
+                            "(3)Beetles. (n.d.) Retrieved March 7, 2020 from https://www.si.edu/spotlight/buginfo/beetle\n" +
+                            "(4)Beetles (Order Coleoptera). (n.d.) Retrieved March 7, 2020 from https://www.inaturalist.org/taxa/47208-Coleoptera",
                     "• Hard outer wings typically meeting in middle (elytra) when at rest\n" +
                             "• Chewing mouthparts",
                     "Beetles can be found in nearly every habitat on the planet and are commonly encountered outdoors. As a" +
                             "result, there is a large list of plants that serve as attractants and hosts to both them and their food items."),
         Insect("Bellflower Resin Bee", "(Megachile campanulae)",
             R.drawable.bellflower_resin_bee_1,R.drawable.bellflower_resin_bee_2,R.drawable.bellflower_resin_bee_3,R.drawable.bellflower_resin_bee_4,
-              "The Bellflower Resin Bee is considered a solitary mason bee. The female makes her nest in hollow plant\n" +
-                    "stems or abandoned tunnels in pieces of wood. Once she has identified an ideal site, the female uses her\n" +
-                    "mandibles (jaws) to collect natural resins from plants and trees1\n" +
-                    "\n" +
-                    ". This material will line the individual cells\n" +
-                    "for her eggs. As she builds the chambers, she starts with the cell furthest from the opening, deposits a\n" +
-                    "single egg with a bundle of pollen (and sometimes nectar) for food, and then seals off the cell with plant\n" +
-                    "resin1\n" +
-                    ". This helps protect the eggs from pathogens, parasites, and the elements2\n" +
-                    "\n" +
-                    ". The female will repeat\n" +
-                    "\n" +
-                    "this process, each time leaving one egg and food bundle per cell.\n" +
-                    "The Bellflower Resin Bee’s range extends from the New England states to Minnesota, Nebraska and\n" +
-                    "Texas3\n" +
-                    ". It is native to the southern Ontario region and pollinates a large diversity of plants1\n" +
-                    ".\n" +
-                    "\n" +
-                    "SEASONALITY: April to September\n" +
-                    "STATUS: Native\n" +
-                    "CONSERVATION STATUS (IUCN): Unknown\n" +
-                    "Sources:\n" +
-                    "1Bellflower Resin Bee. (n.d.). Retrieved from https://eol.org/pages/2751057/articles\n" +
-                    "2Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                    "Press LLC.\n" +
-                    "3Megachile campanulae (Robertson, 1903). (2020). Retrieved January 17, 2020, from\n" +
-                    "https://www.discoverlife.org/mp/20q?search=Megachile+campanulae",
+              "The Bellflower Resin Bee is considered a solitary mason bee. The female makes her nest in hollow plant stems or abandoned tunnels in pieces of wood. Once she has identified an ideal site, the female uses her mandibles (jaws) to collect natural resins from plants and trees(1). This material will line the individual cells for her eggs. As she builds the chambers, she starts with the cell furthest from the opening, deposits a single egg with a bundle of pollen (and sometimes nectar) for food, and then seals off the cell with plant resin1. This helps protect the eggs from pathogens, parasites, and the elements(2). The female will repeat this process, each time leaving one egg and food bundle per cell.\n" +
+                      "\n" +
+                      "The Bellflower Resin Bee’s range extends from the New England states to Minnesota, Nebraska and Texas(3). It is native to the southern Ontario region and pollinates a large diversity of plants(1).\n" +
+                      "\n" +
+                      "SEASONALITY: April to September\n" +
+                      "STATUS: Native\n" +
+                      "CONSERVATION STATUS (IUCN): Unknown\n" +
+                      "\n" +
+                      "Sources:\n" +
+                      "(1)Bellflower Resin Bee. (n.d.). Retrieved from https://eol.org/pages/2751057/articles\n" +
+                      "(2)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                      "(3)Megachile campanulae (Robertson, 1903). (2020). Retrieved January 17, 2020, from https://www.discoverlife.org/mp/20q?search=Megachile+campanulae",
             "• Pale to white pubescence (soft, short, scattered down-like hairs)\n" +
                     "• Rows of white hair beneath abdomen (scopa)\n" +
                     "• Basal white stripes on abdomen\n" +
@@ -397,46 +252,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Aster, Symphyotrichum spp."),
         Insect("Blue Orchard Mason Bee", "(Osmia lignaria)",
             R.drawable.blue_orchard_mason_bee_1,R.drawable.blue_orchard_mason_bee_2,R.drawable.blue_orchard_mason_bee_3,R.drawable.blue_orchard_mason_bee_4,
-                    "The Blue Orchard Mason Bee is named as such because of its role in pollinating fruiting trees1\n" +
-                            ".\n" +
-                            "As soon as they emerge as adults, both males and females search for a mate. After mating, the female\n" +
-                            "begins the search for a suitable nesting site1\n" +
+                    "The Blue Orchard Mason Bee is named as such because of its role in pollinating fruiting trees(1). As soon as they emerge as adults, both males and females search for a mate. After mating, the female begins the search for a suitable nesting site1. These sites can include insect hotels, paper straws, reeds, and holes in wood. A female Blue Orchard Mason Bee uses mud to build a back wall for her nest if one isn’t already present. She then collects pollen and nectar and rolls it into a ball inside the nest before depositing a single egg on top of it1. The female then seals off this chamber with mud. She repeats this process five to eight times before finally capping the closure of the nest with a thicker layer mud1. Interestingly enough, the larvae closest to the entrance will develop into males; the cells furthest from the entrance house larvae that will emerge as females1.This is believed to give males an advantage in emerging first and preparing to mate with emerging females. A secondary advantage could be to protect the female brood from parasitism since the first cells are the most vulnerable(1).\n" +
                             "\n" +
-                            ". These sites can include insect hotels, paper straws, reeds,\n" +
-                            "and holes in wood. A female Blue Orchard Mason Bee uses mud to build a back wall for her nest if one\n" +
-                            "isn’t already present. She then collects pollen and nectar and rolls it into a ball inside the nest before\n" +
-                            "depositing a single egg on top of it1\n" +
+                            "To attract O. lignaria, leave a small patch of mud (silty-clay) nearby available nesting sites (insect hotels, paper tubes, reeds, etc.) and plenty of foraging plants. \n" +
                             "\n" +
-                            ". The female then seals off this chamber with mud. She repeats this\n" +
-                            "process five to eight times before finally capping the closure of the nest with a thicker layer mud1\n" +
-                            ".\n" +
-                            "Interestingly enough, the larvae closest to the entrance will develop into males; the cells furthest from\n" +
-                            "the entrance house larvae that will emerge as females1\n" +
+                            "The range of the Blue Orchard Mason Bee extends throughout most of temperate North America and the U.S. except for Alaska, Hawaii, and Florida(2).\n" +
                             "\n" +
-                            ".This is believed to give males an advantage in\n" +
-                            "emerging first and preparing to mate with emerging females. A secondary advantage could be to protect\n" +
-                            "the female brood from parasitism since the first cells are the most vulnerable1\n" +
-                            ".\n" +
-                            "\n" +
-                            "To attract O. lignaria, leave a small patch of mud (silty-clay) nearby available nesting sites (insect hotels,\n" +
-                            "paper tubes, reeds, etc.) and plenty of foraging plants.\n" +
-                            "\n" +
-                            "O. lignaria\n" +
-                            "9mm to\n" +
-                            "11mm long\n" +
-                            "\n" +
-                            "The range of the Blue Orchard Mason Bee extends throughout most of temperate North America and the\n" +
-                            "U.S. except for Alaska, Hawaii, and Florida2\n" +
-                            ".\n" +
-                            "SEASONALITY: Late March to June3\n" +
+                            "SEASONALITY: Late March to June(3)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
                             "STATUS: Native\n" +
-                            "Sources: 1Moisset, B., & Wojcik, V. (n.d.). Blue Orchard Mason Bee (Osmia lignaria). Retrieved January 17,\n" +
-                            "2020, from https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/mason_bees.shtml\n" +
-                            "2Osmia Lignaria. (n.d.). Retrieved January 17, 2020, from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+lignaria\n" +
-                            "3Osmia lignaria Say, 1837. (n.d.). Retrieved January 17, 2020, from\n" +
-                            "https://www.discoverlife.org/mp/20q?search=Osmia+lignaria",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Moisset, B., & Wojcik, V. (n.d.). Blue Orchard Mason Bee (Osmia lignaria). Retrieved January 17, 2020, from https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/mason_bees.shtml \n" +
+                            "(2)Osmia Lignaria. (n.d.). Retrieved January 17, 2020, from http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+lignaria\n" +
+                            "(3)Osmia lignaria Say, 1837. (n.d.). Retrieved January 17, 2020, from https://www.discoverlife.org/mp/20q?search=Osmia+lignaria",
                     "• Dark metallic blue, sometimes with green tint\n" +
                             "• Mostly black hair; pale hairs are interspersed\n" +
                             "• Females collect pollen on hairs beneath the abdomen (scopa)",
@@ -489,25 +318,16 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Viburnum, Viburnum spp."),
         Insect("Brown Lacewings", "(Family: Hemerobiidae)",
             R.drawable.brown_lacewings_1,R.drawable.brown_lacewings_2,R.drawable.brown_lacewings_3,R.drawable.brown_lacewings_4,
-                    "Brown Lacewings (like Common Green Lacewings [Chrysoperla spp.]) are common woodland residents1\n" +
-                            ".\n" +
-                            "Unlike Chrysoperla spp., Brown Lacewings are typically smaller in size, brown, and have more rounded\n" +
-                            "wings1\n" +
-                            ". Both adults and larvae are important biological controls on aphid populations. Female Brown\n" +
-                            "Lacewings lay their eggs directly onto a leaf2\n" +
-                            ".\n" +
+                    "Brown Lacewings (like Common Green Lacewings [Chrysoperla spp.]) are common woodland residents(1). Unlike Chrysoperla spp., Brown Lacewings are typically smaller in size, brown, and have more rounded wings(1). Both adults and larvae are important biological controls on aphid populations. Female Brown Lacewings lay their eggs directly onto a leaf(2).\n" +
                             "\n" +
-                            "The range of Brown Lacewings extends around the globe and throughout the United States3\n" +
-                            ".\n" +
+                            "The range of Brown Lacewings extends around the globe and throughout the United States(3).\n" +
                             "\n" +
-                            "SEASONALITY: April to November3\n" +
-                            "EASTERN US AND CANADA: >601\n" +
-                            "Sources:\n" +
-                            "1Cotinis, Beatriz, M., Wisch, H., smccann27, Schusteff, A., Belov, V. (2004). Family Hemerobiidae - Brown\n" +
-                            "Lacewings. Retrieved February 27, 2020 from https://bugguide.net/node/view/3577\n" +
-                            "2MacLeod, E. G. & Stange, L. A. (2001). Common name: brown lacewings (of Florida)\n" +
-                            "scientific name: (Insecta: Neuroptera: Hemerobiidae). Retrieved February 27, 2020 from\n" +
-                            "http://entnemdept.ufl.edu/creatures/beneficial/brown_lacewings.htm",
+                            "SEASONALITY: April to November(3)\n" +
+                            "EASTERN US AND CANADA: >60(1)\n" +
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Cotinis, Beatriz, M., Wisch, H., smccann27, Schusteff, A., Belov, V. (2004). Family Hemerobiidae - Brown Lacewings. Retrieved February 27, 2020 from https://bugguide.net/node/view/3577\n" +
+                            "(2)MacLeod, E. G. & Stange, L. A. (2001). Common name: brown lacewings (of Florida) scientific name: (Insecta: Neuroptera: Hemerobiidae). Retrieved February 27, 2020 from http://entnemdept.ufl.edu/creatures/beneficial/brown_lacewings.htm",
                     "• Thin, long, brown body\n" +
                             "• Long antennae\n" +
                             "• Large, rounded, brown to transparent (clear) wings folded over body\n" +
@@ -518,40 +338,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "."),
         Insect("Bufflehead Mason Bee", "(Osmia bucephala)",
             R.drawable.bufflehead_mason_bee_1,R.drawable.bufflehead_mason_bee_2,R.drawable.bufflehead_mason_bee_3,R.drawable.bufflehead_mason_bee_4,
-                "The Bufflehead Mason Bee looks like the Common Eastern Bumblebee (B. impatiens); however, it is not\n" +
-                        "as stocky as B. impatiens and lacks a pollen-basket on its hind-leg (corbicula). Like other bees in the\n" +
-                        "Megachilidae family, Bufflehead Mason Bee females carry pollen on modified hairs beneath the abdomen\n" +
-                        "known as scopa. They nest in wood cavities and use chewed leaves combined with wood and/or pith (a\n" +
-                        "type of soft tissue inside vascular plant stems) to separate each chamber1\n" +
+                "The Bufflehead Mason Bee looks like the Common Eastern Bumblebee (B. impatiens); however, it is not as stocky as B. impatiens and lacks a pollen-basket on its hind-leg (corbicula). Like other bees in the Megachilidae family, Bufflehead Mason Bee females carry pollen on modified hairs beneath the abdomen known as scopa. They nest in wood cavities and use chewed leaves combined with wood and/or pith (a type of soft tissue inside vascular plant stems) to separate each chamber(1). After finding a suitable nesting site, the female will collect pollen and/or nectar using her scopa and return to the nest. She will roll the food into a ball inside the first cell before laying an egg on it. She then seals of the chamber with plant material and begins collecting more pollen and/or nectar for the next egg. She will repeat this process before capping the nest entrance with more plant material.\n" +
                         "\n" +
-                        ". After finding a suitable nesting\n" +
-                        "site, the female will collect pollen and/or nectar using her scopa and return to the nest. She will roll the\n" +
-                        "food into a ball inside the first cell before laying an egg on it. She then seals of the chamber with plant\n" +
-                        "material and begins collecting more pollen and/or nectar for the next egg. She will repeat this process\n" +
-                        "before capping the nest entrance with more plant material.\n" +
+                        "The range of the Bufflehead Mason Bee extends throughout the northeast United States(2).\n" +
                         "\n" +
-                        "The range of the Bufflehead Mason Bee extends throughout the northeast United States2\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: March to July2\n" +
-                        "\n" +
-                        "O. bucephala\n" +
-                        "13mm to\n" +
-                        "16mm long\n" +
-                        "\n" +
-                        "CONSERVATION STATUS: Secure3\n" +
+                        "SEASONALITY: March to July(2)\n" +
+                        "CONSERVATION STATUS: Secure(3)\n" +
                         "STATUS: Native\n" +
-                        "Sources:\n" +
-                        "1Cane, J. H., Griswold, T., and Parker F. D. (2007). Substrates and Materials Used for Nesting by North\n" +
-                        "American Osmia Bees (Hymenoptera: Apiformes: Megachilidae). Retrieved February 8, 2020 from\n" +
-                        "https://www.fs.fed.us/rm/pubs_other/rmrs_2007_cane_j001.pdf\n" +
-                        "2Bufflehead Mason Bee (Osmia bucephala). (n.d.). Retrieved February 8, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/199125-Osmia-bucephala\n" +
-                        "3\n" +
-                        "Schweitzer, D. F. (2012). Osmia bucephala - Cresson, 1864. Retrieved February 8, 2020 from\n" +
-                        "http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+bucephala\n" +
-                        "4Osmia bucephala Cresson, 1864. (n.d.) Retrieved February 8, 2020 from\n" +
-                        "https://www.discoverlife.org/20/q?search=Osmia+bucephala",
+                        "\n" +
+                        "Sources: \n" +
+                        "(1)Cane, J. H., Griswold, T., and Parker F. D. (2007). Substrates and Materials Used for Nesting by North American Osmia Bees (Hymenoptera: Apiformes: Megachilidae). Retrieved February 8, 2020 from https://www.fs.fed.us/rm/pubs_other/rmrs_2007_cane_j001.pdf\n" +
+                        "(2)Bufflehead Mason Bee (Osmia bucephala). (n.d.). Retrieved February 8, 2020 from https://www.inaturalist.org/taxa/199125-Osmia-bucephala\n" +
+                        "(3)Schweitzer, D. F. (2012). Osmia bucephala - Cresson, 1864. Retrieved February 8, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+bucephala\n" +
+                        "(4)Osmia bucephala Cresson, 1864. (n.d.) Retrieved February 8, 2020 from https://www.discoverlife.org/20/q?search=Osmia+bucephala",
                 "• Black with a bluish tint on head and thorax\n" +
                         "• Pale hair on head, thorax, and first abdominal segment (T1)\n" +
                         "• Black abdominal hair",
@@ -591,38 +390,18 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Viburnum, Viburnum spp."),
         Insect("Carrot Wasps", "(Gasteruption spp.)",
             R.drawable.carrot_wasps_1,R.drawable.carrot_wasps_2,R.drawable.carrot_wasps_3,R.drawable.carrot_wasps_4,
-                    "Gasteruption is a genus within the larger family of carrot wasps, Gasteruptiinae. These wasps are visually\n" +
-                            "striking because of the female’s long tail, a modified ovipositor used to lay eggs. These wasps parasitize\n" +
-                            "the nests of twig- and cavity-nesting bees1\n" +
+                    "Gasteruption is a genus within the larger family of carrot wasps, Gasteruptiinae. These wasps are visually striking because of the female’s long tail, a modified ovipositor used to lay eggs. These wasps parasitize the nests of twig- and cavity-nesting bees(1). Using their long, modified ovipositor, the female repeatedly pierces the sealed (or unsealed) entrance of a bee’s nest and deposits her own eggs inside(1). The eggs will hatch into larvae and consume the pollen ball, the host larva, or both(2).\n" +
                             "\n" +
-                            ". Using their long, modified ovipositor, the female repeatedly\n" +
+                            "As adults, Carrot-wasps spend their days foraging nectar from a wide variety of flowers(1). Their range extends throughout the United States and Canada(2).\n" +
                             "\n" +
-                            "pierces the sealed (or unsealed) entrance of a bee’s nest and deposits her own eggs inside1\n" +
-                            "\n" +
-                            ". The eggs will\n" +
-                            "\n" +
-                            "hatch into larvae and consume the pollen ball, the host larva, or both2\n" +
-                            ".\n" +
-                            "\n" +
-                            "As adults, Carrot-wasps spend their days foraging nectar from a wide variety of flowers1\n" +
-                            "\n" +
-                            ". Their range\n" +
-                            "\n" +
-                            "extends throughout the United States and Canada2\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May and October3\n" +
+                            "SEASONALITY: May and October(3)\n" +
                             "EASTERN US AND CANADA: 15\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "Sources:\n" +
-                            "1\n" +
-                            "Jennings, J. T. and A. R. Deans. (2005). Gasteruptiinae. Gasteruption. Version 06. Retrieved February 13,\n" +
-                            "2020 from http://tolweb.org/Gasteruption/25832/2005.05.06 in The Tree of Life Web Project,\n" +
-                            "http://tolweb.org\n" +
-                            "2Balaban, J., Balaban, J., Nendick-Mason, H., Cotinis, Schusteff, A., Maxwell, J., and Belov, V. (2004). Genus\n" +
-                            "Gasteruption. Retrieved February 13, 2020 from https://bugguide.net/node/view/7742\n" +
-                            "3Genus Gasteruption. (n.d.) Retrieved February 13, 2020 from https://www.inaturalist.org/taxa/250313-\n" +
-                            "Gasteruption",
+                            "\n" +
+                            "Sources: \n" +
+                            "1Jennings, J. T. and A. R. Deans. (2005). Gasteruptiinae. Gasteruption. Version 06. Retrieved February 13, 2020 from http://tolweb.org/Gasteruption/25832/2005.05.06 in The Tree of Life Web Project, http://tolweb.org\n" +
+                            "2Balaban, J., Balaban, J., Nendick-Mason, H., Cotinis, Schusteff, A., Maxwell, J., and Belov, V. (2004). Genus Gasteruption. Retrieved February 13, 2020 from https://bugguide.net/node/view/7742\n" +
+                            "3Genus Gasteruption. (n.d.) Retrieved February 13, 2020 from https://www.inaturalist.org/taxa/250313-Gasteruption\n",
                     "• Black hairless body\n" +
                             "• Long, narrow abdomen\n" +
                             "• Distinctive long tail",
@@ -630,53 +409,23 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "preference for flowers in the carrot or parsley family (Apiaceae)2"),
         Insect("Centipedes", "(Class: Chilopoda)",
             R.drawable.centipedes_1,R.drawable.centipedes_2,R.drawable.centipedes_3,R.drawable.centipedes_4,
-                    "Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body\n" +
-                            "segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and will\n" +
-                            "catch and eat any invertebrate their size or smaller, like insects and spiders1\n" +
+                    "Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and will catch and eat any invertebrate their size or smaller, like insects and spiders(1). The smallest Centipedes are around an inch while the largest tropical species can grow well over six inches. The largest North American species is the Giant Desert Centipede (Scolopendra heros) which on average grows to be around 6.5” (though some eye-witness accounts have reported up to 12”)(2). By far the most common species in North America is the House Centipede (Scutigera coleoptera).\n" +
                             "\n" +
-                            ". The smallest Centipedes are\n" +
-                            "around an inch while the largest tropical species can grow well over six inches. The largest North\n" +
-                            "American species is the Giant Desert Centipede (Scolopendra heros) which on average grows to be\n" +
-                            "around 6.5” (though some eye-witness accounts have reported up to 12”)2\n" +
+                            "Centipedes use venom to immobilize their prey and their bites can sting(3). If threatened, Centipedes can pinch with their hind legs(1). Since these invertebrates do not have a protective water-retaining layer, they are often found in moist areas like underneath rocks, logs, leaf litter, and debris piles(3,4). They may be found in an insect hotel filled with bark, twigs, and debris hunting the other invertebrates there.\n" +
                             "\n" +
-                            ". By far the most common\n" +
+                            "While Centipedes are not deadly, they can deliver a painful bite or pinch and it is advised to not handle them. They help control other invertebrate populations while also serving as a food source for a wide variety of animals such as beetles, birds, toads, snakes, salamanders, and others.\n" +
                             "\n" +
-                            "species in North America is the House Centipede (Scutigera coleoptera).\n" +
-                            "Centipedes use venom to immobilize their prey and their bites can sting3\n" +
+                            "The range of the Centipede extends around the globe and can be found throughout the Unites States(5).\n" +
                             "\n" +
-                            ". If threatened, Centipedes can\n" +
-                            "\n" +
-                            "pinch with their hind legs1\n" +
-                            "\n" +
-                            ". Since these invertebrates do not have a protective water-retaining layer, they\n" +
-                            "\n" +
-                            "are often found in moist areas like underneath rocks, logs, leaf litter, and debris piles3,4\n" +
-                            "\n" +
-                            ". They may be\n" +
-                            "found in an insect hotel filled with bark, twigs, and debris hunting the other invertebrates there.\n" +
-                            "While Centipedes are not deadly, they can deliver a painful bite or pinch and it is advised to not handle\n" +
-                            "them. They help control other invertebrate populations while also serving as a food source for a wide\n" +
-                            "variety of animals such as beetles, birds, toads, snakes, salamanders, and others.\n" +
-                            "The range of the Centipede extends around the globe and can be found throughout the Unites States5\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: year-round5\n" +
+                            "SEASONALITY: year-round(5)\n" +
                             "UNITED STATES: ~6 species\n" +
                             "\n" +
-                            "Sources:\n" +
-                            "\n" +
-                            "1Pest ID – Bark Centipede. (n.d.). Retrieved February 20, 2020 from https://proactivepestga.com/pest-id-\n" +
-                            "bark-centipede/\n" +
-                            "\n" +
-                            "2Elliott, L., Balaban, J., Balaban, J., Moisset, B., Quinn, M., Belov, V., Parker, H. S., & Hedlund, T. (2005).\n" +
-                            "Species Scolopendra heros - Giant Redheaded Centipede. Retrieved March 19, 2020 from\n" +
-                            "https://bugguide.net/node/view/34475.\n" +
-                            "3Bark Centipede (Scolopocryptops sexspinosus). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.insectidentification.org/insect-description.asp?identification=Bark-Centipede\n" +
-                            "4Centipedes of North America. (n.d.). Retrieved March 19, 2020 from\n" +
-                            "https://www.insectidentification.org/centipedes.asp\n" +
-                            "5Centipedes (Order: Chilopoda). (n.d.). Retrieved March 19, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/123663-Scolopocryptops-sexspinosus",
+                            "Sources: \n" +
+                            "(1)Pest ID – Bark Centipede. (n.d.). Retrieved February 20, 2020 from https://proactivepestga.com/pest-id-bark-centipede/\n" +
+                            "(2)Elliott, L., Balaban, J., Balaban, J., Moisset, B., Quinn, M., Belov, V., Parker, H. S., & Hedlund, T. (2005). Species Scolopendra heros - Giant Redheaded Centipede. Retrieved March 19, 2020 from https://bugguide.net/node/view/34475.\n" +
+                            "(3)Bark Centipede (Scolopocryptops sexspinosus). (n.d.). Retrieved February 20, 2020 from https://www.insectidentification.org/insect-description.asp?identification=Bark-Centipede\n" +
+                            "(4)Centipedes of North America. (n.d.). Retrieved March 19, 2020 from https://www.insectidentification.org/centipedes.asp\n" +
+                            "(5)Centipedes (Order: Chilopoda). (n.d.). Retrieved March 19, 2020 from https://www.inaturalist.org/taxa/123663-Scolopocryptops-sexspinosus",
                     "• Multi-segmented body (15 to 180 segments)\n" +
                             "• One leg-pair per body segment\n" +
                             "• Long antennae",
@@ -684,49 +433,24 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "litter, etc.) with a higher activity at night."),
         Insect("Common Barklice", "(Family: Psocidae)",
             R.drawable.common_barklice_1,R.drawable.common_barklice_2,R.drawable.common_barklice_3,R.drawable.common_barklice_4,
-                    "Common Barklice are harmless detritivores (organisms that eat dead or decaying organic material) that\n" +
-                            "come in a variety of colors. They are often mistaken for aphids, a common garden pest. However, a quick\n" +
-                            "glance under a magnifying glass or hand-lens will reveal the Common Barklice’s larger head and chewing\n" +
-                            "mouth parts (as opposed to the aphid’s small head and round, sucker-mouth)1\n" +
+                    "Common Barklice are harmless detritivores (organisms that eat dead or decaying organic material) that come in a variety of colors. They are often mistaken for aphids, a common garden pest. However, a quick glance under a magnifying glass or hand-lens will reveal the Common Barklice’s larger head and chewing mouth parts (as opposed to the aphid’s small head and round, sucker-mouth)(1). Unlike aphids, Common Barklice are typically considered beneficial backyard insects. They usually live in clusters known as “herds” and can be found on bark or rocks eating any fungi, algae, and/or lichen growing there. Common Barklice also eat dead bark and other materials found on tree trunks and limbs(2). They do not harm the tree. In fact, they benefit their host by “cleaning off” the decaying materials and foreign bodies found there (algae, fungi, etc.)(1).\n" +
                             "\n" +
-                            ". Unlike aphids, Common\n" +
-                            "Barklice are typically considered beneficial backyard insects. They usually live in clusters known as “herds”\n" +
-                            "and can be found on bark or rocks eating any fungi, algae, and/or lichen growing there. Common Barklice\n" +
-                            "also eat dead bark and other materials found on tree trunks and limbs2\n" +
+                            "Common Barklice larvae go through four to six developmental stages and resemble tiny wingless adults before fully maturing(3).\n" +
                             "\n" +
-                            ". They do not harm the tree. In\n" +
-                            "fact, they benefit their host by “cleaning off” the decaying materials and foreign bodies found there\n" +
-                            "(algae, fungi, etc.)1\n" +
-                            ".\n" +
+                            "Some species of Common Barklice have glands in their mouths that let them spin delicate webs(1). It is thought that these webs protect the adults and offspring from predators. While they are unlikely to use an insect hotel, they may be encountered on nearby trees or woody plants. A they are beneficial backyard insects, there is no need to control or manage them. The best practice is to let them be.\n" +
                             "\n" +
-                            "Common Barklice larvae go through four to six developmental stages and resemble tiny wingless adults\n" +
-                            "before fully maturing3\n" +
-                            ".\n" +
+                            "Common Barklice can be found throughout the Eastern and Southern states, though they are also found along the West coast and down throughout Mexico(4).\n" +
                             "\n" +
-                            "Some species of Common Barklice have glands in their mouths that let them spin delicate webs1\n" +
-                            ". It is\n" +
-                            "thought that these webs protect the adults and offspring from predators. While they are unlikely to use\n" +
-                            "an insect hotel, they may be encountered on nearby trees or woody plants. A they are beneficial backyard\n" +
-                            "insects, there is no need to control or manage them. The best practice is to let them be.\n" +
-                            "Common Barklice can be found throughout the Eastern and Southern states, though they are also found\n" +
-                            "along the West coast and down throughout Mexico4\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May to October2\n" +
-                            "EASTERN US AND CANADA: 60 species5\n" +
+                            "SEASONALITY: May to October(2)\n" +
+                            "EASTERN US AND CANADA: 60 species(5)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "Sources:\n" +
-                            "1Raupp, M. J. (2018). TINY RECYCLERS: BOOKLICE AND BARKLICE, PSOCOPTERA. Retrieved February 20,\n" +
-                            "2020 from http://bugoftheweek.com/blog/2018/7/9/tiny-recyclers-booklice-and-barklice-psocoptera\n" +
-                            "2Common Barklice (Family Psocidae). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/120991-Psocidae\n" +
-                            "3Drees, B. (n.d.). Barklice. Retrieved February 20, 2020 from\n" +
-                            "https://agrilife.org/extensionento/publications/barklice/\n" +
-                            "4Murray, T., Nendick-Mason, H., Moisset, B., Quinn, M., Kropiewnicki, T., Zimlich, R. L., Belov, V., &\n" +
-                            "Penner, L. (2006). Species Cerastipsocus venosus. Retrieved February 20, 2020 from\n" +
-                            "https://bugguide.net/node/view/83280\n" +
-                            "5Murray, T., Moisset, B., & Belov, V. (2016). Family Psocidae – Common Barklice. Retrieved February 20,\n" +
-                            "2020 from https://bugguide.net/node/view/83277",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Raupp, M. J. (2018). TINY RECYCLERS: BOOKLICE AND BARKLICE, PSOCOPTERA. Retrieved February 20, 2020 from http://bugoftheweek.com/blog/2018/7/9/tiny-recyclers-booklice-and-barklice-psocoptera\n" +
+                            "(2)Common Barklice (Family Psocidae). (n.d.). Retrieved February 20, 2020 from https://www.inaturalist.org/taxa/120991-Psocidae\n" +
+                            "(3)Drees, B. (n.d.). Barklice. Retrieved February 20, 2020 from https://agrilife.org/extensionento/publications/barklice/\n" +
+                            "(4)Murray, T., Nendick-Mason, H., Moisset, B., Quinn, M., Kropiewnicki, T., Zimlich, R. L., Belov, V., & Penner, L. (2006). Species Cerastipsocus venosus. Retrieved February 20, 2020 from https://bugguide.net/node/view/83280\n" +
+                            "(5)Murray, T., Moisset, B., & Belov, V. (2016). Family Psocidae – Common Barklice. Retrieved February 20, 2020 from https://bugguide.net/node/view/83277",
                     "• Large head with chewing mouth parts\n" +
                             "• Tent-like wings (cover entire body)\n" +
                             "• Long antennae",
@@ -734,54 +458,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "support Common Barklice3"),
         Insect("Common Eastern Bumblebee", "(Bombus impatiens)",
             R.drawable.common_eastern_bumblebee_1,R.drawable.common_eastern_bumblebee_2,R.drawable.common_eastern_bumblebee_3,R.drawable.common_eastern_bumblebee_4,
-                  "The Common Eastern Bumblebee is a frequent backyard visitor to flowering gardens. Due to their\n" +
-                        "extensive hair, bumblebees are able to fly in cooler temperatures which makes them an important early\n" +
-                        "Spring pollinator1\n" +
-                        "\n" +
-                        ". They shake large quantities of pollen out of a single flower by buzz-pollinating\n" +
-                        "\n" +
-                        "(sonication)1\n" +
-                        "\n" +
-                        ". Like honeybees, the Common Eastern Bumblebee is a social species. A gyne (inseminated\n" +
-                        "\n" +
-                        "female) will overwinter in an insulated location until the spring1\n" +
-                        "\n" +
-                        ". As temperatures warm, the gyne\n" +
-                        "emerges and begins looking for a suitable nesting site – typically a hole in the ground, a pile of plant\n" +
-                        "debris, a shed, or other insulated area1\n" +
-                        "\n" +
-                        ". Once the nest is secure, the gyne collects pollen and nectar into a\n" +
-                        "ball and begins laying eggs. The first generation will take roughly a month to fully develop from egg to\n" +
-                        "worker and will most likely consist of all females1\n" +
-                        ".\n" +
-                        "\n" +
-                        "While bumblebees do not use insect hotels, they are important pollinators for a number of reasons. Their\n" +
-                        "ability to fly in cooler temperatures means they can pollinate early season crops. They also exhibit floral\n" +
-                        "constancy1\n" +
-                        ". This means that when they forage, they visit flowers of the same species, thus increasing the\n" +
-                        "likelihood of that plant being pollinated. Bumblebees also use a pollinating technique known as\n" +
-                        "sonication, which releases more pollen in a shorter timeframe, meaning bumblebees can visit more\n" +
-                        "flowers than other bees in the same amount of time. Sonication also allows bumblebees to carry more\n" +
-                        "pollen with each flower visit, increasing the chance of successful pollination1\n" +
-                        ".\n" +
-                        "\n" +
-                        "The bumblebee’s size, foraging habits, and ability to fly in cooler temperatures makes it an important\n" +
-                        "flower and crop pollinator.\n" +
-                        "The range of the Common Eastern Bumblebee extends throughout much of eastern North America\n" +
-                        "including parts of Canada2\n" +
-                        "\n" +
-                        ". It has also been reported more frequently in the Pacific Northwest3\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: March to October\n" +
-                        "STATUS: Native\n" +
-                        "CONSERVATION STATUS: Least Concern; stable (IUCN)\n" +
-                        "Sources: 1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                        "Pollination Press LLC.\n" +
-                        "2Bombus impatiens Cresson, 1863. (n.d.). Retrieved January 17, 2020, from\n" +
-                        "https://www.discoverlife.org/mp/20q?search=Bombus+impatiens&flags=subgenus:\n" +
-                        "3Common Eastern Bumble Bee (Bombus impatiens). (n.d.). Retrieved January 17, 2020, from\n" +
-                        "https://www.inaturalist.org/taxa/118970-Bombus-impatiens",
+                  "The Common Eastern Bumblebee is a frequent backyard visitor to flowering gardens. Due to their extensive hair, bumblebees are able to fly in cooler temperatures which makes them an important early Spring pollinator(1). They shake large quantities of pollen out of a single flower by buzz-pollinating (sonication)(1). Like honeybees, the Common Eastern Bumblebee is a social species. A gyne (inseminated female) will overwinter in an insulated location until the spring(1). As temperatures warm, the gyne emerges and begins looking for a suitable nesting site – typically a hole in the ground, a pile of plant debris, a shed, or other insulated area(1). Once the nest is secure, the gyne collects pollen and nectar into a ball and begins laying eggs. The first generation will take roughly a month to fully develop from egg to worker and will most likely consist of all females(1).\n" +
+                          "\n" +
+                          "While bumblebees do not use insect hotels, they are important pollinators for a number of reasons. Their ability to fly in cooler temperatures means they can pollinate early season crops. They also exhibit floral constancy(1). This means that when they forage, they visit flowers of the same species, thus increasing the likelihood of that plant being pollinated. Bumblebees also use a pollinating technique known as sonication, which releases more pollen in a shorter timeframe, meaning bumblebees can visit more flowers than other bees in the same amount of time. Sonication also allows bumblebees to carry more pollen with each flower visit, increasing the chance of successful pollination(1).\n" +
+                          "\n" +
+                          "The bumblebee’s size, foraging habits, and ability to fly in cooler temperatures makes it an important flower and crop pollinator.\n" +
+                          "\n" +
+                          "The range of the Common Eastern Bumblebee extends throughout much of eastern North America including parts of Canada(2). It has also been reported more frequently in the Pacific Northwest(3). \n" +
+                          "\n" +
+                          "SEASONALITY: March to October\n" +
+                          "STATUS: Native\n" +
+                          "CONSERVATION STATUS: Least Concern; stable (IUCN)\n" +
+                          "\n" +
+                          "Sources: \n" +
+                          "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                          "(2)Bombus impatiens Cresson, 1863. (n.d.). Retrieved January 17, 2020, from https://www.discoverlife.org/mp/20q?search=Bombus+impatiens&flags=subgenus:\n" +
+                          "(3)Common Eastern Bumble Bee (Bombus impatiens). (n.d.). Retrieved January 17, 2020, from https://www.inaturalist.org/taxa/118970-Bombus-impatiens",
                  "• Pale yellow hair on thorax and first abdominal segment.\n" +
                         "• Black spot in middle of thorax\n" +
                         "• Abdomen covered in black hair",
@@ -852,36 +544,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Apples, cherries, plums, currants, gooseberries, tomatoes, eggplants, blueberries, cranberries"),
         Insect("Common Pill Woodlouse", "(Armadillidium vulgare)",
             R.drawable.common_pill_woodlouse_1,R.drawable.common_pill_woodlouse_2,R.drawable.common_pill_woodlouse_3,R.drawable.common_pill_woodlouse_4,
-                    "The Common Woodlouse (pill bug or “roly-poly”) is a multi-segmented arthropod whose trademark is\n" +
-                            "curling into an armored ball when disturbed or threatened. They are harmless detritivores (organisms\n" +
-                            "that eat dead and decaying organic matter) that live in humid places beneath rocks, logs, bricks, stones,\n" +
-                            "and more1\n" +
-                            ". The Common Woodlouse benefits ecosystems by cycling nutrients back into the soil; it has\n" +
-                            "been shown to modify the chemical composition of topsoil by raising pH and concentrations of\n" +
-                            "phosphorous, potassium, and nitrate while increasing the removal of carbon from leaf litter1\n" +
-                            ".\n" +
+                    "The Common Woodlouse (pill bug or “roly-poly”) is a multi-segmented arthropod whose trademark is curling into an armored ball when disturbed or threatened. They are harmless detritivores (organisms that eat dead and decaying organic matter) that live in humid places beneath rocks, logs, bricks, stones, and more(1). The Common Woodlouse benefits ecosystems by cycling nutrients back into the soil; it has been shown to modify the chemical composition of topsoil by raising pH and concentrations of phosphorous, potassium, and nitrate while increasing the removal of carbon from leaf litter(1). \n" +
                             "\n" +
-                            "“During the breeding season, reproductive females develop a [fluid-filled] ‘brood-pouch’” where fertilized\n" +
-                            "eggs mature and the young emerge from once fully developed2\n" +
-                            ".\n" +
+                            "“During the breeding season, reproductive females develop a [fluid-filled] ‘brood-pouch’” where fertilized eggs mature and the young emerge from once fully developed(2). \n" +
                             "\n" +
-                            "The Common Woodlouse originated from Europe but can now be found worldwide.\n" +
+                            "The Common Woodlouse originated from Europe but can now be found worldwide. \n" +
+                            "\n" +
                             "SEASONALITY: year-round\n" +
-                            "CONSERVATION STATUS: stable\n" +
+                            "CONSERVATION STATUS: stable \n" +
                             "STATUS: Introduced\n" +
                             "\n" +
-                            "A. vulgare\n" +
-                            "18mm long\n" +
-                            "\n" +
-                            "Sources:\n" +
-                            "1Entz, C., Cotinis, Moisset, B., Kropiewnicki, T., Ceisemen, Danko, E., Blocky. (2007). Species Armadillidium\n" +
-                            "vulgare – Common Pill Bug. Retrieved February 24, 2020 from https://bugguide.net/node/view/94180\n" +
-                            "2Pill Woodlouse - Armadillidium vulgare. (n.d.). Retrieved February 24, 2020 from\n" +
-                            "https://www.naturespot.org.uk/species/pill-woodlouse\n" +
-                            "3\n" +
-                            "Franklin, J., Byron, M., & Gillett-Kaufman, J. (2015). common name: pillbug, roly-poly, woodlouse\n" +
-                            "scientific name: Armadillidium vulgare (Latreille) (Malacostraca: Isopoda: Armadillidiidae). Retrieved\n" +
-                            "February 24, 2020 from http://entnemdept.ufl.edu/creatures/MISC/Armadillidium_vulgare.htm",
+                            "Sources: \n" +
+                            "(1)Entz, C., Cotinis, Moisset, B., Kropiewnicki, T., Ceisemen, Danko, E., Blocky. (2007). Species Armadillidium vulgare – Common Pill Bug. Retrieved February 24, 2020 from https://bugguide.net/node/view/94180\n" +
+                            "(2)Pill Woodlouse - Armadillidium vulgare. (n.d.). Retrieved February 24, 2020 from https://www.naturespot.org.uk/species/pill-woodlouse\n" +
+                            "(3)Franklin, J., Byron, M., & Gillett-Kaufman, J. (2015). common name: pillbug, roly-poly, woodlousescientific name: Armadillidium vulgare (Latreille) (Malacostraca: Isopoda: Armadillidiidae). Retrieved February 24, 2020 from http://entnemdept.ufl.edu/creatures/MISC/Armadillidium_vulgare.htm",
                     "• Several visible body segments resembling an armadillo’s back\n" +
                             "• Trapezoidal endplate\n" +
                             "• Dark grey body\n" +
@@ -890,32 +566,16 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
         Insect("Cuckoo or \"Blood\" Bees", "(Sphecodes spp.)",
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
-                    "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on\n" +
-                            "nectar from flowers and can be seen foraging throughout the season until autumn1\n" +
+                    "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside the while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
                             "\n" +
-                            ". These solitary bees\n" +
-                            "are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of\n" +
-                            "Lasioglassum, Colletes, Andrena, and Halictus)\n" +
-                            "1\n" +
-                            ". Once they find another bee’s nest, the female Cuckoo\n" +
+                            "The range of the Cuckoo Bee extends around the world, especially in North America and Europe(2). Cuckoo Bees are found throughout the United States(2).\n" +
                             "\n" +
-                            "Bee enters and lays her own egg inside the while destroying the host bee’s egg/larvae1\n" +
+                            "SEASONALITY: May to September(2)\n" +
+                            "EASTERN US AND CANADA: 41 species(1)\n" +
                             "\n" +
-                            ". Since Cuckoo\n" +
-                            "Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
-                            "The range of the Cuckoo Bee extends around the world, especially in North America and Europe2\n" +
-                            ". Cuckoo\n" +
-                            "\n" +
-                            "Bees are found throughout the United States2\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May to September2\n" +
-                            "EASTERN US AND CANADA: 41 species1\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Blood Bees (Genus Sphecodes). (n.d.). Retrieved March 5, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/61891-Sphecodes",
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Blood Bees (Genus Sphecodes). (n.d.). Retrieved March 5, 2020 from https://www.inaturalist.org/taxa/61891-Sphecodes",
                     "• Black bees with distinct red abdomen (males are sometimes " +
                             "all black)\n" +
                             "• Black wings",
@@ -933,38 +593,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Cuckoo Leafcutter Bees", "(Coelioxys spp.)",
             R.drawable.cuckoo_leaf_cutter_bees_1,R.drawable.cuckoo_leaf_cutter_bees_2,R.drawable.cuckoo_leaf_cutter_bees_3,R.drawable.cuckoo_leaf_cutter_bees_4,
-                    "Cuckoo Leafcutter Bees are specialists that steal nests. They are cleptoparasites of Leafcutter Bees\n" +
-                            "(Megachile spp.)1\n" +
+                    "Cuckoo Leafcutter Bees are specialists that steal nests. They are cleptoparasites of Leafcutter Bees (Megachile spp.)(1). Females look for unattended nests and will use her pointed abdomen to poke through the nest covering and lay her own eggs inside(1). Her larvae tend to develop more quickly than the host (original) bee(1). After the Cuckoo Leafcutter Bee larvae’s third instar (developmental stage), it uses its mandibles (bee teeth) to get rid of the host and any competing siblings(1). \n" +
                             "\n" +
-                            ". Females look for unattended nests and will use her pointed abdomen to poke through\n" +
+                            "While the larvae steals the food of Leafcutter Bees, the adult Cuckoo Leafcutter Bee feeds on nectar from flowers(2). \n" +
                             "\n" +
-                            "the nest covering and lay her own eggs inside1\n" +
+                            "The range of the Cuckoo Leafcutter Bee extends around the globe and throughout the United States(3).\n" +
                             "\n" +
-                            ". Her larvae tend to develop more quickly than the host\n" +
+                            "SEASONALITY: June to November(3)\n" +
+                            "EASTERN US AND CANADA: 22 species(1)\n" +
                             "\n" +
-                            "(original) bee1\n" +
-                            "\n" +
-                            ". After the Cuckoo Leafcutter Bee larvae’s third instar (developmental stage), it uses its\n" +
-                            "\n" +
-                            "mandibles (bee teeth) to get rid of the host and any competing siblings1\n" +
-                            ".\n" +
-                            "\n" +
-                            "\n" +
-                            "While the larvae steals the food of Leafcutter Bees, the adult Cuckoo Leafcutter Bee feeds on nectar from\n" +
-                            "flowers2\n" +
-                            ".\n" +
-                            "The range of the Cuckoo Leafcutter Bee extends around the globe and throughout the United States3\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: June to November3\n" +
-                            "EASTERN US AND CANADA: 22 species1\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Cotinis, Moisset, B., Ascher, J. S., Belov, V., & Go, H. (2004). Genus Coelioxys – Cuckoo-leaf-cutter Bees.\n" +
-                            "Retrieved February 27, 2020 from https://bugguide.net/node/view/7605\n" +
-                            "3Cuckoo Leaf-cutter Bees (Genus Coelioxys). (n.d.). Retrieved February 27, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/199145-Coelioxys",
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Cotinis, Moisset, B., Ascher, J. S., Belov, V., & Go, H. (2004). Genus Coelioxys – Cuckoo-leaf-cutter Bees. Retrieved February 27, 2020 from https://bugguide.net/node/view/7605\n" +
+                            "(3)Cuckoo Leaf-cutter Bees (Genus Coelioxys). (n.d.). Retrieved February 27, 2020 from https://www.inaturalist.org/taxa/199145-Coelioxys",
                     "• Pointed abdomen\n" +
                             "• Black body with white bands at the end of (apical) each abdominal segment\n" +
                             "• No abdominal scopae (pollen-collecting hairs)\n" +
@@ -984,38 +625,17 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Sneezeweed, Helenium autumnale"),
         Insect("Dwarf Mason Bee", "(Osmia pumila)",
             R.drawable.dwarf_mason_bee_1,R.drawable.dwarf_mason_bee_2,R.drawable.dwarf_mason_bee_3,R.drawable.dwarf_mason_bee_4,
-                    "Dwarf Mason Bees are small, generalist bees1\n" +
+                    "Dwarf Mason Bees are small, generalist bees(1) that visit a wide variety of flowers. Like other mason and leafcutter bees, they nest in pre-existing holes in wood or other natural cavities such as reeds, insect hotels, bamboo, paper straws, and more. Dwarf Mason Bees use chewed leaves to separate their brood (bee eggs, larva, and/or pupa) cells. The female will search for a suitable nesting site. Once found, she will collect enough pollen and nectar to roll it into a ball at the back of the nest before depositing a single egg on top of it(1). The female then seals off this chamber with chewed leaves before going to collect more resources for the next chamber. She will repeat this process and then close off the nest entrance with chewed leaves.\n" +
                             "\n" +
-                            "that visit a wide variety of flowers. Like other mason and\n" +
-                            "leafcutter bees, they nest in pre-existing holes in wood or other natural cavities such as reeds, insect\n" +
-                            "hotels, bamboo, paper straws, and more. Dwarf Mason Bees use chewed leaves to separate their brood\n" +
-                            "(bee eggs, larva, and/or pupa) cells. The female will search for a suitable nesting site. Once found, she will\n" +
-                            "collect enough pollen and nectar to roll it into a ball at the back of the nest before depositing a single egg\n" +
-                            "on top of it1\n" +
+                            "The range of the Dwarf Mason Bee stretches throughout most of the Northeastern U.S. and Canada and some Midwestern states(1).\n" +
                             "\n" +
-                            ". The female then seals off this chamber with chewed leaves before going to collect more\n" +
-                            "resources for the next chamber. She will repeat this process and then close off the nest entrance with\n" +
-                            "chewed leaves.\n" +
-                            "The range of the Dwarf Mason Bee stretches throughout most of the Northeastern U.S. and Canada and\n" +
-                            "some Midwestern states1\n" +
-                            ".\n" +
-                            "SEASONALITY: April to July2\n" +
-                            "CONSERVATION STATUS: Secure – last evaluated in 2017\n" +
-                            "1\n" +
-                            "\n" +
-                            "O. pumila\n" +
-                            "7mm to\n" +
-                            "8mm long\n" +
-                            "\n" +
+                            "SEASONALITY: April to July(2)\n" +
+                            "CONSERVATION STATUS: Secure – last evaluated in 2017(1)\n" +
                             "STATUS: Native\n" +
-                            "Sources: 1Osmia pumila. (2019). Retrieved January 17, 2020, from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?sourceTemplate=tabular_report.wmt&loadTemplat\n" +
-                            "e=species_RptComprehensive.wmt&selectedReport=RptComprehensive.wmt&summaryView=tabular_re\n" +
-                            "port.wmt&elKey=837220&paging=home&save=true&startIndex=1&nextStartIndex=1&reset=false&offPa\n" +
-                            "geSelectedElKey=837220&offPageSelectedElType=species&offPageYesNo=true&post_processes=&radiob\n" +
-                            "utton=radiobutton&selectedIndexes=837220\n" +
-                            "2Osmia pumila Cresson, 1864. (n.d.). Retrieved January 17, 2020, from\n" +
-                            "https://www.discoverlife.org/20/q?search=Osmia+pumila",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Osmia pumila. (2019). Retrieved January 17, 2020, from http://explorer.natureserve.org/servlet/NatureServe?sourceTemplate=tabular_report.wmt&loadTemplate=species_RptComprehensive.wmt&selectedReport=RptComprehensive.wmt&summaryView=tabular_report.wmt&elKey=837220&paging=home&save=true&startIndex=1&nextStartIndex=1&reset=false&offPageSelectedElKey=837220&offPageSelectedElType=species&offPageYesNo=true&post_processes=&radiobutton=radiobutton&selectedIndexes=837220\n" +
+                            "(2)Osmia pumila Cresson, 1864. (n.d.). Retrieved January 17, 2020, from https://www.discoverlife.org/20/q?search=Osmia+pumila\n",
                     "• Blue with black legs\n" +
                             "• White to yellowish hair; white scopa\n" +
                             "• Noticeably pitted (like a golfball)",
@@ -1084,54 +704,21 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Viburnum, Viburnum spp."),
         Insect("Eastern Carpenter Bee", "(Xylocopa virginica)",
             R.drawable.eastern_carpenter_bee_1,R.drawable.eastern_carpenter_bee_2,R.drawable.eastern_carpenter_bee_3,R.drawable.eastern_carpenter_bee_4,
-                "The Eastern Carpenter Bee is a common backyard visitor and perhaps the reason your wooden cabin is\n" +
-                        "dotted with holes. Males and females overwinter as adults and emerge in the spring1\n" +
+                "The Eastern Carpenter Bee is a common backyard visitor and perhaps the reason your wooden cabin is dotted with holes. Males and females overwinter as adults and emerge in the spring(1). After mating, the female uses her powerful mandibles (bee teeth) to excavate a new nest burrow, typically in pine or cedar boards or perhaps your deck(1). The entrance will branch off into several different tunnels(2). The female Eastern Carpenter Bee will gather pollen and nectar into a ball and deposit it at the furthest end of the tunnel(2). She will then lay an egg on top of it before working on the next cell. Often the male will stand guard while the female works(3). \n" +
                         "\n" +
-                        ". After mating, the\n" +
-                        "female uses her powerful mandibles (bee teeth) to excavate a new nest burrow, typically in pine or cedar\n" +
-                        "boards or perhaps your deck1\n" +
+                        "While this habit of chewing holes can be a nuisance for homeowners, the Eastern Carpenter Bee remains an important native pollinator and a welcomed visitor to any flowering plant. Like bumblebees, they use a form of pollination known as sonication(2). Sonication is an incredibly efficient form of pollination. It releases more pollen in a shorter amount of time, meaning the Eastern Carpenter Bee can visit more flowers than other bees in a given timeframe. Sonication is so effective that it allows the Eastern Carpenter Bee to carry more pollen with each flower visit(1) which increases the chance of successful pollination.\n" +
                         "\n" +
-                        ". The entrance will branch off into several different tunnels2\n" +
+                        "Many bees live less than a year, but the Eastern Carpenter Bee can survive up to 3 years(2). Their range extends throughout the eastern United States, stretching down into Florida and as far West as Texas, Nebraska, Kansas, and a couple sitings in Idaho(3).\n" +
                         "\n" +
-                        ". The female\n" +
-                        "Eastern Carpenter Bee will gather pollen and nectar into a ball and deposit it at the furthest end of the\n" +
-                        "tunnel2\n" +
-                        ". She will then lay an egg on top of it before working on the next cell. Often the male will stand\n" +
-                        "guard while the female works3\n" +
-                        ".\n" +
-                        "\n" +
-                        "While this habit of chewing holes can be a nuisance for homeowners, the Eastern Carpenter Bee remains\n" +
-                        "an important native pollinator and a welcomed visitor to any flowering plant. Like bumblebees, they use a\n" +
-                        "form of pollination known as sonication2\n" +
-                        "\n" +
-                        ". Sonication is an incredibly efficient form of pollination. It\n" +
-                        "releases more pollen in a shorter amount of time, meaning the Eastern Carpenter Bee can visit more\n" +
-                        "flowers than other bees in a given timeframe. Sonication is so effective that it allows the Eastern\n" +
-                        "Carpenter Bee to carry more pollen with each flower visit1which increases the chance of successful\n" +
-                        "pollination.\n" +
-                        "Many bees live less than a year, but the Eastern Carpenter Bee can survive up to 3 years2\n" +
-                        "\n" +
-                        ". Their range\n" +
-                        "extends throughout the eastern United States, stretching down into Florida and as far West as Texas,\n" +
-                        "Nebraska, Kansas, and a couple sitings in Idaho3\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: April to October3\n" +
-                        "CONSERVATION STATUS: Secure4\n" +
+                        "SEASONALITY: April to October(3)\n" +
+                        "CONSERVATION STATUS: Secure(4)\n" +
                         "STATUS: Native\n" +
                         "\n" +
-                        "X. virginica\n" +
-                        "17mm to\n" +
-                        "23mm long\n" +
-                        "\n" +
-                        "Sources: 1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                        "Pollination Press LLC.\n" +
-                        "2Buchman, S. (n.d.). Eastern Carpenter Bee (Xylocopa spp.). Retrieved January 22, 2020 from\n" +
-                        "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/carpenter_bees.shtml\n" +
-                        "3Eastern Carpenter Bee (Xylocopa virginica). (n.d.). Retrieved January 22, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/51110-Xylocopa-virginica\n" +
-                        "4Xylocopa virginica. (n.d.). Retrieved January 22, 2020 from\n" +
-                        "http://explorer.natureserve.org/servlet/NatureServe?searchName=Xylocopa+virginica",
+                        "Sources: \n" +
+                        "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                        "(2)Buchman, S. (n.d.). Eastern Carpenter Bee (Xylocopa spp.). Retrieved January 22, 2020 from https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/carpenter_bees.shtml\n" +
+                        "(3)Eastern Carpenter Bee (Xylocopa virginica). (n.d.). Retrieved January 22, 2020 from https://www.inaturalist.org/taxa/51110-Xylocopa-virginica\n" +
+                        "(4)Xylocopa virginica. (n.d.). Retrieved January 22, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Xylocopa+virginica",
                 "• Black with pale hairs on thorax and first abdominal segment\n" +
                         "• Black and bald abdomen; glossy\n" +
                         "• Wings held outward at 45̊angle when foraging\n" +
@@ -1155,52 +742,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Aster, Symphyotrichum spp."),
         Insect("Eastern Calligrapher", "(Toxomerus geminatus)",
             R.drawable.eastern_caligrapher_bee_1,R.drawable.eastern_caligrapher_bee_2,R.drawable.eastern_caligrapher_bee_3,R.drawable.eastern_caligrapher_bee_4,
-                "The Eastern Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern\n" +
-                        "United States. They feed on nectar and pollen and are found in forests, meadows, fields, savannas, fens,\n" +
-                        "marshes, and bogs1\n" +
+                "The Eastern Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. They feed on nectar and pollen and are found in forests, meadows, fields, savannas, fens, marshes, and bogs(1). While typically not found in insect hotels, the slug-like larvae of the Eastern Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(2). An abundance of syrphid larva can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                         "\n" +
-                        ". While typically not found in insect hotels, the slug-like larvae of the Eastern\n" +
-                        "Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids,\n" +
-                        "thrips, and small caterpillars2\n" +
+                        "In optimal environmental conditions, adult Eastern Calligrapher females will lay their eggs on plants infested with prey(2). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating resident pests(2). Unless overwintering, the larva will pupate and emerge 1 or 2 weeks later(2). There can be several generations each year depending on environmental conditions(2).\n" +
                         "\n" +
-                        ". An abundance of syrphid larva can reduce aphid populations by 70 to\n" +
+                        "Eastern Calligraphers have similar coloration to some bee and wasp species. This similarity in appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing organism to avoid predation. \n" +
                         "\n" +
-                        "100%1\n" +
-                        ", making them a welcomed occupant in gardens and agricultural fields.\n" +
+                        "True to its name, the range of the Eastern Calligrapher extends from some parts of south-east Canada down throughout the eastern U.S. It has been recorded as far west as Texas, Oklahoma, Kansas, and Nebraska(3). \n" +
                         "\n" +
-                        "T. geminatus\n" +
-                        "7mm average\n" +
-                        "\n" +
-                        "In optimal environmental conditions, adult Eastern Calligrapher females will lay their eggs on plants\n" +
-                        "infested with prey2\n" +
-                        "\n" +
-                        ". The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all\n" +
-                        "\n" +
-                        "the while eating resident pests2\n" +
-                        "\n" +
-                        ". Unless overwintering, the larva will pupate and emerge 1 or 2 weeks\n" +
-                        "\n" +
-                        "later2\n" +
-                        ". There can be several generations each year depending on environmental conditions2\n" +
-                        ".\n" +
-                        "\n" +
-                        "Eastern Calligraphers have similar coloration to some bee and wasp species. This similarity in appearance\n" +
-                        "is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing\n" +
-                        "organism to avoid predation.\n" +
-                        "True to its name, the range of the Eastern Calligrapher extends from some parts of south-east Canada\n" +
-                        "down throughout the eastern U.S. It has been recorded as far west as Texas, Oklahoma, Kansas, and\n" +
-                        "Nebraska3\n" +
-                        ".\n" +
-                        "SEASONALITY: March to November3\n" +
+                        "SEASONALITY: March to November(3)\n" +
                         "CONSERVATION STATUS: Unknown\n" +
                         "STATUS: Native\n" +
-                        "Sources: 1\n" +
-                        "Iowa State University. (n.d.) Species Toxomerus geminatus. Retrieved January 18, 2020 from\n" +
-                        "https://bugguide.net/node/view/8222\n" +
-                        "2Gu, A. (n.d.). Syrphid Flies. Retrieved January 18, 2020 from\n" +
-                        "https://biocontrol.entomology.cornell.edu/predators/syrphids.php\n" +
-                        "3Eastern Calligrapher (Toxomerus geminatus). (n.d.). Retrieved January 18, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/126532-Toxomerus-geminatus",
+                        "\n" +
+                        "Sources: \n" +
+                        "(1)Iowa State University. (n.d.) Species Toxomerus geminatus. Retrieved January 18, 2020 from https://bugguide.net/node/view/8222 \n" +
+                        "(2)Gu, A. (n.d.). Syrphid Flies. Retrieved January 18, 2020 from https://biocontrol.entomology.cornell.edu/predators/syrphids.php\n" +
+                        "(3)Eastern Calligrapher (Toxomerus geminatus). (n.d.). Retrieved January 18, 2020 from https://www.inaturalist.org/taxa/126532-Toxomerus-geminatus",
                 "• Distinct black and yellow pattern\n" +
                         "• Yellow margin (middle-line) outlined in black down abdomen\n" +
                         "• Large reddish-brown eyes\n" +
@@ -1210,32 +767,15 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         ". Adults visit a wide variety of flowers."),
         Insect("European Wool-Carder Bee", "(Anthidium manicatum)",
             R.drawable.european_wool_carder_bee_1,R.drawable.european_wool_carder_bee_2,R.drawable.european_wool_carder_bee_3,R.drawable.european_wool_carder_bee_4,
-                "The European Wool Carder Bee can often be mistaken for wasps due to their bright yellow and black\n" +
-                        "patterns. Their name comes from their behavior of scraping hairs from plants for nest materials, a process\n" +
-                        "likened to wool carding. Plants like Lamb’s Ear (Stachys byzantina), Spiderwort (Tradescentia spp.), and\n" +
-                        "Sagewort (Artemesia spp.) attract the females of this species due to their hairy parts. Male European\n" +
-                        "Wool Carder Bees are substantially larger than females and behave aggressively towards other males.\n" +
-                        "They defend their territory using modified “teeth” at the end of their abdomens to fight off other bees.\n" +
-                        "This often maims or kills native bees as they have not evolved any defense against this1\n" +
+                "The European Wool Carder Bee can often be mistaken for wasps due to their bright yellow and black patterns. Their name comes from their behavior of scraping hairs from plants for nest materials, a process likened to wool carding. Plants like Lamb’s Ear (Stachys byzantina), Spiderwort (Tradescentia spp.), and Sagewort (Artemesia spp.) attract the females of this species due to their hairy parts. Male European Wool Carder Bees are substantially larger than females and behave aggressively towards other males. They defend their territory using modified “teeth” at the end of their abdomens to fight off other bees. This often maims or kills native bees as they have not evolved any defense against this(1). The European Wool Carder Bee nests in pre-existing holes in wood or hollow plant stems and seems to inhabit mostly urban landscapes(1). \n" +
                         "\n" +
-                        ". The European\n" +
-                        "Wool Carder Bee nests in pre-existing holes in wood or hollow plant stems and seems to inhabit mostly\n" +
-                        "urban landscapes1\n" +
-                        ".\n" +
+                        "While first introduced in the northeastern U.S. in the 1960s, these bees can now be found throughout Canada, the U.S., and South America(1).\n" +
                         "\n" +
-                        "While first introduced in the northeastern U.S. in the 1960s, these bees can now be found throughout\n" +
-                        "Canada, the U.S., and South America1\n" +
-                        ".\n" +
-                        "SEASONALITY: Late January to early November1\n" +
+                        "SEASONALITY: Late January to early November(1)\n" +
                         "STATUS: Invasive\n" +
                         "\n" +
-                        "A. manicatum\n" +
-                        "11mm to\n" +
-                        "17mm long\n" +
-                        "\n" +
-                        "Sources: 1Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., ... Redford, A. (2018,\n" +
-                        "August). Anthidium manicatum. Retrieved January 17, 2020, from\n" +
-                        "http://idtools.org/id/bees/exotic/factsheet.php?name=16911",
+                        "Sources: \n" +
+                        "(1)Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., … Redford, A. (2018, August). Anthidium manicatum. Retrieved January 17, 2020, from http://idtools.org/id/bees/exotic/factsheet.php?name=16911",
                 "• Black and yellow; distinct black “V” on abdomen\n" +
                         "• Yellow mandibles (jaws) and legs\n" +
                         "• Black tegula (plate where wings connect to body)",
@@ -1260,41 +800,21 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Flat-Tailed Leafcutter Bee", "(Megachile mendica)",
             R.drawable.flat_tailed_leafcutter_bee_1,R.drawable.flat_tailed_leafcutter_bee_2,R.drawable.flat_tailed_leafcutter_bee_3,R.drawable.flat_tailed_leafcutter_bee_4,
-                    "The Flat-tailed Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their\n" +
-                            "mandibles (bee teeth) for their nests. The “flat-tailed” is in reference to their flattened terminal (end)\n" +
-                            "abdominal segment (terga 6). They are solitary bees that nest in pre-existing cavities in wood, rocks, or\n" +
-                            "plant stems1\n" +
+                    "The Flat-tailed Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their mandibles (bee teeth) for their nests. The “flat-tailed” is in reference to their flattened terminal (end) abdominal segment (terga 6). They are solitary bees that nest in pre-existing cavities in wood, rocks, or plant stems(1). After finding a suitable site, a female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per cell and sealing it off with plant material.\n" +
                             "\n" +
-                            ". After finding a suitable site, a female uses her large mandibles to cut leaves and build\n" +
-                            "chambers for each of her eggs, starting with the chamber the furthest from the opening1\n" +
+                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(1). They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season(1).\n" +
                             "\n" +
-                            ". She deposits a\n" +
-                            "single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female\n" +
-                            "then seals off the chamber and repeats this process, each time leaving one egg and food bundle per cell\n" +
-                            "and sealing it off with plant material.\n" +
-                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer1\n" +
-                            ". They\n" +
-                            "immediately seek a mate and search for nesting sites to prepare the next generation, which will\n" +
-                            "overwinter and emerge in the next season1\n" +
-                            ".\n" +
+                            "The range of the Flat-tailed Leafcutter Bee extends throughout the United States, though many public observations have been submitted along the eastern U.S(2,3).\n" +
                             "\n" +
-                            "The range of the Flat-tailed Leafcutter Bee extends throughout the United States, though many public\n" +
-                            "observations have been submitted along the eastern U.S2,3\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May to October3\n" +
+                            "SEASONALITY: May to October(3)\n" +
                             "CONSERVATION STATUS: unknown\n" +
                             "STATUS: native\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Moisset, B., Cotinis, Ascher, J. S., & Go, H. (2006). Species Megachile mendica – Flat-tailed Leaf-cutter\n" +
-                            "Bee. Retrieved February 29, 2020 from https://bugguide.net/node/view/81669\n" +
-                            "3\n" +
-                            "Flat-tailed Leafcutter Bee (Megachile mendica). (n.d.). Retrieved February 29, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/199131-Megachile-mendica\n" +
-                            "4Megachile mendica Cresson, 1878. (n.d.). Retrieved February 29, 2020 from\n" +
-                            "https://www.discoverlife.org/mp/20q?search=Megachile+mendica",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Moisset, B., Cotinis, Ascher, J. S., & Go, H. (2006). Species Megachile mendica – Flat-tailed Leaf-cutter Bee. Retrieved February 29, 2020 from https://bugguide.net/node/view/81669\n" +
+                            "(3)Flat-tailed Leafcutter Bee (Megachile mendica). (n.d.). Retrieved February 29, 2020 from https://www.inaturalist.org/taxa/199131-Megachile-mendica\n" +
+                            "(4)Megachile mendica Cresson, 1878. (n.d.). Retrieved February 29, 2020 from https://www.discoverlife.org/mp/20q?search=Megachile+mendica",
                     "• Black bee with white abdominal stripes\n" +
                             "• (female) pale yellow hairs underneath abdomen (scopa)\n" +
                             "• Last abdominal segment (T6) is straight and" +
@@ -1350,63 +870,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Four-toothed Mason Wasp", "(Monobia quadridens)",
             R.drawable.four_toothed_mason_wasp_1,R.drawable.four_toothed_mason_wasp_2,R.drawable.four_toothed_mason_wasp_3,R.drawable.four_toothed_mason_wasp_4,
-                    "The Four-toothed Mason Wasp is a solitary, mostly black wasp with a white or cream band on the first\n" +
-                            "segment of its abdomen. They look like the Bald-faced Hornet (Dolichovespula maculate) and a sting from\n" +
-                            "either is said to feel similar. The Bald-faced Hornet lives in a social nest and has more white markings on\n" +
-                            "the face, thorax, and abdomen than the Four-toothed Mason Wasp.\n" +
-                            "The Four-toothed Mason Wasp feeds on nectar from a wide variety of flowers and therefore assists in\n" +
-                            "pollination1\n" +
+                    "The Four-toothed Mason Wasp is a solitary, mostly black wasp with a white or cream band on the first segment of its abdomen. They look like the Bald-faced Hornet (Dolichovespula maculate) and a sting from either is said to feel similar. The Bald-faced Hornet lives in a social nest and has more white markings on the face, thorax, and abdomen than the Four-toothed Mason Wasp. \n" +
                             "\n" +
-                            ". They nest in pre-existing cavities in wood (left by carpenter bees or wood-boring beetles)\n" +
+                            "The Four-toothed Mason Wasp feeds on nectar from a wide variety of flowers and therefore assists in pollination(1). They nest in pre-existing cavities in wood (left by carpenter bees or wood-boring beetles) and the ground but will sometimes dig or carve out their own nest(1). The female is known to take over the nests of other solitary bees by removing the latter’s eggs(1). \n" +
                             "\n" +
-                            "and the ground but will sometimes dig or carve out their own nest1\n" +
+                            "After finding a suitable nesting site, the Four-toothed Mason Wasp lays a single egg at the far end of the cavity(1). She then hunts for caterpillars (typically moth species)(1) to paralyze and carry back to the nest where they will be stored for her larva to eat(1). After collecting enough food, she builds a mud wall to seal the egg and caterpillars together in a chamber(1). Before laying another egg, she’ll build a second mud wall, leaving a gap between the first egg chamber and the beginning of the second (intercalary cells)(1). Once complete, she’ll begin the process anew by laying another egg and filling the chamber with paralyzed caterpillars before sealing it with mud(1). This process continues until the cavity is full of egg chambers with “blanks” in between(1). The eggs will hatch into larvae, eat the caterpillars, and overwinter before pupating in the spring(1).\n" +
                             "\n" +
-                            ". The female is known to take over the\n" +
+                            "The range of the Four-toothed Mason Wasp extends throughout eastern North America, southern Canada and northern Mexico(1).\n" +
                             "\n" +
-                            "nests of other solitary bees by removing the latter’s eggs1\n" +
-                            ".\n" +
-                            "\n" +
-                            "After finding a suitable nesting site, the Four-toothed Mason Wasp lays a single egg at the far end of the\n" +
-                            "cavity1\n" +
-                            ". She then hunts for caterpillars (typically moth species)1\n" +
-                            "\n" +
-                            "to paralyze and carry back to the nest\n" +
-                            "\n" +
-                            "where they will be stored for her larva to eat1\n" +
-                            "\n" +
-                            ". After collecting enough food, she builds a mud wall to seal\n" +
-                            "\n" +
-                            "the egg and caterpillars together in a chamber1\n" +
-                            "\n" +
-                            ". Before laying another egg, she’ll build a second mud wall,\n" +
-                            "leaving a gap between the first egg chamber and the beginning of the second (intercalary cells)1\n" +
-                            ". Once\n" +
-                            "complete, she’ll begin the process anew by laying another egg and filling the chamber with paralyzed\n" +
-                            "caterpillars before sealing it with mud1\n" +
-                            "\n" +
-                            ". This process continues until the cavity is full of egg chambers with\n" +
-                            "\n" +
-                            "“blanks” in between1\n" +
-                            "\n" +
-                            ". The eggs will hatch into larvae, eat the caterpillars, and overwinter before pupating\n" +
-                            "\n" +
-                            "in the spring1\n" +
-                            ".\n" +
-                            "\n" +
-                            "The range of the Four-toothed Mason Wasp extends throughout eastern North America, southern\n" +
-                            "Canada and northern Mexico1\n" +
-                            ".\n" +
-                            "SEASONALITY: March to November2\n" +
-                            "CONSERVATION STATUS: Imperiled3\n" +
+                            "SEASONALITY: March to November(2)\n" +
+                            "CONSERVATION STATUS: Imperiled(3)\n" +
                             "STATUS: native\n" +
-                            "Sources:\n" +
-                            "1The Buglady. (2017). Four-toothed Mason Wasp (Family Vespidae). Retrieved March 5, 2020 from\n" +
-                            "https://uwm.edu/field-station/four-toothed-mason-wasp/\n" +
-                            "2\n" +
-                            "Four-toothed Mason Wasp (Monobia quadridens). (n.d.). Retrieved March 5, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/126215-Monobia-quadridens\n" +
-                            "3Monobia quadridens - (Linnaeus, 1763). (n.d.). Retrieved March 5, 2020 from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Monobia+quadridens",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)The Buglady. (2017). Four-toothed Mason Wasp (Family Vespidae). Retrieved March 5, 2020 from https://uwm.edu/field-station/four-toothed-mason-wasp/\n" +
+                            "(2)Four-toothed Mason Wasp (Monobia quadridens). (n.d.). Retrieved March 5, 2020 from https://www.inaturalist.org/taxa/126215-Monobia-quadridens\n" +
+                            "(3)Monobia quadridens - (Linnaeus, 1763). (n.d.). Retrieved March 5, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Monobia+quadridens",
                     "• Hairless black body with large white band at the end of first " +
                             "abdominal band\n" +
                             "• White spots on thorax\n" +
@@ -1414,35 +893,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "N/A"),
         Insect("Green Lacewings", "(Chrysoperla spp.)",
             R.drawable.green_lacewing_1,R.drawable.green_lacewing_2,R.drawable.green_lacewing_3,R.drawable.green_lacewing_4,
-                    "Common Green Lacewings (like Brown Lacewings [Family: Hemerobiidae]) are a welcomed backyard and\n" +
-                            "farm-field resident. Their larvae are prized biological controls on aphid populations and “spider mites\n" +
-                            "(especially red mites), thrips, whiteflies, eggs of leafhoppers, moths, leafminers, small caterpillars, and\n" +
-                            "beetle larvae.”1 The larvae are active hunters while the adults feed on pollen, nectar, and the honeydew\n" +
-                            "excreted by adult aphids2\n" +
+                    "Common Green Lacewings (like Brown Lacewings [Family: Hemerobiidae]) are a welcomed backyard and farm-field resident. Their larvae are prized biological controls on aphid populations and “spider mites (especially red mites), thrips, whiteflies, eggs of leafhoppers, moths, leafminers, small caterpillars, and beetle larvae”(1). The larvae are active hunters while the adults feed on pollen, nectar, and the honeydew excreted by adult aphids(2). Female Common Green Lacewings lay their light green eggs on silken strands(1) attached to leaves – like tiny balloons. \n" +
                             "\n" +
-                            ". Female Common Green Lacewings lay their light green eggs on silken strands\n" +
-                            "1\n" +
+                            "Common Green Lacewing larvae are prone to drying out and need a source of moisture(1). Adults rely on nectar and aphid honeydew to stay hydrated. To promote the presence of Common Green Lacewings, a nearby supply of flowering plants and a small population of aphids should be tolerated(1).\n" +
                             "\n" +
-                            "attached to leaves – like tiny balloons.\n" +
-                            "Common Green Lacewing larvae are prone to drying out and need a source of moisture1\n" +
+                            "The range of Common Green Lacewings extends around the globe and throughout the United States(3).\n" +
                             "\n" +
-                            ". Adults rely on\n" +
-                            "nectar and aphid honeydew to stay hydrated. To promote the presence of Common Green Lacewings, a\n" +
-                            "nearby supply of flowering plants and a small population of aphids should be tolerated1\n" +
-                            ".\n" +
+                            "SEASONALITY: April to November(3)\n" +
+                            "EASTERN US AND CANADA: 8 species(2)\n" +
                             "\n" +
-                            "The range of Common Green Lacewings extends around the globe and throughout the United States3\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: April to November3\n" +
-                            "EASTERN US AND CANADA: 8 species2\n" +
-                            "Sources:\n" +
-                            "1Chrysoperla (=Chrysopa) carnea, C. rufilabris (Neuroptera: Chrysopidae). (n.d.). Retrieved February 26,\n" +
-                            "2020 from https://biocontrol.entomology.cornell.edu/predators/Chrysoperla.php\n" +
-                            "2Moisset, B., Nendick-Mason, H., Ceiseman, Belov, V. (2005). Genus Chrysoperla. Retrieved February 26,\n" +
-                            "2020 from https://bugguide.net/node/view/32027\n" +
-                            "3Genus: Chrysoperla. (n.d.). Retrieved February 26, 2020 from https://www.inaturalist.org/taxa/59441-\n" +
-                            "Chrysoperla",
+                            "Sources: \n" +
+                            "(1)Chrysoperla (=Chrysopa) carnea, C. rufilabris (Neuroptera: Chrysopidae). (n.d.). Retrieved February 26, 2020 from https://biocontrol.entomology.cornell.edu/predators/Chrysoperla.php\n" +
+                            "(2)Moisset, B., Nendick-Mason, H., Ceiseman, Belov, V. (2005). Genus Chrysoperla. Retrieved February 26, 2020 from https://bugguide.net/node/view/32027\n" +
+                            "(3)Genus: Chrysoperla. (n.d.). Retrieved February 26, 2020 from https://www.inaturalist.org/taxa/59441-Chrysoperla",
                     "• Bright green\n" +
                             "• Long antennae\n" +
                             "• Thin, long body\n" +
@@ -1452,47 +915,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "infested and/or flowering plants."),
         Insect("Harvestmen", "(Order: Opiliones)",
             R.drawable.harvestmen_1,R.drawable.harvestmen_2,R.drawable.harvestmen_3,R.drawable.harvestmen_4,
-                    "Harvestmen, or “daddy-long-legs,” are non-venomous, normally solitary Arachnids more closely related\n" +
-                            "to scorpions than spiders1\n" +
+                    "Harvestmen, or “daddy-long-legs,” are non-venomous, normally solitary Arachnids more closely related to scorpions than spiders(1). They are easily distinguished from spiders by their long, spindly legs and the broad fusion of their two body segments(1). This gives them the appearance of only having one body segment. While spiders have eight eyes, harvestmen only have two(2). They also do not have silk glands and therefore do not spin webs.  \n" +
                             "\n" +
-                            ". They are easily distinguished from spiders by their long, spindly legs and the\n" +
+                            "Harvestmen are beneficial members of a garden as they are generalist predators, eating both living and dead organisms, and help control pest populations(3). Some of the pests they eat include aphids, caterpillars, slugs, grasshoppers, psyllids, beetle larvae, and mites(3). They may be seen on or around an insect hotel looking for prey. Providing logs, mulch, and rocks in your garden will help prevent them from dehydrating in the sun(3).\n" +
                             "\n" +
-                            "broad fusion of their two body segments1\n" +
+                            "The range of Harvestmen extends around the globe, and they are commonly found in the United States(4).\n" +
                             "\n" +
-                            ". This gives them the appearance of only having one body\n" +
-                            "\n" +
-                            "segment. While spiders have eight eyes, harvestmen only have two2\n" +
-                            "\n" +
-                            ". They also do not have silk glands\n" +
-                            "\n" +
-                            "and therefore do not spin webs.\n" +
-                            "Harvestmen are beneficial members of a garden as they are generalist predators, eating both living and\n" +
-                            "dead organisms, and help control pest populations3\n" +
-                            "\n" +
-                            ". Some of the pests they eat include aphids,\n" +
-                            "\n" +
-                            "caterpillars, slugs, grasshoppers, psyllids, beetle larvae, and mites3\n" +
-                            "\n" +
-                            ". They may be seen on or around an\n" +
-                            "insect hotel looking for prey. Providing logs, mulch, and rocks in your garden will help prevent them from\n" +
-                            "dehydrating in the sun3\n" +
-                            ".\n" +
-                            "\n" +
-                            "The range of Harvestmen extends around the globe, and they are commonly found in the United States4\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May to November, though some species are active in winter4\n" +
+                            "SEASONALITY: May to November, though some species are active in winter(4)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "Sources:\n" +
-                            "1Bartlett, T., Nanz, S. Moisset, B., Elliott, L., Wisch, H., Stephen, C., Hall, K., Belov, V., Parker, H. S.,\n" +
-                            "Reynolds, B., Hedin, M. (2004). Order Opiliones – Harvestmen. Retrieved February 20, 2020 from\n" +
-                            "https://bugguide.net/node/view/2405\n" +
-                            "2 HARVESTMEN (one of several kinds of arthropod known as Daddy Longlegs). (n.d.). Retrieved February\n" +
-                            "20, 2020 from https://www.backyardnature.net/longlegs.htm\n" +
-                            "3Gardiner, M., & Griffith, M. (2016). Ohio’s Natural Enemies: Harvestmen (also known as daddy longlegs).\n" +
-                            "Retrieved February 20, 2020 from https://ohioline.osu.edu/factsheet/ent-68\n" +
-                            "4Harvestment (Order Opiliones). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/47367-Opiliones",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Bartlett, T., Nanz, S. Moisset, B., Elliott, L., Wisch, H., Stephen, C., Hall, K., Belov, V., Parker, H. S., Reynolds, B., Hedin, M. (2004). Order Opiliones – Harvestmen. Retrieved February 20, 2020 from https://bugguide.net/node/view/2405\n" +
+                            "(2)HARVESTMEN (one of several kinds of arthropod known as Daddy Longlegs). (n.d.). Retrieved February 20, 2020 from https://www.backyardnature.net/longlegs.htm\n" +
+                            "(3)Gardiner, M., & Griffith, M. (2016). Ohio’s Natural Enemies: Harvestmen (also known as daddy longlegs). Retrieved February 20, 2020 from https://ohioline.osu.edu/factsheet/ent-68\n" +
+                            "(4)Harvestment (Order Opiliones). (n.d.). Retrieved February 20, 2020 from https://www.inaturalist.org/taxa/47367-Opiliones\n",
                     "• One body segment (actually two, but broadly fused together)\n" +
                             "• Very long, thin legs\n" +
                             "• Wandering; not on a web",
@@ -1500,63 +936,23 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "items."),
         Insect("Hornets and Yellowjackets", "(Subfamily: Vespinae)",
             R.drawable.hornets_and_yellowjackets_1,R.drawable.hornets_and_yellowjackets_2,R.drawable.hornets_and_yellowjackets_3,R.drawable.hornets_and_yellowjackets_4,
-                    "Hornets and Yellowjackets are some of the most recognizable wasps in North America. Many common\n" +
-                            "species have striped or stippled pale cream to yellow patterns on a black body. Others are completely\n" +
-                            "black or a mixture of deep reds and metallic shades. They are social species that build paper nests using a\n" +
-                            "mixture of saliva and plant fibers1\n" +
+                    "Hornets and Yellowjackets are some of the most recognizable wasps in North America. Many common species have striped or stippled pale cream to yellow patterns on a black body. Others are completely black or a mixture of deep reds and metallic shades. They are social species that build paper nests using a mixture of saliva and plant fibers(1). These are annual nests that only last a single year before being abandoned, though some nests can be used longer in warm climates(2). The nests can range from the size of a baseball to larger than a basketball(2). Since they build their own nests, Hornets and Yellowjackets are not likely to use an insect hotel.\n" +
                             "\n" +
-                            ". These are annual nests that only last a single year before being\n" +
+                            "Different species of Vespinae have different types of sociality. The simplest form is subsocial behavior, where the brood (young wasps) are cared for during a limited timeframe(2). The most extreme case of social behavior is eusociality. In this case, one female (a queen) or a few related females lay all the eggs. A sterile caste of female workers from overlapping generations work together to care for the brood (ex: yellowjackets)(2). When disturbed or threatened, a wasp will emit a pheromone that alerts the hive to a perceived threat and causes them to swarm(3). \n" +
                             "\n" +
-                            "abandoned, though some nests can be used longer in warm climates2\n" +
+                            "Hornet and Yellowjacket larvae mostly eat caterpillars while the adults feed on nectar from flowers(4). Despite the fear surrounding them and their sting, Hornets and Yellowjackets are important biological controls on pest populations. They, along with most wasps in the Vespidae family, prey upon nearly every pest species on the planet(3). This makes them especially useful in protecting crops and farmland from damaging swarms of pest species(3).\n" +
                             "\n" +
-                            ". The nests can range from the size\n" +
+                            "The range of the Hornet and Yellowjacket subfamily extends around the globe and are commonly found throughout the United States(5).\n" +
                             "\n" +
-                            "of a baseball to larger than a basketball2\n" +
+                            "SEASONALITY: March to November(5)\n" +
+                            "EASTERN US AND CANADA: 22(4)\n" +
                             "\n" +
-                            ". Since they build their own nests, Hornets and Yellowjackets are\n" +
-                            "\n" +
-                            "not likely to use an insect hotel.\n" +
-                            "Different species of Vespinae have different types of sociality. The simplest form is subsocial behavior,\n" +
-                            "where the brood (young wasps) are cared for during a limited timeframe2\n" +
-                            "\n" +
-                            ". The most extreme case of\n" +
-                            "social behavior is eusociality. In this case, one female (a queen) or a few related females lay all the eggs. A\n" +
-                            "sterile caste of female workers from overlapping generations work together to care for the brood (ex:\n" +
-                            "yellowjackets)2\n" +
-                            "\n" +
-                            ". When disturbed or threatened, a wasp will emit a pheromone that alerts the hive to a\n" +
-                            "\n" +
-                            "perceived threat and causes them to swarm3\n" +
-                            ".\n" +
-                            "\n" +
-                            "Hornet and Yellowjacket larvae mostly eat caterpillars while the adults feed on nectar from flowers4\n" +
-                            ".\n" +
-                            "Despite the fear surrounding them and their sting, Hornets and Yellowjackets are important biological\n" +
-                            "controls on pest populations. They, along with most wasps in the Vespidae family, prey upon nearly every\n" +
-                            "pest species on the planet3\n" +
-                            "\n" +
-                            ". This makes them especially useful in protecting crops and farmland from\n" +
-                            "\n" +
-                            "damaging swarms of pest species3\n" +
-                            ".\n" +
-                            "\n" +
-                            "The range of the Hornet and Yellowjacket subfamily extends around the globe and are commonly found\n" +
-                            "throughout the United States5\n" +
-                            ".\n" +
-                            "SEASONALITY: March to November5\n" +
-                            "EASTERN US AND CANADA: 224\n" +
-                            "Sources:\n" +
-                            "1Persson, S. (2015). Phylogeny and taxonomy of the subfamily Vespinae (Hymenoptera: Vespidae), based\n" +
-                            "on five molecular markers. Retrieved March 5, 2020 from\n" +
-                            "https://bioenv.gu.se/digitalAssets/1536/1536726_suzanna-persson.pdf\n" +
-                            "2Kimsey, L. S. & Carpenter, J., M. (2012). The Vespinae of North America (Vespidae, Hymenoptera).\n" +
-                            "Journal of Hymenoptera Research 28, https://doi.org/10.3897/jhr.28.3514\n" +
-                            "3Wasps. (n.d.). Retrieved March 6, 2020 from\n" +
-                            "https://www.nationalgeographic.com/animals/invertebrates/group/wasps/ \n" +
-                            "4Bartlett, T., Moisset, B., Tony-2, Buck, M., & Belov, V. (2004). Subfamily Vespinae – Hornets and\n" +
-                            "Yellowjackets. Retrieved March 6, 2020 from https://bugguide.net/node/view/385\n" +
-                            "5Hornets and Yellowjackets (Subfamily Vespinae). (n.d.). Retrieved March 6, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/84738-Vespinae",
+                            "Sources: \n" +
+                            "(1)Persson, S. (2015). Phylogeny and taxonomy of the subfamily Vespinae (Hymenoptera: Vespidae), based on five molecular markers. Retrieved March 5, 2020 from https://bioenv.gu.se/digitalAssets/1536/1536726_suzanna-persson.pdf\n" +
+                            "(2)Kimsey, L. S. & Carpenter, J., M. (2012). The Vespinae of North America (Vespidae, Hymenoptera). Journal of Hymenoptera Research 28, https://doi.org/10.3897/jhr.28.3514\n" +
+                            "(3)Wasps. (n.d.). Retrieved March 6, 2020 from https://www.nationalgeographic.com/animals/invertebrates/group/wasps/\n" +
+                            "(4)Bartlett, T., Moisset, B., Tony-2, Buck, M., & Belov, V. (2004). Subfamily Vespinae – Hornets and Yellowjackets. Retrieved March 6, 2020 from https://bugguide.net/node/view/385\n" +
+                            "(5)Hornets and Yellowjackets (Subfamily Vespinae). (n.d.). Retrieved March 6, 2020 from https://www.inaturalist.org/taxa/84738-Vespinae",
                     "• “wasp waist” – narrow connection between thorax " +
                             "and abdomen (petiole)\n" +
                             "• Flat or straight clypeus (facial plate above mandibles)\n" +
@@ -1566,76 +962,27 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Hornets and Wasps will be attracted to gardens that have a lot of pests and flowers. They are important " +
                             "biological controls on pest populations, though they can be a nuisance if they build a nest close to a " +
                             "human dwelling where frequent encounters occur."),
-        Insect("Hornfaced Bee", "(Osmia cornifrons)",
+        Insect("Horn-faced Bee", "(Osmia cornifrons)",
             R.drawable.hornfaced_bee_1,R.drawable.hornfaced_bee_2,R.drawable.hornfaced_bee_3,R.drawable.hornfaced_bee_4,
-                "The Horn-faced Bee was introduced to the U.S. from Japan sometime in the 1980s1\n" +
+                "The Horn-faced Bee was introduced to the U.S. from Japan sometime in the 1980s(1). This was done intentionally by USDA scientists to aid with apple crop pollination(2). Recently, scientists have begun looking at the Japanese Horn-faced Bee as a potential alternative pollinator for certain crops in Michigan(3). These bees exhibit a preference for fruit trees and can fly in cooler temperatures(3). Their foraging habits make them an effective pollinator which is why scientists now view them as a candidate for use as cherry tree pollinators in Michigan(3).\n" +
                         "\n" +
-                        ". This was done\n" +
+                        "The Horn-faced Bee becomes active in early spring(3). After mating, the female feeds for a couple days before searching out a suitable nest-cavity around 5/16-inches in diameter and 6 inches in length(3). The female will divide this cavity into multiple cells for her offspring. The Horn-faced Bee collects pollen and/or nectar using specialized hairs beneath her abdomen (scopa) and rolls it into a ball inside the first cell before laying an egg on it. She then seals the chamber with a mud wall and begins collecting more pollen and/or nectar for the next egg. She repeats this process up to five times before capping the nest entrance with a mud wall(3).\n" +
                         "\n" +
-                        "intentionally by USDA scientists to aid with apple crop pollination2\n" +
+                        "One generation of Horn-faced Bees are produced each year; the eggs hatch roughly a week after being laid, pupate in the late summer, and molt into adult bees a month later(3). These new adults will remain inside the nest until the following spring(3).\n" +
                         "\n" +
-                        ". Recently, scientists have begun\n" +
-                        "O. cornifrons\n" +
-                        "8mm to\n" +
-                        "12mm long\n" +
+                        "The range of the Horn-faced bee extends throughout the northeastern United States, thought there have also been observations of the bee in Oregon(4).\n" +
                         "\n" +
-                        "looking at the Japanese Horn-faced Bee as a potential alternative pollinator for certain crops in Michigan3\n" +
-                        ".\n" +
-                        "\n" +
-                        "These bees exhibit a preference for fruit trees and can fly in cooler temperatures3\n" +
-                        "\n" +
-                        ". Their foraging habits\n" +
-                        "make them an effective pollinator which is why scientists now view them as a candidate for use as cherry\n" +
-                        "tree pollinators in Michigan3\n" +
-                        ".\n" +
-                        "\n" +
-                        "The Horn-faced Bee becomes active in early spring3\n" +
-                        "\n" +
-                        ". After mating, the female feeds for a couple days\n" +
-                        "before searching out a suitable nest-cavity around 5/16-inches in diameter and 6 inches in length3\n" +
-                        ". The\n" +
-                        "female will divide this cavity into multiple cells for her offspring. The Horn-faced Bee collects pollen\n" +
-                        "and/or nectar using specialized hairs beneath her abdomen (scopa) and rolls it into a ball inside the first\n" +
-                        "cell before laying an egg on it. She then seals the chamber with a mud wall and begins collecting more\n" +
-                        "pollen and/or nectar for the next egg. She repeats this process up to five times before capping the nest\n" +
-                        "entrance with a mud wall3\n" +
-                        ".\n" +
-                        "\n" +
-                        "One generation of Horn-faced Bees are produced each year; the eggs hatch roughly a week after being\n" +
-                        "laid, pupate in the late summer, and molt into adult bees a month later3\n" +
-                        "\n" +
-                        ". These new adults will remain\n" +
-                        "\n" +
-                        "inside the nest until the following spring3\n" +
-                        ".\n" +
-                        "\n" +
-                        "The range of the Horn-faced bee extends throughout the northeastern United States, thought there have\n" +
-                        "also been observations of the bee in Oregon4\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: March to May4\n" +
-                        "CONSERVATION STATUS: Secure and Increasing5\n" +
+                        "SEASONALITY: March to May(4)\n" +
+                        "CONSERVATION STATUS: Secure and Increasing(5)\n" +
                         "STATUS: Introduced\n" +
-                        "Sources:\n" +
-                        "1USGS Bee Inventory and Monitoring Lab. (2015). Osmia cornifrons, F, Face, Washington, DC_2014-02-23-\n" +
-                        "15.08.06 ZS PMax. Retrieved February 8, 2020 from\n" +
                         "\n" +
-                        "https://www.flickr.com/photos/usgsbiml/22502757351/in/photolist-Lj8n3j-Kwy1Aq-AhuvM2-jMCg5h-\n" +
-                        "jMzNSn-KwJH1H-jMAwSx\n" +
-                        "\n" +
-                        "2Kropiewnicki, T. Moisset, B. Quinn, M., Ascher, and J. Go, H. (2008). Species Osmia cornifrons - Hornfaced\n" +
-                        "Bee. Retrieved February 8, 2020 from https://bugguide.net/node/view/174363\n" +
-                        "3Rothwell, N. (2014). MSU pollination project expands to investigate an alternative pollinator. Retrieved\n" +
-                        "February 8, 2020 from\n" +
-                        "https://www.canr.msu.edu/news/msu_pollination_project_expands_to_investigate_an_alternative_polli\n" +
-                        "nator\n" +
-                        "4Hornfaced Bee (Osmia cornifrons). (n.d.) Retrieved February 8, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/121508-Osmia-cornifrons\n" +
-                        "5\n" +
-                        "Schweitzer, D.F. (2012). Osmia cornifrons - (Radoszkowski, 1887). Retrieved February 8, 2020 from\n" +
-                        "http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+cornifrons\n" +
-                        "6Osmia cornifrons (Radoszkowski, 1887). (n.d.) Retrieved February 8, 2020 from\n" +
-                        "https://www.discoverlife.org/20/q?search=Osmia+cornifrons",
+                        "Sources: \n" +
+                        "(1)USGS Bee Inventory and Monitoring Lab. (2015). Osmia cornifrons, F, Face, Washington, DC_2014-02-23-15.08.06 ZS PMax. Retrieved February 8, 2020 from https://www.flickr.com/photos/usgsbiml/22502757351/in/photolist-Lj8n3j-Kwy1Aq-AhuvM2-jMCg5h-jMzNSn-KwJH1H-jMAwSx\n" +
+                        "(2)Kropiewnicki, T. Moisset, B. Quinn, M., Ascher, and J. Go, H. (2008). Species Osmia cornifrons - Hornfaced Bee. Retrieved February 8, 2020 from https://bugguide.net/node/view/174363\n" +
+                        "(3)Rothwell, N. (2014). MSU pollination project expands to investigate an alternative pollinator. Retrieved February 8, 2020 from https://www.canr.msu.edu/news/msu_pollination_project_expands_to_investigate_an_alternative_pollinator\n" +
+                        "(4)Hornfaced Bee (Osmia cornifrons). (n.d.) Retrieved February 8, 2020 from https://www.inaturalist.org/taxa/121508-Osmia-cornifrons\n" +
+                        "(5)Schweitzer, D.F. (2012). Osmia cornifrons - (Radoszkowski, 1887). Retrieved February 8, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+cornifrons\n" +
+                        "(6)Osmia cornifrons (Radoszkowski, 1887). (n.d.) Retrieved February 8, 2020 from https://www.discoverlife.org/20/q?search=Osmia+cornifrons",
                 "• Long lateral horns on face (clypeus)\n" +
                         "• Small horn in lower (apical)\n" +
                         "• Pale yellow hair on head, thorax, and abdomen\n" +
@@ -1663,36 +1010,18 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Viburnum, Viburnum spp."),
         Insect("House Centipede", "(Scutigera coleoptera)",
             R.drawable.house_centipede_1,R.drawable.house_centipede_2,R.drawable.house_centipede_3,R.drawable.house_centipede_4,
-                    "House Centipedes are fast moving arthropods with multiple body segments. Their legs are long compared\n" +
-                            "to their body. In females, the last leg pair is more than twice the length of her body1\n" +
+                    "House Centipedes are fast moving arthropods with multiple body segments. Their legs are long compared to their body. In females, the last leg pair is more than twice the length of her body(1). Centipedes have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and hunt any invertebrate their size or smaller. House Centipedes immobilize prey with venom and are considered one of the most beneficial indoor insects to have since they eat other household pests such as “cockroach nymphs, flies, moths, bedbugs, crickets, silverfish, earwigs, and small spiders”(1). They typically run from people and do not bite, but if threatened enough, their bite is said to be no worse than a bee sting and cause some swelling(1). \n" +
                             "\n" +
-                            ". Centipedes have\n" +
-                            "one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are\n" +
-                            "active hunters and hunt any invertebrate their size or smaller. House Centipedes immobilize prey with\n" +
-                            "venom and are considered one of the most beneficial indoor insects to have since they eat other\n" +
-                            "household pests such as “cockroach nymphs, flies, moths, bedbugs, crickets, silverfish, earwigs, and small\n" +
-                            "spiders.”\n" +
-                            "1 They typically run from people and do not bite, but if threatened enough, their bite is said to be\n" +
-                            "no worse than a bee sting and cause some swelling1\n" +
-                            ".\n" +
+                            "House Centipedes are common in basements or other moist, cool areas in the house. When outdoors, they are typically found beneath logs, rocks, twigs, and in other cool, moist locations(1). They may be found in an insect hotel filled with bark, twigs, and debris hunting the other invertebrates there.\n" +
                             "\n" +
-                            "House Centipedes are common in basements or other moist, cool areas in the house2\n" +
+                            "The range of the House Centipede extends throughout the United States. \n" +
                             "\n" +
-                            ". When outdoors,\n" +
-                            "\n" +
-                            "they are typically found beneath logs, rocks, twigs, and in other cool, moist locations1\n" +
-                            "\n" +
-                            ". They may be found\n" +
-                            "\n" +
-                            "in an insect hotel filled with bark, twigs, and debris hunting the other invertebrates there.\n" +
-                            "The range of the House Centipede extends throughout the United States.\n" +
-                            "SEASONALITY: year-round3\n" +
+                            "SEASONALITY: year-round\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "STATUS: Introduced1\n" +
-                            "Sources:\n" +
-                            "1Bartlett, T., Nendick-Mason, H., VanDyck, J., Moisset, B., McLeod, R., Quinn, M., Kropiewnicki, T., &\n" +
-                            "KenW. (2004). Species Scutigera coleoptrata – House Centipede. Retrieved February 22, 2020 from\n" +
-                            "https://bugguide.net/node/view/25",
+                            "STATUS: Introduced(1)\n" +
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Bartlett, T., Nendick-Mason, H., VanDyck, J., Moisset, B., McLeod, R., Quinn, M., Kropiewnicki, T., & KenW. (2004). Species Scutigera coleoptrata – House Centipede. Retrieved February 22, 2020 from https://bugguide.net/node/view/25\n",
                     "• 15 pairs of long legs\n" +
                             "• One leg-pair per body segment\n" +
                             "• Pale yellow body with three long stripes down back",
@@ -1700,40 +1029,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "underneath rocks, leaf litter, etc.) with a higher activity at night."),
         Insect("Hoverflies", "(Family: Syrphidae)",
             R.drawable.hoverflies_1,R.drawable.hoverflies_2,R.drawable.hoverflies_3,R.drawable.hoverflies_4,
-                    "Hoverflies (also known as Flower Flies) is a family of over 6,000 fly species that visit flowers for nectar and\n" +
-                            "pollen as adults1\n" +
+                    "Hoverflies (also known as Flower Flies) is a family of over 6,000 fly species that visit flowers for nectar and pollen as adults(1). A vast majority of Hoverflies mimic the patterns and behaviors of bees and wasps. This is known as batesian mimicry. The untrained eye can sometimes mistake them for a bee or wasp, though Hoverflies can be distinguished from Hymenoptera (bees and wasps) by their single pair of wings, large eyes, short antennae, and extra wing vein (spurious vein). Hoverflies are often overlooked as a group despite playing an indispensable role as “bio-control agents of plant pests, recyclers of dead plant and animal matter, pests of some ornamental plants, and pollinators”(1). Larvae can be found in a wide range of habitats and have a varied diet, though most are predators of other arthropods including aphids(1,2). \n" +
                             "\n" +
-                            ". A vast majority of Hoverflies mimic the patterns and behaviors of bees and wasps. This\n" +
-                            "is known as batesian mimicry. The untrained eye can sometimes mistake them for a bee or wasp, though\n" +
-                            "Hoverflies can be distinguished from Hymenoptera (bees and wasps) by their single pair of wings, large\n" +
-                            "eyes, short antennae, and extra wing vein (spurious vein). Hoverflies are often overlooked as a group\n" +
-                            "despite playing an indispensable role as “bio-control agents of plant pests, recyclers of dead plant and\n" +
-                            "animal matter, pests of some ornamental plants, and pollinators”1\n" +
+                            "Most Hoverflies lay their eggs near a food source (ex: an aphid infested plant) and are not typically associated with insect hotels. They are still a beautiful and welcomed backyard inhabitant.\n" +
                             "\n" +
-                            ". Larvae can be found in a wide range of\n" +
-                            "habitats and have a varied diet, though most are predators of other arthropods including aphids1,2\n" +
-                            ".\n" +
-                            "Most Hoverflies lay their eggs near a food source (ex: an aphid infested plant) and are not typically\n" +
-                            "associated with insect hotels. They are still a beautiful and welcomed backyard inhabitant.\n" +
-                            "The range of the Hoverfly family extends throughout North America and are found worldwide2\n" +
-                            ".\n" +
+                            "The range of the Hoverfly family extends throughout North America and are found worldwide(2).\n" +
                             "\n" +
-                            "SEASONALITY: April to November3\n" +
-                            "EASTERN US AND CANADA: approximately 8002\n" +
-                            "\n" +
-                            "Syrphidae\n" +
-                            "1mm to\n" +
-                            "35mm long\n" +
+                            "SEASONALITY: April to November(3)\n" +
+                            "EASTERN US AND CANADA: approximately 800(2)\n" +
                             "\n" +
                             "Sources:\n" +
-                            "1Welcome to Syrphidae Community Website. (n.d.). Retrieved February 23, 2020 from\n" +
-                            "http://syrphidae.myspecies.info/\n" +
-                            "2Bartlett, T., Cotinis, Moisset, B., Wisch, H., Bbarnd, Schusteff, A., Belov, V., Byers, K., & Moran, K. (2004).\n" +
-                            "Family Syrphidae – Syrphid Flies. Retrieved February 23, 2020 from https://bugguide.net/node/view/196\n" +
-                            "3Hover Flies (Family Syrphidae). (n.d.). Retrieved February 24, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/49995-Syrphidae\n" +
-                            "4Kautz, A. & Gardiner, M. M. (2016). Ohio's Natural Enemies: Hover Flies. Retrieved February 24, 2020\n" +
-                            "from https://ohioline.osu.edu/factsheet/ent-73",
+                            "(1)Welcome to Syrphidae Community Website. (n.d.). Retrieved February 23, 2020 from  http://syrphidae.myspecies.info/\n" +
+                            "(2)Bartlett, T., Cotinis, Moisset, B., Wisch, H., Bbarnd, Schusteff, A., Belov, V., Byers, K., & Moran, K. (2004). Family Syrphidae – Syrphid Flies. Retrieved February 23, 2020 from https://bugguide.net/node/view/196\n" +
+                            "(3)Hover Flies (Family Syrphidae). (n.d.). Retrieved February 24, 2020 from https://www.inaturalist.org/taxa/49995-Syrphidae\n" +
+                            "(4)Kautz, A. & Gardiner, M. M. (2016). Ohio's Natural Enemies: Hover Flies. Retrieved February 24, 2020 from https://ohioline.osu.edu/factsheet/ent-73",
                     "• Behavior of “hovering” around flowers\n" +
                             "• Large eyes; short antennae\n" +
                             "• One pair of wings\n" +
@@ -1751,38 +1060,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Buckwheat, Fagopyrum esculentum"),
         Insect("Jumping Spiders", "(Family: Salticidae)",
             R.drawable.jumping_spiders_1,R.drawable.jumping_spiders_2,R.drawable.jumping_spiders_3,R.drawable.jumping_spiders_4,
-                    "Despite their tiny size, Jumping Spiders have the best vision of any spider, making them excellent\n" +
-                            "hunters1\n" +
-                            ". Their name comes from their agile, sudden jumps (typically seen when hunting prey). This\n" +
-                            "family of spiders contains over 6,000 species, many of which boast incredibly vibrant colors and striking\n" +
-                            "patterns. Typical colors are black, brown, and gray, but males of certain species have patches or patterns\n" +
-                            "with red, orange, yellow, metallic green and blue, copper, silver, gold and others1\n" +
+                    "Despite their tiny size, Jumping Spiders have the best vision of any spider, making them excellent hunters(1). Their name comes from their agile, sudden jumps (typically seen when hunting prey). This family of spiders contains over 6,000 species, many of which boast incredibly vibrant colors and striking patterns. Typical colors are black, brown, and gray, but males of certain species have patches or patterns with red, orange, yellow, metallic green and blue, copper, silver, gold and others(1). The mating rituals of these spiders are unique, often involving the male “dancing” and showing off his colors for the female. \n" +
                             "\n" +
-                            ". The mating rituals of\n" +
-                            "these spiders are unique, often involving the male “dancing” and showing off his colors for the female.\n" +
-                            "Jumping Spiders are not aggressive towards people and will usually stay in place while “watching” an\n" +
-                            "approaching person. Jumping Spiders are hunter-stalkers that use their incredible vision to slowly sneak\n" +
-                            "up on their prey before pouncing – like a cat – up to several times their body-length onto the target1\n" +
-                            ".\n" +
-                            "They do not spin webs but may make tiny shelters out of silk or draglines to prevent a fall during a jump1\n" +
-                            ".\n" +
-                            "Jumping Spiders may make use of insect hotels as a shelter or use it as a hunting ground for small insects.\n" +
-                            "They typically have a one-year life cycle; some species have an indistinct cycle, meaning all life-stages can\n" +
-                            "be found at the same time throughout the year1\n" +
-                            ".\n" +
+                            "Jumping Spiders are not aggressive towards people and will usually stay in place while “watching” an approaching person. Jumping Spiders are hunter-stalkers that use their incredible vision to slowly sneak up on their prey before pouncing – like a cat – up to several times their body-length onto the target(1). They do not spin webs but may make tiny shelters out of silk or draglines to prevent a fall during a jump(1). \n" +
                             "\n" +
-                            "The range of the Jumping Spider family is extensive. They have been recorded on every continent except\n" +
-                            "Antarctica and are common throughout the United States2\n" +
-                            ".\n" +
+                            "Jumping Spiders may make use of insect hotels as a shelter or use it as a hunting ground for small insects. They typically have a one-year life cycle; some species have an indistinct cycle, meaning all life-stages can be found at the same time throughout the year(1). \n" +
                             "\n" +
-                            "SEASONALITY: Year-long1\n" +
+                            "The range of the Jumping Spider family is extensive. They have been recorded on every continent except Antarctica and are common throughout the United States(2).\n" +
+                            " \n" +
+                            "SEASONALITY: Year-long(1)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "Sources:\n" +
-                            "1Cranshaw, W. (n.d.). Jumping Spider. Retrieved February 20, 2020 from\n" +
-                            "https://wiki.bugwood.org/HPIPM:Jumping_Spider\n" +
-                            "2\n" +
-                            "Jumping Spiders (Family Salticidae). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/48139-Salticidae",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Cranshaw, W. (n.d.). Jumping Spider. Retrieved February 20, 2020 from https://wiki.bugwood.org/HPIPM:Jumping_Spider\n" +
+                            "(2)Jumping Spiders (Family Salticidae). (n.d.). Retrieved February 20, 2020 from  https://www.inaturalist.org/taxa/48139-Salticidae\n",
                     "• Large front eyes\n" +
                             "• Small, compact shape\n" +
                             "• Agile movements and jumps",
@@ -1790,38 +1081,21 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "there are prey items around."),
         Insect("Lady Bugs", "(Family: Coccinellidae)",
             R.drawable.lady_bug_1,R.drawable.lady_bug_2,R.drawable.lady_bug_3,R.drawable.lady_bug_4,
-                    "Ladybugs are some of the most well-known insects on the planet. They are valued for their role in" +
-                            "controlling aphid and scale insect populations1\n" +
+                    "Ladybugs are some of the most well-known insects on the planet. They are valued for their role in controlling aphid and scale insect populations(1). Some cultures consider them good luck and signs of a good harvest. \n" +
                             "\n" +
-                            ". Some cultures consider them good luck and signs of a\n" +
+                            "Ladybugs come in many different sizes, shapes and colors(1). The most well-known pattern is red with black spots, but there is a wide variety of patterns from checkered, striped, banded, radial, metallic and more(1). Their body shapes also vary from being compact to oval to elongate. \n" +
                             "\n" +
-                            "good harvest.\n" +
-                            "Ladybugs come in many different sizes, shapes and colors1\n" +
+                            "While most ladybugs are predatory, some will eat plants, fungi, and even pollen(2). Most Ladybugs are beneficial to have in the garden, but some of the plant-eating species can be harmful. \n" +
                             "\n" +
-                            ". The most well-known pattern is red with black\n" +
-                            "spots, but there is a wide variety of patterns from checkered, striped, banded, radial, metallic and more1\n" +
-                            ".\n" +
+                            "The range of Ladybugs extends around the globe and throughout the United States(3).\n" +
                             "\n" +
-                            "Their body shapes also vary from being compact to oval to elongate.\n" +
-                            "While most ladybugs are predatory, some will eat plants, fungi, and even pollen2\n" +
+                            "SEASONALITY: April to November(3)\n" +
+                            "EASTERN US AND CANADA: > 480 species(2)\n" +
                             "\n" +
-                            ". Most Ladybugs are\n" +
-                            "\n" +
-                            "beneficial to have in the garden, but some of the plant-eating species can be harmful.\n" +
-                            "The range of Ladybugs extends around the globe and throughout the United States3\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: April to November3\n" +
-                            "EASTERN US AND CANADA: > 480 species2\n" +
-                            "Sources:\n" +
-                            "1Giorgi, A. & Vandenberg, N. (2009). Coccinellidae. Retrieved February 27, 2020 from\n" +
-                            "http://tolweb.org/Coccinellidae\n" +
-                            "2Bartlett, T., Cotinis, Nendick-Mason, H., Moisset, B., McLeod, R., Harpootlian, P., Elliott, L., Entz, C.,\n" +
-                            "Quinn, M., Moyer, T., ceiseman, Haines, R. D., Belov, V., Parker, H. S., Parker, A. & Hedlund, T. (2004).\n" +
-                            "Family Coccinellidae – Lady Beetles. Retrieved February 27, 2020 from\n" +
-                            "https://bugguide.net/node/view/179\n" +
-                            "Lady Beetles (Family Coccinellidae). (n.d.). Retrieved February 27, 2020 from Lady Beetles Family\n" +
-                            "Coccinellidae",
+                            "Sources: \n" +
+                            "(1)Giorgi, A. & Vandenberg, N. (2009). Coccinellidae. Retrieved February 27, 2020 from http://tolweb.org/Coccinellidae\n" +
+                            "(2)Bartlett, T., Cotinis, Nendick-Mason, H., Moisset, B., McLeod, R., Harpootlian, P., Elliott, L., Entz, C., Quinn, M., Moyer, T., ceiseman, Haines, R. D., Belov, V., Parker, H. S., Parker, A. & Hedlund, T. (2004). Family Coccinellidae – Lady Beetles. Retrieved February 27, 2020 from  https://bugguide.net/node/view/179\n" +
+                            "(3)Lady Beetles (Family Coccinellidae). (n.d.). Retrieved February 27, 2020 from Lady Beetles Family Coccinellidae",
                     "Key Characteristics\n" +
                             "• Round or dome-shaped body\n" +
                             "• antennae shore\n" +
@@ -1830,24 +1104,16 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Ladybugs are predacious insects and will be found on flowers that attract their prey items, namely aphids and scaly insects."),
         Insect("Leafcutter Bees", "(Megachile spp.)",
             R.drawable.leafcutter_bees_1,R.drawable.leafcutter_bees_2,R.drawable.leafcutter_bees_3,R.drawable.leafcutter_bees_4,
-            "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests.\n" +
-                    "They are all solitary species that nest both above and below the ground in cavities. Above ground nesting\n" +
-                    "sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber\n" +
-                    "wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the\n" +
-                    "opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa.\n" +
-                    "Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a\n" +
-                    "single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from\n" +
-                    "plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per\n" +
-                    "chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch,\n" +
-                    "consume the food bundle, and overwinter as mature larva before pupating in spring.\n" +
-                    "Leafcutter bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer. They\n" +
-                    "immediately seek a mate and search for nesting sites to prepare the next generation, which will\n" +
-                    "overwinter and emerge in the next season.\n" +
+            "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests. They are all solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa. Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch, consume the food bundle, and overwinter as mature larva before pupating in spring.\n" +
+                    "\n" +
+                    "Leafcutter bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer. They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season.\n" +
+                    "\n" +
                     "SEASONALITY: Early May to October\n" +
-                    "EASTERN US AND CANADA: 44 species\n" +
+                    "EASTERN US AND CANADA: 44 species \n" +
                     "CONSERVATION STATUS: Unknown\n" +
-                    "Sources: Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                    "Pollination Press LLC.",
+                    "\n" +
+                    "Sources: \n" +
+                    "Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.",
             "• Females have rows of pale scopa beneath abdomen\n" +
                     "• Grey or black bees with pale bands on abdomen\n" +
                     "• Males with long hairs on forelegs",
@@ -1884,35 +1150,17 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Aster, Symphyotrichum spp."),
         Insect("Maine Blueberry Bee", "(Osmia atriventris)",
             R.drawable.maine_blueberry_bee_1,R.drawable.maine_blueberry_bee_2,R.drawable.maine_blueberry_bee_3,R.drawable.maine_blueberry_bee_4,
-                    "The Maine Blueberry Bee is a beautiful metallic blue bee about the size of a house fly. They are smaller\n" +
-                            "and less hairy than their cousin, the Blue Orchard Mason Bee. None-the-less, the Maine Blueberry Bee is\n" +
-                            "O. atriventris\n" +
-                            "7mm to\n" +
-                            "8mm long\n" +
+                    "The Maine Blueberry Bee is a beautiful metallic blue bee about the size of a house fly. They are smaller and less hairy than their cousin, the Blue Orchard Mason Bee. None-the-less, the Maine Blueberry Bee is an important pollinator of blueberries and other fruiting trees, and their life cycle is closely tied to the blueberry bloom(1). They are known pollinators of high- and low-bush blueberries. These bees nest in pre-existing cavities in wood, reeds, insect hotels, paper straws, and bamboo. \n" +
                             "\n" +
-                            "an important pollinator of blueberries and other fruiting trees, and their life cycle is closely tied to the\n" +
-                            "blueberry bloom1\n" +
-                            "\n" +
-                            ". They are known pollinators of high- and low-bush blueberries. These bees nest in pre-\n" +
-                            "existing cavities in wood, reeds, insect hotels, paper straws, and bamboo.\n" +
-                            "\n" +
-                            "The range of the Maine Blueberry Bee extends throughout the Midwest and Eastern U.S. and extends\n" +
-                            "northward into Canada, where it has been recorded as far west as British Columbia2\n" +
-                            ".\n" +
+                            "The range of the Maine Blueberry Bee extends throughout the Midwest and Eastern U.S. and extends northward into Canada, where it has been recorded as far west as British Columbia(2). \n" +
                             "\n" +
                             "SEASONALITY: Unknown\n" +
                             "CONSERVATION STATUS: Unknown\n" +
                             "STATUS: Native\n" +
-                            "Sources: 1Drummond, F. & Stubbs, C. (2003, June). 630 – Wild Bee Conservation for Wild Blueberry Fields.\n" +
-                            "UMaine Extension No. 2111. Retrieved January 17, 2020, from\n" +
                             "\n" +
-                            "https://extension.umaine.edu/blueberries/factsheets/bees/630-wild-bee-conservation-for-wild-\n" +
-                            "blueberry-fields/\n" +
-                            "\n" +
-                            "2Osmia atriventris. (2009). Retrieved January 17, 2020, from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+atriventris\n" +
-                            "3Osmia atriventris, Cresson, 1864. (n.d.). Retrieved January 17, 2020, from\n" +
-                            "https://www.discoverlife.org/20/q?search=Osmia+atriventris",
+                            "Sources: \n" +
+                            "(1)Drummond, F. & Stubbs, C. (2003, June). 630 – Wild Bee Conservation for Wild Blueberry Fields. UMaine Extension No. 2111. Retrieved January 17, 2020, from https://extension.umaine.edu/blueberries/factsheets/bees/630-wild-bee-conservation-for-wild-blueberry-fields/ \n" +
+                            "(2)Osmia atriventris. (2009). Retrieved January 17, 2020, from http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+atriventris",
                     "• Dark metallic blue, sometimes with green tint\n" +
                             "• Mostly black hair: pale hairs are interspersed (very discreet\n" +
                             "on abdomen)\n" +
@@ -1963,53 +1211,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Viburnum, Viburnum spp."),
         Insect("Margined Calligrapher", "(Toxomerus marginatus)",
             R.drawable.margined_calligrapher_1,R.drawable.margined_calligrapher_2,R.drawable.margined_calligrapher_3,R.drawable.margined_calligrapher_4,
-                    "The Margined Calligrapher is among one of the most common hover flies (family: Syrphid) found in the\n" +
-                            "United States. They feed on nectar and pollen and are found in diverse habitats ranging from roadsides to\n" +
-                            "woodland edges1\n" +
+                    "The Margined Calligrapher is among one of the most common hover flies (family: Syrphid) found in the United States. They feed on nectar and pollen and are found in diverse habitats ranging from roadsides to woodland edges(1). While typically not found in insect hotels, the slug-like larvae of the Margined Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larva can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                             "\n" +
-                            ". While typically not found in insect hotels, the slug-like larvae of the Margined\n" +
-                            "Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids,\n" +
-                            "T. marginatus\n" +
-                            "5.5mm\n" +
-                            "average\n" +
+                            "In optimal environmental conditions, adult Margined Calligrapher females will lay their eggs on plants infested with prey(2). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating the resident pests(2). Unless overwintering, the larva will pupate and emerge 1 or 2 weeks later(2). There can be several generations each year depending on environmental conditions(2).\n" +
                             "\n" +
-                            "thrips, and small caterpillars1\n" +
+                            "Margined Calligraphers have similar coloration to some bee and wasp species. This similarity in appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing organism to avoid predation. \n" +
                             "\n" +
-                            ". An abundance of syrphid larva can reduce aphid populations by 70 to\n" +
+                            "The range of the Margined Calligrapher extends from southern Canada, throughout the U.S. (including Hawaii), and down into parts of Mexico(3).\n" +
                             "\n" +
-                            "100%1\n" +
-                            ", making them a welcomed occupant in gardens and agricultural fields.\n" +
-                            "In optimal environmental conditions, adult Margined Calligrapher females will lay their eggs on plants\n" +
-                            "infested with prey2\n" +
-                            "\n" +
-                            ". The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all\n" +
-                            "\n" +
-                            "the while eating the resident pests2\n" +
-                            "\n" +
-                            ". Unless overwintering, the larva will pupate and emerge 1 or 2 weeks\n" +
-                            "\n" +
-                            "later2\n" +
-                            ". There can be several generations each year depending on environmental conditions2\n" +
-                            ".\n" +
-                            "Margined Calligraphers have similar coloration to some bee and wasp species. This similarity in\n" +
-                            "\n" +
-                            "appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-\n" +
-                            "appetizing organism to avoid predation.\n" +
-                            "\n" +
-                            "The range of the Margined Calligrapher extends from southern Canada, throughout the U.S. (including\n" +
-                            "Hawaii), and down into parts of Mexico3\n" +
-                            ".\n" +
-                            "SEASONALITY: March to November\n" +
-                            "3\n" +
+                            "SEASONALITY: March to November(3)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
                             "STATUS: Native\n" +
-                            "Sources: 1\n" +
-                            "Iowa State University. (n.d.) Species Toxomerus marginatus. Retrieved January 18, 2020 from\n" +
-                            "https://bugguide.net/node/view/8221\n" +
-                            "2Gu, A. (n.d.). Syrphid Flies. Retrieved January 18, 2020 from\n" +
-                            "https://biocontrol.entomology.cornell.edu/predators/syrphids.php\n" +
-                            "3Margined Calligrapher (Toxomerus marginatus). (n.d.). Retrieved January 18, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/126889-Toxomerus-marginatus",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Iowa State University. (n.d.) Species Toxomerus marginatus. Retrieved January 18, 2020 from https://bugguide.net/node/view/8221\n" +
+                            "(2)Gu, A. (n.d.). Syrphid Flies. Retrieved January 18, 2020 from https://biocontrol.entomology.cornell.edu/predators/syrphids.php\n" +
+                            "(3)Margined Calligrapher (Toxomerus marginatus). (n.d.). Retrieved January 18, 2020 from https://www.inaturalist.org/taxa/126889-Toxomerus-marginatus",
                     "• Distinct black and yellow pattern\n" +
                             "• consistent yellow margin (middle-line) down abdomen\n" +
                             "• Large reddish-brown eyes\n" +
@@ -2019,25 +1236,14 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             ". Adults visit a wide variety of flowers."),
         Insect("Mason Bees", "(Osmia spp.)",
             R.drawable.mason_bees_1,R.drawable.mason_bees_2,R.drawable.mason_bees_3,R.drawable.mason_bees_4,
-                "Mason bees can play a significant role in pollinating orchards in the Great Lakes and Northeast. These\n" +
-                        "bees nest in cavities both above and below ground. When nesting above ground, they search for hollow\n" +
-                        "plant stems, holes in standing dead trees, abandoned mud dauber wasp nests, and snail shells (O.\n" +
+                "Mason bees can play a significant role in pollinating orchards in the Great Lakes and Northeast. These bees nest in cavities both above and below ground. When nesting above ground, they search for hollow plant stems, holes in standing dead trees, abandoned mud dauber wasp nests, and snail shells (O. conjuncta). After finding a suitable nesting site, a female will build multiple chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food and then seals off the chamber with chewed plants parts or mud (O. lignaria). She repeats this process three to five times before finally capping off the nest with mud or chewed leaves. The larvae will hatch, consume the food bundle, and normally overwinter as mature larva before pupating in spring and emerging as an adult bee.\n" +
                         "\n" +
-                        "Osmia spp.\n" +
-                        "5mm to\n" +
-                        "17mm long\n" +
-                        "\n" +
-                        "conjuncta). After finding a suitable nesting site, a female will build multiple chambers starting with a cell\n" +
-                        "furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for\n" +
-                        "food and then seals off the chamber with chewed plants parts or mud (O. lignaria). She repeats this\n" +
-                        "process three to five times before finally capping off the nest with mud or chewed leaves. The larvae will\n" +
-                        "hatch, consume the food bundle, and normally overwinter as mature larva before pupating in spring and\n" +
-                        "emerging as an adult bee.\n" +
                         "SEASONALITY: Late March to September\n" +
-                        "EASTERN US AND CANADA: 30 species\n" +
+                        "EASTERN US AND CANADA: 30 species \n" +
                         "CONSERVATION STATUS: Unknown\n" +
-                        "Sources: Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                        "Pollination Press LLC.",
+                        "\n" +
+                        "Sources: \n" +
+                        "Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.",
                 "• Dark blue or green with metallic sheen\n" +
                         "• Moderately hairy head, thorax, and abdomen\n" +
                         "• Females collect pollen on hairs beneath the abdomen (scopae)",
@@ -2057,41 +1263,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Viburnum, Viburnum spp."),
         Insect("Metallic Bluish Green Cuckoo Wasp", "(Chrysis angolensis)",
             R.drawable.metallic_bluish_green_cuckoo_wasp_1,R.drawable.metallic_bluish_green_cuckoo_wasp_2,R.drawable.metallic_bluish_green_cuckoo_wasp_3,R.drawable.metallic_bluish_green_cuckoo_wasp_4,
-                "The Metallic Bluish Green Cuckoo Wasp can be mistaken for the Pure Green Sweat Bee (A. pura).\n" +
-                        "However, the four teeth at the end of its abdomen and the ability to curl into a ball is what distinguishes\n" +
-                        "the Metallic Bluish Green Cuckoo Wasp from A. pura.\n" +
-                        "The Metallic Bluish Green Cuckoo Wasp parasitizes the larva of some bee and wasp species, including\n" +
-                        "those in the Megachilidae (Leafcutter bee) family1\n" +
+                "The Metallic Bluish Green Cuckoo Wasp can be mistaken for the Pure Green Sweat Bee (A. pura). However, the four teeth at the end of its abdomen and the ability to curl into a ball is what distinguishes the Metallic Bluish Green Cuckoo Wasp from A. pura. \n" +
                         "\n" +
-                        ". An adult female will search for the nest of another bee\n" +
-                        "or wasp and lay its own eggs inside. When the egg hatches into a larva, it will eat the resident bee or\n" +
-                        "wasp larva and the remaining pollen/nectar reserves. Adult Metallic Bluish Green Cuckoo Wasps feed on\n" +
-                        "nectar from a variety of plants2\n" +
-                        ".\n" +
+                        "This wasp parasitizes the larva of other bee and wasp species, including those in the Megachilidae (Leafcutter bee) family(1). An adult female will search for the nest of another bee or wasp and lay its own eggs inside. When the egg hatches into a larva, it will eat the resident bee or wasp larva and the remaining pollen/nectar reserves. Adult Metallic Bluish Green Cuckoo Wasps feed on nectar from a variety of plants(2).\n" +
                         "\n" +
-                        "The Metallic Bluish Green Cuckoo Wasp was introduced to the United States sometime during World War\n" +
-                        "II, possibly via parasitized mud nests in machinery or returning aircraft3\n" +
+                        "The Metallic Bluish Green Cuckoo Wasp was introduced to the United States sometime during World War II, possibly via parasitized mud nests in machinery or returning aircraft(3). Its range now extends throughout the United States(4).\n" +
                         "\n" +
-                        ". Its range now extends\n" +
-                        "\n" +
-                        "throughout the United States4\n" +
-                        ".\n" +
-                        "SEASONALITY: April to November3\n" +
+                        "SEASONALITY: April to November(3)\n" +
                         "STATUS: Introduced\n" +
-                        "Sources:\n" +
-                        "1Cotinis, Moisset, B., Schneider, K., and Belov, V. (2004). Genus Chrysis. Retrieved February 8, 2020 from\n" +
-                        "https://bugguide.net/node/view/8067\n" +
                         "\n" +
-                        "A. angolensis\n" +
-                        "7mm to\n" +
-                        "11mm long\n" +
-                        "\n" +
-                        "2Cuckoo Wasp (Chrysis spp.). (n.d.). Retrieved February 8, 2020 from\n" +
-                        "https://www.insectidentification.org/insect-description.asp?identification=Cuckoo-Wasp\n" +
-                        "3Chrysis angolensis Radoszkowski, 1881. (n.d.). Retrieved February 8, 2020 from\n" +
-                        "https://www.discoverlife.org/mp/20q?search=Chrysis+angolensis&guide=Chrysididae&mobile=1\n" +
-                        "4Chrysis angolensis. (n.d.) Retrieved February 8, 2020 from https://www.inaturalist.org/taxa/325772-\n" +
-                        "Chrysis-angolensis",
+                        "Sources: \n" +
+                        "(1)Cotinis, Moisset, B., Schneider, K., and Belov, V. (2004). Genus Chrysis. Retrieved February 8, 2020 from https://bugguide.net/node/view/8067\n" +
+                        "(2)Cuckoo Wasp (Chrysis spp.). (n.d.). Retrieved February 8, 2020 from https://www.insectidentification.org/insect-description.asp?identification=Cuckoo-Wasp\n" +
+                        "(3)Chrysis angolensis Radoszkowski, 1881. (n.d.). Retrieved February 8, 2020 from https://www.discoverlife.org/mp/20q?search=Chrysis+angolensis&guide=Chrysididae&mobile=1\n" +
+                        "(4)Chrysis angolensis. (n.d.) Retrieved February 8, 2020 from https://www.inaturalist.org/taxa/325772-Chrysis-angolensis\n",
                 "• Bright dimpled, green body; blue square on thorax\n" +
                         "• Blue terminal segment\n" +
                         "• Dark brown/black wings\n" +
@@ -2099,41 +1284,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                 "The Metallic Bluish Green Cuckoo Wasp can be found in many habitats visiting the flowers there."),
         Insect("Mexican Grass-Carrying Wasp", "(Chrysis angolensis)",
             R.drawable.mexican_grass_carrying_wasp_1,R.drawable.mexican_grass_carrying_wasp_2,R.drawable.mexican_grass_carrying_wasp_3,R.drawable.mexican_grass_carrying_wasp_4,
-                    "The Mexican Grass-carrying Wasp is a solitary species that spends its days gathering nectar from flowers\n" +
-                            "and hunting insects (usually tree crickets)1\n" +
+                    "The Mexican Grass-carrying Wasp is a solitary species that spends its days gathering nectar from flowers and hunting insects (usually tree crickets)(1). Solitary Wasps, including the Grass-carrying Wasp, are not aggressive as they do not defend their nests(1). The Grass-Carrying Wasp nests in hollowed tubes or cavities in wood. Their nests are easy to spot because of the long blades of grass used to cap the cavity-entrance.\n" +
                             "\n" +
-                            ". Solitary Wasps, including the Grass-carrying Wasp, are not\n" +
+                            "Before laying her eggs, the female first stocks the nest with paralyzed crickets that the larvae will eat once they hatch(1). After carrying enough back to the nest, the female will either make each cell individually with an egg, a grasshopper, and a grass wall, or creates a “communal area” where the larvae will feed and grow together(1).\n" +
                             "\n" +
-                            "aggressive as they do not defend their nests1\n" +
+                            "The range of the Mexican Grass-carrying Wasp extends throughout the United States though less observations have been reported throughout the interior states(2).\n" +
                             "\n" +
-                            ". The Grass-Carrying Wasp nests in hollowed tubes or\n" +
-                            "\n" +
-                            "cavities in wood. Their nests are easy to spot because of the long blades of grass used to cap the cavity-\n" +
-                            "entrance.\n" +
-                            "\n" +
-                            "Before laying her eggs, the female first stocks the nest with paralyzed crickets that the larvae will eat once\n" +
-                            "they hatch1\n" +
-                            "\n" +
-                            ". After carrying enough back to the nest, the female will either make each cell individually with\n" +
-                            "an egg, a grasshopper, and a grass wall, or creates a “communal area” where the larvae will feed and\n" +
-                            "grow together1\n" +
-                            ".\n" +
-                            "\n" +
-                            "The range of the Mexican Grass-carrying Wasp extends throughout the United States though less\n" +
-                            "observations have been reported throughout the interior states2\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: April to September2\n" +
+                            "SEASONALITY: April to September(2)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "STATUS: Native2\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2016). Meet the Grass-Carrying Wasp, a Gentle Pollinator of Summer Flowers. Retrieved 11\n" +
+                            "STATUS: Native(2)\n" +
                             "\n" +
-                            "February 2020 from https://www.houzz.com/magazine/meet-the-grass-carrying-wasp-a-gentle-\n" +
-                            "pollinator-of-summer-flowers-stsetivw-vs~58817932\n" +
-                            "\n" +
-                            "2Mexican Grass-carrying Wasp (Isodontia mexicana). (n.d.) Retrieved 12 February, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/203340-Isodontia-mexicana",
+                            "Sources: \n" +
+                            "(1)Holm, H. (2016). Meet the Grass-Carrying Wasp, a Gentle Pollinator of Summer Flowers. Retrieved 11 February 2020 from https://www.houzz.com/magazine/meet-the-grass-carrying-wasp-a-gentle-pollinator-of-summer-flowers-stsetivw-vs~58817932\n" +
+                            "(2)Mexican Grass-carrying Wasp (Isodontia mexicana). (n.d.) Retrieved 12 February, 2020 from https://www.inaturalist.org/taxa/203340-Isodontia-mexicana",
                     "• Black body with pale hair\n" +
                             "• Narrow waist between thorax and abdomen\n" +
                             "• Often a brown spot between waist and first\n" +
@@ -2146,54 +1309,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Goldenrod, Solidago spp."),
         Insect("Millipedes", "(Chrysis angolensis)",
             R.drawable.millipedes_1,R.drawable.millipedes_2,R.drawable.millipedes_3,R.drawable.millipedes_4,
-                    "Millipedes are multi-segmented and come in many sizes. They can be round or flat depending on the\n" +
-                            "species. The smaller species remain around a quarter of an inch while the largest species grow up to 15\n" +
-                            "inches long1\n" +
+                    "Millipedes are multi-segmented and come in many sizes. They can be round or flat depending on the species. The smaller species remain around a quarter of an inch while the largest species grow up to 15 inches long(1). In North America, the longest species (Paeromopus paniculus) is a little over 6 inches(2). Millipedes have two leg-pairs for each body segment (except for the first three) as opposed to centipedes which only have one leg-pair per segment(3). Contrary to their name, Millipedes do not have 1,000 legs; at most, they may have up to 200 leg pairs(1). When they walk, their legs move in a wave-like motion. \n" +
                             "\n" +
-                            ". In North America, the longest species (Paeromopus paniculus) is a little over 6 inches2\n" +
-                            ".\n" +
-                            "Millipedes have two leg-pairs for each body segment (except for the first three) as opposed to centipedes\n" +
-                            "which only have one leg-pair per segment3\n" +
+                            "Millipedes eat decaying vegetation, but a few species are known to be occasional carnivores(2). Millipedes are valuable detritivores (organisms that eat dead or decaying organic material) because they cycle nutrients back into the environment faster than plants and animals do naturally(1). They are also an important food source for other animals such as birds and toads. Millipedes can dry out easily and therefore prefer moist habitats(1). This may lead them to be more active at night when it is cooler. \n" +
                             "\n" +
-                            ". Contrary to their name, Millipedes do not have 1,000 legs; at\n" +
+                            "While they are not known users of insect hotels, you may find a millipede hanging around nearby. They are more likely to be on the ground since that is where most of their food will be. Having rocks or a pile of wood provides perfect habitat for these important recyclers.\n" +
                             "\n" +
-                            "most, they may have up to 200 leg pairs1\n" +
+                            "Millipedes are found around the globe and throughout the United States(4). Some species can live up to several years(2).\n" +
                             "\n" +
-                            ". When they walk, their legs move in a wave-like motion.\n" +
-                            "Millipedes eat decaying vegetation, but a few species are known to be occasional carnivores2\n" +
-                            "\n" +
-                            ". Millipedes\n" +
-                            "are valuable detritivores (organisms that eat dead or decaying organic material) because they cycle\n" +
-                            "nutrients back into the environment faster than plants and animals do naturally1\n" +
-                            "\n" +
-                            ". They are also an\n" +
-                            "important food source for other animals such as birds and toads. Millipedes can dry out easily and\n" +
-                            "therefore prefer moist habitats1\n" +
-                            "\n" +
-                            ". This may lead them to be more active at night when it is cooler.\n" +
-                            "While they are not known users of insect hotels, you may find a millipede hanging around nearby. They\n" +
-                            "are more likely to be on the ground since that is where most of their food will be. Having rocks or a pile of\n" +
-                            "wood provides perfect habitat for these important recyclers.\n" +
-                            "Millipedes are found around the globe and throughout the United States4\n" +
-                            "\n" +
-                            ". Some species can live up to\n" +
-                            "\n" +
-                            "several years2\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: March to October4\n" +
+                            "SEASONALITY: March to October(4)\n" +
                             "CONSERVATION STATUS: Unknown\n" +
-                            "Sources:\n" +
-                            "1\n" +
-                            "Interesting Facts about Millipedes. (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.terminix.com/blog/bug-facts/interesting-facts-about-millipedes/\n" +
-                            "2Bartlett, T., Moisset, B., McLeod, R., Elliott, L., Wirth, C. C., Entz, C., Quinn, M., Belov, V., KenW, Hennen,\n" +
-                            "D., & biosam. (2004). Class Diplopoda – Millipedes. Retrieved February 20, 2020 from\n" +
-                            "https://bugguide.net/node/view/37\n" +
-                            "3Millipede (Eurymerodesmus spp.). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.insectidentification.org/insect-description.asp?identification=Millipede\n" +
-                            "4Millipedes (Class Diplopoda). (n.d.). Retrieved February 20, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/47735-Diplopoda",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Interesting Facts about Millipedes. (n.d.). Retrieved February 20, 2020 from https://www.terminix.com/blog/bug-facts/interesting-facts-about-millipedes/\n" +
+                            "(2)Bartlett, T., Moisset, B., McLeod, R., Elliott, L., Wirth, C. C., Entz, C., Quinn, M., Belov, V., KenW, Hennen, D., & biosam. (2004). Class Diplopoda – Millipedes. Retrieved February 20, 2020 from https://bugguide.net/node/view/37\n" +
+                            "(3)Millipede (Eurymerodesmus spp.). (n.d.). Retrieved February 20, 2020 from https://www.insectidentification.org/insect-description.asp?identification=Millipede\n" +
+                            "(4)Millipedes (Class Diplopoda). (n.d.). Retrieved February 20, 2020 from https://www.inaturalist.org/taxa/47735-Diplopoda\n",
                     "• Armored body\n" +
                             "• Worm-like appearance; many body segments (25 – 100+)\n" +
                             "• Two leg-pairs per body segment",
@@ -2201,38 +1332,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "litter, etc.) with a higher activity at night."),
         Insect("Modest Masked Bee", "(Hylaeus modestus)",
             R.drawable.modest_masked_bee_1,R.drawable.modest_masked_bee_2,R.drawable.modest_masked_bee_3,R.drawable.modest_masked_bee_4,
-                    "The Modest Masked Bee is a little different from other bees. The females are completely hairless; unlike\n" +
-                            "their hairy cousins, these bees carry pollen internally inside stomach-like organs1\n" +
+                    "The Modest Masked Bee is a little different from other bees. The females are completely hairless; unlike their hairy cousins, these bees carry pollen internally inside stomach-like organs(1). To make a nest, the females will find a pre-existing cavity (typically in wood) or pithy (a type of soft tissue in vascular plants) plant stem(1). She’ll then build chambers for each egg using a combination of saliva and pith(1). After prepping the chamber, she’ll gather pollen and return to the prepared nest, regurgitate the pollen, and lay an egg on top of it before capping off the chamber(1). She’ll either repeat this process for the next chamber or close off the nest by capping the entrance with more pith and saliva.\n" +
                             "\n" +
-                            ". To make a nest, the\n" +
-                            "females will find a pre-existing cavity (typically in wood) or pithy (a type of soft tissue in vascular plants)\n" +
-                            "plant stem1\n" +
+                            "The range of the Modest Masked Bee extends throughout the eastern United States(2).\n" +
                             "\n" +
-                            ". She’ll then build chambers for each egg using a combination of saliva and pith1\n" +
-                            ". After\n" +
-                            "prepping the chamber, she’ll gather pollen and return to the prepared nest, regurgitate the pollen, and\n" +
-                            "lay an egg on top of it before capping off the chamber1\n" +
-                            "\n" +
-                            ". She’ll either repeat this process for the next\n" +
-                            "\n" +
-                            "chamber or close off the nest by capping the entrance with more pith and saliva.\n" +
-                            "The range of the Modest Masked Bee extends throughout the eastern United States2\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: May to September3\n" +
+                            "SEASONALITY: May to September(3)\n" +
                             "STATUS: Native\n" +
-                            "CONSERVATION STATUS: Secure4\n" +
+                            "CONSERVATION STATUS: Secure(4)\n" +
+                            "\n" +
                             "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Modest Masked Bee (Hylaeus modestus). (n.d.). Retrieved February 23, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/199048-Hylaeus-modestus\n" +
-                            "3Murray, T., Moisset, B., Quinn, M., Ascher, J. M., Schusteff, A., & Go, H. (2006). Retrieved February 22,\n" +
-                            "2020 from https://bugguide.net/node/view/78945\n" +
-                            "4Hylaeus modestus - Say, 1837. (n.d.) Retrieved February 22, 2020 from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Hylaeus%20modestus\n" +
-                            "5Hylaeus modestus Say, 1837. (n.d.). Retrieved February 22, 2020 from\n" +
-                            "https://www.discoverlife.org/20/q?search=Hylaeus+modestus",
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Modest Masked Bee (Hylaeus modestus). (n.d.). Retrieved February 23, 2020 from https://www.inaturalist.org/taxa/199048-Hylaeus-modestus\n" +
+                            "(3)Murray, T., Moisset, B., Quinn, M., Ascher, J. M., Schusteff, A., & Go, H. (2006). Retrieved February 22, 2020 from https://bugguide.net/node/view/78945\n" +
+                            "(4)Hylaeus modestus - Say, 1837. (n.d.) Retrieved February 22, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Hylaeus%20modestus\n" +
+                            "(5)Hylaeus modestus Say, 1837. (n.d.). Retrieved February 22, 2020 from https://www.discoverlife.org/20/q?search=Hylaeus+modestus",
                     "• Hairless black body; yellow triangular markings on face\n" +
                             "• (male) Yellow clypeus (face)\n" +
                             "• Yellow spot or stripe on mid-leg",
@@ -2311,31 +1424,13 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Lindley’s Aster, Symphyotrichum ciliolatum"),
         Insect("Oblong wool Carder Bee", "(Anthidium oblongatum)",
             R.drawable.oblong_wool_carder_bee_1,R.drawable.oblong_wool_carder_bee_2,R.drawable.oblong_wool_carder_bee_3,R.drawable.oblong_wool_carder_bee_4,
-                "The Oblong Wool Carder Bee was accidentally introduced to the U.S. from Europe in the 1990s1\n" +
-                        ". Since\n" +
-                        "then, they have expanded their range to include the Midwest and Eastern States. They can often be\n" +
-                        "mistaken for wasps due to their bold yellow and black pattern. They are also strikingly alike to the\n" +
-                        "European Wool Carder Bee. A distinct difference between the two is the tegula (the protective plate that\n" +
-                        "covers the connection between the wings and the body of the bee). The Oblong Wool Carder Bee has an\n" +
-                        "orange tegula while the European Wool Carder Bee’s is black. Their name comes from their behavior of\n" +
-                        "scraping plant hairs for their nest materials, a process likened to wool carding. They nest in cavities found\n" +
-                        "in wood, rocks, and hollow plants stems1\n" +
+                "The Oblong Wool Carder Bee was accidentally introduced to the U.S. from Europe in the 1990s(1). Since then, they have expanded their range to include the Midwest and Eastern States. They can often be mistaken for wasps due to their bold yellow and black pattern. They are also strikingly alike to the European Wool Carder Bee. A distinct difference between the two is the tegula (the protective plate that covers the connection between the wings and the body of the bee). The Oblong Wool Carder Bee has an orange tegula while the European Wool Carder Bee’s is black. Their name comes from their behavior of scraping plant hairs for their nest materials, a process likened to wool carding.  They nest in cavities found in wood, rocks, and hollow plants stems1. There can be up to eight cells within one nest, each containing a single egg and pollen ball1 that the larva will eat as they develop. \n" +
                         "\n" +
-                        ". There can be up to eight cells within one nest, each containing\n" +
-                        "\n" +
-                        "a single egg and pollen ball1\n" +
-                        "\n" +
-                        "that the larva will eat as they develop.\n" +
-                        "\n" +
-                        "A. oblongatum\n" +
-                        "8mm to\n" +
-                        "11mm long\n" +
-                        "\n" +
-                        "SEASONALITY: May to September1\n" +
+                        "SEASONALITY: May to September(1)\n" +
                         "STATUS: Invasive\n" +
-                        "SOURCES: 1Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., ... Redford, A.\n" +
-                        "(2018, August). Anthidium oblongatum. Retrieved January 17, 2020, from\n" +
-                        "http://idtools.org/id/bees/exotic/factsheet.php?name=16916",
+                        "\n" +
+                        "SOURCES: \n" +
+                        "(1)Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., … Redford, A. (2018, August). Anthidium oblongatum. Retrieved January 17, 2020, from http://idtools.org/id/bees/exotic/factsheet.php?name=16916",
                 "• Black with distinct yellow pattern\n" +
                         "• Yellow jaws (mandibles) and legs\n" +
                         "• Orange tegula (the plate where wings connect to body)",
@@ -2357,30 +1452,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Orange-tipped Wood-digger Bee", "(Anthophora terminalis)",
             R.drawable.orange_tipped_wood_digger_bee_1,R.drawable.orange_tipped_wood_digger_bee_2,R.drawable.orange_tipped_wood_digger_bee_3,R.drawable.orange_tipped_wood_digger_bee_4,
-                    "The Orange-tipped Wood-digger Bee is unique from other bees in the genus Anthophora in that it nests in\n" +
-                            "pre-existing holes in logs or rotting wood1\n" +
-                            ".\n" +
+                    "The Orange-tipped Wood-digger Bee is unique from other bees in the genus Anthophora in that it nests in pre-existing holes in logs or rotting wood(1). \n" +
                             "\n" +
-                            "The range of the Orange-tipped Wood-differ Bee extends throughout the north-eastern United States\n" +
-                            "and some parts of southern Canada2\n" +
-                            ".\n" +
+                            "The range of the Orange-tipped Wood-differ Bee extends throughout the north-eastern United States and some parts of southern Canada(2).\n" +
+                            "\n" +
                             "SEASONALITY: June to October\n" +
-                            "CONSERVATION STATUS: Stable3\n" +
+                            "CONSERVATION STATUS: Stable(3)\n" +
                             "STATUS: Native\n" +
-                            "Sources:\n" +
                             "\n" +
-                            "A. terminalis\n" +
-                            "10mm to\n" +
-                            "13.5 mm long\n" +
-                            "\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Orange-tipped Wood-digger Bee (Anthophora terminalis). (n.d.). Retrieved February 10, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/198854-Anthophora-terminalis\n" +
-                            "3Almquist, D. T. (2018). Anthophora terminalis – Cresson, 1869. Retrieved 10 February 2020 from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Anthophora+terminalis\n" +
-                            "4Anthophora terminalis Cresson, 1869. (n.d.) Retrieved February 10, 2020 from\n" +
-                            "https://www.discoverlife.org/20/q?search=Anthophora+terminalis",
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Orange-tipped Wood-digger Bee (Anthophora terminalis). (n.d.). Retrieved February 10, 2020 from https://www.inaturalist.org/taxa/198854-Anthophora-terminalis\n" +
+                            "(3)Almquist, D. T. (2018). Anthophora terminalis – Cresson, 1869. Retrieved 10 February 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Anthophora+terminalis\n" +
+                            "(4)Anthophora terminalis Cresson, 1869. (n.d.) Retrieved February 10, 2020 from https://www.discoverlife.org/20/q?search=Anthophora+terminalis",
                     "• Black bee with orange-brown hair at end of abdomen\n" +
                             "• Pale bands that do not meet in middle on abdomen\n" +
                             "• Long, pale hair on hind legs\n" +
@@ -2420,41 +1504,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Hoary Vervain, Verbena stricta"),
         Insect("Pugnacious Leafcutter Bee", "(Megachile pugnata)",
             R.drawable.pugnacious_leafcutter_bee_1,R.drawable.pugnacious_leafcutter_bee_2,R.drawable.pugnacious_leafcutter_bee_3,R.drawable.pugnacious_leafcutter_bee_4,
-                    "The Pugnacious Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their\n" +
-                            "mandibles (bee teeth) for their nests. The defining characteristic of this species is their shortened clypeus\n" +
-                            "(face plate). They are a solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems1\n" +
-                            ". After\n" +
-                            "finding a nesting suitable site, the female uses her large mandibles to cut leaves and build chambers for\n" +
-                            "each of her eggs, starting with the chamber the furthest away from the opening1\n" +
+                    "The Pugnacious Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their mandibles (bee teeth) for their nests. The defining characteristic of this species is their shortened clypeus (face plate). They are a solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a nesting suitable site, the female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with plant material.\n" +
                             "\n" +
-                            ". She deposits a single\n" +
-                            "egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then\n" +
-                            "seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber\n" +
-                            "and sealing it off with plant material.\n" +
-                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer1\n" +
-                            ". They\n" +
-                            "immediately seek a mate and search for nesting sites to prepare the next generation, which will\n" +
-                            "overwinter and emerge in the next season1\n" +
-                            ".\n" +
+                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(1). They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season(1).\n" +
                             "\n" +
-                            "The range of the Pugnacious Leafcutter Bee extends throughout the United States3\n" +
-                            ".\n" +
+                            "The range of the Pugnacious Leafcutter Bee extends throughout the United States(3).\n" +
                             "\n" +
-                            "SEASONALITY: June to October3\n" +
-                            "CONSERVATION STATUS: secure4\n" +
+                            "SEASONALITY: June to October(3)\n" +
+                            "CONSERVATION STATUS: secure(4)\n" +
                             "STATUS: native\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Moisset, B., Cotinis, Ascher, J. S., & Go, H. (2006). Species Megachile mendica – Flat-tailed Leaf-cutter\n" +
-                            "Bee. Retrieved February 29, 2020 from https://bugguide.net/node/view/81669\n" +
-                            "3Pugnacious Leafcutter Bee (Megachile pugnata). (n.d.). Retrieved February 29, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/198850-Megachile-pugnata\n" +
-                            "4\n" +
-                            "Schweitzer, D. F. (2015). Megachile pugnata – Say, 1837. Retrieved February 29, 2020 from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile+pugnata\n" +
-                            "5Megachile pugnata Say, 1837. (n.d.). Retrieved February 29, 2020 from\n" +
-                            "https://www.discoverlife.org/mp/20q?search=Megachile+pugnata#Hosts",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Moisset, B., Cotinis, Ascher, J. S., & Go, H. (2006). Species Megachile mendica – Flat-tailed Leaf-cutter Bee. Retrieved February 29, 2020 from https://bugguide.net/node/view/81669\n" +
+                            "(3)Pugnacious Leafcutter Bee (Megachile pugnata). (n.d.). Retrieved February 29, 2020 from https://www.inaturalist.org/taxa/198850-Megachile-pugnata\n" +
+                            "(4)Schweitzer, D. F. (2015). Megachile pugnata – Say, 1837. Retrieved February 29, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile+pugnata\n" +
+                            "(5)Megachile pugnata Say, 1837. (n.d.). Retrieved February 29, 2020 from https://www.discoverlife.org/mp/20q?search=Megachile+pugnata#Hosts",
                     "• Face (clypeus) extremely shortened\n" +
                             "• (female) entirely black body\n" +
                             "• (female) Pale yellow hairs underneath abdomen (scopa)",
@@ -2506,59 +1571,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Pure Green Sweat Bee", "(Augochlora pura)",
             R.drawable.pure_green_sweat_bee_1,R.drawable.pure_green_sweat_bee_2,R.drawable.pure_green_sweat_bee_3,R.drawable.pure_green_sweat_bee_4,
-                "The Pure Green Sweat Bees is a small, typically iridescent green bee that visits a wide variety of flowers1\n" +
-                        ".\n" +
+                "The Pure Green Sweat Bees is a small, typically iridescent green bee that visits a wide variety of flowers(1). The female makes her nest underneath bark or in pre-existing holes in rotting trees(1),(2). The female uses mud and debris found in or near the stumps to create her nest(1). She provisions the nest with pollen, nectar, and some of her saliva which may have antiseptic qualities(1). The eggs she lay develop and hatch in the summer before pupating and emerging as adults later in the summer or fall(1). Pure Green Sweat Bees mate in the fall(1). Males will die shortly after mating(1), but the females will continue to forage and prepare for overwintering in a rotten log or cavity in a wood stump(2). Overwintering females emerge in the spring and establish a nest shortly after. Pure Green Sweat Bees will have between two or three generations each year(2).\n" +
                         "\n" +
-                        "The female makes her nest underneath bark or in pre-existing holes in rotting trees1, 2\n" +
+                        "The range of the Pure Green Sweat Bee covers the eastern United States and southeast Canada(3). While they do not use insect hotels, Pure Green Sweat Bees are important generalist pollinators in many habitats including eastern deciduous forests; they may also be one of the few pollinators of walnut4.\n" +
                         "\n" +
-                        ". The female uses\n" +
-                        "\n" +
-                        "mud and debris found in or near the stumps to create her nest1\n" +
-                        "\n" +
-                        ". She provisions the nest with pollen,\n" +
-                        "\n" +
-                        "nectar, and some of her saliva which may have antiseptic qualities1\n" +
-                        "\n" +
-                        ". The eggs she lay develop and hatch in\n" +
-                        "\n" +
-                        "the summer before pupating and emerging as adults later in the summer or fall1\n" +
-                        "\n" +
-                        ". Pure Green Sweat Bees\n" +
-                        "\n" +
-                        "mate in the fall1\n" +
-                        "\n" +
-                        ". Males will die shortly after mating1\n" +
-                        "\n" +
-                        ", but the females will continue to forage and prepare\n" +
-                        "\n" +
-                        "for overwintering in a rotten log or cavity in a wood stump2\n" +
-                        "\n" +
-                        ". Overwintering females emerge in the spring\n" +
-                        "and establish a nest shortly after. Pure Green Sweat Bees will have between two or three generations\n" +
-                        "each year.2\n" +
-                        "The range of the Pure Green Sweat Bee covers the eastern United States and southeast Canada3\n" +
-                        ". While\n" +
-                        "they do not use insect hotels, Pure Green Sweat Bees are important generalist pollinators in many\n" +
-                        "habitats including eastern deciduous forests; they may also be one of the few pollinators of walnut4\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: April to October1\n" +
+                        "SEASONALITY: April to October(1)\n" +
                         "CONSERVATION STATUS: Unknown\n" +
                         "STATUS: Native\n" +
-                        "Sources: 1Moisset, B. & Wojcik, V. (n.d.). The Pure Golden Green Sweat Bee (Augochlora pura). Retrieved\n" +
                         "\n" +
-                        "January 19, 2020 from https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-\n" +
-                        "month/augochlora_pura.shtml\n" +
-                        "\n" +
-                        "2Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                        "Press LLC.\n" +
-                        "3Pure Green Sweat Bee (Augochlora pura). (n.d.) Retrieved January 19, 2020 from\n" +
-                        "https://www.inaturalist.org/observations?place_id=any&taxon_id=82523\n" +
-                        "4\n" +
-                        "Short, C. A. & Lucky, A. (2018, September). common name: pure gold-green sweat bee (suggested\n" +
-                        "common name) scientific name: Augochlora pura (Say 1837) (Insecta: Hymenoptera: Halictidae:\n" +
-                        "Halictinae). Retrieved January 19, 2020 from\n" +
-                        "http://entnemdept.ufl.edu/creatures/MISC/BEES/Augochlora_pura.html",
+                        "Sources: \n" +
+                        "(1)Moisset, B. & Wojcik, V. (n.d.). The Pure Golden Green Sweat Bee (Augochlora pura). Retrieved January 19, 2020 from https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/augochlora_pura.shtml\n" +
+                        "(2)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                        "(3)Pure Green Sweat Bee (Augochlora pura). (n.d.) Retrieved January 19, 2020 from https://www.inaturalist.org/observations?place_id=any&taxon_id=82523\n" +
+                        "(4)Short, C. A. & Lucky, A. (2018, September). \tcommon name: pure gold-green sweat bee (suggested common name) scientific name: Augochlora pura (Say 1837) (Insecta: Hymenoptera: Halictidae: Halictinae). Retrieved January 19, 2020 from http://entnemdept.ufl.edu/creatures/MISC/BEES/Augochlora_pura.html",
                 "• Bright green/golden body\n" +
                         "• Dark brown wings and tegula\n" +
                         "(plate where wing connects to body)\n" +
@@ -2585,36 +1610,18 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Sneezeweed, Helenium autumnale"),
         Insect("Scaly Bee Fly", "(Lepidophora lepidocera)",
             R.drawable.scaly_bee_fly_1,R.drawable.scaly_bee_fly_2,R.drawable.scaly_bee_fly_3,R.drawable.scaly_bee_fly_4,
-                "The Scaly Bee Fly is an early spring visitor that feeds on nectar as an adult1\n" +
+                "The Scaly Bee Fly is an early spring visitor that feeds on nectar as an adult(1). Adult females fly early in the season to find the tunnels of solitary bee nests that haven’t been sealed off yet(1). When the female bee or wasp leaves her burrow unattended, the female Scaly Bee Fly will hover in front of the burrow and deposit an egg by flicking her abdomen(1). The resulting larva will consume the bee or wasp larva(1),(2) and are thus considered parasitoids of cavity nesting bees and wasps. \n" +
                         "\n" +
-                        ". Adult females fly early in the\n" +
+                        "The range of the Scaly Bee Fly is scattered throughout the eastern United States(3).\n" +
                         "\n" +
-                        "season to find the tunnels of solitary bee nests that haven’t been sealed off yet1\n" +
-                        "\n" +
-                        ". When the female bee or\n" +
-                        "wasp leaves her burrow unattended, the female Scaly Bee Fly will hover in front of the burrow and\n" +
-                        "deposit an egg by flicking her abdomen1\n" +
-                        "\n" +
-                        ". The resulting larva will consume the bee or wasp larva1, 2 and are\n" +
-                        "\n" +
-                        "thus considered parasitoids of cavity nesting bees and wasps.\n" +
-                        "The range of the Scaly Bee Fly is scattered throughout the eastern United States3\n" +
-                        ".\n" +
-                        "\n" +
-                        "L. lepidocera\n" +
-                        "10 mm\n" +
-                        "\n" +
-                        "SEASONALITY: May through November3\n" +
+                        "SEASONALITY: May through November(3)\n" +
                         "CONSERVATION STATUS: Unknown\n" +
                         "STATUS: Native\n" +
-                        "Sources: 1Bee Fly – Lepidophora lepidocera. (n.d.). Retrieved January 18, 2020 from\n" +
-                        "https://www.cirrusimage.com/flies_bee_lepidophora_lepidocera/\n" +
-                        "2\n" +
-                        "Iowa State University. (n.d.) Species Lepidophora lepidocera. Retrieved January 18, 2020 from\n" +
-                        "https://bugguide.net/node/view/2770\n" +
-                        "3\n" +
-                        "Scaly Bee Fly (Lepidophora lepidocera). (n.d.). Retrieved January 18, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/319147-Lepidophora-lepidocera",
+                        "\n" +
+                        "Sources: \n" +
+                        "(1)Bee Fly – Lepidophora lepidocera. (n.d.). Retrieved January 18, 2020 from https://www.cirrusimage.com/flies_bee_lepidophora_lepidocera/\n" +
+                        "(2)Iowa State University. (n.d.) Species Lepidophora lepidocera. Retrieved January 18, 2020 from https://bugguide.net/node/view/2770\n" +
+                        "(3)Scaly Bee Fly (Lepidophora lepidocera). (n.d.). Retrieved January 18, 2020 from https://www.inaturalist.org/taxa/319147-Lepidophora-lepidocera",
                 "• Hump-back shape\n" +
                         "• Pale white or yellow scales\n" +
                         "• Dark wings\n" +
@@ -2627,62 +1634,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Bushy Aster, Symphyotrichum dumosum"),
         Insect("Sculptured Resin Bee", "(Megachile sculpturalis)",
             R.drawable.sculptured_resin_bee_1,R.drawable.sculptured_resin_bee_2,R.drawable.sculptured_resin_bee_3,R.drawable.sculptured_resin_bee_4,
-                "The Sculptured Resin Bee is native to Japan and Asia and was first introduced to the U.S. on accident in\n" +
-                        "North Carolina in the 1990s1,2\n" +
+                "The Sculptured Resin Bee is native to Japan and Asia and was first introduced to the U.S. on accident in North Carolina in the 1990s(1),(2). It is a large bee compared to other native species and may be mistaken for the Eastern Carpenter bee (x. virginica), but the presence of hairs beneath the abdomen and the absence of a corbicula (pollen basket on the hind-leg) can help distinguish the two species. \n" +
                         "\n" +
-                        ". It is a large bee compared to other native species and may be mistaken for\n" +
-                        "the Eastern Carpenter bee (x. virginica), but the presence of hairs beneath the abdomen and the absence\n" +
-                        "of a corbicula (pollen basket on the hind-leg) can help distinguish the two species.\n" +
+                        "The Sculptured Resin Bee nests in pre-existing cavities left behind by carpenter bees or other animals(1). It will not excavate its own nest(3). After finding a suitable nesting site, the female collects sap and/or resin to prepare the nest cavity(3). Like other bees in the Megachilidae family, the female Sculptured Resin Bee collects pollen underneath her abdomen on modified hairs known as scopa. She will make several pollen-collecting trips before laying an egg on top of the collected pollen ball inside the nest cavity(3). The chamber containing the pollen ball and egg will be sealed with resin, mud, or wood and the female will continue to construct up to ten chambers in this fashion (depending on the length of the cavity)(3). The nest entrance may be capped with resin, wood, mud, or a mixture of the three(3). The eggs will hatch into larva, eat the pollen, and overwinter before pupating the following spring and emerging as adults in the summer(3).\n" +
                         "\n" +
-                        "M.\n" +
-                        "sculpturalis\n" +
-                        "14mm to\n" +
-                        "24mm long\n" +
+                        "Sculptured Resin Bees are known pollinators of kudzu, an invasive vine from Asia(3).\n" +
                         "\n" +
-                        "The Sculptured Resin Bee nests in pre-existing cavities left behind by carpenter bees or other animals1\n" +
-                        ". It\n" +
+                        "The range of the Sculptured Resin Bee has expanded since its introduction. It can now be found throughout the eastern U.S. and has been recorded as far west as Nebraska and Texas(1). \n" +
                         "\n" +
-                        "will not excavate its own nest3\n" +
-                        "\n" +
-                        ". After finding a suitable nesting site, the female collects sap and/or resin to\n" +
-                        "\n" +
-                        "prepare the nest cavity3\n" +
-                        "\n" +
-                        ". Like other bees in the Megachilidae family, the female Sculptured Resin Bee\n" +
-                        "\n" +
-                        "collects pollen underneath her abdomen on modified hairs known as scopa. She will make several pollen-\n" +
-                        "collecting trips before laying an egg on top of the collected pollen ball inside the nest cavity3\n" +
-                        "\n" +
-                        ". The\n" +
-                        "chamber containing the pollen ball and egg will be sealed with resin, mud, or wood and the female will\n" +
-                        "continue to construct up to ten chambers in this fashion (depending on the length of the cavity)3\n" +
-                        ". The\n" +
-                        "\n" +
-                        "nest entrance may be capped with resin, wood, mud, or a mixture of the three3\n" +
-                        "\n" +
-                        ". The eggs will hatch into\n" +
-                        "larva, eat the pollen, and overwinter before pupating the following spring and emerging as adults in the\n" +
-                        "summer3\n" +
-                        ".\n" +
-                        "Sculptured Resin Bees are known pollinators of kudzu, an invasive vine from Asia3\n" +
-                        ".\n" +
-                        "\n" +
-                        "The range of the Sculptured Resin Bee has expanded since its introduction. It can now be found\n" +
-                        "throughout the eastern U.S. and has been recorded as far west as Nebraska and Texas1\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: May to October1\n" +
+                        "SEASONALITY: May to October(1)\n" +
                         "STATUS: Invasive\n" +
-                        "Sources:\n" +
-                        "1\n" +
-                        "Sculptured Resin Bee (Megachile sculpturalis). (n.d.). Retrieved February 8, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/52785-Megachile-sculpturalis\n" +
-                        "2Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                        "Press LLC.\n" +
-                        "3Moisset, M., Boone, M., Entz, C., Ascher, J., Belov, V., and Go, H. (2005). Species Megachile sculpturalis -\n" +
-                        "Sculptured Resin Bee. Retrieved February 8, 2020 from https://bugguide.net/node/view/15541\n" +
-                        "4Megachile sculpturalis Smith, 1853. (n.d.) Retrieved February 8, 2020 from\n" +
-                        "https://www.discoverlife.org/mp/20q?search=Megachile+sculpturalis#Hosts",
+                        "\n" +
+                        "Sources: \n" +
+                        "(1)Sculptured Resin Bee (Megachile sculpturalis). (n.d.). Retrieved February 8, 2020 from https://www.inaturalist.org/taxa/52785-Megachile-sculpturalis\n" +
+                        "(2)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                        "(3)Moisset, M., Boone, M., Entz, C., Ascher, J., Belov, V., and Go, H. (2005). Species Megachile sculpturalis - Sculptured Resin Bee. Retrieved February 8, 2020 from https://bugguide.net/node/view/15541\n" +
+                        "(4)Megachile sculpturalis Smith, 1853. (n.d.) Retrieved February 8, 2020 from https://www.discoverlife.org/mp/20q?search=Megachile+sculpturalis#Hosts",
                 "• Auburn hair on thorax and first abdominal segment\n" +
                         "• Black, hairless abdomen with noticeable pits (like a golfball)\n" +
                         "• Dark transparent wings\n" +
@@ -2733,37 +1700,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Aster, Symphyotrichum spp."),
         Insect("Silver-tailed Petalcutter Bee", "(Megachile montivaga)",
             R.drawable.silver_tailed_petalcutter_bee_1,R.drawable.silver_tailed_petalcutter_bee_2,R.drawable.silver_tailed_petalcutter_bee_3,R.drawable.silver_tailed_petalcutter_bee_4,
-                    "Part of the Silver-tailed Petalcutter Bee’s name comes from their behavior of using their mandibles (bee\n" +
-                            "teeth) to cut flower petals for lining their nests. They are a solitary bee that nests in pre-existing cavities\n" +
-                            "in wood, rocks, or plant stems1\n" +
+                    "Part of the Silver-tailed Petalcutter Bee’s name comes from their behavior of using their mandibles (bee teeth) to cut flower petals for lining their nests. They are a solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a suitable nesting site, the female uses her large mandibles to cut petals and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with petals.\n" +
                             "\n" +
-                            ". After finding a suitable nesting site, the female uses her large mandibles\n" +
-                            "to cut petals and build chambers for each of her eggs, starting with the chamber the furthest away from\n" +
-                            "the opening1\n" +
+                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(1). They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season(1).\n" +
                             "\n" +
-                            ". She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the\n" +
-                            "developing larva. The female then seals off the chamber and repeats this process, each time leaving one\n" +
-                            "egg and food bundle per chamber and sealing it off with petals.\n" +
-                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer1\n" +
-                            ". They\n" +
-                            "immediately seek a mate and search for nesting sites to prepare the next generation, which will\n" +
-                            "overwinter and emerge in the next season1\n" +
-                            ".\n" +
+                            "The range of the Silver-tailed Petalcutter Bee is interspersed throughout the United States(2).\n" +
                             "\n" +
-                            "The range of the Silver-tailed Petalcutter Bee is interspersed throughout the United States2\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: April to September2\n" +
+                            "SEASONALITY: April to September(2)\n" +
                             "CONSERVATION STATUS: unknown\n" +
                             "STATUS: native\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2\n" +
-                            "Silver-tailed Petalcutter Bee (Megachile montivaga). (n.d.). Retrieved February 29, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/199130-Megachile-montivaga\n" +
-                            "3Megachile montivaga Cresson 1878. (n.d.) Retrieved March 1, 2020 from\n" +
-                            "https://www.discoverlife.org/20/q?search=Megachile+montivaga",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Silver-tailed Petalcutter Bee (Megachile montivaga). (n.d.). Retrieved February 29, 2020 from https://www.inaturalist.org/taxa/199130-Megachile-montivaga\n" +
+                            "(3)Megachile montivaga Cresson 1878. (n.d.) Retrieved March 1, 2020 from https://www.discoverlife.org/20/q?search=Megachile+montivaga",
                     "• Terminal (end) abdominal segment concave when " +
                             "viewed from side\n" +
                             "• (female) entirely black body\n" +
@@ -2813,55 +1763,19 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Small Carpenter Bees", "(Ceratina spp.)",
             R.drawable.small_carpenter_bees_1,R.drawable.small_carpenter_bees_2,R.drawable.small_carpenter_bees_3,R.drawable.small_carpenter_bees_4,
-                    "Small Carpenter Bees are tiny, metallic bees often with a white spot/stripe (female) or inverted T (male)\n" +
-                            "on their face (clypeus)1\n" +
+                    "Small Carpenter Bees are tiny, metallic bees often with a white spot/stripe (female) or inverted T (male) on their face (clypeus)(1). They nest in cavities that are filled with pith (soft tissue inside a vascular plant), woody stems, or sometimes rotting wood(1). Females that have overwintered will mate in the spring and begin a nest by excavating a suitable site(1). The females prefer a nearly vertical nest site and will use her mandibles to chew through pith to create a long tunnel(1). She will then begin stocking the tunnel with pollen and nectar from multiple foraging trips using the fine hairs on her back legs (hind-tibia) to carry the provisions(1). After enough food has been collected, she will deposit the pollen at the end of her nest and lay a single egg on top of it. She will then close-off the chamber by creating a wall of pith(1). She repeats this process of collecting pollen, laying eggs, and sealing each chamber before sealing the entrance to the entire nest. The female will guard her completed nest until her young (progeny) emerge(2). \n" +
                             "\n" +
-                            ". They nest in cavities that are filled with pith (soft tissue inside a vascular plant),\n" +
+                            "Providing habitat for Small Carpenter Bees is easy. Plant a native perennial garden with tall flower stalks. In the fall and winter, leave the dead stems standing. Once the spring comes, cut the stalks to about 15 inches above the ground and leave the flower heads(1). That is all that is required! Be on the lookout for signs of excavated stalks. As the season continues, new growth will fill in and hide the old stalks which will naturally degrade as the season continues(1).\n" +
                             "\n" +
-                            "woody stems, or sometimes rotting wood1\n" +
+                            "The range of Small Carpenter Bees extends around the globe and throughout the United States(3).\n" +
                             "\n" +
-                            ". Females that have overwintered will mate in the spring and\n" +
+                            "SEASONALITY: April to November(3)\n" +
+                            "EASTERN US AND CANADA: 5 species(1)\n" +
                             "\n" +
-                            "begin a nest by excavating a suitable site1\n" +
-                            "\n" +
-                            ". The females prefer a nearly vertical nest site and will use her\n" +
-                            "\n" +
-                            "mandibles to chew through pith to create a long tunnel1\n" +
-                            "\n" +
-                            ". She will then begin stocking the tunnel with\n" +
-                            "pollen and nectar from multiple foraging trips using the fine hairs on her back legs (hind-tibia) to carry the\n" +
-                            "provisions1\n" +
-                            ". After enough food has been collected, she will deposit the pollen at the end of her nest and\n" +
-                            "lay a single egg on top of it. She will then close-off the chamber by creating a wall of pith1\n" +
-                            "\n" +
-                            ". She repeats\n" +
-                            "this process of collecting pollen, laying eggs, and sealing each chamber before sealing the entrance to the\n" +
-                            "entire nest. The female will guard her completed nest until her young (progeny) emerge2\n" +
-                            ".\n" +
-                            "\n" +
-                            "Providing habitat for Small Carpenter Bees is easy. Plant a native perennial garden with tall flower stalks.\n" +
-                            "In the fall and winter, leave the dead stems standing. Once the spring comes, cut the stalks to about 15\n" +
-                            "inches above the ground and leave the flower heads1\n" +
-                            "\n" +
-                            ". That is all that is required! Be on the lookout for\n" +
-                            "signs of excavated stalks. As the season continues, new growth will fill in and hide the old stalks which will\n" +
-                            "naturally degrade as the season continues1\n" +
-                            ".\n" +
-                            "\n" +
-                            "The range of Small Carpenter Bees extends around the globe and throughout the United States3\n" +
-                            ".\n" +
-                            "\n" +
-                            "SEASONALITY: April to November3\n" +
-                            "EASTERN US AND CANADA: 5 species1\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Grissell, E. E. & Sanford, M. T. (1999). common name: small carpenter bees scientific name: Ceratina spp.\n" +
-                            "(Insecta: Hymenoptera: Apidae: Xylocopinae). Retrieved February 27, 2020 from\n" +
-                            "http://entnemdept.ufl.edu/creatures/misc/bees/ceratina.htm\n" +
-                            "3\n" +
-                            "Small Carpenter Bees (Genus Ceratina). (n.d.). Retrieved February 27, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/155108-Ceratina",
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Grissell, E. E. & Sanford, M. T. (1999). common name: small carpenter bees scientific name: Ceratina spp. (Insecta: Hymenoptera: Apidae: Xylocopinae). Retrieved February 27, 2020 from http://entnemdept.ufl.edu/creatures/misc/bees/ceratina.htm\n" +
+                            "(3)Small Carpenter Bees (Genus Ceratina). (n.d.). Retrieved February 27, 2020 from https://www.inaturalist.org/taxa/155108-Ceratina",
                     "• Hourglass shape\n" +
                             "• Metallic, relatively hairless body\n" +
                             "• Barrel abdomen that narrows to a near point",
@@ -2891,47 +1805,18 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Sneezeweed, Helenium autumnale"),
         Insect("Small Mason Bees", "(Hoplitis spp.)",
             R.drawable.small_mason_bees_1,R.drawable.small_mason_bees_2,R.drawable.small_mason_bees_3,R.drawable.small_mason_bees_4,
-                "Small Mason Bees are solitary bees that emerge as adults in late spring or early summer1\n" +
+                "Small Mason Bees are solitary bees that emerge as adults in late spring or early summer(1). After mating with a male, the female searches for a nesting site in a pithy flower stalk or woody stem(1). Pith refers to a type of soft tissue inside the stems of vascular plants(2). Small Mason Bee females supply their nesting cavity with pollen and nectar before laying a single egg with the food bundle. The females then use their mandibles (bee teeth) to cut and gather plant pith or chewed leaves to block off the cell and either make another chamber for a new egg or seal the entrance to the nest(1). The larvae develop over the summer before spinning a cocoon and overwintering as prepupae(1). They will finish pupating in the spring and emerge as adults(1). \n" +
                         "\n" +
-                        ". After mating\n" +
+                        "The range of the Small Mason Bee genus extends throughout the continental US into Canada(3). They are also found in Europe, Africa, and Asia(3).\n" +
                         "\n" +
-                        "with a male, the female searches for a nesting site in a pithy flower stalk or woody stem1\n" +
-                        "\n" +
-                        ". Pith refers to a\n" +
-                        "\n" +
-                        "type of soft tissue inside the stems of vascular plants2\n" +
-                        "\n" +
-                        ". Small Mason Bee females supply their nesting\n" +
-                        "cavity with pollen and nectar before laying a single egg with the food bundle. The females then use their\n" +
-                        "mandibles (bee teeth) to cut and gather plant pith or chewed leaves to block off the cell and either make\n" +
-                        "another chamber for a new egg or seal the entrance to the nest1\n" +
-                        "\n" +
-                        ". The larvae develop over the summer\n" +
-                        "Hoplitis spp.\n" +
-                        "4mm to\n" +
-                        "14mm long\n" +
-                        "\n" +
-                        "before spinning a cocoon and overwintering as prepupae1\n" +
-                        "\n" +
-                        ". They will finish pupating in the spring and\n" +
-                        "\n" +
-                        "emerge as adults1\n" +
-                        ".\n" +
-                        "\n" +
-                        "The range of the Small Mason Bee genus extends throughout the continental US into Canada3\n" +
-                        ". They are\n" +
-                        "\n" +
-                        "also found in Europe, Africa, and Asia3\n" +
-                        ".\n" +
-                        "SEASONALITY: April to August3\n" +
-                        "EASTERN US AND CANADA: 10 species1\n" +
+                        "SEASONALITY: April to August(3)\n" +
+                        "EASTERN US AND CANADA: 10 species(1)\n" +
                         "CONSERVATION STATUS: Unknown\n" +
-                        "Sources: 1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                        "Pollination Press LLC.\n" +
-                        "2pith. (n.d.) Retrieved January 23, 2020 from https://www.merriam-webster.com/dictionary/pith\n" +
-                        "3\n" +
-                        "Small Mason Bees (Genus Hoplitis). (n.d.) Retrieved January 23, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/177785-Hoplitis",
+                        "\n" +
+                        "Sources: \n" +
+                        "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                        "(2)pith. (n.d.) Retrieved January 23, 2020 from https://www.merriam-webster.com/dictionary/pith\n" +
+                        "(3)Small Mason Bees (Genus Hoplitis). (n.d.) Retrieved January 23, 2020 from https://www.inaturalist.org/taxa/177785-Hoplitis",
                 "• Black with few hairs on head and thorax\n" +
                         "• White hair bands on abdomen that do not meet in middle\n" +
                         "• Light blue or green colored eyes (common)1",
@@ -2947,32 +1832,17 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Wild Bergamot, Monarda fistulosa"),
         Insect("Small Resin Bees", "(Heriades spp.)",
             R.drawable.small_resin_bees_1,R.drawable.small_resin_bees_2,R.drawable.small_resin_bees_3,R.drawable.small_resin_bees_4,
-                    "Small Resin Bees are solitary bees that make their nest in a wooden cavity or stem1\n" +
+                    "Small Resin Bees are solitary bees that make their nest in a wooden cavity or stem(1). Once a female finds a suitable nest site, she collects resin from plants and begins building chambers for each of her eggs(2). She will go on several trips to collect pollen using specialized hairs beneath her abdomen known as scopa. This pollen will later serve as the food source for the bee larva as it develops. After collecting enough pollen, the female will return to the nest-cavity, roll the pollen into a ball at the furthest end, and deposit a single egg on top of it. She then seals the chamber with resin and will either close off the entrance to the nest or continue making more chambers with a pollen ball and egg.\n" +
                             "\n" +
-                            ". Once a female finds a\n" +
-                            "suitable nest site, she collects resin from plants and begins building chambers for each of her eggs2\n" +
-                            ". She\n" +
-                            "will go on several trips to collect pollen using specialized hairs beneath her abdomen known as scopa.\n" +
-                            "This pollen will later serve as the food source for the bee larva as it develops. After collecting enough\n" +
-                            "pollen, the female will return to the nest-cavity, roll the pollen into a ball at the furthest end, and deposit\n" +
-                            "a single egg on top of it. She then seals the chamber with resin and will either close off the entrance to\n" +
-                            "the nest or continue making more chambers with a pollen ball and egg.\n" +
-                            "Small Resin Bees are found on every continent except Australia and South America2\n" +
+                            "Small Resin Bees are found on every continent except Australia and South America(2). Their range extends throughout the United States(3).\n" +
                             "\n" +
-                            ". Their range extends\n" +
+                            "SEASONALITY: Late May to October(1)\n" +
+                            "EASTERN US AND CANADA: 4 species(1)\n" +
                             "\n" +
-                            "throughout the United States3\n" +
-                            ".\n" +
-                            "SEASONALITY: Late May to October1\n" +
-                            "EASTERN US AND CANADA: 4 species1\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., Ramirez, R., Griswold, T., &\n" +
-                            "Redford, A. (2018). Retrieved February 25, 2020 from\n" +
-                            "http://idtools.org/id/bees/exotic/factsheet.php?name=16626\n" +
-                            "3Resin Bees (Genus Heriades). (n.d.). Retrieved February 25, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/124222-Heriades",
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., Ramirez, R., Griswold, T., & Redford, A. (2018). Retrieved February 25, 2020 from http://idtools.org/id/bees/exotic/factsheet.php?name=16626\n" +
+                            "(3)Resin Bees (Genus Heriades). (n.d.). Retrieved February 25, 2020 from https://www.inaturalist.org/taxa/124222-Heriades",
                     "• Round, constricted-looking abdomen; narrow white bands on rim\n" +
                             "• Coarsely-pitted thorax and abdomen (like a golf ball)\n" +
                             "• (males) end of abdomen rounded downward",
@@ -2996,52 +1866,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Nodding Onion, Allium cernuum"),
         Insect("Small Sweat Bees", "(Lasioglossum spp.)",
             R.drawable.small_sweat_bees_1,R.drawable.small_sweat_bees_2,R.drawable.small_sweat_bees_3,R.drawable.small_sweat_bees_4,
-                    "The Small Sweat Bee genus is the largest bee genus on the planet1\n" +
+                    "The Small Sweat Bee genus is the largest bee genus on the planet(1). Depending on the species, there can be up to three generations in a single year(2). Females that mate in the Autumn will overwinter and, in the spring, start either a social or solitary nest(2). A few species in the subgenus Dialictus will nest in rotting wood or cavities(2). These Small Sweat Bees are dark brown, gray, black, or metallic, uniformly hairy, and lack prominent white hair bands on their abdomen(2).\n" +
                             "\n" +
-                            ". Depending on the species, there can\n" +
+                            "The “larger” Small Sweat Bees (non-Dialictus, Lasioglossum spp.) resemble Sweat Bees (Halictus spp.)(2). The main visible difference between the two groups is the location of the white hair bands. In Lasioglossum spp., the hair band is at the base (top) of the abdominal segment (terga)(2). In Halictus spp., the hair band is at the apical (bottom or end) of each terga(2).\n" +
                             "\n" +
-                            "be up to three generations in a single year2\n" +
+                            "Small Sweat Bees frequently visit flowers but go unnoticed due to their tiny size(3). Their range extends around the globe and throughout the United States(4). \n" +
                             "\n" +
-                            ". Females that mate in the Autumn will overwinter and, in the\n" +
+                            "SEASONALITY: Mid-March to Late October(2)\n" +
+                            "EASTERN US AND CANADA: 126 species(2)\n" +
                             "\n" +
-                            "spring, start either a social or solitary nest2\n" +
-                            "\n" +
-                            ". A few species in the subgenus Dialictus will nest in rotting\n" +
-                            "\n" +
-                            "wood or cavities2\n" +
-                            "\n" +
-                            ". These Small Sweat Bees are dark brown, gray, black, or metallic, uniformly hairy, and\n" +
-                            "\n" +
-                            "lack prominent white hair bands on their abdomen2\n" +
-                            ".\n" +
-                            "\n" +
-                            "The “larger” Small Sweat Bees (non-Dialictus, Lasioglossum spp.) resemble Sweat Bees (Halictus spp.)2\n" +
-                            ".\n" +
-                            "The main visible difference between the two groups is the location of the white hair bands. In\n" +
-                            "Lasioglossum spp., the hair band is at the base (top) of the abdominal segment (terga)2\n" +
-                            "\n" +
-                            ". In Halictus spp.,\n" +
-                            "\n" +
-                            "the hair band is at the apical (bottom or end) of each abdominal segment (terga).2" +
-                            "Small Sweat Bees frequently visit flowers but go unnoticed due to their tiny size3\n" +
-                            "\n" +
-                            ". Their range extends\n" +
-                            "\n" +
-                            "around the globe and throughout the United States4\n" +
-                            ".\n" +
-                            "SEASONALITY: Mid-March to Late October2\n" +
-                            "EASTERN US AND CANADA: 126 species2\n" +
-                            "Sources:\n" +
-                            "1\n" +
-                            "Laioglossum. (n.d.). Retrieved February 26, 2020 from\n" +
-                            "https://en.wikipedia.org/wiki/Lasioglossum#cite_note-1\n" +
-                            "2Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "3\n" +
-                            "Leung, R., Moisset B., Quinn, M., Ascher, J. S., Block, N., Belov, V., Hess, M. (2004). Genus Lasioglossum.\n" +
-                            "Retrieved February 26, 2020 from https://bugguide.net/node/view/9033\n" +
-                            "4Genus: Lasioglossum. (n.d.). Retrieved February 26, 2020 from https://www.inaturalist.org/taxa/57678-\n" +
-                            "Lasioglossum",
+                            "Sources: \n" +
+                            "(1)Laioglossum. (n.d.). Retrieved February 26, 2020 from https://en.wikipedia.org/wiki/Lasioglossum#cite_note-1\n" +
+                            "(2)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(3)Leung, R., Moisset B., Quinn, M., Ascher, J. S., Block, N., Belov, V., Hess, M. (2004). Genus Lasioglossum. Retrieved February 26, 2020 from https://bugguide.net/node/view/9033\n" +
+                            "(4)Genus: Lasioglossum. (n.d.). Retrieved February 26, 2020 from https://www.inaturalist.org/taxa/57678-Lasioglossum",
                     "• Uniformly hairy\n" +
                             "• (subgenus Dialictus) dark brown, gray, black, or metallic\n" +
                             "• (some species) prominent white basal (base of) abdominal hair bands",
@@ -3083,41 +1921,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Small-Handed Leafcutter Bee", "(Megachile gemula)",
             R.drawable.small_handed_leafcutter_bee_1,R.drawable.small_handed_leafcutter_bee_2,R.drawable.small_handed_leafcutter_bee_3,R.drawable.small_handed_leafcutter_bee_4,
-                    "The Small-handed Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their\n" +
-                            "mandibles (bee teeth) for their nests. They are solitary bees that nest in hollowed twigs or logs2\n" +
-                            ". After\n" +
-                            "finding a suitable nesting site, the female uses her large mandibles to cut leaves and build chambers for\n" +
-                            "each of her eggs, starting with the chamber the furthest away from the opening1\n" +
+                    "The Small-handed Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their mandibles (bee teeth) for their nests. They are solitary bees that nest in hollowed twigs or logs(2). After finding a suitable nesting site, the female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with plant material.\n" +
                             "\n" +
-                            ". She deposits a single\n" +
-                            "egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then\n" +
-                            "seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber\n" +
-                            "and sealing it off with plant material.\n" +
-                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer1\n" +
-                            ". They\n" +
-                            "immediately seek a mate and search for nesting sites to prepare the next generation, which will\n" +
-                            "overwinter and emerge in the next season1\n" +
-                            ".\n" +
+                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(1). They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season(1).\n" +
                             "\n" +
-                            "The range of the Small-handed Leafcutter Bee extends throughout the U.S. though many public records\n" +
-                            "have been submitted predominantly in the northeast U.S. and southeast Canada3,4\n" +
-                            "SEASONALITY: June to August3\n" +
-                            "CONSERVATION STATUS: Secure5\n" +
+                            "The range of the Small-handed Leafcutter Bee extends throughout the U.S. though many public records have been submitted predominantly in the northeast U.S. and southeast Canada(3,4).\n" +
+                            "\n" +
+                            "SEASONALITY: June to August(3)\n" +
+                            "CONSERVATION STATUS: Secure(5)\n" +
                             "STATUS: native\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Gibbs, J. (2017). Notes on the Nests of Augochloropsis metallica fulgida and Megachile mucida in Central\n" +
-                            "Michigan (Hymenoptera: Halictidae, Megachilidae). The Great Lakes Entomologist, 50(1). Retrieved March\n" +
-                            "4, 2020 from https://scholar.valpo.edu/tgle/vol50/iss1/4\n" +
-                            "3\n" +
-                            "Small-handed Leaf-cutter Bee (Megachile gemula). (n.d.). Retrieved March 4, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/199135-Megachile-gemula\n" +
-                            "4Megachile gemula Cresson, 1878. (n.d.). Retrieved March 4, 2020 from\n" +
-                            "https://www.discoverlife.org/20/q?search=Megachile+gemula\n" +
-                            "5\n" +
-                            "Schweitzer, D.F. & Ormes, M. (2015). Megachile gemula - Cresson, 1878. Retrieved March 4, 2020 from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile%20gemula",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Gibbs, J. (2017). Notes on the Nests of Augochloropsis metallica fulgida and Megachile mucida in Central Michigan (Hymenoptera: Halictidae, Megachilidae). The Great Lakes Entomologist, 50(1). Retrieved March 4, 2020 from https://scholar.valpo.edu/tgle/vol50/iss1/4\n" +
+                            "(3)Small-handed Leaf-cutter Bee (Megachile gemula). (n.d.). Retrieved March 4, 2020 from https://www.inaturalist.org/taxa/199135-Megachile-gemula\n" +
+                            "(4)Megachile gemula Cresson, 1878. (n.d.). Retrieved March 4, 2020 from https://www.discoverlife.org/20/q?search=Megachile+gemula\n" +
+                            "(5)Schweitzer, D.F. & Ormes, M. (2015). Megachile gemula - Cresson, 1878. Retrieved March 4, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile%20gemula",
                     "• (female) entirely black body with pale hair (pubescence) on thorax\n" +
                             "• (female) Black hairs underneath abdomen (scopa)\n" +
                             "• No pale bands on abdomen\n" +
@@ -3183,46 +2002,22 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Taurus Mason Bee", "(Osmia taurus)",
             R.drawable.taurus_mason_bee_1,R.drawable.taurus_mason_bee_2,R.drawable.taurus_mason_bee_3,R.drawable.taurus_mason_bee_4,
-                "The Taurus Mason Bee is native to Japan but was introduced to the United States around the same time\n" +
-                        "as the Hornfaced Bee (O. cornifrons)\n" +
-                        "1\n" +
-                        "in the 1980s. The two species look so similar that it is likely the\n" +
+                "The Taurus Mason Bee is native to Japan but was introduced to the United States around the same time as the Hornfaced Bee (O. cornifrons)(1) in the 1980s. The two species look so similar that it is likely the Taurus Mason Bee was mistaken for O. cornifrons and released into the U.S(2). The two species can be differentiated by the shortened or flat inner tooth of the mandible (bee teeth) and smooth basal (bottom) half of the clypeus (bee face) in O. taurus(2).\n" +
                         "\n" +
-                        "Taurus Mason Bee was mistaken for O. cornifrons and released into the U.S2\n" +
+                        "Like other mason bees, the Taurus Mason Bee nests in pre-existing cavities in wood, hollow stems, tubes, or insect hotels(2). They collect pollen and form a pollen ball inside the chamber furthest from the opening before laying a single egg on top of it. They then use mud to seal off the chamber and repeat this process until sealing the entrance to their nest(2).\n" +
                         "\n" +
-                        ". The two species can be\n" +
-                        "differentiated by the shortened or flat inner tooth of the mandible (bee teeth) and smooth basal\n" +
-                        "(bottom) half of the clypeus (bee face) in O. taurus2\n" +
-                        ".\n" +
+                        "The range of the Taurus Mason Bee now extends throughout the eastern United States and as far west as Wisconsin and Illinois(3).\n" +
                         "\n" +
-                        "Like other mason bees, the Taurus Mason Bee nests in pre-existing cavities in wood, hollow stems, tubes,\n" +
-                        "or insect hotels2\n" +
+                        "SEASONALITY: February to July(2)\n" +
+                        "CONSERVATION STATUS: Secure and increasing(4)\n" +
+                        "STATUS: Introduced(1) \n" +
                         "\n" +
-                        ". They collect pollen and form a pollen ball inside the chamber furthest from the opening\n" +
-                        "before laying a single egg on top of it. They then use mud to seal off the chamber and repeat this process\n" +
-                        "until sealing the entrance to their nest2\n" +
-                        ".\n" +
-                        "\n" +
-                        "The range of the Taurus Mason Bee now extends throughout the eastern United States and as far west as\n" +
-                        "Wisconsin and Illinois3\n" +
-                        ".\n" +
-                        "SEASONALITY: February to July2\n" +
-                        "CONSERVATION STATUS: Secure and increasing4\n" +
-                        "STATUS: Introduced1\n" +
-                        "Sources:\n" +
-                        "1Chatfield-Taylor, W., Moisset, B., Ascher, J., Belov, V., and Go, H. (2007). Species Osmia Taurus – Taurus\n" +
-                        "Mason Bee. Retrieved February 9, 2020 from https://bugguide.net/node/view/104830\n" +
-                        "2\n" +
-                        "S. Burrows, C. Ritner, M. Christman, L. Spears, A. Smith-Pardo, S. Price, R. Ramirez, T. Griswold, A.\n" +
-                        "Redford. (2018). Osmia taurus. Retrieved February 9, 2020 from\n" +
-                        "http://idtools.org/id/bees/exotic/factsheet.php?name=16958\n" +
-                        "3Taurus Mason Bee (Osmia taurus). (n.d.). Retrieved February 9, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/461507-Osmia-taurus3\n" +
-                        "4\n" +
-                        "Schweitzer, D. F. (2014). Osmia taurus – Smith, 1873. Retrieved February 9, 2020 from\n" +
-                        "http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+taurus\n" +
-                        "5Osmia Taurus Smith, 1873. (n.d.) Retrieved February 9, 2020 from\n" +
-                        "https://www.discoverlife.org/20/q?search=Osmia+taurus",
+                        "Sources: \n" +
+                        "(1)Chatfield-Taylor, W., Moisset, B., Ascher, J., Belov, V., and Go, H. (2007). Species Osmia Taurus – Taurus Mason Bee. Retrieved February 9, 2020 from https://bugguide.net/node/view/104830\n" +
+                        "(2)S. Burrows, C. Ritner, M. Christman, L. Spears, A. Smith-Pardo, S. Price, R. Ramirez, T. Griswold, A. Redford. (2018). Osmia taurus. Retrieved February 9, 2020 from http://idtools.org/id/bees/exotic/factsheet.php?name=16958\n" +
+                        "(3)Taurus Mason Bee (Osmia taurus). (n.d.). Retrieved February 9, 2020 from https://www.inaturalist.org/taxa/461507-Osmia-taurus3\n" +
+                        "(4)Schweitzer, D. F. (2014). Osmia taurus – Smith, 1873. Retrieved February 9, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+taurus\n" +
+                        "(5)Osmia Taurus Smith, 1873. (n.d.) Retrieved February 9, 2020 from https://www.discoverlife.org/20/q?search=Osmia+taurus",
                 "• Horn or small projection on lower face (clypeus)\n" +
                         "• Red to orange hue on abdominal hair\n" +
                         "• Pale reddish-yellow hair beneath abdomen (scopa) on females",
@@ -3249,52 +2044,21 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "Viburnum, Viburnum spp."),
         Insect("Transverse-Banded Calligrapher", "(Eristalis transversa)",
             R.drawable.transverse_banded_calligrapher_1,R.drawable.transverse_banded_calligrapher_2,R.drawable.transverse_banded_calligrapher_3,R.drawable.transverse_banded_calligrapher_4,
-                "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout\n" +
+                "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larva can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                         "\n" +
-                        "the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-\n" +
-                        "Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat\n" +
+                        "In optimal environmental conditions, adult Transverse-Banded Calligrapher females will lay their eggs on plants infested with prey(1). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating resident pests(1). Unless overwintering, the larva will pupate and emerge 1 or 2 weeks later(1). There can be several generations each year depending on environmental conditions(1).\n" +
                         "\n" +
-                        "aphids, thrips, and small caterpillars1\n" +
+                        "Transverse-Banded Calligraphers have similar coloration to some bee and wasp species. This similarity in appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing organism to avoid predation. \n" +
                         "\n" +
-                        ". An abundance of syrphid larva can reduce aphid populations by 70\n" +
+                        "The range of the Transverse-Banded Calligrapher extends from some parts of south-east Canada down throughout the eastern U.S. It has been recorded as far west as Texas, Oklahoma, Kansas, Nebraska and South Dakota(2).\n" +
                         "\n" +
-                        "to 100%1\n" +
-                        ", making them a welcomed occupant in gardens and agricultural fields.\n" +
-                        "\n" +
-                        "E. transversa\n" +
-                        "9mm to\n" +
-                        "11mm\n" +
-                        "\n" +
-                        "In optimal environmental conditions, adult Transverse-Banded Calligrapher females will lay their eggs on\n" +
-                        "plants infested with prey1\n" +
-                        "\n" +
-                        ". The eggs will hatch around 3 days later and develop over a period of 1 to 3\n" +
-                        "\n" +
-                        "weeks, all the while eating resident pests1\n" +
-                        "\n" +
-                        ". Unless overwintering, the larva will pupate and emerge 1 or 2\n" +
-                        "\n" +
-                        "weeks later1\n" +
-                        "\n" +
-                        ". There can be several generations each year depending on environmental conditions1\n" +
-                        ".\n" +
-                        "Transverse-Banded Calligraphers have similar coloration to some bee and wasp species. This similarity in\n" +
-                        "\n" +
-                        "appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-\n" +
-                        "appetizing organism to avoid predation.\n" +
-                        "\n" +
-                        "The range of the Transverse-Banded Calligrapher extends from some parts of south-east Canada down\n" +
-                        "throughout the eastern U.S. It has been recorded as far west as Texas, Oklahoma, Kansas, Nebraska and\n" +
-                        "South Dakota2\n" +
-                        ".\n" +
-                        "\n" +
-                        "SEASONALITY: April to November2\n" +
+                        "SEASONALITY: April to November(2)\n" +
                         "CONSERVATION STATUS: Unknown\n" +
                         "STATUS: Native\n" +
-                        "Sources: 1Gu, A. (n.d.). Syrphid Flies. Retrieved January 18, 2020 from\n" +
-                        "https://biocontrol.entomology.cornell.edu/predators/syrphids.php\n" +
-                        "2Transverse-Banded Calligrapher (Eristalis transversa). (n.d.). Retrieved January 18, 2020 from\n" +
-                        "https://www.inaturalist.org/taxa/145436-Eristalis-transversa",
+                        "\n" +
+                        "Sources: \n" +
+                        "(1)Gu, A. (n.d.). Syrphid Flies. Retrieved January 18, 2020 from https://biocontrol.entomology.cornell.edu/predators/syrphids.php\n" +
+                        "(2)Transverse-Banded Calligrapher (Eristalis transversa). (n.d.). Retrieved January 18, 2020 from https://www.inaturalist.org/taxa/145436-Eristalis-transversa",
                 "• Thorax bi-colored: gray top half; black bottom half\n" +
                         "• Yellow and black patterned abdomen\n" +
                         "• Large reddish-brown eyes\n" +
@@ -3306,38 +2070,21 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                         "of flowers."),
         Insect("Unarmed Leafcutter Bee", "(Megachile inermis)",
             R.drawable.unarmed_leafcutter_bee_1,R.drawable.unarmed_leafcutter_bee_2,R.drawable.unarmed_leafcutter_bee_3,R.drawable.unarmed_leafcutter_bee_4,
-                    "Part of the Unarmed Leafcutter Bee’s name comes from their behavior of using their mandibles (bee\n" +
-                            "teeth) to cut leaves for lining their nests. They are a large solitary bee that nests in pre-existing cavities in\n" +
-                            "wood, rocks, or plant stems1\n" +
+                    "Part of the Unarmed Leafcutter Bee’s name comes from their behavior of using their mandibles (bee teeth) to cut leaves for lining their nests. They are a large solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a suitable nesting site, the female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with chewed leaves.\n" +
                             "\n" +
-                            ". After finding a suitable nesting site, the female uses her large mandibles to\n" +
-                            "cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the\n" +
-                            "opening1\n" +
-                            ". She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the\n" +
-                            "developing larva. The female then seals off the chamber and repeats this process, each time leaving one\n" +
-                            "egg and food bundle per chamber and sealing it off with chewed leaves.\n" +
-                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer1\n" +
-                            ". They\n" +
-                            "immediately seek a mate and search for nesting sites to prepare the next generation, which will\n" +
-                            "overwinter and emerge in the next season1\n" +
-                            ".\n" +
+                            "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(1). They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season(1).\n" +
                             "\n" +
-                            "The range of the Unarmed Leafcutter Bee is spread throughout the northern United States2\n" +
-                            ".\n" +
+                            "The range of the Unarmed Leafcutter Bee is spread throughout the northern United States(2).\n" +
                             "\n" +
-                            "SEASONALITY: June to October2\n" +
-                            "CONSERVATION STATUS: secure3\n" +
+                            "SEASONALITY: June to October(2)\n" +
+                            "CONSERVATION STATUS: secure(3)\n" +
                             "STATUS: native\n" +
-                            "Sources:\n" +
-                            "1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination\n" +
-                            "Press LLC.\n" +
-                            "2Unarmed Leafcutter Bee (Megachile inermis). (n.d.). Retrieved March 2, 2020 from\n" +
-                            "https://www.inaturalist.org/taxa/199134-Megachile-inermis\n" +
-                            "3\n" +
-                            "Schweitzer, D. F. (2015). Megachile inermis – Provancher, 1888. Retrieved March 2, 2020 from\n" +
-                            "http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile+inermis\n" +
-                            "4Megachile inermis – Provancher, 1888. (n.d.) Retrieved March 1, 2020 from\n" +
-                            "https://www.discoverlife.org/20/q?search=Megachile+inermis",
+                            "\n" +
+                            "Sources: \n" +
+                            "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                            "(2)Unarmed Leafcutter Bee (Megachile inermis). (n.d.). Retrieved March 2, 2020 from https://www.inaturalist.org/taxa/199134-Megachile-inermis\n" +
+                            "(3)Schweitzer, D. F. (2015). Megachile inermis – Provancher, 1888. Retrieved March 2, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Megachile+inermis\n" +
+                            "(4)Megachile inermis – Provancher, 1888. (n.d.) Retrieved March 1, 2020 from https://www.discoverlife.org/20/q?search=Megachile+inermis",
                     "• Black body with white abdominal hair bands\n" +
                             "• Gena (area between eyes) is wider than width of eye\n" +
                             "• (female) Pale hairs underneath abdomen (scopa)\n" +
@@ -3389,51 +2136,25 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                             "Aster, Symphyotrichum spp."),
         Insect("Western Honeybee", "(Apis mellifera)",
             R.drawable.western_honeybee_1,R.drawable.western_honeybee_2,R.drawable.western_honeybee_3,R.drawable.western_honeybee_4,
-            "The Western Honeybee has become synonymous with the word bee. Honeybees are one of the few\n" +
-                    "species that produce honey. European settlers introduced the species to North America early in the\n" +
-                    "1620s1\n" +
-                    ". Since then, they have become the most widely used commercial pollinator and producer of wax\n" +
-                    "and honey. California alone depends on nearly 1.8 million honeybee colonies to pollinate their almond\n" +
-                    "orchards2\n" +
-                    ".\n" +
-                    "This social species forms large nests with upwards to 80,000 members all working under the rule of a\n" +
-                    "single queen. The workers are all sterile females that fulfill a number of tasks vital for the success of the\n" +
-                    "hive including3\n" +
-                    ":\n" +
-                    "• Foraging\n" +
-                    "• Guarding\n" +
+            "The Western Honeybee has become synonymous with the word bee. Honeybees are one of the few species that produce honey. European settlers introduced the species to North America early in the 1620s(1). Since then, they have become the most widely used commercial pollinator and producer of wax and honey. California alone depends on nearly 1.8 million honeybee colonies to pollinate their almond orchards(2). \n" +
                     "\n" +
-                    "A. mellifera\n" +
-                    "10mm to\n" +
-                    "11mm long\n" +
+                    "This social species forms large nests with upwards to 80,000 members all working under the rule of a single queen. The workers are all sterile females that fulfill a number of tasks vital for the success of the hive including(3): foraging, guarding, propolizing*, honeycomb building, honey sealing, drone feeding, and fanning (to cool the hive).\n" +
                     "\n" +
-                    "• propolizing*\n" +
-                    "• honeycomb building\n" +
-                    "• honey sealing\n" +
-                    "• drone feeding\n" +
-                    "• fanning (cools the hive)\n" +
-                    "The queen is the largest bee in the hive and the sole producer of eggs. Male honeybees’ (drones) main\n" +
-                    "duty is to find and mate with queens.\n" +
-                    "A phenomenon known as Colony Collapse Disorder (CCD) has resulted in recent declines of hive\n" +
-                    "populations. The exact cause of this disorder is still unknown, though many speculate it is due to\n" +
-                    "pesticides, parasites, fewer food resources, or a combination of these. Since 1950, the U.S. has lost\n" +
-                    "approximately 50% of managed honeybee hives4\n" +
-                    ".\n" +
+                    "The queen is the largest bee in the hive and the sole producer of eggs. Male honeybees’ (drones) main duty is to find and mate with queens. \n" +
                     "\n" +
-                    "*Propolis is a resinous substance obtain from plants. When worker bees add their own enzymes to it, the\n" +
-                    "resulting hard waxy substance obtains antibacterial and antifungal properties.\n" +
+                    "A phenomenon known as Colony Collapse Disorder (CCD) has resulted in recent declines of hive populations. The exact cause of this disorder is still unknown, though many speculate it is due to pesticides, parasites, fewer food resources, or a combination of these. Since 1950, the U.S. has lost approximately 50% of managed honeybee hives(4).\n" +
+                    "\n" +
+                    "*Propolis is a resinous substance obtain from plants. When worker bees add their own enzymes to it, the resulting hard waxy substance obtains antibacterial and antifungal properties. \n" +
+                    "\n" +
                     "SEASONALITY: March to November\n" +
                     "STATUS: Non-native\n" +
                     "CONSERVATION STATUS: Data deficient (IUCN), in decline (U.S.)\n" +
-                    "Sources: 1Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN:\n" +
-                    "Pollination Press LLC.\n" +
-                    "2Honey Bees Are Pollinators. (n.d.). Retrieved January 17, 2020, from\n" +
-                    "https://www.abfnet.org/page/PollinatorFacts\n" +
-                    "3Western Honey Bee (Apis mellifera). (n.d.). Retrieved January 17, 2020, from\n" +
-                    "https://www.inaturalist.org/taxa/47219-Apis-mellifera\n" +
-                    "4Vanengelsdorp, D., & Meixner, M. D. (2009). A historical review of managed honey bee populations in\n" +
-                    "Europe and the United States and the factors that may affect them. Journal of Invertebrate Pathology,\n" +
-                    "103, s83–s83. doi: 10.1016/j.jip.2009.06.011",
+                    "\n" +
+                    "Sources: \n" +
+                    "(1)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
+                    "(2)Honey Bees Are Pollinators. (n.d.). Retrieved January 17, 2020, from https://www.abfnet.org/page/PollinatorFacts \n" +
+                    "(3)Western Honey Bee (Apis mellifera). (n.d.). Retrieved January 17, 2020, from https://www.inaturalist.org/taxa/47219-Apis-mellifera\n" +
+                    "(4)Vanengelsdorp, D., & Meixner, M. D. (2009). A historical review of managed honey bee populations in Europe and the United States and the factors that may affect them. Journal of Invertebrate Pathology, 103, s83–s83. doi: 10.1016/j.jip.2009.06.011",
             "• Alternating amber to brown stripes on abdomen (common)\n" +
                     "• Pollen basket on hind legs\n" +
                     "• Hairy eyes\n" +
