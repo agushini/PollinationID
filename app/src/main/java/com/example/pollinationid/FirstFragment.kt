@@ -8,5 +8,5 @@ import android.view.ViewGroup
 
 class FirstFragment:Fragment(R.layout.fragment_first){
 
-    //Hello
+
 }
