@@ -1,6 +1,5 @@
 package com.example.pollinationid
 
-//https://medium.com/developer-student-clubs/android-kotlin-camera-using-gallery-ff8591c26c3e useful link for camera integration
 import android.os.Bundle
 import android.util.Log
 import android.util.Log.VERBOSE

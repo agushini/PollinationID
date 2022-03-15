@@ -48,7 +48,7 @@
                 android:layout_height="300dp"
                 android:background="@color/grey_c1c1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/insecthotelimage"
+                android:src="@drawable/michigan_hotel"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/firstFragment"></ImageView>
 
