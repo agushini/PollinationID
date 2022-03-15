@@ -2,10 +2,6 @@ package com.example.pollinationid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -38,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //this needs to be edited, i was trying to figure out how to change the action bar
-    private fun setCurrentFragment(fragment:Fragment)=
+    private fun setCurrentFragment(fragment: FifthFragment)=
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flFragment,fragment)
            /* if (fragment == FirstFragment()){
