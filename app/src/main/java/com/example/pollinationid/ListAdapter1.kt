@@ -33,7 +33,7 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         val E_IMG_2_KEY = "E_IMG_2"
         val E_IMG_3_KEY = "E_IMG_3"
         val E_IMG_4_KEY = "E_IMG_4"
-        val E_DESCRIPTION_KEY = "E-DESCRIPTION"
+        val E_DESCRIPTION_KEY  = "E-DESCRIPTION"
         val E_ABOUT_KEY = "E_ABOUT"
         val E_KEYCHAR_KEY = "E_KEYCHAR"
         val E_PLANT_KEY = "E_PLANT"
