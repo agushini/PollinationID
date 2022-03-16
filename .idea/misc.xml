@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_explore.xml" value="0.1707193515704154" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_pollinator_idactivity.xml" value="0.15760869565217392" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_pollinator_idkey.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/card.xml" value="0.1707193515704154" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Chris/Documents/GitHub/PollinationID/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/drawable/AlfafaBee_background.xml" value="0.24583333333333332" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/drawable/ic_home_background.xml" value="0.3828125" />
@@ -27,8 +34,13 @@
         <entry key="..\:/Users/amaya/OneDrive/Documents/GitHub/PollinationID/app/src/main/res/layout/activity_main.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/amaya/OneDrive/Documents/GitHub/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.146875" />
         <entry key="..\:/Users/amaya/OneDrive/Documents/GitHub/PollinationID/app/src/main/res/layout/fragment_third.xml" value="0.13229166666666667" />
+        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/activity_explore.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/activity_google_home.xml" value="0.24139492753623187" />
+        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/activity_login.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/activity_main_login.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/card.xml" value="0.1" />
-        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.18285714285714286" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11666666666666667" />
       </map>
