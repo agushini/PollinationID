@@ -13,16 +13,13 @@
         android:id="@+id/fifthFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="@string/menu"
         android:textColor="#306CB5"
         android:textSize="40sp"
         android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -32,19 +29,16 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="75dp" />
 
-    <Button
-        android:id="@+id/button"
+    <ImageButton
+        android:id="@+id/GoogleAuth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:text="Sign In with Google"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp"/>
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
