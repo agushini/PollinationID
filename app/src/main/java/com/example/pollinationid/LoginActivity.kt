@@ -54,6 +54,10 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+
+                //once successful open up the main activity
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }

@@ -29,7 +29,7 @@
             android:layout_marginRight="15dp"
             android:autofillHints="emailAddress"
             android:ems="10"
-            android:hint="email"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:textColorHint="#757575" />
@@ -43,7 +43,7 @@
             android:layout_marginRight="15dp"
             android:autofillHints="password"
             android:ems="10"
-            android:hint="password"
+            android:hint="Password"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:textColorHint="#757575" />
@@ -57,7 +57,7 @@
             android:layout_marginRight="15dp"
             android:autofillHints="password"
             android:ems="10"
-            android:hint="confirm password"
+            android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:textColorHint="#757575"
@@ -71,7 +71,7 @@
             android:background="#16B2FF"
             app:backgroundTint="#16B2FF"
             android:textColor="@color/white"
-            android:text="signed" />
+            android:text="@string/sign_up" />
 
         <TextView
             android:id="@+id/tvRedirectLogin"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center_horizontal"
-            android:text="already have an account login"
+            android:text="@string/sign_into_existing_account"
             android:textColor="#18206F"
             android:textSize="16sp" />
     </LinearLayout>

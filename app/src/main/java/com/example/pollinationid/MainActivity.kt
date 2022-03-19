@@ -1,5 +1,6 @@
 package com.example.pollinationid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -15,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //supportActionBar?.title = "Home Page";
 
         val firstFragment=FirstFragment()
         val secondFragment=SecondFragment()
@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val fifthFragment=FifthFragment()
 
         setCurrentFragment(firstFragment)
+
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){

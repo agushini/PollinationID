@@ -74,4 +74,9 @@
     <string name="plants">Plants</string>
     <string name="description">Description</string>
     <string name="technical_name">Technical Name</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_into_existing_account">Sign into Existing Account</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
