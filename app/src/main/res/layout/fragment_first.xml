@@ -48,9 +48,9 @@
                 android:layout_height="300dp"
                 android:background="@color/grey_c1c1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/michigan_hotel"
+                android:src="@drawable/insecthotelimage"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/firstFragment"></ImageView>
+                app:layout_constraintTop_toBottomOf="@id/firstFragment" />
 
             <HorizontalScrollView
                 android:id="@+id/Bee_ScrollView"
