@@ -8,12 +8,13 @@
     tools:context=".PhotoActivity"
     >
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/viewImage"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_width="413dp"
+        android:layout_height="438dp"
         android:layout_marginTop="65dp"
-        app:srcCompat="@drawable/ic_camera_foreground"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_camera_foreground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
