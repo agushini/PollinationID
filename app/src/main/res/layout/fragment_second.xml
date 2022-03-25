@@ -27,6 +27,7 @@
         app:layout_constraintVertical_bias="0.016" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/hotelInputText"
         android:layout_width="306dp"
         android:layout_height="59dp"
         android:layout_marginStart="45dp"
@@ -41,8 +42,7 @@
             android:id="@+id/HotelIDInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hotel_id"
-            />
+            android:hint="@string/hotel_id" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -58,5 +58,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/secondFragment" />
+
+    <Button
+        android:id="@+id/nextHotelIDBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:backgroundTint="#FF306CB5"
+        android:backgroundTintMode="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelInputText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

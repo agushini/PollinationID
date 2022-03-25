@@ -79,4 +79,8 @@
     <string name="sign_up">Sign Up</string>
     <string name="sign_into_existing_account">Sign into Existing Account</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="camera">Camera</string>
+    <string name="select_photo_source">Select Photo Source</string>
+    <string name="library">Library</string>
+    <string name="photo_id">Photo ID</string>
 </resources>
