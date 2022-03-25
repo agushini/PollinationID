@@ -40,6 +40,7 @@ class PhotoActivity : AppCompatActivity() {
                      Toast.makeText(this,"Camera could not open", Toast.LENGTH_SHORT).show()
                  }
              }
+
              0 -> {//if libary was pressed on previous fragment
                  Log.v("PhotoActivity: ","Library was passed")
                  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
@@ -62,16 +63,14 @@ class PhotoActivity : AppCompatActivity() {
          }
  }
 
-
+    companion object {
+        private val IMAGE_CHOOSE = 1000;
+        private val PERMISSION_CODE = 1001;
+    }
     private fun chooseImageGallery() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
         startActivityForResult(intent, IMAGE_CHOOSE)
-    }
-
-    companion object {
-        private val IMAGE_CHOOSE = 1000;
-        private val PERMISSION_CODE = 1001;
     }
 
     override fun onRequestPermissionsResult(
@@ -79,7 +78,7 @@ class PhotoActivity : AppCompatActivity() {
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)//this line is different
         when(requestCode){
             PERMISSION_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
@@ -97,17 +96,11 @@ class PhotoActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data) //this line is different
         if(requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK){
             val takenPhoto = BitmapFactory.decodeFile(filePhoto.absolutePath)
             viewImage.setImageBitmap(takenPhoto)
         }
-        else {
-            super.onActivityResult(requestCode, resultCode, data)
-        }
-        if(requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK){
-            viewImage.setImageURI(data?.data)
-        }
-
     }
 
 }

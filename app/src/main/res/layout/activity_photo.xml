@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".PhotoActivity"
     >
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginTop="65dp"
-        android:src="@mipmap/ic_launcher"
+        app:srcCompat="@drawable/ic_camera_foreground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
