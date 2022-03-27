@@ -19,7 +19,6 @@ class ThirdFragment:Fragment(R.layout.fragment_third) {
         super.onCreate(savedInstanceState)
         val view: View = inflater!!.inflate(R.layout.fragment_third,container,false)
 
-
         view.cameraButton.setOnClickListener{ view ->
             Log.v("Camera Button", "Clicked")
             val intentCam = Intent( activity , PhotoActivity::class.java)

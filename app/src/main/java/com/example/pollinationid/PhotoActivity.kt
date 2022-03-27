@@ -8,7 +8,6 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.ImageView
@@ -16,7 +15,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import java.io.File
 
 class PhotoActivity : AppCompatActivity() {
 
@@ -76,12 +74,10 @@ class PhotoActivity : AppCompatActivity() {
         }
     }
 
-
     private fun chooseImageGallery() {
         val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
         startActivityForResult(gallery, pickImage)
     }
-
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -92,7 +88,7 @@ class PhotoActivity : AppCompatActivity() {
             requestCode,
             permissions,
             grantResults
-        )//this line is different
+        )
         if (requestCode == CAMERA_PERMISSION_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
@@ -119,11 +115,6 @@ class PhotoActivity : AppCompatActivity() {
                 }
             }
         }
-    }
-
-    private fun getPhotoFile(fileName: String): File {
-        val directoryStorage = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(fileName, ".jpg", directoryStorage)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
