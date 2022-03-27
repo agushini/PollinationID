@@ -2,6 +2,8 @@ package com.example.pollinationid
 
 import android.Manifest
 import android.app.Activity
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -10,19 +12,35 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.text.format.DateFormat
+import android.text.format.DateFormat.is24HourFormat
 import android.util.Log
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import java.io.File
+import java.util.*
 
-class PhotoActivity : AppCompatActivity() {
+class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
+    TimePickerDialog.OnTimeSetListener {
 
     lateinit var imageView: ImageView
     private val pickImage = 100
     private var imageUri: Uri? = null
+
+    lateinit var textView: TextView
+    lateinit var button: Button
+    var day = 0
+    var month: Int = 0
+    var year: Int = 0
+    var hour: Int = 0
+    var minute: Int = 0
+    var myDay = 0
+    var myMonth: Int = 0
+    var myYear: Int = 0
+    var myHour: Int = 0
+    var myMinute: Int = 0
 
     companion object {
         private const val LIBRARY_PERMISSION_CODE = 1001
@@ -36,6 +54,19 @@ class PhotoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_photo)
         imageView = findViewById(R.id.imageView)
         val temp = intent.getIntExtra("MODE", 3)
+
+        textView = findViewById(R.id.displayDate)
+        button = findViewById(R.id.pickDateBtn)
+
+        button.setOnClickListener {
+            val calendar: Calendar = Calendar.getInstance()
+            day = calendar.get(Calendar.DAY_OF_MONTH)
+            month = calendar.get(Calendar.MONTH)
+            year = calendar.get(Calendar.YEAR)
+            val datePickerDialog =
+                DatePickerDialog(this@PhotoActivity, this@PhotoActivity, year, month,day)
+            datePickerDialog.show()
+        }
 
         when (temp) { //when the intent from the other activity is one of these number then run a certain function
             1 -> {//if camera was clicked on previous fragment
@@ -138,4 +169,25 @@ class PhotoActivity : AppCompatActivity() {
             Log.e("OnActResult", "Unexpected input in if/else")
         }
     }
+
+    override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
+        myDay = day
+        myMonth = month
+        myYear = year
+        val calendar: Calendar = Calendar.getInstance()
+        hour = calendar.get(Calendar.HOUR)
+        minute = calendar.get(Calendar.MINUTE)
+        val timePickerDialog = TimePickerDialog(this@PhotoActivity, this@PhotoActivity, hour, minute,
+            DateFormat.is24HourFormat(this@PhotoActivity))
+        timePickerDialog.show()
+    }
+    override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
+        myHour = hourOfDay
+        myMinute = minute
+        textView.text = "Year: " + myYear + "\n" + "Month: " + myMonth + "\n" + "Day: " + myDay + "\n" + "Hour: " + myHour + "\n" + "Minute: " + myMinute
+    }
+
+
+
+
 }
