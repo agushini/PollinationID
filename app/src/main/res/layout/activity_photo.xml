@@ -9,7 +9,7 @@
     >
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/viewImage"
+        android:id="@+id/imageView"
         android:layout_width="413dp"
         android:layout_height="438dp"
         android:layout_marginTop="65dp"
