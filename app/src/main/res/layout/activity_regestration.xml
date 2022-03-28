@@ -64,7 +64,7 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/btnSSigned"
+            android:id="@+id/btnSignOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"

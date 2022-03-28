@@ -79,4 +79,9 @@
     <string name="sign_up">Sign Up</string>
     <string name="sign_into_existing_account">Sign into Existing Account</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="pollination_project">PolliNation Project</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
 </resources>
