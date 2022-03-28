@@ -3,6 +3,8 @@ package com.example.pollinationid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -35,6 +37,8 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+
     }
 
     //this needs to be edited, i was trying to figure out how to change the action bar
