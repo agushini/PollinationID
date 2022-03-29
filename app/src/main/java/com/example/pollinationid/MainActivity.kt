@@ -2,12 +2,8 @@ package com.example.pollinationid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.pollinationid.IdFragment.SecondFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -20,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         //supportActionBar?.title = "Home Page";
 
         val firstFragment=FirstFragment()
-        val secondFragment=SecondFragment()
+        val secondFragment= SecondFragment()
         val thirdFragment=ThirdFragment()
         val fourthFragment=FourthFragment()
         val fifthFragment=FifthFragment()

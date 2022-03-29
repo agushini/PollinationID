@@ -28,7 +28,7 @@
         app:layout_constraintVertical_bias="0.016" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/hotelInputText"
         android:layout_width="306dp"
         android:layout_height="59dp"
         android:layout_marginStart="45dp"
@@ -37,8 +37,7 @@
         app:boxBackgroundColor="#F31C1B1B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/HotelIDInput"
@@ -59,19 +58,21 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondFragment"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/secondFragment" />
 
     <Button
-        android:id="@+id/idButton"
+        android:id="@+id/dateAndTimeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="448dp"
         android:text="Next"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="@color/black"
+        android:backgroundTint="#FF306CB5"
+        android:backgroundTintMode="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelInputText"
+         />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

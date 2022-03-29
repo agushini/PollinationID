@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PollinationID">
         <activity
-            android:name=".PollinatorIDActivity"
+            android:name=".PollinatorIDKeyActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
