@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.pollinationid.R
 
-class OnePairWingsPollinatorsFragment : Fragment() {
+class NumberOfWingsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +19,7 @@ class OnePairWingsPollinatorsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_one_pair_wings_pollinators, container, false)
+        return inflater.inflate(R.layout.fragment_number_of_wings, container, false)
     }
-
 
 }

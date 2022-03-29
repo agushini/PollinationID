@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.pollinationid.R
 
-
 class HairFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +21,6 @@ class HairFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hair, container, false)
     }
+
 
 }
