@@ -59,9 +59,15 @@
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.12001811594202899" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11666666666666667" />
-        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_body_segments.xml" value="0.1" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/activity_explore.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/activity_pollinator_idactivity.xml" value="0.1" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/card.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_body_segments.xml" value="0.16" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_hair.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_number_of_wings.xml" value="0.1" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_hair_on_sides_color.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_hair_underneath_color.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_number_of_wings.xml" value="0.2" />
       </map>
     </option>
   </component>

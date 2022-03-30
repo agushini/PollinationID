@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".IdFragment.BodySegmentsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/numberOfWingsFragment"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="661dp"
+        android:text="Body Segments"
+        android:textColor="#306CB5"
+        android:textSize="40sp"
+        android:textStyle="italic|bold" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/twoSegmentsButton"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="396dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkspiders" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="414dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="143dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkcentipede"
+        android:visibility="visible" />
+
+</RelativeLayout>

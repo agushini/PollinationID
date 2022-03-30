@@ -22,5 +22,5 @@ class FullHairColorFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_full_hair_color, container, false)
     }
 
-    
+
 }
