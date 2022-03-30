@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PollinationID">
         <activity
+            android:name=".ContactsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_contacts"
+            android:theme="@style/Theme.PollinationID.NoActionBar" />
+        <activity
+            android:name=".TermsConditionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrivacyPolicyActivity"
             android:exported="false" />
         <activity

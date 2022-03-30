@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrivacyPolicyActivity">
+    tools:context=".TermsConditionsActivity">
 
     <Button
         android:id="@+id/btnTCBack"
@@ -22,9 +22,9 @@
         android:id="@+id/txtTCTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/privacy_policy"
-        android:textSize="50sp"
+        android:text="@string/terms_and_conditions"
         android:textAlignment="center"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,9 +34,9 @@
         android:id="@+id/txtTCinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/priv_policy_info"
-        android:textSize="20sp"
+        android:text="@string/TC_info"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTCTitle" />
@@ -45,11 +45,11 @@
         android:id="@+id/txtTCLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/priv_policy_link"
-        android:textSize="20sp"
+        android:linksClickable="true"
+        android:text="@string/TC_Hyperlink"
         android:textAlignment="center"
         android:textColorLink="#0000FF"
-        android:linksClickable="true"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
