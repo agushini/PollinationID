@@ -7,7 +7,7 @@
     tools:context=".TermsConditionsActivity">
 
     <Button
-        android:id="@+id/btnTCBack"
+        android:id="@+id/btnContactsBack"
         android:layout_width="100dp"
         android:layout_height="69dp"
         android:layout_margin="15dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtTCTitle"
+        android:id="@+id/txtContactsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/terms_and_conditions"
@@ -39,10 +39,10 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTCTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContactsTitle" />
 
     <TextView
-        android:id="@+id/txtTCLink"
+        android:id="@+id/txtContactsLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:linksClickable="true"

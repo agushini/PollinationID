@@ -13,7 +13,7 @@ class PrivacyPolicyActivity : AppCompatActivity() {
 
         val fifthFragment=FifthFragment()
 
-        val linkToTextView = findViewById<TextView>(R.id.txtTCLink)
+        val linkToTextView = findViewById<TextView>(R.id.txtContactsLink)
         linkToTextView.movementMethod = LinkMovementMethod.getInstance()
 /*
         when(btnBack){

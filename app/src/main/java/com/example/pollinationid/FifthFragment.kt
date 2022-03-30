@@ -57,7 +57,8 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
 
         view.BtnContact.setOnClickListener { view ->
             Log.v("Contact Button", "Clicked")
-
+            val intent = Intent(activity, ContactsActivity::class.java)
+            activity?.startActivity(intent)
         }
 
         return view

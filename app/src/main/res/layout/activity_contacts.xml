@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity">
 
+    <Button
+        android:id="@+id/btnContactsBack"
+        android:layout_width="100dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:text="@string/back_to_menu"
+        android:textColor="#0277BD"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtContactsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTCinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contacts_info"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContactsTitle" />
+
+    <TextView
+        android:id="@+id/txtContactsLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:text="@string/contacts_hyperlink"
+        android:textAlignment="center"
+        android:textColorLink="#0000FF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTCinfo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

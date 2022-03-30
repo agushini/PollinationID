@@ -101,4 +101,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="contacts_info">Students from the University of Michigan-Dearborn created, developed, and currently run the PolliNation Project. If you have any questions regarding the app or the PolliNation Project, please email:</string>
+    <string name="contacts_hyperlink"><a href="PollinationProject@umich.edu">PollinationProject@umich.edu</a></string>
 </resources>
