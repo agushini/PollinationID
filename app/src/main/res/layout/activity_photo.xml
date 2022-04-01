@@ -64,14 +64,15 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/HotelIDInput" />
+                app:layout_constraintTop_toBottomOf="@+id/HotelIDInputPhoto" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/HotelIDInput"
+            <EditText
+                android:id="@+id/HotelIDInputPhoto"
                 android:layout_width="285dp"
                 android:layout_height="54dp"
                 android:layout_marginTop="25dp"
                 android:hint="@string/hotel_id"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pickDateBtn" />

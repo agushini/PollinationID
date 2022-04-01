@@ -7,18 +7,17 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.pollinationid.R
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var tvRedirectSignUp: TextView
-    lateinit var etEmail: EditText
+    private lateinit var etEmail: EditText
     private lateinit var etPass: EditText
-    lateinit var btnLogin: Button
+    private lateinit var btnLogin: Button
 
     // Creating firebaseAuth object
-    lateinit var auth: FirebaseAuth
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

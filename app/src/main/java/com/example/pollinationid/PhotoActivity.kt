@@ -19,6 +19,11 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_photo.*
 import java.io.File
 import java.util.*
 
@@ -30,7 +35,8 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     private var imageUri: Uri? = null
 
     lateinit var textView: TextView
-    lateinit var button: Button
+    lateinit var dateButton: Button
+    lateinit var hotelButton: Button
     var day = 0
     var month: Int = 0
     var year: Int = 0
@@ -41,6 +47,8 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     var myYear: Int = 0
     var myHour: Int = 0
     var myMinute: Int = 0
+
+    val db = Firebase.firestore //initalize the database
 
     companion object {
         private const val LIBRARY_PERMISSION_CODE = 1001
@@ -56,9 +64,10 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         val temp = intent.getIntExtra("MODE", 3)
 
         textView = findViewById(R.id.displayDate)
-        button = findViewById(R.id.pickDateBtn)
+        dateButton = findViewById(R.id.pickDateBtn)
+        hotelButton = findViewById(R.id.enterHotel)
 
-        button.setOnClickListener {
+        dateButton.setOnClickListener {
             val calendar: Calendar = Calendar.getInstance()
             day = calendar.get(Calendar.DAY_OF_MONTH)
             month = calendar.get(Calendar.MONTH)
@@ -68,9 +77,41 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             datePickerDialog.show()
         }
 
+        hotelButton.setOnClickListener{
+            Log.i("Date Button:", "Clicked")
+            val hotel = HotelIDInputPhoto.text.toString().uppercase()
+            //val hotel = hotelTemp.uppercase()
+//            var hotelRef = db.collection("Hotels").document()
+
+            //val currentUse= FirebaseAuth.getInstance().currentUser?.uid
+
+            val mFireStore = FirebaseFirestore.getInstance()
+            val docref =mFireStore.collection("Hotels").document(hotel)
+
+            docref.get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val document = task.result
+                    if(document != null) {
+                        if (document.exists()) {
+                            Log.i("TAG", "Document already exists.")
+                        } else {
+                            Log.e("TAG", "Document doesn't exist.")
+                        }
+                    }
+                } else {
+                    Log.i("Log: ", "Document doesn't exist.")
+                    Toast.makeText(
+                        this,
+                        "Please enter in a valid hotel id",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+        }
+
         when (temp) { //when the intent from the other activity is one of these number then run a certain function
             1 -> {//if camera was clicked on previous fragment
-                Log.v("PhotoActivity: ", "Camera was passed")
+                Log.i("PhotoActivity: ", "Camera was passed")
 
                 if (ContextCompat.checkSelfPermission(
                         this,
@@ -88,7 +129,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
             0 -> {//if libary was pressed on previous fragment
-                Log.v("PhotoActivity: ", "Library was passed")
+                Log.i("PhotoActivity: ", "Library was passed")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
                         val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -102,7 +143,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
             else -> {//error handling
-                Log.v("PhotoActivity: ", "Unexpected input")
+                Log.e("PhotoActivity: ", "Unexpected input")
             }
         }
     }
