@@ -10,21 +10,15 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
 import android.text.format.DateFormat
-import android.text.format.DateFormat.is24HourFormat
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_photo.*
-import java.io.File
 import java.util.*
 
 class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
@@ -35,9 +29,9 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     private var imageUri: Uri? = null
 
     lateinit var textView: TextView
-    lateinit var dateButton: Button
+    private lateinit var dateButton: Button
     lateinit var hotelButton: Button
-    var day = 0
+    private var day = 0
     var month: Int = 0
     var year: Int = 0
     var hour: Int = 0
@@ -47,8 +41,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     var myYear: Int = 0
     var myHour: Int = 0
     var myMinute: Int = 0
-
-    val db = Firebase.firestore //initalize the database
 
     companion object {
         private const val LIBRARY_PERMISSION_CODE = 1001
@@ -79,27 +71,21 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         hotelButton.setOnClickListener{
             Log.i("Date Button:", "Clicked")
-            val hotel = HotelIDInputPhoto.text.toString().uppercase()
-            //val hotel = hotelTemp.uppercase()
-//            var hotelRef = db.collection("Hotels").document()
-
-            //val currentUse= FirebaseAuth.getInstance().currentUser?.uid
-
+            val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
             val mFireStore = FirebaseFirestore.getInstance()
-            val docref =mFireStore.collection("Hotels").document(hotel)
+            val hotelRef =mFireStore.collection("Hotels").document(hotel) //give it the hotel path
 
-            docref.get().addOnCompleteListener { task ->
+            hotelRef.get().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     val document = task.result
                     if(document != null) {
                         if (document.exists()) {
                             Log.i("TAG", "Document already exists.")
                         } else {
-                            Log.e("TAG", "Document doesn't exist.")
+                            Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
                         }
                     }
                 } else {
-                    Log.i("Log: ", "Document doesn't exist.")
                     Toast.makeText(
                         this,
                         "Please enter in a valid hotel id",
@@ -128,7 +114,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                     )
                 }
             }
-            0 -> {//if libary was pressed on previous fragment
+            0 -> {//if library was pressed on previous fragment
                 Log.i("PhotoActivity: ", "Library was passed")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
@@ -136,7 +122,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                         requestPermissions(permissions, LIBRARY_PERMISSION_CODE)
                     } else {
                         chooseImageGallery()
-
                     }
                 } else {
                     chooseImageGallery()
@@ -148,12 +133,10 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
     }
 
-
     private fun chooseImageGallery() {
         val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
         startActivityForResult(gallery, pickImage)
     }
-
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -164,7 +147,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             requestCode,
             permissions,
             grantResults
-        )//this line is different
+        )
         if (requestCode == CAMERA_PERMISSION_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
@@ -191,11 +174,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
         }
-    }
-
-    private fun getPhotoFile(fileName: String): File {
-        val directoryStorage = getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-        return File.createTempFile(fileName, ".jpg", directoryStorage)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -227,8 +205,5 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         myMinute = minute
         textView.text = "Year: " + myYear + "\n" + "Month: " + myMonth + "\n" + "Day: " + myDay + "\n" + "Hour: " + myHour + "\n" + "Minute: " + myMinute
     }
-
-
-
 
 }
