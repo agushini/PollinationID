@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pollinationid" >
 
-    <!--  This is probably where the permissions stuff goes
-            Camera and Wifi
+    <!-- Below are the permissions required for the app to run. It requests permissions though.
      -->
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
