@@ -2,6 +2,8 @@ package com.example.pollinationid
 
 import android.Manifest
 import android.app.Activity
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -9,18 +11,36 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
+import android.text.format.DateFormat
 import android.util.Log
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_photo.*
+import java.util.*
 
-class PhotoActivity : AppCompatActivity() {
+class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
+    TimePickerDialog.OnTimeSetListener {
 
     lateinit var imageView: ImageView
     private val pickImage = 100
     private var imageUri: Uri? = null
+
+    lateinit var textView: TextView
+    private lateinit var dateButton: Button
+    lateinit var hotelButton: Button
+    private var day = 0
+    var month: Int = 0
+    var year: Int = 0
+    var hour: Int = 0
+    var minute: Int = 0
+    var myDay = 0
+    var myMonth: Int = 0
+    var myYear: Int = 0
+    var myHour: Int = 0
+    var myMinute: Int = 0
 
     companion object {
         private const val LIBRARY_PERMISSION_CODE = 1001
@@ -35,9 +55,80 @@ class PhotoActivity : AppCompatActivity() {
         imageView = findViewById(R.id.imageView)
         val temp = intent.getIntExtra("MODE", 3)
 
+        textView = findViewById(R.id.displayDate)
+        dateButton = findViewById(R.id.pickDateBtn)
+        hotelButton = findViewById(R.id.enterHotel)
+
+        dateButton.setOnClickListener {
+            Log.i("Photo Activity", "Date button clicked")
+            val calendar: Calendar = Calendar.getInstance()
+            day = calendar.get(Calendar.DAY_OF_MONTH)
+            month = calendar.get(Calendar.MONTH)
+            year = calendar.get(Calendar.YEAR)
+            val datePickerDialog =
+                DatePickerDialog(this@PhotoActivity, this@PhotoActivity, year, month,day)
+            datePickerDialog.show()
+        }
+
+        hotelButton.setOnClickListener{
+            Log.i("Photo Activity", "Hotel button clicked")
+            val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
+
+
+            if (hotel != ""){
+                val mFireStore = FirebaseFirestore.getInstance()
+                val hotelRef =mFireStore.collection("Hotels").document(hotel) //give it the hotel path
+
+                hotelRef.get().addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        val document = task.result
+                        if(document != null) {
+                            if (document.exists()) {
+                                Log.i("Photo Activity", "Hotel exists.")
+                                if (displayDate.text != ""){ //if date entered
+                                    Log.i("Photo Activity","Date entered")
+                                    Toast.makeText(
+                                        this,
+                                        "Valid Date and Hotel!",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+
+                                    val intent = Intent(this, PhotoPossiblePollinators::class.java)
+                                    startActivity(intent)
+                                    // using finish() to end the activity
+
+                                }else{
+                                    Log.i("Photo Activity", "Date not entered")
+                                    Toast.makeText(
+                                        this,
+                                        "Please enter in a valid date",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                }
+                            } else {
+                                Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
+                            }
+                        }
+                    } else {
+                        Toast.makeText(
+                            this,
+                            "Please enter in a valid hotel id",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                }
+            }else{
+                Toast.makeText(
+                    this,
+                    "Please enter in a valid hotel id",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
+
         when (temp) { //when the intent from the other activity is one of these number then run a certain function
             1 -> {//if camera was clicked on previous fragment
-                Log.v("PhotoActivity: ", "Camera was passed")
+                Log.i("PhotoActivity: ", "Camera was passed")
 
                 if (ContextCompat.checkSelfPermission(
                         this,
@@ -54,22 +145,21 @@ class PhotoActivity : AppCompatActivity() {
                     )
                 }
             }
-            0 -> {//if libary was pressed on previous fragment
-                Log.v("PhotoActivity: ", "Library was passed")
+            0 -> {//if library was pressed on previous fragment
+                Log.i("PhotoActivity: ", "Library was passed")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
                         val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
                         requestPermissions(permissions, LIBRARY_PERMISSION_CODE)
                     } else {
                         chooseImageGallery()
-
                     }
                 } else {
                     chooseImageGallery()
                 }
             }
             else -> {//error handling
-                Log.v("PhotoActivity: ", "Unexpected input")
+                Log.e("PhotoActivity: ", "Unexpected input")
             }
         }
     }
@@ -129,4 +219,22 @@ class PhotoActivity : AppCompatActivity() {
             Log.e("OnActResult", "Unexpected input in if/else")
         }
     }
+
+    override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
+        myDay = day
+        myMonth = month
+        myYear = year
+        val calendar: Calendar = Calendar.getInstance()
+        hour = calendar.get(Calendar.HOUR)
+        minute = calendar.get(Calendar.MINUTE)
+        val timePickerDialog = TimePickerDialog(this@PhotoActivity, this@PhotoActivity, hour, minute,
+            DateFormat.is24HourFormat(this@PhotoActivity))
+        timePickerDialog.show()
+    }
+    override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
+        myHour = hourOfDay
+        myMinute = minute
+        textView.text = "Year: " + myYear + "\n" + "Month: " + myMonth + "\n" + "Day: " + myDay + "\n" + "Hour: " + myHour + "\n" + "Minute: " + myMinute
+    }
+
 }

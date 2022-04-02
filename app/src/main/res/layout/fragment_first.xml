@@ -13,7 +13,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:label="Pollinator Categories"
+    android:label="@string/pollinator_categories"
     >
 
 

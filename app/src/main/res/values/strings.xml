@@ -83,4 +83,8 @@
     <string name="select_photo_source">Select Photo Source</string>
     <string name="library">Library</string>
     <string name="photo_id">Photo ID</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="where_did_you_see_the_pollinator">Where did you see the pollinator?</string>
+    <string name="next">Next</string>
+    <string name="enter_hotel">Enter Hotel</string>
 </resources>
