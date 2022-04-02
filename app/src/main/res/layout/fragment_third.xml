@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="Photo ID"
+        android:text="@string/photo_id"
         android:textColor="#306CB5"
         android:textSize="40sp"
         android:textStyle="italic|bold"
@@ -29,7 +29,7 @@
     <Button
         android:id="@+id/libraryButton"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="79dp"
         android:layout_marginTop="225dp"
@@ -38,8 +38,7 @@
         android:backgroundTint="#FF306CB5"
         android:backgroundTintMode="@color/black"
         android:drawableLeft="@drawable/ic_book_foreground"
-
-        android:text="Library"
+        android:text="@string/library"
 
         app:layout_constraintBottom_toTopOf="@+id/cameraButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +48,7 @@
     <Button
         android:id="@+id/cameraButton"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="79dp"
         android:layout_marginTop="20dp"
@@ -58,7 +57,7 @@
 
         android:backgroundTintMode="@color/black"
         android:drawableLeft="@drawable/ic_camera_foreground"
-        android:text="Camera"
+        android:text="@string/camera"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/libraryButton" />
@@ -68,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="122dp"
-        android:text="Select Photo Source"
+        android:text="@string/select_photo_source"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

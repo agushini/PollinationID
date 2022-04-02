@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="96dp"
@@ -9,7 +8,8 @@
     android:layout_marginTop="12dp"
     android:layout_marginRight="1dp"
     android:clickable="true"
-    android:foreground="?selectableItemBackground">
+    android:foreground="?selectableItemBackground"
+    android:focusable="true">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,7 +24,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/recycler_1_title_text"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             card_view:layout_constraintStart_toEndOf="@+id/recycler1ImageView"
             card_view:layout_constraintTop_toTopOf="parent" />
 
