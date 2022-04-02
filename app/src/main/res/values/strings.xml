@@ -79,6 +79,29 @@
     <string name="sign_up">Sign Up</string>
     <string name="sign_into_existing_account">Sign into Existing Account</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="pollination_project">PolliNation Project</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="contact">Contact</string>
+    <string name="account">Account</string>
+    <string name="info">Info</string>
+    <string name="priv_policy_info">Please see the link below for more information regarding our Privicy Policy</string>
+    <string name="priv_policy_link"><a href="https://drive.google.com/file/d/1FXgs6MWDeqfwc4WW95Zl38Mbz34JAgeh/view?usp=drivesdk">Click here for our Privacy Policy</a></string>
+    <string name="back_to_menu"><![CDATA[< Menu]]></string>
+    <string name="TC_info">Please see the link below for more information regarding our Terms and Conditions</string>
+    <string name="TC_Hyperlink"><a href="https://drive.google.com/file/d/1uuwdQQiwQnZZ3QMNLNNsx--n1KVVfTA9/view?usp=drivesdk">Click here for our Terms and Conditions</a></string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="contacts_info">Students from the University of Michigan-Dearborn created, developed, and currently run the PolliNation Project. If you have any questions regarding the app or the PolliNation Project, please email:</string>
+    <string name="contacts_hyperlink"><a href="PollinationProject@umich.edu">PollinationProject@umich.edu</a></string>
     <string name="camera">Camera</string>
     <string name="select_photo_source">Select Photo Source</string>
     <string name="library">Library</string>

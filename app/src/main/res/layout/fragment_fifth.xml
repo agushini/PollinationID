@@ -13,7 +13,7 @@
         android:id="@+id/fifthFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:text="@string/menu"
         android:textColor="#306CB5"
         android:textSize="40sp"
@@ -21,14 +21,127 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:background="#16B2FF"
+        android:text="@string/sign_out"
+        android:textColor="@color/white"
+        app:backgroundTint="#16B2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccount"
+        tools:ignore="TextContrastCheck" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="75dp" />
+    <Button
+        android:id="@+id/BtnPassReset"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:background="#16B2FF"
+        android:text="@string/password_reset"
+        android:textColor="@color/white"
+        app:backgroundTint="#16B2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignOut"
+        tools:ignore="TextContrastCheck" />
 
+    <Button
+        android:id="@+id/BtnPNProject"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:background="#16B2FF"
+        android:text="@string/pollination_project"
+        android:textColor="@color/white"
+        app:backgroundTint="#16B2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/BtnPrivPolicy"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="36dp"
+        android:background="#16B2FF"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/white"
+        app:backgroundTint="#16B2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPNProject"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/BtnTC"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="200dp"
+        android:background="#16B2FF"
+        android:text="@string/terms_and_conditions"
+        android:textColor="@color/white"
+        app:backgroundTint="#16B2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPrivPolicy"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/BtnContact"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
+        android:layout_margin="15dp"
+        android:background="#16B2FF"
+        android:text="@string/contact"
+        android:textColor="@color/white"
+        app:backgroundTint="#16B2FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnTC"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtAccount"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_c1c1"
+        android:ems="10"
+        android:inputType="none"
+        android:labelFor="@id/fifthFragment"
+        android:text="   Account"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifthFragment"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtInfo"
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey_c1c1"
+        android:ems="10"
+        android:inputType="none"
+        android:labelFor="@id/fifthFragment"
+        android:text="   Info"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BtnPNProject"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnPassReset"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

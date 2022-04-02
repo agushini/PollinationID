@@ -7,7 +7,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.example.pollinationid.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -31,7 +30,7 @@ class RegestrationActivity : AppCompatActivity() {
         etEmail = findViewById(R.id.etSEmailAddress)
         etConfPass = findViewById(R.id.etSConfPassword)
         etPass = findViewById(R.id.etSPassword)
-        btnSignUp = findViewById(R.id.btnSSigned)
+        btnSignUp = findViewById(R.id.btnSignOut)
         tvRedirectLogin = findViewById(R.id.tvRedirectLogin)
 
         // Initialising auth object
