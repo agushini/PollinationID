@@ -21,6 +21,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <EditText
             android:id="@+id/etSEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
