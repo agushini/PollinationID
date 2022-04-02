@@ -59,7 +59,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         dateButton = findViewById(R.id.pickDateBtn)
         hotelButton = findViewById(R.id.enterHotel)
 
-        dateButton.setOnClickListener {
+        dateButton.setOnClickListener { //when pick date clicked
             Log.i("Photo Activity", "Date button clicked")
             val calendar: Calendar = Calendar.getInstance()
             day = calendar.get(Calendar.DAY_OF_MONTH)
@@ -95,7 +95,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
                                     val intent = Intent(this, PhotoPossiblePollinators::class.java)
                                     startActivity(intent)
-                                    // using finish() to end the activity
 
                                 }else{
                                     Log.i("Photo Activity", "Date not entered")
@@ -145,7 +144,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                     )
                 }
             }
-            0 -> {//if library was pressed on previous fragment
+            0 -> { //if library was pressed on previous fragment
                 Log.i("PhotoActivity: ", "Library was passed")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
@@ -220,6 +219,8 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
     }
 
+
+    //for date picker
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         myDay = day
         myMonth = month
