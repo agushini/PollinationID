@@ -64,6 +64,13 @@
                 android:value=".MainActivity"/>
         </activity>
 
+        <activity android:name=".PhotoPossiblePollinators"
+            android:label="Possible Pollinators"
+            android:launchMode= "singleTop">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PhotoActivity"/>
+        </activity>
+
     </application>
 
 </manifest>

@@ -60,6 +60,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         hotelButton = findViewById(R.id.enterHotel)
 
         dateButton.setOnClickListener {
+            Log.i("Photo Activity", "Date button clicked")
             val calendar: Calendar = Calendar.getInstance()
             day = calendar.get(Calendar.DAY_OF_MONTH)
             month = calendar.get(Calendar.MONTH)
@@ -70,28 +71,58 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
 
         hotelButton.setOnClickListener{
-            Log.i("Date Button:", "Clicked")
+            Log.i("Photo Activity", "Hotel button clicked")
             val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
-            val mFireStore = FirebaseFirestore.getInstance()
-            val hotelRef =mFireStore.collection("Hotels").document(hotel) //give it the hotel path
 
-            hotelRef.get().addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val document = task.result
-                    if(document != null) {
-                        if (document.exists()) {
-                            Log.i("TAG", "Document already exists.")
-                        } else {
-                            Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
+
+            if (hotel != ""){
+                val mFireStore = FirebaseFirestore.getInstance()
+                val hotelRef =mFireStore.collection("Hotels").document(hotel) //give it the hotel path
+
+                hotelRef.get().addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        val document = task.result
+                        if(document != null) {
+                            if (document.exists()) {
+                                Log.i("Photo Activity", "Hotel exists.")
+                                if (displayDate.text != ""){ //if date entered
+                                    Log.i("Photo Activity","Date entered")
+                                    Toast.makeText(
+                                        this,
+                                        "Valid Date and Hotel!",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+
+                                    val intent = Intent(this, PhotoPossiblePollinators::class.java)
+                                    startActivity(intent)
+                                    // using finish() to end the activity
+
+                                }else{
+                                    Log.i("Photo Activity", "Date not entered")
+                                    Toast.makeText(
+                                        this,
+                                        "Please enter in a valid date",
+                                        Toast.LENGTH_LONG
+                                    ).show()
+                                }
+                            } else {
+                                Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
+                            }
                         }
+                    } else {
+                        Toast.makeText(
+                            this,
+                            "Please enter in a valid hotel id",
+                            Toast.LENGTH_LONG
+                        ).show()
                     }
-                } else {
-                    Toast.makeText(
-                        this,
-                        "Please enter in a valid hotel id",
-                        Toast.LENGTH_LONG
-                    ).show()
                 }
+            }else{
+                Toast.makeText(
+                    this,
+                    "Please enter in a valid hotel id",
+                    Toast.LENGTH_LONG
+                ).show()
             }
         }
 
