@@ -79,4 +79,9 @@
     <string name="sign_up">Sign Up</string>
     <string name="sign_into_existing_account">Sign into Existing Account</string>
     <string name="confirm_password">Confirm Password</string>
+
+<string name="title_forgot_password">FORGOT PASSWORD</string>
+ <string name="forgot_password_title_description">Enter e-mail and link will be sent to reset the password</string>
+<string name="btn_lbl_submit">Submit</string>
+    <string name="et_hint_email_id">Enter E-mail</string>
 </resources>
