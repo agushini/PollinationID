@@ -14,6 +14,8 @@ import com.google.firebase.ktx.Firebase
 
 class RegestrationActivity : AppCompatActivity() {
 
+   lateinit var etFirstName: EditText
+   lateinit var etLastName: EditText
     lateinit var etEmail: EditText
     lateinit var etConfPass: EditText
     private lateinit var etPass: EditText
@@ -50,6 +52,8 @@ class RegestrationActivity : AppCompatActivity() {
     }
 
     private fun signUpUser() {
+
+
         val email = etEmail.text.toString()
         val pass = etPass.text.toString()
         val confirmPassword = etConfPass.text.toString()

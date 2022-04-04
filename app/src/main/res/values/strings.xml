@@ -75,6 +75,8 @@
     <string name="description">Description</string>
     <string name="technical_name">Technical Name</string>
     <string name="email">Email</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_into_existing_account">Sign into Existing Account</string>

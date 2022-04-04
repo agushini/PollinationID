@@ -47,19 +47,20 @@ class LoginActivity : AppCompatActivity() {
         }
 
         tv_ForgotPassword.setOnClickListener {
-            startActivity(Intent()
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
 
         }
     }
 
-    val textView = findViewById<TextView>(R.id.tv_ForgotPassword)
-    textView.setOnClickListener {
-        val intent = Intent(this, ForgotPasswordActivity::class.java)
-        startActivity(intent)
-    }
+    //val textView = findViewById<TextView>(R.id.tv_ForgotPassword)
+    //textView.setOnClickListener {
+       // val intent = Intent(this, ForgotPasswordActivity::class.java)
+       // startActivity(intent)
+    //}
 
     private fun login() {
+
         val email = etEmail.text.toString()
         val pass = etPass.text.toString()
         // calling signInWithEmailAndPassword(email, pass)
