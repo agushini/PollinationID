@@ -85,7 +85,7 @@ class RegestrationActivity : AppCompatActivity() {
         // We call createUserWithEmailAndPassword
         // using auth object and pass the
         // email and pass in it.
-        auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
+        auth.createUserWithEmailAndPassword(email, pass,).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
 
@@ -97,5 +97,7 @@ class RegestrationActivity : AppCompatActivity() {
                 Toast.makeText(this, "Signed Up Failed!", Toast.LENGTH_SHORT).show()
             }
         }
+
+
     }
 }

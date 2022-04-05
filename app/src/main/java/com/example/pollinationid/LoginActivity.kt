@@ -37,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             login()
         }
+        
 
         tvRedirectSignUp.setOnClickListener {
             val intent = Intent(this, RegestrationActivity::class.java)
