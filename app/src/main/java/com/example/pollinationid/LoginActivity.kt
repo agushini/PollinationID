@@ -20,13 +20,16 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var btnLogin: Button
     private lateinit var tvForgotpassword: TextView
 
+
     // Creating firebaseAuth object
     private lateinit var auth: FirebaseAuth
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
         setContentView(R.layout.activity_login2)
 
         // View Binding
@@ -90,6 +93,9 @@ class LoginActivity : AppCompatActivity() {
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
+
+
+
 //        val firebaseAuth: FirebaseAuth
 //        val mAuthListener: AuthStateListener
 //        firebaseAuth = FirebaseAuth.getInstance()
