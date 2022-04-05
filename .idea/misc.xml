@@ -23,6 +23,7 @@
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/font/lato_bold.xml" value="0.396875" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout-v23/card.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_explore.xml" value="0.1" />
+        <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_forgotpassword.xml" value="0.17561229807191245" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_login2.xml" value="0.1" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_main.xml" value="0.19413919413919414" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_photo.xml" value="0.21197916666666666" />
@@ -50,11 +51,6 @@
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.12001811594202899" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11666666666666667" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_forgot_password2.xml" value="0.2" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_forgotpassword.xml" value="0.1" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_login2.xml" value="0.22" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_regestration.xml" value="0.2" />
       </map>
     </option>
   </component>

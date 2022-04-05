@@ -39,7 +39,7 @@
             android:layout_marginRight="15dp"
             android:autofillHints="password"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:textColorHint="#757575" />
@@ -58,26 +58,16 @@
 
 
         <TextView
-            android:id="@+id/tv_already_have_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:rotationX="-4"
-            android:text="Forgot Password!"
-            android:textColor="#000"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
             android:id="@+id/tv_ForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
             android:gravity="right"
-            android:text="Forgot Password"
+            android:text="@string/forgot_password"
             android:textColor="#18206F"
             android:textSize="16sp"
-            android:clickable="true"/>
+            android:clickable="true"
+            android:focusable="true" />
 
 
         <TextView
@@ -86,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:gravity="center_horizontal"
-            android:text="Create Account"
+            android:text="@string/create_account"
             android:textColor="#18206F"
             android:textSize="16sp" />
 

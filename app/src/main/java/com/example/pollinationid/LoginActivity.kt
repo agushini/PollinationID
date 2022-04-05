@@ -1,15 +1,15 @@
 package com.example.pollinationid
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login2.*
+import org.w3c.dom.Text
 
 class LoginActivity : AppCompatActivity() {
 
@@ -17,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etEmail: EditText
     private lateinit var etPass: EditText
     private lateinit var btnLogin: Button
+    private lateinit var tv_ForgotPassword: TextView
 
     // Creating firebaseAuth object
     private lateinit var auth: FirebaseAuth
@@ -28,8 +29,9 @@ class LoginActivity : AppCompatActivity() {
         // View Binding
         tvRedirectSignUp = findViewById(R.id.tvRedirectSignUp)
         btnLogin = findViewById(R.id.btnLogin)
-        etEmail = findViewById(R.id.etEmailAddress)
+        etEmail = findViewById(R.id.etEmail)
         etPass = findViewById(R.id.etPassword)
+        tv_ForgotPassword = findViewById(R.id.tv_ForgotPassword)
 
         // initialising Firebase auth object
         auth = FirebaseAuth.getInstance()
@@ -45,18 +47,13 @@ class LoginActivity : AppCompatActivity() {
             finish()
         }
 
+        //set click listener for the forgot password button
         tv_ForgotPassword.setOnClickListener {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
 
     }
-    }
 
-    //val textView = findViewById<TextView>(R.id.tv_ForgotPassword)
-    //textView.setOnClickListener {
-       // val intent = Intent(this, ForgotPasswordActivity::class.java)
-       // startActivity(intent)
-    //}
 
     private fun login() {
 
@@ -77,3 +74,4 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
     }
+}

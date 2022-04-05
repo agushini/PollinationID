@@ -115,4 +115,7 @@
     <string name="forgot_password_title_description">Enter e-mail and link will be sent to reset the password</string>
     <string name="btn_lbl_submit">Submit</string>
     <string name="et_hint_email_id">Enter E-mail</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
 </resources>
