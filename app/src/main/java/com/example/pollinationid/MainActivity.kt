@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
     }
 
     //this needs to be edited, i was trying to figure out how to change the action bar
