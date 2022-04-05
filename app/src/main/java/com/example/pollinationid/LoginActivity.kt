@@ -3,11 +3,13 @@ package com.example.pollinationid
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_login2.*
 
 class LoginActivity : AppCompatActivity() {
 
@@ -42,9 +44,22 @@ class LoginActivity : AppCompatActivity() {
             // using finish() to end the activity
             finish()
         }
+
+        tv_ForgotPassword.setOnClickListener {
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
+        }
+
+    }
     }
 
+    //val textView = findViewById<TextView>(R.id.tv_ForgotPassword)
+    //textView.setOnClickListener {
+       // val intent = Intent(this, ForgotPasswordActivity::class.java)
+       // startActivity(intent)
+    //}
+
     private fun login() {
+
         val email = etEmail.text.toString()
         val pass = etPass.text.toString()
         // calling signInWithEmailAndPassword(email, pass)
@@ -62,4 +77,3 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
     }
-}

@@ -39,6 +39,9 @@
             android:name=".PrivacyPolicyActivity"
             android:exported="false" />
         <activity
+            android:name=".forgotpasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>

@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/etEmailAddress"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -44,6 +44,8 @@
             android:minHeight="48dp"
             android:textColorHint="#757575" />
 
+
+
         <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
@@ -53,6 +55,30 @@
             app:backgroundTint="#16B2FF"
             android:textColor="@color/white"
             android:text="@string/login" />
+
+
+        <TextView
+            android:id="@+id/tv_already_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotationX="-4"
+            android:text="Forgot Password!"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="Forgot Password"
+            android:textColor="#18206F"
+            android:textSize="16sp"
+            android:clickable="true"/>
+
 
         <TextView
             android:id="@+id/tvRedirectSignUp"
