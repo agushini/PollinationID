@@ -52,7 +52,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_photo)
-        imageView = findViewById(R.id.imageView)
+        imageView = findViewById(R.id.inputPhotoView)
         val temp = intent.getIntExtra("MODE", 3)
 
         textView = findViewById(R.id.displayDate)
