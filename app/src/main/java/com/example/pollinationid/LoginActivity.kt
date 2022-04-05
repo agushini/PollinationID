@@ -1,14 +1,15 @@
 package com.example.pollinationid
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuth.AuthStateListener
 
 
 class LoginActivity : AppCompatActivity() {
@@ -53,6 +54,21 @@ class LoginActivity : AppCompatActivity() {
         tvForgotpassword.setOnClickListener {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
+
+
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            // User is signed in
+            val i = Intent(this@LoginActivity, MainActivity::class.java)
+            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(i)
+        } else {
+            // User is signed out
+          Log.v("SignOut Button", "Clicked")
+            val intent = Intent(this, LoginActivity::class.java)
+            this?.startActivity(intent)
+        }
+
     }
 
     private fun login() {
