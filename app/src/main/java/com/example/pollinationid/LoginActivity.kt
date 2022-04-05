@@ -8,8 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_login2.*
-import org.w3c.dom.Text
 
 class LoginActivity : AppCompatActivity() {
 
@@ -17,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etEmail: EditText
     private lateinit var etPass: EditText
     private lateinit var btnLogin: Button
-    private lateinit var tv_ForgotPassword: TextView
+    private lateinit var tvForgotpassword: TextView
 
     // Creating firebaseAuth object
     private lateinit var auth: FirebaseAuth
@@ -31,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         etEmail = findViewById(R.id.etEmail)
         etPass = findViewById(R.id.etPassword)
-        tv_ForgotPassword = findViewById(R.id.tv_ForgotPassword)
+        tvForgotpassword = findViewById(R.id.tv_ForgotPassword)
 
         // initialising Firebase auth object
         auth = FirebaseAuth.getInstance()
@@ -48,12 +46,10 @@ class LoginActivity : AppCompatActivity() {
         }
 
         //set click listener for the forgot password button
-        tv_ForgotPassword.setOnClickListener {
+        tvForgotpassword.setOnClickListener {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
-
     }
-
 
     private fun login() {
 
