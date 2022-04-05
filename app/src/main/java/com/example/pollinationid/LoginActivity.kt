@@ -8,6 +8,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth.AuthStateListener
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -19,6 +21,8 @@ class LoginActivity : AppCompatActivity() {
 
     // Creating firebaseAuth object
     private lateinit var auth: FirebaseAuth
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +41,6 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             login()
         }
-        
 
         tvRedirectSignUp.setOnClickListener {
             val intent = Intent(this, RegestrationActivity::class.java)
@@ -70,5 +73,18 @@ class LoginActivity : AppCompatActivity() {
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
+//        val firebaseAuth: FirebaseAuth
+//        val mAuthListener: AuthStateListener
+//        firebaseAuth = FirebaseAuth.getInstance()
+//
+//        mAuthListener = AuthStateListener {
+//            val user = FirebaseAuth.getInstance().currentUser
+//            if (user != null) {
+//                val intent = Intent(this@LoginActivity, FirstFragment::class.java)
+//                startActivity(intent)
+//                finish()
+//            }
+//        }
+
     }
 }
