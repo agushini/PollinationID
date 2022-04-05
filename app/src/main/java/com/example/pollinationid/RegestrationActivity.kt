@@ -34,6 +34,8 @@ class RegestrationActivity : AppCompatActivity() {
         etPass = findViewById(R.id.etSPassword)
         btnSignUp = findViewById(R.id.btnSignOut)
         tvRedirectLogin = findViewById(R.id.tvRedirectLogin)
+        etFirstName = findViewById(R.id.etFirstName)
+        etLastName = findViewById(R.id.etLastName)
 
         // Initialising auth object
         auth = Firebase.auth
@@ -56,8 +58,19 @@ class RegestrationActivity : AppCompatActivity() {
         val email = etEmail.text.toString()
         val pass = etPass.text.toString()
         val confirmPassword = etConfPass.text.toString()
+        val FirstName = etFirstName.text.toString()
+        val LastName = etLastName.text.toString()
 
         // check pass
+
+        if (FirstName.isBlank()){
+            Toast.makeText(
+                this,
+                "Please input First Name",
+                Toast.LENGTH_SHORT).show()
+            return
+        }
+
         if (email.isBlank() || pass.isBlank() || confirmPassword.isBlank()) {
             Toast.makeText(this, "Email and Password can't be blank", Toast.LENGTH_SHORT).show()
             return
