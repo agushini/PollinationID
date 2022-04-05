@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
 
-        }
+    }
     }
 
     //val textView = findViewById<TextView>(R.id.tv_ForgotPassword)
@@ -78,4 +78,3 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
     }
-}
