@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-        val user = FirebaseAuth.getInstance().currentUser
+       /* val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
             // User is signed in
             val i = Intent(this@LoginActivity, MainActivity::class.java)
@@ -64,11 +64,12 @@ class LoginActivity : AppCompatActivity() {
             startActivity(i)
         } else {
             // User is signed out
-          Log.v("SignOut Button", "Clicked")
-            val intent = Intent(this, LoginActivity::class.java)
-            this?.startActivity(intent)
+            startActivity(Intent(this, LoginActivity::class.java))
+//                Log.v("SignOut Button", "Clicked")
+//            val intent = Intent(this, LoginActivity::class.java)
+//            this?.startActivity(intent)
         }
-
+*/
     }
 
     private fun login() {
