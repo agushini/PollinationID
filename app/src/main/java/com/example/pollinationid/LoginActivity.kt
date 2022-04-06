@@ -14,6 +14,8 @@ import com.google.firebase.auth.FirebaseAuth
 import android.preference.PreferenceManager
 
 import android.content.SharedPreferences
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,11 +29,26 @@ class LoginActivity : AppCompatActivity() {
     // Creating firebaseAuth object
     private lateinit var auth: FirebaseAuth
 
+    public override fun onStart() {
+        super.onStart()
+        // Check if user is signed in (non-null) and update UI accordingly.
+        val currentUser = auth.currentUser
+        if(currentUser != null){
+            
+
+        }
+    }
+
+   /* private fun reload() {
+        startActivity(Intent(this, LoginActivity::class.java))
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_login2)
+
+        auth = Firebase.auth
 
         // View Binding
         tvRedirectSignUp = findViewById(R.id.tvRedirectSignUp)
@@ -74,6 +91,7 @@ class LoginActivity : AppCompatActivity() {
 //            this?.startActivity(intent)
         }
 */
+
     }
 
     private fun login() {
