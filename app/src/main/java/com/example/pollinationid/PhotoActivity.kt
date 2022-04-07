@@ -17,8 +17,12 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.pollinationid.ml.PollinatorModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_photo.*
+import org.tensorflow.lite.DataType
+import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.util.*
 
 class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
@@ -27,6 +31,11 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     lateinit var imageView: ImageView
     private val pickImage = 100
     private var imageUri: Uri? = null
+
+    //for the photo ai
+    //lateinit var aiTextView: TextView
+    lateinit var bitmap: Bitmap
+    lateinit var aiPhoto: ImageView
 
     lateinit var textView: TextView
     private lateinit var dateButton: Button
@@ -74,7 +83,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             Log.i("Photo Activity", "Hotel button clicked")
             val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
 
-
             if (hotel != ""){
                 val mFireStore = FirebaseFirestore.getInstance()
                 val hotelRef =mFireStore.collection("Hotels").document(hotel) //give it the hotel path
@@ -93,7 +101,33 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                                         Toast.LENGTH_LONG
                                     ).show()
 
+
+                                    //Start looking into the image and processing it
+                                    Log.i("Possible Pollinators", "Inside")
+                                    var resize: Bitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
+                                    val model = PollinatorModel.newInstance(this)
+                                    var theBuffer = TensorImage.fromBitmap(resize)
+                                    var byteBuffer = theBuffer.buffer
+
+                                    Log.i("Possible Pollinators", "Above Input")
+                                    // Creates inputs for reference.
+                                    val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.UINT8)
+                                    inputFeature0.loadBuffer(byteBuffer)
+
+                                    Log.i("Possible Pollinators", "Above Run")
+                                    // Runs model inference and gets result.
+                                    val outputs = model.process(inputFeature0)
+                                    val outputFeature0 = outputs.probabilityAsTensorBuffer
+                                    var max = getMax(outputFeature0.floatArray)
+                                    //aiTextView.setText(max)
+                                    Log.i("Possible Pollinators", "Max 1: $max")
+
+                                    // Releases model resources if no longer used.
+                                    model.close()
+
                                     val intent = Intent(this, PhotoPossiblePollinators::class.java)
+
+                                    intent.putExtra("Results", max)
                                     startActivity(intent)
 
                                 }else{
@@ -236,6 +270,29 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         myHour = hourOfDay
         myMinute = minute
         textView.text = "Year: " + myYear + "\n" + "Month: " + myMonth + "\n" + "Day: " + myDay + "\n" + "Hour: " + myHour + "\n" + "Minute: " + myMinute
+    }
+
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        super.onActivityResult(requestCode, resultCode, data)
+//
+//        aiPhoto.setImageURI(data?.data)
+//
+//        var uri: Uri? = data?.data
+//        bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
+//    }
+
+    private fun getMax(arr:FloatArray) : Int{
+        var index = 0
+        var min = 0.0f
+
+        for(i in 0..1000){
+            if(arr[i]>min){
+                index = i
+                min = arr[i]
+            }
+        }
+        return index
+
     }
 
 }
