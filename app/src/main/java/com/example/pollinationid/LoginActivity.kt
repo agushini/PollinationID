@@ -1,21 +1,18 @@
 package com.example.pollinationid
 
-import android.content.ContentValues.TAG
-import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
+import android.preference.PreferenceManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import android.preference.PreferenceManager
-
-import android.content.SharedPreferences
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -29,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
     // Creating firebaseAuth object
     private lateinit var auth: FirebaseAuth
 
-    public override fun onStart() {
+    /*public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
@@ -37,16 +34,29 @@ class LoginActivity : AppCompatActivity() {
             
 
         }
-    }
+    }*/
 
    /* private fun reload() {
         startActivity(Intent(this, LoginActivity::class.java))
     }*/
-
+   var sp: SharedPreferences? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_login2)
+
+        if(sp?.getBoolean("logged",false) == true) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        val preferences = PreferenceManager.getDefaultSharedPreferences(
+            applicationContext
+        )
+        // "login","no" means default string value is "no", so if you didn't set yes after login, it will be no as default
+        // "login","no" means default string value is "no", so if you didn't set yes after login, it will be no as default
+
+
 
         auth = Firebase.auth
 
