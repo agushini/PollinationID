@@ -15,17 +15,6 @@ class PrivacyPolicyActivity : AppCompatActivity() {
 
         val linkToTextView = findViewById<TextView>(R.id.txtContactsLink)
         linkToTextView.movementMethod = LinkMovementMethod.getInstance()
-/*
-        when(btnBack){
-            setCurrentFragment(fifthFragment)->R.id.btnBack
-        }
-*/
     }
-/*
-    private fun setCurrentFragment(fragment: Fragment)=
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flFragment,fragment)
-            commit()
-        }
-*/
+
 }

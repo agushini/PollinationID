@@ -31,13 +31,28 @@
             android:name=".ContactsActivity"
             android:exported="false"
             android:label="@string/title_activity_contacts"
-            android:theme="@style/Theme.PollinationID.NoActionBar" />
+            android:theme="@style/Theme.PollinationID.NoActionBar"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".TermsConditionsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".PrivacyPolicyActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="true" >
