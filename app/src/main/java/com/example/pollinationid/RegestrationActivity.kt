@@ -1,16 +1,20 @@
 package com.example.pollinationid
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-
+val db = Firebase.firestore
 class RegestrationActivity : AppCompatActivity() {
     val user = Firebase.auth.currentUser
 
@@ -29,6 +33,20 @@ class RegestrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_regestration)
+
+        val user = hashMapOf(
+            "first" to "Ada",
+            "last" to "Lovelace",
+        )
+// Add a new document with a generated ID
+        db.collection("users")
+            .add(user)
+            .addOnSuccessListener { documentReference ->
+                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error adding document", e)
+            }
 
         // View Bindings
         etEmail = findViewById(R.id.etSEmailAddress)
@@ -51,11 +69,11 @@ class RegestrationActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        user?.let {
+        /*user?.let {
             // Name, email address, and profile photo Url
-            var etFirstName = user.displayName
-            val etLastName = user.displayName
-        }
+            var etFirstName = user.
+            val etLastName = user.
+        }*/
     }
 
     private fun signUpUser() {
@@ -87,7 +105,21 @@ class RegestrationActivity : AppCompatActivity() {
                 .show()
             return
         }
+        val user = Firebase.auth.currentUser
+        user?.let {
+            // Name, email address, and profile photo Url
+            val name = user.displayName
+            val email = user.email
+            val photoUrl = user.photoUrl
 
+            // Check if user's email is verified
+            val emailVerified = user.isEmailVerified
+
+            // The user's ID, unique to the Firebase project. Do NOT use this value to
+            // authenticate with your backend server, if you have one. Use
+            // FirebaseUser.getToken() instead.
+            val uid = user.uid
+        }
         // If all credential are correct
         // We call createUserWithEmailAndPassword
         // using auth object and pass the
