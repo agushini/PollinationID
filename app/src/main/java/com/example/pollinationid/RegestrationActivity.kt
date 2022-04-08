@@ -54,7 +54,6 @@ class RegestrationActivity : AppCompatActivity() {
 
     private fun signUpUser() {
 
-
         val email = etEmail.text.toString()
         val pass = etPass.text.toString()
         val confirmPassword = etConfPass.text.toString()
@@ -63,11 +62,12 @@ class RegestrationActivity : AppCompatActivity() {
 
         // check pass
 
-        if (FirstName.isBlank()){
+        if (FirstName.isBlank()) {
             Toast.makeText(
                 this,
                 "Please input First Name",
-                Toast.LENGTH_SHORT).show()
+                Toast.LENGTH_SHORT
+            ).show()
             return
         }
 
@@ -81,6 +81,7 @@ class RegestrationActivity : AppCompatActivity() {
                 .show()
             return
         }
+
         // If all credential are correct
         // We call createUserWithEmailAndPassword
         // using auth object and pass the
@@ -96,8 +97,8 @@ class RegestrationActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Signed Up Failed!", Toast.LENGTH_SHORT).show()
             }
+            
         }
-
 
     }
 }

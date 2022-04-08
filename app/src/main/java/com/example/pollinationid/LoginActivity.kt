@@ -46,17 +46,16 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login2)
 
         if(sp?.getBoolean("logged",false) == true) {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+        else{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        val preferences = PreferenceManager.getDefaultSharedPreferences(
-            applicationContext
-        )
         // "login","no" means default string value is "no", so if you didn't set yes after login, it will be no as default
         // "login","no" means default string value is "no", so if you didn't set yes after login, it will be no as default
-
-
 
         auth = Firebase.auth
 
@@ -87,20 +86,19 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-       /* val user = FirebaseAuth.getInstance().currentUser
+        /*val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
             // User is signed in
-            val i = Intent(this@LoginActivity, MainActivity::class.java)
-            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            val i = Intent(this, MainActivity::class.java)
+//            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(i)
         } else {
             // User is signed out
-            startActivity(Intent(this, LoginActivity::class.java))
+//            startActivity(Intent(this, LoginActivity::class.java))
 //                Log.v("SignOut Button", "Clicked")
-//            val intent = Intent(this, LoginActivity::class.java)
-//            this?.startActivity(intent)
-        }
-*/
+            val intent = Intent(this, LoginActivity::class.java)
+            this?.startActivity(intent)
+        }*/
 
     }
 

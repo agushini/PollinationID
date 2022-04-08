@@ -28,7 +28,7 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
 
         view.btnSignOut.setOnClickListener { view ->
             Log.v("SignOut Button", "Clicked")
-            val intent = Intent(activity, LoginActivity::class.java)
+            val intent = Intent(activity, RegestrationActivity::class.java)
             activity?.startActivity(intent)
         }
 
