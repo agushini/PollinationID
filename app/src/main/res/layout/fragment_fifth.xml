@@ -95,7 +95,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btnSignOut"
             tools:ignore="TextContrastCheck" />
 
-        <EditText
+        <TextView
             android:id="@+id/txtAccount"
             android:layout_width="410dp"
             android:layout_height="40dp"
@@ -104,9 +104,11 @@
             android:ems="10"
             android:inputType="none"
             android:labelFor="@id/fifthFragment"
-            android:text="@string/account"
+            android:text="     Account"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
             app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +144,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtInfo"
             tools:ignore="TextContrastCheck" />
 
-        <EditText
+        <TextView
             android:id="@+id/txtInfo"
             android:layout_width="410dp"
             android:layout_height="40dp"
@@ -151,9 +153,11 @@
             android:ems="10"
             android:inputType="none"
             android:labelFor="@id/fifthFragment"
-            android:text="@string/info"
+            android:text="     Info"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
             app:layout_constraintBottom_toTopOf="@+id/BtnPNProject"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
