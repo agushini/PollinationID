@@ -34,7 +34,7 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
 
         view.BtnPassReset.setOnClickListener { view ->
             Log.v("Reset Password Button", "Clicked")
-            val intent = Intent(activity, LoginActivity::class.java)
+            val intent = Intent(activity, ForgotPasswordActivity::class.java)
             activity?.startActivity(intent)
         }
 
