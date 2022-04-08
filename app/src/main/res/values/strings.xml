@@ -119,4 +119,9 @@
     <string name="password">Password</string>
     <string name="create_account">Create Account</string>
     <string name="login__pollination">Login to Pollination </string>
+    <string name="PoliProjectInfo1">Bees and other pollinators are disappearing around the globe. Major threats to pollinators include habitat loss and fragmentation, pollution and pesticides, and the spread of invasive species and diseases.</string>
+    <string name="PoliProjectInfo2">Over the past 70 years, the United States has experienced a dramatic decline in honey bee colonies from about 5.9 million in 1947 to just 2.7 million in 2017--a 55% reduction. A surveyor from Michigan State University found population numbers for half of Michigan’s bumblebee species have declined by 50% or more.</string>
+    <string name="PoliProjectInfo3">Pollinators, such as bees, birds, beetles, and butterflies, are vital organisms for pollination of wild plant species and crops, such as apples, blueberries, and almonds. In fact, it is estimated that one out of every three bites of food we eat and nearly 90% of Earth’s flowering plants depend on insect pollination. In the US alone, honeybees are responsible for pollinating $10 billion worth of crops annually.</string>
+    <string name="PoliProjectInfo4">The message is clear: we need to act. The PolliNation Project is a campus and community-wide initiative to build insect hotels in order to promote pollinator awareness and conservation. Check out the <a href="https://www.youtube.com/watch?v=UP1SQ2c78JQ">PolliNation You Tube video</a> for an overview of the project\'s goals and plans.</string>
+    <string name="PoliProjecyHyperLink">For more information about the PolliNation Project, check out the PolliNation website located <a href="https://umdearborn.edu/environmental-interpretive-center/education-programs/pollination-project">here.</a></string>
 </resources>

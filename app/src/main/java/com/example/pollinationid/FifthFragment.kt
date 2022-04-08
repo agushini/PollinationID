@@ -40,7 +40,8 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
 
         view.BtnPNProject.setOnClickListener { view ->
             Log.v("PolliNation Project Btn", "Clicked")
-
+            val intent = Intent(activity, PolinationProjectActivity::class.java)
+            activity?.startActivity(intent)
         }
 
         view.BtnPrivPolicy.setOnClickListener { view ->

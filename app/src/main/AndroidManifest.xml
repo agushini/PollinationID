@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
-    package="com.example.pollinationid" >
-
-    <!-- Below are the permissions required for the app to run. It requests permissions though.
-     -->
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    package="com.example.pollinationid">
+    <!--  Below are the permissions required for the app to run. It requests permissions though. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -16,15 +13,23 @@
         android:roundIcon="@mipmap/theicon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PollinationID">
+        <activity
+            android:name=".PolinationProjectActivity"
+            android:exported="false"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <provider
-            android:authorities="com.example.pollinationid"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.pollinationid"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/providerfile"/>
+                android:resource="@xml/providerfile" />
         </provider>
 
         <activity
@@ -33,7 +38,7 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".TermsConditionsActivity"
@@ -41,7 +46,7 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".PrivacyPolicyActivity"
@@ -49,17 +54,15 @@
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ForgotPasswordActivity"
-            android:exported="true" >
+            android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
         </activity>
-
-
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -69,20 +72,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".RegestrationActivity"
-            android:label="Sign Up"
-            android:exported="true">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity"/>
+            android:exported="true"
+            android:label="Sign Up">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:launchMode="singleTop">
-
-        </activity>
+            android:launchMode="singleTop"></activity>
         <activity
             android:name=".ExploreActivity"
             android:label="Explore More"
@@ -91,21 +92,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".PhotoActivity"
+        <activity
+            android:name=".PhotoActivity"
             android:label="Photo ID"
-            android:launchMode= "singleTop">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-
-        <activity android:name=".PhotoPossiblePollinators"
+        <activity
+            android:name=".PhotoPossiblePollinators"
             android:label="Possible Pollinators"
-            android:launchMode= "singleTop">
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PhotoActivity"/>
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PhotoActivity" />
         </activity>
-
     </application>
 
 </manifest>
