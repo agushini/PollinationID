@@ -10,6 +10,9 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.FirebaseFirestore
+
+var db = FirebaseFirestore.getInstance()
 
 class RegestrationActivity : AppCompatActivity() {
     val user = Firebase.auth.currentUser
@@ -92,7 +95,7 @@ class RegestrationActivity : AppCompatActivity() {
         // We call createUserWithEmailAndPassword
         // using auth object and pass the
         // email and pass in it.
-        auth.createUserWithEmailAndPassword(email, pass,).addOnCompleteListener(this) {
+        auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
 
