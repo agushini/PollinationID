@@ -200,8 +200,7 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "• Rows of white hair beneath abdomen (scopa)\n" +
                     "• Basal white stripes on abdomen\n" +
                     "• 3 visible metasomal sterna",
-            "The Bellflower Resin Bee has been recorded on the following plants3\n" +
-                    ":\n" +
+            "The Bellflower Resin Bee has been recorded on the following plants:\n" +
                     "\n" +
                     "Milkweed, Asclepias spp.\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -210,11 +209,6 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Mallow, Malva spp.\n" +
                     "Sweet Clover, Melilotus spp.\n" +
                     "Evening Primrose, Oenothera spp.\n" +
-                    "\n" +
-                    "M. campanulae\n" +
-                    "8mm to\n" +
-                    "11mm long\n" +
-                    "\n" +
                     "Lobelia, Lobelia spp.\n" +
                     "Loosestrife, Lythrum spp.\n" +
                     "Catmint, Nepeta spp.\n" +
@@ -224,8 +218,8 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Fuzzy Bean, Strophostyles spp.\n" +
                     "Snowberry, Symphoricarpus spp.\n" +
                     "Vervain, Verbena spp.\n" +
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
-                    "Identification and Native Plant Forage Guide (Holm 2017)\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees:\n" +
+                    "An Identification and Native Plant Forage Guide (Holm 2017)\n\n" +
                     "SPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
@@ -233,7 +227,7 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Coneflower, Echinacea spp.\n" +
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
-                    "Balsam Ragwort, Packera paupercula\n" +
+                    "Balsam Ragwort, Packera paupercula\n\n" +
                     "SUMMER\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
@@ -246,7 +240,7 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "Blazingstar, Liatris spp.\n" +
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
-                    "Leadplant, Amorpha canescens\n" +
+                    "Leadplant, Amorpha canescens\n\n" +
                     "AUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
@@ -477,71 +471,70 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                  "• Pale yellow hair on thorax and first abdominal segment.\n" +
                         "• Black spot in middle of thorax\n" +
                         "• Abdomen covered in black hair",
-                  "The following species attract members from the genus Bombus. Information obtained from Bees: An\n" +
-                        "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                        "COMMON FORAGE PLANTS\n" +
-                        "ANNUALS AND PERENNIALS\n" +
-                        "Anise Hyssop, Agastache foeniculum\n" +
-                        "Prairie Onion, Allium stellatum\n" +
-                        "Wild Columbine, Aquilegia canadensis\n" +
-                        "Milkweed, Ascleppias spp.\n" +
-                        "Canada Milkvetch, Astragalus canadensis\n" +
-                        "White Indigo, Baptisia spp.\n" +
-                        "Partridge Pea, Chamaecrista fasciculata\n" +
-                        "White Turtlehead, Chelone glabra\n" +
-                        "Prairie Clover, Dalea spp.\n" +
-                        "Wild Larkspur, Delphinium virescens\n" +
-                        "Canada Tick Trefoil, Desmodium canadense\n" +
-                        "Shooting Star, Dodecatheon media\n" +
-                        "Coneflower, Echinacea spp.\n" +
-                        "Spotted Joe Pye Weed, Eutrochium maculatum\n" +
-                        "Wild Geranium, Geranium maculatum\n" +
-                        "Prairie Smoke, Geum triflorum\n" +
-                        "Sneezeweed, Helenium autumnale\n" +
-                        "Virginia Waterleaf, Hydrophyllum virginianum\n" +
-                        "Bottle Gentian, Gentiana andrewsii\n" +
-                        "Blazingstar, Liatris spp.\n" +
-                        "Blue Lobelia, Lobelia siphilitica\n" +
-                        "Wild Lupine, Lupinus perennis\n" +
-                        "Wild Bergamot, Monarda fistulosa\n" +
-                        "Beardtongue, Penstemon spp.\n" +
-                        "Obedient Plant, Physostegia virginiana\n" +
-                        "Jacob’s Ladder, Polemonium reptans\n" +
-                        "Solomon’s Seal, Polygonatum spp.\n" +
-                        "Gray-headed Coneflower, Ratibida pinnata\n" +
-                        "Black-eyed Susan, Rudbeckia hirta\n" +
-                        "Wild Senna, Senna hebecarpa\n" +
-                        "Goldenrod, Solidago spp.\n" +
-                        "Aster, Symphyotrichum spp.\n" +
-                        "Spiderwort, Tradescantia spp.\n" +
-                        "Common Ironweed, Wernonia fasciculata\n" +
-                        "Culver’s Root, Veronicastrum virginicum\n" +
-                        "Vervain, Verbena spp.\n" +
-                        "Golden Alexanders, Zizia aurea\n" +
-                        "SHRUBS\n" +
-                        "\n" +
-                        "Black Chokecherry, Aronia melanocarpa\n" +
-                        "New Jersey tea, Ceanothus americanus\n" +
-                        "Buttonbush, Cephalanthus occidentalis\n" +
-                        "Leadplant/False Indigo, Amorpha spp.\n" +
-                        "Gray Dogwood, Cornus racemosa\n" +
-                        "Red Osier Dogwood, Cornus sericea\n" +
-                        "Bush Honeysuckle, Diervilla lonicera\n" +
-                        "Sumac, Rhus spp.\n" +
-                        "Willow, Salix spp.\n" +
-                        "Smooth Wild Rose, Rosa blanda\n" +
-                        "Prickly Ash, Zanthoxylum americanum\n" +
-                        "TREES\n" +
-                        "Buckeye, Aesculus spp.\n" +
-                        "Eastern Redbud, Cercis canadensis\n" +
-                        "Kentucky Coffeetree, Gymnocladus dioicus\n" +
-                        "Tulip Poplar, Liriodendron tulipifera\n" +
-                        "American Plum, Prunus americana\n" +
-                        "Black Cherry, Prunus serotina\n" +
-                        "American Bladdernut, Staphylea trifolia\n" +
-                        "American Basswood, Tilia americana\n" +
-                        "Crops pollinated\n" +
-                        "Apples, cherries, plums, currants, gooseberries, tomatoes, eggplants, blueberries, cranberries"),
+                  "The following species attract members from the genus Bombus. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n" +
+                          " \n\n" +
+                          "COMMON FORAGE PLANTS  \n" +
+                          "ANNUALS AND PERENNIALS \n" +
+                          "Anise Hyssop, Agastache foeniculum \n" +
+                          "Prairie Onion, Allium stellatum \n" +
+                          "Wild Columbine, Aquilegia canadensis \n" +
+                          "Milkweed, Ascleppias spp. \n" +
+                          "Canada Milkvetch, Astragalus canadensis \n" +
+                          "White Indigo, Baptisia spp. \n" +
+                          "Partridge Pea, Chamaecrista fasciculata  \n" +
+                          "White Turtlehead, Chelone glabra \n" +
+                          "Prairie Clover, Dalea spp. \n" +
+                          "Wild Larkspur, Delphinium virescens \n" +
+                          "Canada Tick Trefoil, Desmodium canadense \n" +
+                          "Shooting Star, Dodecatheon media \n" +
+                          "Coneflower, Echinacea spp. \n" +
+                          "Spotted Joe Pye Weed, Eutrochium maculatum \n" +
+                          "Wild Geranium, Geranium maculatum \n" +
+                          "Prairie Smoke, Geum triflorum  \n" +
+                          "Sneezeweed, Helenium autumnale \n" +
+                          "Virginia Waterleaf, Hydrophyllum virginianum \n" +
+                          "Bottle Gentian, Gentiana andrewsii \n" +
+                          "Blazingstar, Liatris spp. \n" +
+                          "Blue Lobelia, Lobelia siphilitica  \n" +
+                          "Wild Lupine, Lupinus perennis \n" +
+                          "Wild Bergamot, Monarda fistulosa \n" +
+                          "Beardtongue, Penstemon spp. \n" +
+                          "Obedient Plant, Physostegia virginiana \n" +
+                          "Jacob’s Ladder, Polemonium reptans \n" +
+                          "Solomon’s Seal, Polygonatum spp. \n" +
+                          "Gray-headed Coneflower, Ratibida pinnata \n" +
+                          "Black-eyed Susan, Rudbeckia hirta \n" +
+                          "Wild Senna, Senna hebecarpa \n" +
+                          "Goldenrod, Solidago spp. \n" +
+                          "Aster, Symphyotrichum spp. \n" +
+                          "Spiderwort, Tradescantia spp. \n" +
+                          "Common Ironweed, Wernonia fasciculata  \n" +
+                          "Culver’s Root, Veronicastrum virginicum  \n" +
+                          "Vervain, Verbena spp. \n" +
+                          "Golden Alexanders, Zizia aurea  \n\n" +
+                          "SHRUBS\n" +
+                          "Black Chokecherry, Aronia melanocarpa \n" +
+                          "New Jersey tea, Ceanothus americanus  \n" +
+                          "Buttonbush, Cephalanthus occidentalis \n" +
+                          "Leadplant/False Indigo, Amorpha spp. \n" +
+                          "Gray Dogwood, Cornus racemosa \n" +
+                          "Red Osier Dogwood, Cornus sericea \n" +
+                          "Bush Honeysuckle, Diervilla lonicera  \n" +
+                          "Sumac, Rhus spp. \n" +
+                          "Willow, Salix spp. \n" +
+                          "Smooth Wild Rose, Rosa blanda \n" +
+                          "Prickly Ash, Zanthoxylum americanum  \n\n" +
+                          "TREES \n" +
+                          "Buckeye, Aesculus spp.  \n" +
+                          "Eastern Redbud, Cercis canadensis  \n" +
+                          "Kentucky Coffeetree, Gymnocladus dioicus  \n" +
+                          "Tulip Poplar, Liriodendron tulipifera  \n" +
+                          "American Plum, Prunus americana \n" +
+                          "Black Cherry, Prunus serotina \n" +
+                          "American Bladdernut, Staphylea trifolia \n" +
+                          "American Basswood, Tilia americana  \n\n" +
+                          "Crops pollinated  \n" +
+                          "Apples, cherries, plums, currants, gooseberries, tomatoes, eggplants, blueberries, cranberries "),
         Insect("Common Pill Woodlouse", "(Armadillidium vulgare)",
             R.drawable.common_pill_woodlouse_1,R.drawable.common_pill_woodlouse_2,R.drawable.common_pill_woodlouse_3,R.drawable.common_pill_woodlouse_4,
                     "The Common Woodlouse (pill bug or “roly-poly”) is a multi-segmented arthropod whose trademark is curling into an armored ball when disturbed or threatened. They are harmless detritivores (organisms that eat dead and decaying organic matter) that live in humid places beneath rocks, logs, bricks, stones, and more(1). The Common Woodlouse benefits ecosystems by cycling nutrients back into the soil; it has been shown to modify the chemical composition of topsoil by raising pH and concentrations of phosphorous, potassium, and nitrate while increasing the removal of carbon from leaf litter(1). \n" +
@@ -779,24 +772,20 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                 "• Black and yellow; distinct black “V” on abdomen\n" +
                         "• Yellow mandibles (jaws) and legs\n" +
                         "• Black tegula (plate where wings connect to body)",
-                "The European Wool Carder Bee is a generalist bee and visits a wide variety of flowers1\n" +
-                        ".\n" +
-                        "\n" +
-                        "The following species attract members from the genus Anthidium. Information obtained from Bees: An\n" +
-                        "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                        "EARLY SUMMER\n" +
-                        "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material)\n" +
-                        "Beardtongue, Penstemon spp.\n" +
-                        "Coneflower, Echincaea spp.\n" +
-                        "Scurfy Pea, Psoralea spp.\n" +
-                        "Milkvetch, Astragalus spp.\n" +
-                        "SUMMER\n" +
-                        "Anise Hyssop, Agastache foeniculum\n" +
-                        "Sagewort, Artemesia spp. (hairs from this plant are used as nesting material)\n" +
-                        "Vervain, Verbena spp.\n" +
-                        "Tickseed, Coreopsis spp.\n" +
-                        "AUTUMN\n" +
-                        "Goldenrod, Solidago and Euthamia spp.\n" +
+                "The European Wool Carder Bee is a generalist bee and visits a wide variety of flowers.  \n" +
+                        "The following species attract members from the genus Anthidium. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
+                        "EARLY SUMMER \n" +
+                        "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material) Beardtongue, Penstemon spp. \n" +
+                        "Coneflower, Echincaea spp. \n" +
+                        "Scurfy Pea, Psoralea spp. \n" +
+                        "Milkvetch, Astragalus spp. \n\n" +
+                        "SUMMER \n" +
+                        "Anise Hyssop, Agastache foeniculum \n" +
+                        "Sagewort, Artemesia spp. (hairs from this plant are used as nesting material) \n" +
+                        "Vervain, Verbena spp. \n" +
+                        "Tickseed, Coreopsis spp. \n\n" +
+                        "AUTUMN \n" +
+                        "Goldenrod, Solidago and Euthamia spp. \n" +
                         "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Flat-Tailed Leafcutter Bee", "(Megachile mendica)",
             R.drawable.flat_tailed_leafcutter_bee_1,R.drawable.flat_tailed_leafcutter_bee_2,R.drawable.flat_tailed_leafcutter_bee_3,R.drawable.flat_tailed_leafcutter_bee_4,
@@ -1117,37 +1106,31 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
             "• Females have rows of pale scopa beneath abdomen\n" +
                     "• Grey or black bees with pale bands on abdomen\n" +
                     "• Males with long hairs on forelegs",
-            "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
-                    "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING\n" +
-                    "Golden Alexanders, Zizia aurea\n" +
-                    "Harebell, Campanula rotundifolia\n" +
-                    "Wild Indigo, Baptisia spp.\n" +
-                    "Coneflower, Echinacea spp.\n" +
-                    "Beardtongue, Penstemon spp.\n" +
-                    "Canada Anemone, Anemone canadensis\n" +
-                    "Balsam Ragwort, Packera paupercula\n" +
-                    "SUMMER\n" +
-                    "\n" +
-                    "Megachile spp.\n" +
-                    "5mm to\n" +
-                    "21mm long\n" +
-                    "\n" +
-                    "Yellow Coneflower, Ratibida pinnata\n" +
-                    "Black-eyed Susan, Rudbeckia hirta\n" +
-                    "Milkweed, Asclepias spp.\n" +
-                    "Joe Pye Weed, Eutrochium spp.\n" +
-                    "Tickseed, Coreopsis spp.\n" +
-                    "Anise Hyssop, Agastache foeniculum\n" +
-                    "Prairie Onion, Allium stellatum\n" +
-                    "Tick Trefoil, Desmodium spp.\n" +
-                    "Blazingstar, Liatris spp.\n" +
-                    "Vervain, Verbena spp.\n" +
-                    "Prairie Clover, Dalea spp.\n" +
-                    "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
-                    "Goldenrod, Solidago spp.\n" +
-                    "Aster, Symphyotrichum spp."),
+            "The following species attract members from the genus Megachile. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
+                    "SPRING \n" +
+                    "Golden Alexanders, Zizia aurea \n" +
+                    "Harebell, Campanula rotundifolia \n" +
+                    "Wild Indigo, Baptisia spp. \n" +
+                    "Coneflower, Echinacea spp. \n" +
+                    "Beardtongue, Penstemon spp. \n" +
+                    "Canada Anemone, Anemone canadensis \n" +
+                    "Balsam Ragwort, Packera paupercula \n\n" +
+                    "SUMMER \n" +
+                    "Yellow Coneflower, Ratibida pinnata \n" +
+                    "Black-eyed Susan, Rudbeckia hirta \n" +
+                    "Milkweed, Asclepias spp. \n" +
+                    "Joe Pye Weed, Eutrochium spp. \n" +
+                    "Tickseed, Coreopsis spp. \n" +
+                    "Anise Hyssop, Agastache foeniculum \n" +
+                    "Prairie Onion, Allium stellatum \n" +
+                    "Tick Trefoil, Desmodium spp. \n" +
+                    "Blazingstar, Liatris spp. \n" +
+                    "Vervain, Verbena spp. \n" +
+                    "Prairie Clover, Dalea spp. \n" +
+                    "Leadplant, Amorpha canescens \n\n" +
+                    "AUTUMN \n" +
+                    "Goldenrod, Solidago spp. \n" +
+                    "Aster, Symphyotrichum spp. "),
         Insect("Maine Blueberry Bee", "(Osmia atriventris)",
             R.drawable.maine_blueberry_bee_1,R.drawable.maine_blueberry_bee_2,R.drawable.maine_blueberry_bee_3,R.drawable.maine_blueberry_bee_4,
                     "The Maine Blueberry Bee is a beautiful metallic blue bee about the size of a house fly. They are smaller and less hairy than their cousin, the Blue Orchard Mason Bee. None-the-less, the Maine Blueberry Bee is an important pollinator of blueberries and other fruiting trees, and their life cycle is closely tied to the blueberry bloom(1). They are known pollinators of high- and low-bush blueberries. These bees nest in pre-existing cavities in wood, reeds, insect hotels, paper straws, and bamboo. \n" +
@@ -2159,8 +2142,7 @@ class FourthFragment:Fragment(R.layout.fragment_fourth) {
                     "• Pollen basket on hind legs\n" +
                     "• Hairy eyes\n" +
                     "• Wings held parallel over back when foraging",
-            "Honeybees are generalist foragers and will visit any available, nearby flower."
-            ),
+            "Honeybees are generalist foragers and will visit any available, nearby flower."),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
