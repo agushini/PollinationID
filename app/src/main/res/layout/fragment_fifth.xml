@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  This is the menu page  -->
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/linearLayout2"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:label="@string/pollinator_categories"
+    >
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/black"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/BtnPrivPolicy"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="36dp"
+            android:background="#16B2FF"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/white"
+            app:backgroundTint="#16B2FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnPNProject"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/fifthFragment"
@@ -26,6 +52,20 @@
             android:textStyle="italic|bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/BtnContact"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:background="#16B2FF"
+            android:text="@string/contact"
+            android:textColor="@color/white"
+            app:backgroundTint="#16B2FF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BtnTC"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btnSignOut"
@@ -55,34 +95,23 @@
             app:layout_constraintTop_toBottomOf="@+id/btnSignOut"
             tools:ignore="TextContrastCheck" />
 
-        <Button
-            android:id="@+id/BtnPNProject"
+        <EditText
+            android:id="@+id/txtAccount"
             android:layout_width="410dp"
-            android:layout_height="60dp"
-            android:layout_margin="15dp"
-            android:background="#16B2FF"
-            android:text="@string/pollination_project"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/grey_c1c1"
+            android:ems="10"
+            android:inputType="none"
+            android:labelFor="@id/fifthFragment"
+            android:text="@string/account"
             android:textColor="@color/white"
-            app:backgroundTint="#16B2FF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtInfo"
-            tools:ignore="TextContrastCheck" />
-
-        <Button
-            android:id="@+id/BtnPrivPolicy"
-            android:layout_width="410dp"
-            android:layout_height="60dp"
-            android:layout_margin="15dp"
-            android:layout_marginTop="36dp"
-            android:background="#16B2FF"
-            android:text="@string/privacy_policy"
-            android:textColor="@color/white"
-            app:backgroundTint="#16B2FF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BtnPNProject"
-            tools:ignore="TextContrastCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/fifthFragment"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <Button
             android:id="@+id/BtnTC"
@@ -100,36 +129,18 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/BtnContact"
+            android:id="@+id/BtnPNProject"
             android:layout_width="410dp"
             android:layout_height="60dp"
             android:layout_margin="15dp"
             android:background="#16B2FF"
-            android:text="@string/contact"
+            android:text="@string/pollination_project"
             android:textColor="@color/white"
             app:backgroundTint="#16B2FF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BtnTC"
+            app:layout_constraintTop_toBottomOf="@+id/txtInfo"
             tools:ignore="TextContrastCheck" />
-
-        <EditText
-            android:id="@+id/txtAccount"
-            android:layout_width="410dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@color/grey_c1c1"
-            android:ems="10"
-            android:inputType="none"
-            android:labelFor="@id/fifthFragment"
-            android:text="   Account"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fifthFragment"
-            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/txtInfo"
@@ -140,7 +151,7 @@
             android:ems="10"
             android:inputType="none"
             android:labelFor="@id/fifthFragment"
-            android:text="   Info"
+            android:text="@string/info"
             android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/BtnPNProject"
@@ -150,5 +161,14 @@
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
 
+            <View
+                android:id="@+id/MenuPageSpacer"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BtnContact" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+    </ScrollView>
+    </LinearLayout>
