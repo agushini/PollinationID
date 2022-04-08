@@ -12,6 +12,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class RegestrationActivity : AppCompatActivity() {
+    val user = Firebase.auth.currentUser
 
    lateinit var etFirstName: EditText
    lateinit var etLastName: EditText
@@ -23,6 +24,7 @@ class RegestrationActivity : AppCompatActivity() {
 
     // create Firebase authentication object
     private lateinit var auth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +51,11 @@ class RegestrationActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-
+        user?.let {
+            // Name, email address, and profile photo Url
+            var etFirstName = user.displayName
+            val etLastName = user.displayName
+        }
     }
 
     private fun signUpUser() {
@@ -97,7 +103,7 @@ class RegestrationActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Signed Up Failed!", Toast.LENGTH_SHORT).show()
             }
-            
+
         }
 
     }
