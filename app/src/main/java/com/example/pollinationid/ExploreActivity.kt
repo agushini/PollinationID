@@ -53,6 +53,5 @@ class ExploreActivity : AppCompatActivity() {
         plantButton.setOnClickListener{
             ExploreDescription_textView.text = intent.getStringExtra(bugInsectViewHolder.E_PLANT_KEY)
         }
-
     }
 }

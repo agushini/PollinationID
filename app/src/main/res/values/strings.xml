@@ -127,4 +127,5 @@
     <string name="PoliProjectHyperLink2">Download our sister app, <a href="https://play.google.com/store/apps/details?id=edu.umich.PolliNationHotels">PolliNation Hotels</a> to upload and view information about pollinators visiting southeast MI insect hotels.</string>
     <string name="place_holder">PLACE HOLDER</string>
     <string name="this_is_my_pollinator">This is my Pollinator</string>
+    <string name="title_activity_possible_photo_pollinator">PossiblePhotoPollinatorActivity</string>
 </resources>

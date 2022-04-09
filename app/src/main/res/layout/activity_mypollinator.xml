@@ -8,7 +8,7 @@
     android:background="@color/black">
 
     <Button
-        android:id="@+id/myPollinator"
+        android:id="@+id/myPollinatorButton"
         android:layout_width="378dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
