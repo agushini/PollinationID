@@ -1,5 +1,7 @@
 package com.example.pollinationid
 
+
+//https://www.gbandroidblogs.com/2022/01/image-classification-android-app-with-tensorflow-lite.html helpful resource
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -34,7 +36,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     private var imageUri: Uri? = null
 
     //for the photo ai
-    //lateinit var aiTextView: TextView
     lateinit var bitmap: Bitmap
     lateinit var aiPhoto: ImageView
 
@@ -106,36 +107,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
 
                                     outputGenerator(bitmap)
-
-//                                    //Start looking into the image and processing it
-//                                    Log.i("Possible Pollinators", "Inside")
-//                                    var resize: Bitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
-//                                    val model = PollinatorModel.newInstance(this)
-//                                    var theBuffer = TensorImage.fromBitmap(resize)
-//                                    var byteBuffer = theBuffer.buffer
-//
-//                                    Log.i("Possible Pollinators", "Above Input")
-//                                    // Creates inputs for reference.
-//                                    val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.UINT8)
-//                                    inputFeature0.loadBuffer(byteBuffer)
-//
-//                                    Log.i("Possible Pollinators", "Above Run")
-//                                    // Runs model inference and gets result.
-//                                    val outputs = model.process(inputFeature0)
-//                                    val outputFeature0 = outputs.probabilityAsTensorBuffer
-//                                    var max = getMax(outputFeature0.floatArray)
-//                                    //aiTextView.setText(max)
-//                                    Log.i("Possible Pollinators", "Max 1: $max")
-//
-//                                    // Releases model resources if no longer used.
-//                                    model.close()
-//
-//                                    val intent = Intent(this, PhotoPossiblePollinators::class.java)
-//
-//                                    intent.putExtra("Results", max)
-//                                    startActivity(intent)
-
-
+                                    
 
                                 }else{
                                     Log.i("Photo Activity", "Date not entered")
@@ -322,6 +294,8 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         intent.putExtra("Results", text)
         startActivity(intent)
+        
+
     }
 
 }
