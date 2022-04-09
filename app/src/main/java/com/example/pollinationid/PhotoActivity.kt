@@ -283,20 +283,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     }
 
 
-    private fun getMax(arr:FloatArray) : Int{
-        var index = 0
-        var min = 0.0f
-
-        for(i in 0..1000){
-            if(arr[i]>min){
-                index = i
-                min = arr[i]
-            }
-        }
-        return index
-
-    }
-
     private fun outputGenerator(bitmap: Bitmap){
         Log.i("TAGPHOTO", "Inside OutputGenerator")
         //declearing tensor flow lite model variable
@@ -315,12 +301,23 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         //getting result having high probability
         val highProbabilityOutput = outputs[0]
-        var text = highProbabilityOutput.label
+        val text = highProbabilityOutput.label
+        var outputList : MutableList<String> = mutableListOf()
+
+         for (i in outputs.indices){
+             if (outputs[i].score < .10){
+                 //do nothing
+                 //TODO: Maybe add something that handles if the outputList is empty to say not recognized
+                 break
+             }
+             outputList.add(outputs[i].label)
+        }
 
         //setting ouput text
-
         Log.i("TAGPHOTO", "outputGenerator: $highProbabilityOutput : ${highProbabilityOutput.score}")
+        outputList.forEach{Log.i("TAGPHOTO",it)}
 
+        pollinatorModel.close()
         val intent = Intent(this, PhotoPossiblePollinators::class.java)
 
         intent.putExtra("Results", text)

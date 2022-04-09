@@ -17,16 +17,14 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 
 class PhotoPossiblePollinators : AppCompatActivity() {
 
-    lateinit var aiTextView: TextView
-
-    lateinit var aiPhoto: ImageView
+    lateinit var aiResults: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         Log.i("PossiblePollinator", "Inside")
         setContentView(R.layout.photo_pollinators_possible)
-        aiTextView = findViewById(R.id.aiResults)
+        aiResults = findViewById(R.id.aiResults)
         Log.i("POSSIBLE POLLINATORS", "Before Intent")
 
         val text = intent.getStringExtra("Results")
