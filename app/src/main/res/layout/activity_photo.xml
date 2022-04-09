@@ -20,7 +20,7 @@
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageView"
+                android:id="@+id/inputPhotoView"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="65dp"
@@ -40,7 +40,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                app:layout_constraintTop_toBottomOf="@+id/inputPhotoView" />
 
             <Button
                 android:id="@+id/pickDateBtn"

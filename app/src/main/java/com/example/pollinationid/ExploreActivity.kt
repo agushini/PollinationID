@@ -9,7 +9,6 @@ import kotlinx.android.synthetic.main.fragment_fourth.*
 
 class ExploreActivity : AppCompatActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -20,7 +19,6 @@ class ExploreActivity : AppCompatActivity() {
         val navBarTitle = intent.getStringExtra(bugInsectViewHolder.NAV_BAR_KEY)
         supportActionBar?.title = navBarTitle
 
-        //set the technical name thingy
         val eTechNameTextView: TextView = findViewById(R.id.Explore_technicalName_textview)
         eTechNameTextView?.text = intent.getStringExtra(bugInsectViewHolder.E_DESCRIPTION_KEY)
 
