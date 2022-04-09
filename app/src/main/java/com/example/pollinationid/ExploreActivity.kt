@@ -21,7 +21,6 @@ class ExploreActivity : AppCompatActivity() {
         supportActionBar?.title = navBarTitle
 
         //set the technical name thingy
-        //val eDescription = intent.getStringExtra(bugInsectViewHolder.E_DESCRIPTION)
         val eTechNameTextView: TextView = findViewById(R.id.Explore_technicalName_textview)
         eTechNameTextView?.text = intent.getStringExtra(bugInsectViewHolder.E_DESCRIPTION_KEY)
 
@@ -42,7 +41,6 @@ class ExploreActivity : AppCompatActivity() {
         val eimg4 = intent.getIntExtra(bugInsectViewHolder.E_IMG_4_KEY, R.drawable.ic_black_camera_foreground)
         eImageView4?.setImageResource(eimg4)
 
-
         ExploreDescription_textView.text = intent.getStringExtra(bugInsectViewHolder.E_ABOUT_KEY)
 
         //set the text to change on the button click
@@ -57,8 +55,6 @@ class ExploreActivity : AppCompatActivity() {
         plantButton.setOnClickListener{
             ExploreDescription_textView.text = intent.getStringExtra(bugInsectViewHolder.E_PLANT_KEY)
         }
-
-
 
     }
 }
