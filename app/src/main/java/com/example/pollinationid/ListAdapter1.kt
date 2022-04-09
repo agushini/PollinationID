@@ -39,12 +39,9 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
         val E_PLANT_KEY = "E_PLANT"
     }
 
-
     private var mTitleView: TextView? = null
     private var mCaptionView: TextView? = null
     private  var mImageView: ImageView? = null
-
-    //private var eExploreImage1: ImageView? = null
 
     init {
         mTitleView = itemView.findViewById(R.id.recycler1TextView)
