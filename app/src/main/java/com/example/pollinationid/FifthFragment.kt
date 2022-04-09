@@ -1,23 +1,28 @@
 package com.example.pollinationid
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth.AuthStateListener
 import kotlinx.android.synthetic.main.fragment_fifth.view.*
-import kotlinx.android.synthetic.main.fragment_first.*
-import kotlinx.android.synthetic.main.fragment_third.*
-import kotlinx.android.synthetic.main.fragment_third.view.*
 
-
+private val mAuthListener: AuthStateListener? = null
+private val mAuth: FirebaseAuth? = null
 class FifthFragment:Fragment(R.layout.fragment_fifth) {
-
+   /* override fun onStop() {
+        FirebaseAuth.getInstance().signOut();
+        super.onStop()
+        if (mAuthListener != null) {
+            if (mAuth != null) {
+                mAuth.removeAuthStateListener(mAuthListener)
+            }
+        }
+    }*/
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -28,7 +33,7 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
 
         view.btnSignOut.setOnClickListener { view ->
             Log.v("SignOut Button", "Clicked")
-            val intent = Intent(activity, RegestrationActivity::class.java)
+            val intent = Intent(activity, LoginActivity::class.java)
             activity?.startActivity(intent)
         }
 

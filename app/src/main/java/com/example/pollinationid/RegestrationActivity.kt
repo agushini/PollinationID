@@ -14,7 +14,9 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+
 val db = Firebase.firestore
+// Access a Cloud Firestore instance from your Activity
 class RegestrationActivity : AppCompatActivity() {
     val user = Firebase.auth.currentUser
 
@@ -34,19 +36,7 @@ class RegestrationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_regestration)
 
-        val user = hashMapOf(
-            "first" to "Ada",
-            "last" to "Lovelace",
-        )
-// Add a new document with a generated ID
-        db.collection("users")
-            .add(user)
-            .addOnSuccessListener { documentReference ->
-                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
-            }
-            .addOnFailureListener { e ->
-                Log.w(TAG, "Error adding document", e)
-            }
+
 
         // View Bindings
         etEmail = findViewById(R.id.etSEmailAddress)
@@ -62,6 +52,7 @@ class RegestrationActivity : AppCompatActivity() {
 
         btnSignUp.setOnClickListener {
             signUpUser()
+
         }
 
         // switching from signUp Activity to Login Activity
@@ -84,6 +75,7 @@ class RegestrationActivity : AppCompatActivity() {
         val FirstName = etFirstName.text.toString()
         val LastName = etLastName.text.toString()
 
+
         // check pass
 
         if (FirstName.isBlank()) {
@@ -105,7 +97,32 @@ class RegestrationActivity : AppCompatActivity() {
                 .show()
             return
         }
-        val user = Firebase.auth.currentUser
+
+        val user = hashMapOf(
+            "first_name" to "Ada",
+            "last_name" to "Lovelace",
+        )
+// Add a new document with a generated ID
+        db.collection("users")
+            .add(user)
+            .addOnSuccessListener { documentReference ->
+                Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+            }
+            .addOnFailureListener { e ->
+                Log.w(TAG, "Error adding document", e)
+            }
+        db.collection("users")
+            .get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    Log.d(TAG, "${document.id} => ${document.data}")
+                }
+            }
+            .addOnFailureListener { exception ->
+                Log.w(TAG, "Error getting documents.", exception)
+            }
+
+        /*val user = Firebase.auth.currentUser
         user?.let {
             // Name, email address, and profile photo Url
             val name = user.displayName
@@ -119,7 +136,7 @@ class RegestrationActivity : AppCompatActivity() {
             // authenticate with your backend server, if you have one. Use
             // FirebaseUser.getToken() instead.
             val uid = user.uid
-        }
+        }*/
         // If all credential are correct
         // We call createUserWithEmailAndPassword
         // using auth object and pass the

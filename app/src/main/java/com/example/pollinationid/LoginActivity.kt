@@ -46,13 +46,13 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login2)
 
         if(sp?.getBoolean("logged",false) == true) {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-        else{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+   /*     else{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }*/
 
         // "login","no" means default string value is "no", so if you didn't set yes after login, it will be no as default
         // "login","no" means default string value is "no", so if you didn't set yes after login, it will be no as default
