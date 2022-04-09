@@ -17,9 +17,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 
 class PhotoPossiblePollinators : AppCompatActivity() {
 
-    private lateinit var aiTextView: TextView
-
-    //lateinit var aiPhoto: ImageView
+    lateinit var aiTextView: TextView
     lateinit var bitmap: Bitmap
     lateinit var aiPhoto: ImageView
 
@@ -29,10 +27,12 @@ class PhotoPossiblePollinators : AppCompatActivity() {
         Log.i("PossiblePollinator", "Inside")
         setContentView(R.layout.photo_pollinators_possible)
         aiTextView = findViewById(R.id.aiResults)
-        //aiPhoto = findViewById(R.id.inputPhotoView)
+        Log.i("POSSIBLE POLLINATORS", "Before Intent")
 
-        val text = intent.getStringExtra("Result")
-        aiTextView.setText(text)
+        val text = intent.getStringExtra("Results")
+
+        Log.i("POSSIBLE POLLINATORS", "Result $text")
+        aiTextView?.text = text
 
 
 //        Log.i("Possible Pollinators", "Inside")

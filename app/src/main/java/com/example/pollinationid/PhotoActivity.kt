@@ -69,7 +69,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         hotelButton = findViewById(R.id.enterHotel)
 
         dateButton.setOnClickListener { //when pick date clicked
-            Log.i("Photo Activity", "Date button clicked")
+            Log.i("TAGPHOTO", "Date button clicked")
             val calendar: Calendar = Calendar.getInstance()
             day = calendar.get(Calendar.DAY_OF_MONTH)
             month = calendar.get(Calendar.MONTH)
@@ -80,55 +80,61 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
 
         hotelButton.setOnClickListener{
-            Log.i("Photo Activity", "Hotel button clicked")
+            Log.i("TAGPHOTO", "Hotel button clicked")
             val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
 
             if (hotel != ""){
                 val mFireStore = FirebaseFirestore.getInstance()
-                val hotelRef =mFireStore.collection("Hotels").document(hotel) //give it the hotel path
+                val hotelRef = mFireStore.collection("Hotels").document(hotel) //give it the hotel path
 
                 hotelRef.get().addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         val document = task.result
                         if(document != null) {
                             if (document.exists()) {
-                                Log.i("Photo Activity", "Hotel exists.")
+                                Log.i("TAGPHOTO", "Hotel exists.")
                                 if (displayDate.text != ""){ //if date entered
-                                    Log.i("Photo Activity","Date entered")
+                                    Log.i("TAGPHOTO","Date entered")
                                     Toast.makeText(
                                         this,
                                         "Valid Date and Hotel!",
                                         Toast.LENGTH_LONG
                                     ).show()
 
+                                    Log.i("TAGPHOTO", "Before OuputGen Call")
 
-                                    //Start looking into the image and processing it
-                                    Log.i("Possible Pollinators", "Inside")
-                                    var resize: Bitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
-                                    val model = PollinatorModel.newInstance(this)
-                                    var theBuffer = TensorImage.fromBitmap(resize)
-                                    var byteBuffer = theBuffer.buffer
 
-                                    Log.i("Possible Pollinators", "Above Input")
-                                    // Creates inputs for reference.
-                                    val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.UINT8)
-                                    inputFeature0.loadBuffer(byteBuffer)
+                                    outputGenerator(bitmap)
 
-                                    Log.i("Possible Pollinators", "Above Run")
-                                    // Runs model inference and gets result.
-                                    val outputs = model.process(inputFeature0)
-                                    val outputFeature0 = outputs.probabilityAsTensorBuffer
-                                    var max = getMax(outputFeature0.floatArray)
-                                    //aiTextView.setText(max)
-                                    Log.i("Possible Pollinators", "Max 1: $max")
+//                                    //Start looking into the image and processing it
+//                                    Log.i("Possible Pollinators", "Inside")
+//                                    var resize: Bitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
+//                                    val model = PollinatorModel.newInstance(this)
+//                                    var theBuffer = TensorImage.fromBitmap(resize)
+//                                    var byteBuffer = theBuffer.buffer
+//
+//                                    Log.i("Possible Pollinators", "Above Input")
+//                                    // Creates inputs for reference.
+//                                    val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.UINT8)
+//                                    inputFeature0.loadBuffer(byteBuffer)
+//
+//                                    Log.i("Possible Pollinators", "Above Run")
+//                                    // Runs model inference and gets result.
+//                                    val outputs = model.process(inputFeature0)
+//                                    val outputFeature0 = outputs.probabilityAsTensorBuffer
+//                                    var max = getMax(outputFeature0.floatArray)
+//                                    //aiTextView.setText(max)
+//                                    Log.i("Possible Pollinators", "Max 1: $max")
+//
+//                                    // Releases model resources if no longer used.
+//                                    model.close()
+//
+//                                    val intent = Intent(this, PhotoPossiblePollinators::class.java)
+//
+//                                    intent.putExtra("Results", max)
+//                                    startActivity(intent)
 
-                                    // Releases model resources if no longer used.
-                                    model.close()
 
-                                    val intent = Intent(this, PhotoPossiblePollinators::class.java)
-
-                                    intent.putExtra("Results", max)
-                                    startActivity(intent)
 
                                 }else{
                                     Log.i("Photo Activity", "Date not entered")
@@ -161,7 +167,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         when (temp) { //when the intent from the other activity is one of these number then run a certain function
             1 -> {//if camera was clicked on previous fragment
-                Log.i("PhotoActivity: ", "Camera was passed")
+                Log.i("TAGPHOTO", "Camera was passed")
 
                 if (ContextCompat.checkSelfPermission(
                         this,
@@ -179,7 +185,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
             0 -> { //if library was pressed on previous fragment
-                Log.i("PhotoActivity: ", "Library was passed")
+                Log.i("TAGPHOTO", "Library was passed")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
                         val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -192,7 +198,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
             else -> {//error handling
-                Log.e("PhotoActivity: ", "Unexpected input")
+                Log.e("TAGPHOTO", "Unexpected input")
             }
         }
     }
@@ -242,17 +248,18 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (resultCode == Activity.RESULT_OK && requestCode == CAMERA_REQUEST_CODE) {//if taking picture
+        if (resultCode == RESULT_OK && requestCode == CAMERA_REQUEST_CODE) {//if taking picture
             val thumbNail: Bitmap = data!!.extras!!.get("data") as Bitmap
+            bitmap = thumbNail
             imageView.setImageBitmap(thumbNail)
-        } else if (resultCode == RESULT_OK && requestCode == pickImage) {//if choosing image
+        } else if (resultCode == RESULT_OK && requestCode == pickImage) {//if choosing image from gallery
             imageUri = data?.data
-            imageView.setImageURI(imageUri)
+            bitmap = MediaStore.Images.Media.getBitmap(contentResolver, Uri.parse(imageUri.toString())) //set the bitmap var that will be processed
+            imageView.setImageBitmap(bitmap)
         } else {//error handling
-            Log.e("OnActResult", "Unexpected input in if/else")
+            Log.e("TAGPHOTO", "Unexpected input in if/else")
         }
     }
-
 
     //for date picker
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
@@ -272,14 +279,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         textView.text = "Year: " + myYear + "\n" + "Month: " + myMonth + "\n" + "Day: " + myDay + "\n" + "Hour: " + myHour + "\n" + "Minute: " + myMinute
     }
 
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//
-//        aiPhoto.setImageURI(data?.data)
-//
-//        var uri: Uri? = data?.data
-//        bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, uri)
-//    }
 
     private fun getMax(arr:FloatArray) : Int{
         var index = 0
@@ -292,6 +291,38 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             }
         }
         return index
+
+    }
+
+    private fun outputGenerator(bitmap: Bitmap){
+        Log.i("TAGPHOTO", "Inside OutputGenerator")
+        //declearing tensor flow lite model variable
+
+        val pollinatorModel = PollinatorModel.newInstance(this)
+
+        // converting bitmap into tensor flow image
+        val newBitmap = bitmap.copy(Bitmap.Config.ARGB_8888, true)
+        val tfimage = TensorImage.fromBitmap(newBitmap)
+
+        //process the image using trained model and sort it in descending order
+        val outputs = pollinatorModel.process(tfimage)
+            .probabilityAsCategoryList.apply {
+                sortByDescending { it.score }
+            }
+
+        //getting result having high probability
+        val highProbabilityOutput = outputs[0]
+        var text = highProbabilityOutput.label
+
+        //setting ouput text
+
+        Log.i("TAGPHOTO", "outputGenerator: $highProbabilityOutput")
+
+        val intent = Intent(this, PhotoPossiblePollinators::class.java)
+
+        intent.putExtra("Results", text)
+        startActivity(intent)
+
 
     }
 
