@@ -8,6 +8,18 @@
     android:background="@color/black">
 
     <Button
+        android:id="@+id/myPollinator"
+        android:layout_width="378dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FF306CB5"
+        android:text="@string/this_is_my_pollinator"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/myPoliguideline4"
+        />
+
+    <Button
         android:id="@+id/myPoliaboutButton"
         android:layout_width="125dp"
         android:layout_height="90dp"
