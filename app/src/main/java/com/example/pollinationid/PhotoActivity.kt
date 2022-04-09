@@ -1,6 +1,7 @@
 package com.example.pollinationid
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
@@ -273,10 +274,12 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             DateFormat.is24HourFormat(this@PhotoActivity))
         timePickerDialog.show()
     }
+    @SuppressLint("SetTextI18n")
     override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
         myHour = hourOfDay
         myMinute = minute
-        textView.text = "Year: " + myYear + "\n" + "Month: " + myMonth + "\n" + "Day: " + myDay + "\n" + "Hour: " + myHour + "\n" + "Minute: " + myMinute
+        textView.text =
+            "Year: $myYear\nMonth: $myMonth\nDay: $myDay\nHour: $myHour\nMinute: $myMinute"
     }
 
 
@@ -316,14 +319,12 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         //setting ouput text
 
-        Log.i("TAGPHOTO", "outputGenerator: $highProbabilityOutput")
+        Log.i("TAGPHOTO", "outputGenerator: $highProbabilityOutput : ${highProbabilityOutput.score}")
 
         val intent = Intent(this, PhotoPossiblePollinators::class.java)
 
         intent.putExtra("Results", text)
         startActivity(intent)
-
-
     }
 
 }
