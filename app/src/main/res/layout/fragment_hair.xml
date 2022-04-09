@@ -1,14 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".IdFragment.HairFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/hairFragment"
+        android:layout_width="345dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="648dp"
+        android:text="Hair"
+        android:textColor="#306CB5"
+        android:textSize="40sp"
+        android:textStyle="italic|bold" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/hairQuestionText"
+        android:layout_width="345dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="540dp"
+        android:text="Does it have hair and where?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/noHiarButton"
+        android:layout_width="158dp"
+        android:layout_height="157dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="346dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkhair_none" />
+
+    <ImageButton
+        android:id="@+id/hairUnderneathButton"
+        android:layout_width="185dp"
+        android:layout_height="138dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="358dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkhair_abdomen" />
+
+    <ImageButton
+        android:id="@+id/hairOnSideButton"
+        android:layout_width="155dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginBottom="137dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkhair_sides" />
+
+    <ImageButton
+        android:id="@+id/hairFullButton"
+        android:layout_width="155dp"
+        android:layout_height="159dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="143dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkhair_full" />
+
+</RelativeLayout>
