@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,5 +23,35 @@
         android:textColor="#306CB5"
         android:textSize="40sp"
         android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/fullHairBlackAndYellowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="184dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="269dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkhairallover_blackandyellow" />
+
+    <ImageButton
+        android:id="@+id/fullHairBlackAmberOrBrownButton"
+        android:layout_width="101dp"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="256dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dkhairallover_blackamberorbrown" />
 
 </RelativeLayout>
