@@ -38,7 +38,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
     //for the photo ai
     lateinit var bitmap: Bitmap
-    lateinit var aiPhoto: ImageView
 
     lateinit var textView: TextView
     private lateinit var dateButton: Button
@@ -72,7 +71,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         hotelButton = findViewById(R.id.enterHotel)
 
         dateButton.setOnClickListener { //when pick date clicked
-            Log.i("TAGPHOTO", "Date button clicked")
             val calendar: Calendar = Calendar.getInstance()
             day = calendar.get(Calendar.DAY_OF_MONTH)
             month = calendar.get(Calendar.MONTH)
@@ -83,7 +81,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
 
         hotelButton.setOnClickListener{
-            Log.i("TAGPHOTO", "Hotel button clicked")
             val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
 
             if (hotel != ""){
@@ -95,16 +92,16 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                         val document = task.result
                         if(document != null) {
                             if (document.exists()) {
-                                Log.i("TAGPHOTO", "Hotel exists.")
+                                Log.i("PHOTO ACTIVITY", "Hotel exists.")
                                 if (displayDate.text != ""){ //if date entered
-                                    Log.i("TAGPHOTO","Date entered")
+                                    Log.i("PHOTO ACTIVITY","Date entered")
                                     Toast.makeText(
                                         this,
                                         "Valid Date and Hotel!",
                                         Toast.LENGTH_LONG
                                     ).show()
 
-                                    Log.i("TAGPHOTO", "Before OuputGen Call")
+                                    Log.i("PHOTO ACTIVITY", "Before OuputGen Call")
 
 
                                     outputGenerator(bitmap)
@@ -141,7 +138,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         when (temp) { //when the intent from the other activity is one of these number then run a certain function
             1 -> {//if camera was clicked on previous fragment
-                Log.i("TAGPHOTO", "Camera was passed")
+                Log.i("PHOTO ACTIVITY", "Camera was passed")
 
                 if (ContextCompat.checkSelfPermission(
                         this,
@@ -159,7 +156,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
             0 -> { //if library was pressed on previous fragment
-                Log.i("TAGPHOTO", "Library was passed")
+                Log.i("PHOTO ACTIVITY", "Library was passed")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
                         val permissions = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -172,7 +169,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 }
             }
             else -> {//error handling
-                Log.e("TAGPHOTO", "Unexpected input")
+                Log.e("PHOTO ACTIVITY", "Unexpected input")
             }
         }
     }
@@ -231,7 +228,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             bitmap = MediaStore.Images.Media.getBitmap(contentResolver, Uri.parse(imageUri.toString())) //set the bitmap var that will be processed
             imageView.setImageBitmap(bitmap)
         } else {//error handling
-            Log.e("TAGPHOTO", "Unexpected input in if/else")
+            Log.e("PHOTO ACTIVITY", "Unexpected input in if/else")
         }
     }
 
@@ -257,7 +254,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
 
     private fun outputGenerator(bitmap: Bitmap){
-        Log.i("TAGPHOTO", "Inside OutputGenerator")
         //declearing tensor flow lite model variable
 
         val pollinatorModel = PollinatorModel.newInstance(this)
@@ -272,10 +268,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 sortByDescending { it.score }
             }
 
-        //getting result having high probability
-        val highProbabilityOutput = outputs[0]
-
-        var outputList : ArrayList<String> = arrayListOf()
+        val outputList : ArrayList<String> = arrayListOf()
 
          for (i in outputs.indices){
              if (outputs[i].score < .10){
@@ -283,12 +276,8 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                  //TODO: Maybe add something that handles if the outputList is empty to say not recognized
                  break
              }
-             outputList.add(outputs[i].label)
+             outputList.add(outputs[i].label) //add the names of possible pollinators above 10%
         }
-
-        //setting ouput text
-        Log.i("TAGPHOTO", "outputGenerator: $highProbabilityOutput : ${highProbabilityOutput.score}")
-        outputList.forEach{Log.i("TAGPHOTO",it)}
 
         pollinatorModel.close()
         val intent = Intent(this, PhotoPossiblePollinators::class.java)
