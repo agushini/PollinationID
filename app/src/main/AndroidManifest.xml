@@ -112,12 +112,11 @@
 
         <activity
             android:name=".PossiblePhotoPollinatorActivity"
-            android:exported="false"
-            android:label="@string/title_activity_possible_photo_pollinator"
-            android:theme="@style/Theme.PollinationID.NoActionBar" >
+            android:label="Possible Pollinators"
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PhotoActivity" />
+                android:value=".PhotoPossiblePollinators" />
         </activity>
     </application>
 

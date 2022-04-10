@@ -104,10 +104,9 @@
     <ScrollView
         android:id="@+id/myPoliscrollView2"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="1dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toTopOf="@id/myPollinatorButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myPolihorizontalScrollView">
 
@@ -121,7 +120,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginEnd="5dp"
                 android:text="@string/description"
                 android:textColor="@color/white"
@@ -149,11 +147,13 @@
         android:id="@+id/myPollinatorButton"
         android:layout_width="378dp"
         android:layout_height="64dp"
-        android:layout_marginStart="16dp"
         android:backgroundTint="#FF306CB5"
         android:text="@string/this_is_my_pollinator"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/myPoliscrollView2"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
