@@ -16,8 +16,8 @@ class ListAdapterPhoto(private val list: List<Insect>)
     }
 
     override fun onBindViewHolder(holder: bugInsectViewHolderPhoto, position: Int) {
-        val bugInsect: Insect = list[position]
-        holder.bindPhoto(bugInsect)
+        val bugInsectPhoto: Insect = list[position]
+        holder.bindPhoto(bugInsectPhoto)
     }
 
     override fun getItemCount(): Int = list.size
@@ -50,24 +50,24 @@ class bugInsectViewHolderPhoto(inflater: LayoutInflater, parent: ViewGroup) :
 
     }
 
-    fun bindPhoto(bugInsect: Insect) {
-        mTitleView?.text = bugInsect.title
-        mCaptionView?.text = bugInsect.description
-        mImageView?.setImageResource(bugInsect.img1)
+    fun bindPhoto(bugInsectPhoto: Insect) {
+        mTitleView?.text = bugInsectPhoto.title
+        mCaptionView?.text = bugInsectPhoto.description
+        mImageView?.setImageResource(bugInsectPhoto.img1)
 
         itemView.setOnClickListener(){
             //handles the click for each encyclopedia entry
             //on click pass the data for which one was clicked to the new activity to populate
             val intent = Intent(itemView.context, PossiblePhotoPollinatorActivity::class.java)
-            intent.putExtra(NAV_BAR_KEY,bugInsect.title)
-            intent.putExtra(E_IMG_1_KEY,bugInsect.img1)
-            intent.putExtra(E_IMG_2_KEY,bugInsect.img2)
-            intent.putExtra(E_IMG_3_KEY,bugInsect.img3)
-            intent.putExtra(E_IMG_4_KEY,bugInsect.img4)
-            intent.putExtra(E_DESCRIPTION_KEY,bugInsect.description)
-            intent.putExtra(E_ABOUT_KEY,bugInsect.about)
-            intent.putExtra(E_KEYCHAR_KEY,bugInsect.keyChar)
-            intent.putExtra(E_PLANT_KEY,bugInsect.plants)
+            intent.putExtra(NAV_BAR_KEY,bugInsectPhoto.title)
+            intent.putExtra(E_IMG_1_KEY,bugInsectPhoto.img1)
+            intent.putExtra(E_IMG_2_KEY,bugInsectPhoto.img2)
+            intent.putExtra(E_IMG_3_KEY,bugInsectPhoto.img3)
+            intent.putExtra(E_IMG_4_KEY,bugInsectPhoto.img4)
+            intent.putExtra(E_DESCRIPTION_KEY,bugInsectPhoto.description)
+            intent.putExtra(E_ABOUT_KEY,bugInsectPhoto.about)
+            intent.putExtra(E_KEYCHAR_KEY,bugInsectPhoto.keyChar)
+            intent.putExtra(E_PLANT_KEY,bugInsectPhoto.plants)
 
             itemView.context.startActivity(intent)
         }

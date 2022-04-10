@@ -66,7 +66,7 @@ public class PollinatorInfo {
                     "AUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
-        Insect("American Grass Spider", "(Agelenopsis spp.)",
+        Insect("American Grass Spiders", "(Agelenopsis spp.)",
             R.drawable.american_grass_spiders_1,R.drawable.american_grass_spiders_2,R.drawable.american_grass_spiders_3,R.drawable.american_grass_spiders_4,
             "American Grass Spiders are some of the most common funnel weavers seen in the United States and Canada(1). You’ve likely seen their webs in the grass in the early morning. They are a striking sight if sprinkled with dew. American Grass Spider webs are flat and sheet-like with a tube (funnel) either in the middle or off to the side. This funnel is where the American Grass Spider will wait to ambush its prey(1). They wait until a prey item (flies, mosquitoes, moths, butterflies, etc.) lands on their web. The silk strands ensnare the insect and alerts the spider, who will then dart out of its funnel. The spider quickly bites and injects a fast-acting venom to paralyze the prey before dragging its meal back to the safety of its funnel(1). \n" +
                     "\n" +
@@ -395,7 +395,7 @@ public class PollinatorInfo {
                     "• Distinctive long tail",
             "Carrot-wasps are generalists and visit a wide variety of flowers. True to their name, they show a\n" +
                     "preference for flowers in the carrot or parsley family (Apiaceae)2"),
-        Insect("Centipedes", "(Class: Chilopoda)",
+        Insect("Centipedes", "(Class: Chilopoda)", //TODO: This isnt in the AI photo model we should look into that
             R.drawable.centipedes_1,R.drawable.centipedes_2,R.drawable.centipedes_3,R.drawable.centipedes_4,
             "Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and will catch and eat any invertebrate their size or smaller, like insects and spiders(1). The smallest Centipedes are around an inch while the largest tropical species can grow well over six inches. The largest North American species is the Giant Desert Centipede (Scolopendra heros) which on average grows to be around 6.5” (though some eye-witness accounts have reported up to 12”)(2). By far the most common species in North America is the House Centipede (Scutigera coleoptera).\n" +
                     "\n" +
@@ -551,7 +551,7 @@ public class PollinatorInfo {
                     "• Curls into ball when threatened",
             "The Common Pill Woodlouse is a detritivore and can be found in a large variety of habitats with different\n" +
                     "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
-        Insect("Cuckoo or \"Blood\" Bees", "(Sphecodes spp.)",
+        Insect("Cuckoo Bees", "(Sphecodes spp.)", //TODO: This said Cuckoo or Blood Bees this should be changed in the model files
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
             "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside the while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
                     "\n" +
@@ -578,7 +578,7 @@ public class PollinatorInfo {
                     "AUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
-        Insect("Cuckoo Leafcutter Bees", "(Coelioxys spp.)",
+        Insect("Cuckoo Leafcutter Bee", "(Coelioxys spp.)",
             R.drawable.cuckoo_leaf_cutter_bees_1,R.drawable.cuckoo_leaf_cutter_bees_2,R.drawable.cuckoo_leaf_cutter_bees_3,R.drawable.cuckoo_leaf_cutter_bees_4,
             "Cuckoo Leafcutter Bees are specialists that steal nests. They are cleptoparasites of Leafcutter Bees (Megachile spp.)(1). Females look for unattended nests and will use her pointed abdomen to poke through the nest covering and lay her own eggs inside(1). Her larvae tend to develop more quickly than the host (original) bee(1). After the Cuckoo Leafcutter Bee larvae’s third instar (developmental stage), it uses its mandibles (bee teeth) to get rid of the host and any competing siblings(1). \n" +
                     "\n" +
@@ -851,7 +851,7 @@ public class PollinatorInfo {
                     "AUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
-        Insect("Four-toothed Mason Wasp", "(Monobia quadridens)",
+        Insect("Four-Toothed Mason Wasp", "(Monobia quadridens)",
             R.drawable.four_toothed_mason_wasp_1,R.drawable.four_toothed_mason_wasp_2,R.drawable.four_toothed_mason_wasp_3,R.drawable.four_toothed_mason_wasp_4,
             "The Four-toothed Mason Wasp is a solitary, mostly black wasp with a white or cream band on the first segment of its abdomen. They look like the Bald-faced Hornet (Dolichovespula maculate) and a sting from either is said to feel similar. The Bald-faced Hornet lives in a social nest and has more white markings on the face, thorax, and abdomen than the Four-toothed Mason Wasp. \n" +
                     "\n" +
@@ -945,7 +945,7 @@ public class PollinatorInfo {
             "Hornets and Wasps will be attracted to gardens that have a lot of pests and flowers. They are important " +
                     "biological controls on pest populations, though they can be a nuisance if they build a nest close to a " +
                     "human dwelling where frequent encounters occur."),
-        Insect("Horn-faced Bee", "(Osmia cornifrons)",
+        Insect("Hornfaced Bee", "(Osmia cornifrons)",
             R.drawable.hornfaced_bee_1,R.drawable.hornfaced_bee_2,R.drawable.hornfaced_bee_3,R.drawable.hornfaced_bee_4,
             "The Horn-faced Bee was introduced to the U.S. from Japan sometime in the 1980s(1). This was done intentionally by USDA scientists to aid with apple crop pollination(2). Recently, scientists have begun looking at the Japanese Horn-faced Bee as a potential alternative pollinator for certain crops in Michigan(3). These bees exhibit a preference for fruit trees and can fly in cooler temperatures(3). Their foraging habits make them an effective pollinator which is why scientists now view them as a candidate for use as cherry tree pollinators in Michigan(3).\n" +
                     "\n" +
@@ -1010,7 +1010,7 @@ public class PollinatorInfo {
                     "• Pale yellow body with three long stripes down back",
             "The House Centipede is a predaceous arthropod and can typically be found in moist habitats (basements,\n" +
                     "underneath rocks, leaf litter, etc.) with a higher activity at night."),
-        Insect("Hoverflies", "(Family: Syrphidae)",
+        Insect("Hoverflies", "(Family: Syrphidae)", //TODO: Not in the model it should be added
             R.drawable.hoverflies_1,R.drawable.hoverflies_2,R.drawable.hoverflies_3,R.drawable.hoverflies_4,
             "Hoverflies (also known as Flower Flies) is a family of over 6,000 fly species that visit flowers for nectar and pollen as adults(1). A vast majority of Hoverflies mimic the patterns and behaviors of bees and wasps. This is known as batesian mimicry. The untrained eye can sometimes mistake them for a bee or wasp, though Hoverflies can be distinguished from Hymenoptera (bees and wasps) by their single pair of wings, large eyes, short antennae, and extra wing vein (spurious vein). Hoverflies are often overlooked as a group despite playing an indispensable role as “bio-control agents of plant pests, recyclers of dead plant and animal matter, pests of some ornamental plants, and pollinators”(1). Larvae can be found in a wide range of habitats and have a varied diet, though most are predators of other arthropods including aphids(1,2). \n" +
                     "\n" +
@@ -1085,7 +1085,7 @@ public class PollinatorInfo {
                     "• Red ladybugs with black spots most common; many colors and patterns\n" +
                     "• (larvae) soft-bodied, flattened, and elongated",
             "Ladybugs are predacious insects and will be found on flowers that attract their prey items, namely aphids and scaly insects."),
-        Insect("Leafcutter Bees", "(Megachile spp.)",
+        Insect("Leafcutter Bees", "(Megachile spp.)", //TODO: Not in the model needs to be added
             R.drawable.leafcutter_bees_1,R.drawable.leafcutter_bees_2,R.drawable.leafcutter_bees_3,R.drawable.leafcutter_bees_4,
             "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests. They are all solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa. Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch, consume the food bundle, and overwinter as mature larva before pupating in spring.\n" +
                     "\n" +
@@ -1399,7 +1399,7 @@ public class PollinatorInfo {
                     "Stiff Goldenrod, Solidago rigida\n" +
                     "Blue Lobelia, Lobelia siphilitica\n" +
                     "Lindley’s Aster, Symphyotrichum ciliolatum"),
-        Insect("Oblong wool Carder Bee", "(Anthidium oblongatum)",
+        Insect("Oblong Wool-Carder Bee", "(Anthidium oblongatum)",
             R.drawable.oblong_wool_carder_bee_1,R.drawable.oblong_wool_carder_bee_2,R.drawable.oblong_wool_carder_bee_3,R.drawable.oblong_wool_carder_bee_4,
             "The Oblong Wool Carder Bee was accidentally introduced to the U.S. from Europe in the 1990s(1). Since then, they have expanded their range to include the Midwest and Eastern States. They can often be mistaken for wasps due to their bold yellow and black pattern. They are also strikingly alike to the European Wool Carder Bee. A distinct difference between the two is the tegula (the protective plate that covers the connection between the wings and the body of the bee). The Oblong Wool Carder Bee has an orange tegula while the European Wool Carder Bee’s is black. Their name comes from their behavior of scraping plant hairs for their nest materials, a process likened to wool carding.  They nest in cavities found in wood, rocks, and hollow plants stems1. There can be up to eight cells within one nest, each containing a single egg and pollen ball1 that the larva will eat as they develop. \n" +
                     "\n" +
@@ -1427,7 +1427,7 @@ public class PollinatorInfo {
                     "AUTUMN\n" +
                     "Goldenrod, Solidago and Euthamia spp.\n" +
                     "Aster, Symphyotrichum and Eurybia spp."),
-        Insect("Orange-tipped Wood-digger Bee", "(Anthophora terminalis)",
+        Insect("Orange-Tipped Wood Digger Bee", "(Anthophora terminalis)",
             R.drawable.orange_tipped_wood_digger_bee_1,R.drawable.orange_tipped_wood_digger_bee_2,R.drawable.orange_tipped_wood_digger_bee_3,R.drawable.orange_tipped_wood_digger_bee_4,
             "The Orange-tipped Wood-digger Bee is unique from other bees in the genus Anthophora in that it nests in pre-existing holes in logs or rotting wood(1). \n" +
                     "\n" +
@@ -1675,7 +1675,7 @@ public class PollinatorInfo {
                     "AUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
-        Insect("Silver-tailed Petalcutter Bee", "(Megachile montivaga)",
+        Insect("Silver-Tailed Petalcutter Bee", "(Megachile montivaga)",
             R.drawable.silver_tailed_petalcutter_bee_1,R.drawable.silver_tailed_petalcutter_bee_2,R.drawable.silver_tailed_petalcutter_bee_3,R.drawable.silver_tailed_petalcutter_bee_4,
             "Part of the Silver-tailed Petalcutter Bee’s name comes from their behavior of using their mandibles (bee teeth) to cut flower petals for lining their nests. They are a solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a suitable nesting site, the female uses her large mandibles to cut petals and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with petals.\n" +
                     "\n" +
@@ -2019,7 +2019,7 @@ public class PollinatorInfo {
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
                     "Viburnum, Viburnum spp."),
-        Insect("Transverse-Banded Calligrapher", "(Eristalis transversa)",
+        Insect("Transverse-Banded Calligrapher", "(Eristalis transversa)", //TODO: This isnt in the model, it may be Transverse-Banded Flower Fly instead
             R.drawable.transverse_banded_calligrapher_1,R.drawable.transverse_banded_calligrapher_2,R.drawable.transverse_banded_calligrapher_3,R.drawable.transverse_banded_calligrapher_4,
             "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larva can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                     "\n" +

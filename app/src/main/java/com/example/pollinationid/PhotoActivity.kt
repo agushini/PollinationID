@@ -27,6 +27,7 @@ import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.util.*
+import kotlin.collections.ArrayList
 
 class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     TimePickerDialog.OnTimeSetListener {
@@ -273,8 +274,8 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         //getting result having high probability
         val highProbabilityOutput = outputs[0]
-        val text = highProbabilityOutput.label
-        var outputList : MutableList<String> = mutableListOf()
+
+        var outputList : ArrayList<String> = arrayListOf()
 
          for (i in outputs.indices){
              if (outputs[i].score < .10){
@@ -292,7 +293,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         pollinatorModel.close()
         val intent = Intent(this, PhotoPossiblePollinators::class.java)
 
-        intent.putExtra("Results", text)
+        intent.putStringArrayListExtra("Results", outputList)
         startActivity(intent)
         
 
