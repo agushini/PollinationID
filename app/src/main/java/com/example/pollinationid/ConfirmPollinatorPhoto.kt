@@ -43,7 +43,7 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
             val dialogBuilder = AlertDialog.Builder(this)
             Log.i("CONFIRMPOLLINATORPHOTO","Submit Pollinator btn clicked")
 
-            //TODO: Add the backend stuff
+            //TODO: Add the backend stuff to add a document to the collection
 
 
             dialogBuilder.setMessage("Thank you for your submission")
