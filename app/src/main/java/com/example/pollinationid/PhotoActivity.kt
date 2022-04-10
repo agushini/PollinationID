@@ -4,7 +4,6 @@ package com.example.pollinationid
 //https://www.gbandroidblogs.com/2022/01/image-classification-android-app-with-tensorflow-lite.html helpful resource
 import android.Manifest
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
@@ -23,11 +22,9 @@ import androidx.core.content.ContextCompat
 import com.example.pollinationid.ml.PollinatorModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_photo.*
-import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.util.*
-import kotlin.collections.ArrayList
+
 
 class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     TimePickerDialog.OnTimeSetListener {
@@ -42,6 +39,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     lateinit var textView: TextView
     private lateinit var dateButton: Button
     lateinit var hotelButton: Button
+    lateinit var hotel: String
     private var day = 0
     var month: Int = 0
     var year: Int = 0
@@ -81,7 +79,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
 
         hotelButton.setOnClickListener{
-            val hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
+            hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
 
             if (hotel != ""){
                 val mFireStore = FirebaseFirestore.getInstance()
@@ -279,13 +277,26 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
              outputList.add(outputs[i].label) //add the names of possible pollinators above 10%
         }
 
+        val sharedPref = getSharedPreferences("photoPref", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putString("modelPredict",outputs[0].label)
+        editor.putString("hotelID", hotel)
+        editor.putString("dateLog", displayDate.text as String?)
+        //editor.putInt("photoSend",bitmap)
+        editor.apply()
+
+
+
         pollinatorModel.close()
         val intent = Intent(this, PhotoPossiblePollinators::class.java)
 
         intent.putStringArrayListExtra("Results", outputList)
         startActivity(intent)
-        
+
+        finish()
 
     }
 
 }
+
+

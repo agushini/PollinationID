@@ -70,6 +70,7 @@ class bugInsectViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
             intent.putExtra(E_PLANT_KEY,bugInsect.plants)
 
             itemView.context.startActivity(intent)
+
         }
     }
 

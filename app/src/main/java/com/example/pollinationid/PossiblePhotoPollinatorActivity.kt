@@ -2,6 +2,7 @@ package com.example.pollinationid
 
 //similar to explore activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
@@ -13,6 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import kotlinx.android.synthetic.main.activity_mypollinator.*
+import kotlinx.android.synthetic.main.activity_photo.*
 
 
 class PossiblePhotoPollinatorActivity : AppCompatActivity() {
@@ -66,6 +68,13 @@ class PossiblePhotoPollinatorActivity : AppCompatActivity() {
         myPollinatorButton.setOnClickListener{
             Log.i("POSSIBLE POLLINATORS","This is my Pollinator btn clicked")
             //TODO:send to confirm submission page which has the image along with the insect name, date, hotel, userPrediction and ModelPrediction
+
+            val confirmIntent = Intent(this,ConfirmPollinatorPhoto::class.java)
+
+            confirmIntent.putExtra("userPredict",navBarTitle)
+            confirmIntent.putExtra("PhotoSelectedPollinator",eimg1)
+            startActivity(confirmIntent)
+
         }
     }
 
