@@ -16,15 +16,7 @@ private lateinit var auth: FirebaseAuth
 private val mAuthListener: AuthStateListener? = null
 private val mAuth: FirebaseAuth? = null
 class FifthFragment:Fragment(R.layout.fragment_fifth) {
- /*   override fun onStop() {
-        FirebaseAuth.getInstance().signOut();
-        super.onStop()
-        if (mAuthListener != null) {
-            if (mAuth != null) {
-                mAuth.removeAuthStateListener(mAuthListener)
-            }
-        }
-    }*/
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
