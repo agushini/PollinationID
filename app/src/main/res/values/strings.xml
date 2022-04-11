@@ -89,11 +89,12 @@
     <string name="account">Account</string>
     <string name="info">Info</string>
     <string name="priv_policy_info">Please see the link below for more information regarding our Privicy Policy</string>
-    <string name="priv_policy_link"><a href="https://drive.google.com/file/d/1FXgs6MWDeqfwc4WW95Zl38Mbz34JAgeh/view?usp=drivesdk">Click here for our Privacy Policy</a></string>
+    <string name="priv_policy_link"><a href="https://docs.google.com/document/d/1S_erAUwTCj6f4mwdVVSDuohad2OFyHyVllQdcNMtWcA/edit?usp=sharing">Click here for our Privacy Policy</a></string>
     <string name="back_to_menu"><![CDATA[< Menu]]></string>
     <string name="TC_info">Please see the link below for more information regarding our Terms and Conditions</string>
-    <string name="TC_Hyperlink"><a href="https://drive.google.com/file/d/1uuwdQQiwQnZZ3QMNLNNsx--n1KVVfTA9/view?usp=drivesdk">Click here for our Terms and Conditions</a></string>
+    <string name="TC_Hyperlink"><a href="https://docs.google.com/document/d/1rp_maWgNCi8UF-fPw6fqEnRP68qIHXeWiysSBLdNf64/edit?usp=sharing">Click here for our Terms and Conditions</a></string>
     <string name="title_activity_contacts">ContactsActivity</string>
+    
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
