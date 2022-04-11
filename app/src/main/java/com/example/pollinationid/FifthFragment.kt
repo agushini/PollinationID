@@ -9,12 +9,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_fifth.view.*
-
+private lateinit var auth: FirebaseAuth
 private val mAuthListener: AuthStateListener? = null
 private val mAuth: FirebaseAuth? = null
 class FifthFragment:Fragment(R.layout.fragment_fifth) {
-   /* override fun onStop() {
+ /*   override fun onStop() {
         FirebaseAuth.getInstance().signOut();
         super.onStop()
         if (mAuthListener != null) {
@@ -23,6 +25,7 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
             }
         }
     }*/
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -30,11 +33,17 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
     ): View? {
         super.onCreate(savedInstanceState)
         val view: View = inflater!!.inflate(R.layout.fragment_fifth, container, false)
-
+        auth = Firebase.auth
         view.btnSignOut.setOnClickListener { view ->
             Log.v("SignOut Button", "Clicked")
+
+            auth.signOut()
+
+            /*fun signout(view: View) {
+            }*/
             val intent = Intent(activity, LoginActivity::class.java)
-            activity?.startActivity(intent)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
         }
 
         view.BtnPassReset.setOnClickListener { view ->

@@ -2,14 +2,17 @@ package com.example.pollinationid
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.nfc.Tag
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
@@ -45,11 +48,11 @@ class LoginActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_login2)
 
-        if(sp?.getBoolean("logged",false) == true) {
-            val intent = Intent(this, MainActivity::class.java)
+        /*if(sp?.getBoolean("logged",false) == true) {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-   /*     else{
+        else{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }*/
@@ -102,6 +105,21 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        val currentuser = auth.currentUser
+        updateUI(currentuser)
+    }
+
+    private fun updateUI(user: FirebaseUser?) {
+if (user==null) {
+    return
+}
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+
+    }
     private fun login() {
 
         val email = etEmail.text.toString()
@@ -112,11 +130,11 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_SHORT).show()
+                val user = auth.currentUser
+                updateUI(user)
 
                 //once successful open up the main activity
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
+
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }

@@ -111,7 +111,7 @@
     <string name="where_did_you_see_the_pollinator">Where did you see the pollinator?</string>
     <string name="next">Next</string>
     <string name="enter_hotel">Enter Hotel</string>
-    <string name="title_forgot_password">FORGOT PASSWORD</string>
+    <string name="title_forgot_password">RESET PASSWORD</string>
     <string name="forgot_password_title_description">Enter e-mail and link will be sent to reset the password</string>
     <string name="btn_lbl_submit">Submit</string>
     <string name="et_hint_email_id">Enter E-mail</string>
