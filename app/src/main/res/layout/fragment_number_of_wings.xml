@@ -17,12 +17,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="648dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="626dp"
         android:text="Number of Wings"
         android:textColor="#306CB5"
-        android:textSize="30sp"
+        android:textSize="40sp"
         android:textStyle="italic|bold" />
 
     <ImageButton

@@ -34,9 +34,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="536dp"
-        android:layout_marginEnd="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="584dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="99dp"
         android:backgroundTint="#FF306CB5"
         android:backgroundTintMode="@color/black"
         android:text="Next"
@@ -44,6 +46,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/dkDateAndTimeButton"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="431dp"
+        android:backgroundTint="#FF306CB5"
+        android:backgroundTintMode="@color/black"
+        android:text="Pick Date and Time"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/dkTimeText"
+        android:layout_width="174dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="267dp"
+        android:text="@tools:sample/date/ddmmyy"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
