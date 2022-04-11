@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  This is the Pollinator Date and Time page  -->
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,10 +22,10 @@
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <Button
         android:id="@+id/wingTypeButton"
@@ -36,16 +36,17 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="584dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="99dp"
         android:backgroundTint="#FF306CB5"
         android:backgroundTintMode="@color/black"
         android:text="Next"
         android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
 
     <Button
         android:id="@+id/dkDateAndTimeButton"
@@ -55,14 +56,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="431dp"
         android:backgroundTint="#FF306CB5"
         android:backgroundTintMode="@color/black"
         android:text="Pick Date and Time"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
 
     <TextView
         android:id="@+id/dkTimeText"
@@ -72,15 +75,17 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="321dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="267dp"
         android:text="@tools:sample/date/ddmmyy"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
