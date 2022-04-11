@@ -24,7 +24,7 @@ class FifthFragment:Fragment(R.layout.fragment_fifth) {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreate(savedInstanceState)
-        val view: View = inflater!!.inflate(R.layout.fragment_fifth, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_fifth, container, false)
         auth = Firebase.auth
         view.btnSignOut.setOnClickListener { view ->
             Log.v("SignOut Button", "Clicked")
