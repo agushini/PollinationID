@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         val firstFragment=FirstFragment()
-        val secondFragment=SecondFragment()
+        val secondFragment= SecondFragment()
         val thirdFragment=ThirdFragment()
         val fourthFragment=FourthFragment()
         val fifthFragment=FifthFragment()
