@@ -13,7 +13,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_second.view.*
 
-class SecondFragment:Fragment(R.layout.fragment_second) {
+//class SecondFragment:Fragment(R.layout.fragment_second) {
 
 //    lateinit var auth: FirebaseAuth
 //    lateinit var etHotel: EditText
@@ -46,4 +46,4 @@ class SecondFragment:Fragment(R.layout.fragment_second) {
 //                Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
 //        }
 //    }
-}
+//}

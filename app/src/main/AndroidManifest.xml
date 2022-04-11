@@ -126,6 +126,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PossiblePhotoPollinatorActivity" />
         </activity>
+
+        <activity
+            android:name=".PollinatorIDKeyActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>
