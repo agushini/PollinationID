@@ -66,11 +66,11 @@ class RegestrationActivity : AppCompatActivity() {
 
     private fun signUpUser() {
 
-        val email = etEmail.text.toString()
-        val pass = etPass.text.toString()
-        val confirmPassword = etConfPass.text.toString()
-        val FirstName = etFirstName.text.toString()
-        val LastName = etLastName.text.toString()
+        val email = etEmail.text.toString().trim()
+        val pass = etPass.text.toString().trim()
+        val confirmPassword = etConfPass.text.toString().trim()
+        val FirstName = etFirstName.text.toString().trim()
+        val LastName = etLastName.text.toString().trim()
 
 
         // check pass
