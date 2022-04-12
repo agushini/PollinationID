@@ -1,21 +1,31 @@
 package com.example.pollinationid
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.content.DialogInterface
-import android.content.Intent
-import android.content.SharedPreferences
+import android.content.*
+import android.os.Build
 import android.os.Bundle
 import android.util.Base64
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.pollinator_confirm_photo.*
+import java.time.LocalDateTime
 
 class ConfirmPollinatorPhoto : AppCompatActivity() {
 
+    //database variables
+    private var auth: FirebaseAuth = Firebase.auth
+    private val db = Firebase.firestore
+    private val uid = auth.currentUser!!.uid
+
+    @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +36,7 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
 
         val photoPollinator = intent.getIntExtra("PhotoSelectedPollinator",R.drawable.ic_black_camera_foreground)
         val userPredict = intent.getStringExtra("userPredict")
+        val techName = intent.getStringExtra("techName")
 
         val sharedPref = getSharedPreferences( "photoPref",MODE_PRIVATE)
         val modelPredict = sharedPref.getString("modelPredict","ERR:NOTSENT")
@@ -141,10 +152,29 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
                     // show alert dialog
                     alert.show()
                 }
+                .addOnFailureListener { e ->
+                    Log.w(ContentValues.TAG, "Error adding document", e)
+                }
 
 
 
+            dialogBuilder.setMessage("Thank you for your submission")
+            // if the dialog is cancelable
+            .setCancelable(false)
+            // positive button text and action
+            .setPositiveButton("Done!", DialogInterface.OnClickListener {
+                    dialog, id ->
+                    val mainActIntent = Intent(this,MainActivity::class.java)
+                    startActivity(mainActIntent)
+                    finish()
+            })
 
+            // create dialog box
+            val alert = dialogBuilder.create()
+            // set title for alert dialog box
+            alert.setTitle("Pollinator Sent!")
+            // show alert dialog
+            alert.show()
         }
     }
 }

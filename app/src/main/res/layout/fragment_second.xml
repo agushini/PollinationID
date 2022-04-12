@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  This is the Pollinator ID page  -->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
@@ -60,16 +61,18 @@
         app:layout_constraintTop_toBottomOf="@+id/secondFragment" />
 
     <Button
-        android:id="@+id/nextHotelIDBtn"
+        android:id="@+id/dateAndTimeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:text="Next"
         android:textColor="@color/black"
         android:backgroundTint="#FF306CB5"
         android:backgroundTintMode="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hotelInputText" />
+        app:layout_constraintTop_toBottomOf="@+id/hotelInputText"
+         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

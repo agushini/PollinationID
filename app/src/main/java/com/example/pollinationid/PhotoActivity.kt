@@ -15,8 +15,6 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.text.format.DateFormat
 import android.text.format.DateFormat.getBestDateTimePattern
-import android.util.Base64.DEFAULT
-import android.util.Base64.encodeToString
 import android.util.Log
 import android.widget.*
 import androidx.annotation.RequiresApi
@@ -259,7 +257,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun outputGenerator(bitmap: Bitmap){
-        //declearing tensor flow lite model variable
+        //declaring tensor flow lite model variable
 
         val pollinatorModel = PollinatorModel.newInstance(this)
 

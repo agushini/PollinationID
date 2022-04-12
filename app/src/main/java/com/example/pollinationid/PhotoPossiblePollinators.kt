@@ -22,6 +22,7 @@ class PhotoPossiblePollinators : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.photo_pollinators_possible )
 
+        //resulstList = ["Harvest Men", "Blue orchard bee"]
         val outputListRecycler : MutableList<Insect> = arrayListOf()
         val resultsList = intent.getStringArrayListExtra("Results")
         if (resultsList != null) {

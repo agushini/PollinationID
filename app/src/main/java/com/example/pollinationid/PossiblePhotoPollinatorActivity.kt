@@ -73,6 +73,8 @@ class PossiblePhotoPollinatorActivity : AppCompatActivity() {
 
             confirmIntent.putExtra("userPredict",navBarTitle)
             confirmIntent.putExtra("PhotoSelectedPollinator",eimg1)
+            confirmIntent.putExtra("techName",eTechNameTextView.text)
+
             startActivity(confirmIntent)
 
         }
