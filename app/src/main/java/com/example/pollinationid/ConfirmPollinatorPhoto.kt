@@ -11,12 +11,17 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.tasks.OnFailureListener
+import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.pollinator_confirm_photo.*
 import java.time.LocalDateTime
+import java.util.*
 
 class ConfirmPollinatorPhoto : AppCompatActivity() {
 
@@ -48,41 +53,26 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
 
         //decode encoded image to prepare to send it to the database
         val imageBytes = Base64.decode(encodedImage, Base64.DEFAULT)
-        val photoUrl : String
+        var photoUrl = ""
 
-        // Create a storage reference from our app
-        val storageRef = storage.reference
+        val fileName = UUID.randomUUID().toString() +".jpg"
+        val refStorage = FirebaseStorage.getInstance().reference.child("pollinators/$fileName")
 
-        // Create a reference to "mountains.jpg"
-        val mountainsRef = storageRef.child("pollinators/")
+        refStorage.putBytes(imageBytes)
+            .addOnSuccessListener(
+                OnSuccessListener<UploadTask.TaskSnapshot> { taskSnapshot ->
+                    taskSnapshot.storage.downloadUrl.addOnSuccessListener {
 
-        var uploadTask = mountainsRef.putBytes(imageBytes)
-        // Handle unsuccessful uploads
-//        storageRef.child("pollinators/profile.png").downloadUrl.addOnSuccessListener {
-//            // Got the download URL for 'users/me/profile.png'
-//            Log.e("CONFIRMPOLLINATOR","Sucessfully to uploaded photo")
-//        }.addOnFailureListener {
-//            Log.e("CONFIRMPOLLINATOR","Failed to upload photo")
-//        }
+                        photoUrl = it.toString()
+                        Log.i("CONFIRMPOLLINATOR","Sucessfully to uploaded photo $photoUrl")
+                    }
+                })
 
-        val ref = storageRef.child("images/mountains.jpg")
-        uploadTask = ref.putBytes(imageBytes)
+            .addOnFailureListener(OnFailureListener { e ->
+                print(e.message)
+                Log.e("CONFIRMPOLLINATOR","Failed to upload photo")
+            })
 
-        val urlTask = uploadTask.continueWithTask { task ->
-            if (!task.isSuccessful) {
-                task.exception?.let {
-                    throw it
-                }
-            }
-            ref.downloadUrl
-        }.addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                val downloadUri = task.result
-            } else {
-                // Handle failures
-                // ...
-            }
-        }
 
 
         //display the information they are about to submit
@@ -99,8 +89,8 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
             //log stuff to the database
 
             val polDBInfo  = hashMapOf(
-                "date_created" to LocalDateTime.now().toString(),
-                "date_seen" to dateLog,
+                "date_created" to LocalDateTime.now().toString(), //this is formatted differently than the dates given by IOS in the database
+                "date_seen" to dateLog,  //this is formatted differently than the dates given by IOS in the database
                 "genus_species" to techName,
                 "hotel_seen" to hotelId,
                 "indent_type" to "photo_id",

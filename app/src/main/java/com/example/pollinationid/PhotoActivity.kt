@@ -106,8 +106,10 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                                     Log.i("PHOTO ACTIVITY", "Before OuputGen Call")
 
 
-                                    outputGenerator(bitmap)
-                                    
+                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                        outputGenerator(bitmap)
+                                    }
+
 
                                 }else{
                                     Log.i("Photo Activity", "Date not entered")
@@ -285,7 +287,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         val baos = ByteArrayOutputStream()
         val bitmapToSend = imageView.drawable.toBitmap()
         val encoder = Base64.getEncoder()
-        bitmapToSend.compress(Bitmap.CompressFormat.PNG, 100, baos)
+        bitmapToSend.compress(Bitmap.CompressFormat.JPEG, 100, baos)
         val encodedImage = encoder.encodeToString(baos.toByteArray())
 
         val sharedPref = getSharedPreferences("photoPref", MODE_PRIVATE)
