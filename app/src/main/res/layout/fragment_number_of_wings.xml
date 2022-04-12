@@ -46,8 +46,8 @@
 
     <ImageButton
         android:id="@+id/onePairWingsButton"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
+        android:layout_width="131dp"
+        android:layout_height="154dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -56,15 +56,15 @@
         android:src="@drawable/dkwings_onepair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintHorizontal_bias="0.789"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.319" />
+        app:layout_constraintVertical_bias="0.343" />
 
     <ImageButton
         android:id="@+id/twoPairWingsButton"
-        android:layout_width="158dp"
-        android:layout_height="wrap_content"
+        android:layout_width="147dp"
+        android:layout_height="143dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -73,10 +73,51 @@
         android:src="@drawable/dkwings_different"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.249"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781" />
+        app:layout_constraintVertical_bias="0.717" />
 
+    <TextView
+        android:id="@+id/noWingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Wings"
+        android:textColor="#306CB5"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onePairWingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Pair"
+        android:textColor="#306CB5"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/twoPairWingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two Pair"
+        android:textColor="#306CB5"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

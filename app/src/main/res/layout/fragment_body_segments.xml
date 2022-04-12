@@ -41,19 +41,63 @@
         android:src="@drawable/dkspiders" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="277dp"
+        android:id="@+id/twoPlusSegmentsButton"
+        android:layout_width="262dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="75dp"
         android:layout_marginTop="425dp"
         android:layout_marginEnd="74dp"
         android:layout_marginBottom="132dp"
         android:scaleType="fitCenter"
         android:src="@drawable/dkcentipede"
         android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/twoSegmentsText"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="352dp"
+        android:text="2 Body Segments"
+        android:textColor="#306CB5"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/twoPlusSegmentsText"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="88dp"
+        android:text="More than 2 Body Segment"
+        android:textColor="#306CB5"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </RelativeLayout>
