@@ -14,15 +14,21 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.text.format.DateFormat
+import android.text.format.DateFormat.getBestDateTimePattern
+import android.util.Base64.DEFAULT
+import android.util.Base64.encodeToString
 import android.util.Log
 import android.widget.*
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.toBitmap
 import com.example.pollinationid.ml.PollinatorModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_photo.*
 import org.tensorflow.lite.support.image.TensorImage
+import java.io.ByteArrayOutputStream
 import java.util.*
 
 
@@ -251,6 +257,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun outputGenerator(bitmap: Bitmap){
         //declearing tensor flow lite model variable
 
@@ -277,12 +284,18 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
              outputList.add(outputs[i].label) //add the names of possible pollinators above 10%
         }
 
+        val baos = ByteArrayOutputStream()
+        val bitmapToSend = imageView.drawable.toBitmap()
+        val encoder = Base64.getEncoder()
+        bitmapToSend.compress(Bitmap.CompressFormat.PNG, 100, baos)
+        val encodedImage = encoder.encodeToString(baos.toByteArray())
+
         val sharedPref = getSharedPreferences("photoPref", MODE_PRIVATE)
         val editor = sharedPref.edit()
         editor.putString("modelPredict",outputs[0].label)
         editor.putString("hotelID", hotel)
         editor.putString("dateLog", displayDate.text as String?)
-        //editor.putInt("photoSend",bitmap)
+        editor.putString("encodedImage",encodedImage)
         editor.apply()
 
 
