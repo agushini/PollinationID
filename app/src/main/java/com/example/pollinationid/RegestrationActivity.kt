@@ -18,7 +18,7 @@ import com.google.firebase.ktx.Firebase
 
 // Access a Cloud Firestore instance from your Activity
 class RegestrationActivity : AppCompatActivity() {
-    val user = Firebase.auth.currentUser
+
     val db = Firebase.firestore
 
 
@@ -62,11 +62,6 @@ class RegestrationActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        /*user?.let {
-            // Name, email address, and profile photo Url
-            var etFirstName = user.
-            val etLastName = user.
-        }*/
     }
 
     private fun signUpUser() {
@@ -100,38 +95,6 @@ class RegestrationActivity : AppCompatActivity() {
             return
         }
 
-
-
-//        db.collection("Users") //Sukun i commented this out to try to fix this, if it works im getting rid of it
-//            .get()
-//            .addOnSuccessListener { result ->
-//                for (document in result) {
-//                    Log.d(TAG, "${document.id} => ${document.data}")
-//                }
-//            }
-//            .addOnFailureListener { exception ->
-//                Log.w(TAG, "Error getting documents.", exception)
-//            }
-
-        /*val user = Firebase.auth.currentUser
-        user?.let {
-            // Name, email address, and profile photo Url
-            val name = user.displayName
-            val email = user.email
-            val photoUrl = user.photoUrl
-
-            // Check if user's email is verified
-            val emailVerified = user.isEmailVerified
-
-            // The user's ID, unique to the Firebase project. Do NOT use this value to
-            // authenticate with your backend server, if you have one. Use
-            // FirebaseUser.getToken() instead.
-            val uid = user.uid
-        }*/
-        // If all credential are correct
-        // We call createUserWithEmailAndPassword
-        // using auth object and pass the
-        // email and pass in it.
         auth.createUserWithEmailAndPassword(email, pass,).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()

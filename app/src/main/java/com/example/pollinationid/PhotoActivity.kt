@@ -14,6 +14,7 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.text.format.DateFormat
+import android.text.format.DateFormat.getBestDateTimePattern
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity

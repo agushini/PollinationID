@@ -1,20 +1,30 @@
 package com.example.pollinationid
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.content.DialogInterface
-import android.content.Intent
-import android.content.SharedPreferences
+import android.content.*
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.pollinator_confirm_photo.*
+import java.time.LocalDateTime
 
 class ConfirmPollinatorPhoto : AppCompatActivity() {
 
+    //database variables
+    private var auth: FirebaseAuth = Firebase.auth
+    private val db = Firebase.firestore
+    private val uid = auth.currentUser!!.uid
+
+    @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +55,27 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
             Log.i("CONFIRMPOLLINATORPHOTO","Submit Pollinator btn clicked")
 
             //TODO: Add the backend stuff to add a document to the collection
+            //log stuff to the database
+
+            val polDBInfo  = hashMapOf(
+                "date_created" to LocalDateTime.now().toString(),
+                "date_seen" to dateLog,
+                "genus_species" to techName,
+                "hotel_seen" to hotelId,
+                "indent_type" to "photo_id",
+                "photo_from_user" to "temp",
+                "pollinatorID" to userPredict,
+            )
+
+            db.collection("Users").document(uid).collection("PollinatorRecord").document()
+                .set(polDBInfo)
+                .addOnSuccessListener {
+                    Log.d(ContentValues.TAG, "DocumentSnapshot added with ID: $uid")
+                }
+                .addOnFailureListener { e ->
+                    Log.w(ContentValues.TAG, "Error adding document", e)
+                }
+
 
 
             dialogBuilder.setMessage("Thank you for your submission")
