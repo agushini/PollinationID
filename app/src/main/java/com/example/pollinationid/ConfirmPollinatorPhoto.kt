@@ -59,20 +59,18 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
         val refStorage = FirebaseStorage.getInstance().reference.child("pollinators/$fileName")
 
         refStorage.putBytes(imageBytes)
-            .addOnSuccessListener(
-                OnSuccessListener<UploadTask.TaskSnapshot> { taskSnapshot ->
-                    taskSnapshot.storage.downloadUrl.addOnSuccessListener {
+            .addOnSuccessListener { taskSnapshot ->
+                taskSnapshot.storage.downloadUrl.addOnSuccessListener {
 
-                        photoUrl = it.toString()
-                        Log.i("CONFIRMPOLLINATOR","Sucessfully to uploaded photo $photoUrl")
-                    }
-                })
+                    photoUrl = it.toString()
+                    Log.i("CONFIRMPOLLINATOR", "Successfully to uploaded photo $photoUrl")
+                }
+            }
 
-            .addOnFailureListener(OnFailureListener { e ->
+            .addOnFailureListener { e ->
                 print(e.message)
-                Log.e("CONFIRMPOLLINATOR","Failed to upload photo")
-            })
-
+                Log.e("CONFIRMPOLLINATOR", "Failed to upload photo")
+            }
 
 
         //display the information they are about to submit
@@ -84,7 +82,7 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
 
         submitPollinatorPhotoButton.setOnClickListener{
             val dialogBuilder = AlertDialog.Builder(this)
-            Log.i("CONFIRMPOLLINATORPHOTO","Submit Pollinator btn clicked")
+            Log.i("CONFIRMPOLLINATOR","Submit Pollinator btn clicked")
 
             //log stuff to the database
 
@@ -107,12 +105,11 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
                         // if the dialog is cancelable
                         .setCancelable(false)
                         // positive button text and action
-                        .setPositiveButton("Done!", DialogInterface.OnClickListener {
-                                dialog, id ->
-                            val mainActIntent = Intent(this,MainActivity::class.java)
+                        .setPositiveButton("Done!") { _, _ ->
+                            val mainActIntent = Intent(this, MainActivity::class.java)
                             startActivity(mainActIntent)
                             finish()
-                        })
+                        }
 
                     // create dialog box
                     val alert = dialogBuilder.create()
@@ -128,12 +125,11 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
                         // if the dialog is cancelable
                         .setCancelable(false)
                         // positive button text and action
-                        .setPositiveButton("Okay", DialogInterface.OnClickListener {
-                                dialog, id ->
-                            val photoActIntent = Intent(this,PhotoActivity::class.java)
+                        .setPositiveButton("Okay") { _, _ ->
+                            val photoActIntent = Intent(this, PhotoActivity::class.java)
                             startActivity(photoActIntent)
                             finish()
-                        })
+                        }
 
                     // create dialog box
                     val alert = dialogBuilder.create()
@@ -152,12 +148,11 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
             // if the dialog is cancelable
             .setCancelable(false)
             // positive button text and action
-            .setPositiveButton("Done!", DialogInterface.OnClickListener {
-                    dialog, id ->
-                    val mainActIntent = Intent(this,MainActivity::class.java)
-                    startActivity(mainActIntent)
-                    finish()
-            })
+            .setPositiveButton("Done!") { _, _ ->
+                val mainActIntent = Intent(this, MainActivity::class.java)
+                startActivity(mainActIntent)
+                finish()
+            }
 
             // create dialog box
             val alert = dialogBuilder.create()
