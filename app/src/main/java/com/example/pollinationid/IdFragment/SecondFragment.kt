@@ -16,48 +16,12 @@ import kotlinx.android.synthetic.main.activity_photo.*
 
 class SecondFragment:Fragment(R.layout.fragment_second) {
 
-    lateinit var checkHotelButton: Button
-    lateinit var hotelId: String
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        checkHotelButton.setOnClickListener{
-            hotelId = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
-
-            if (hotelId != ""){
-                val mFireStore = FirebaseFirestore.getInstance()
-                val hotelRef = mFireStore.collection("Hotels").document(hotelId) //give it the hotel path
-
-                hotelRef.get().addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val document = task.result
-                        if(document != null) {
-                            if (document.exists()) {
-                                Log.i("PHOTO ACTIVITY", "Hotel exists.")
-                            } else {
-                                Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
-                            }
-                        }
-                    } else {
-                        Toast.makeText(
-                            this@SecondFragment.requireContext(),
-                            "Please enter in a valid hotel id",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    }
-                }
-            }else{
-                Toast.makeText(
-                    this@SecondFragment.requireContext(),
-                    "Please enter in a valid hotel id",
-                    Toast.LENGTH_LONG
-                ).show()
-            }
-        }
 
         //button click to date and time page
         val bind = FragmentSecondBinding.inflate (layoutInflater)

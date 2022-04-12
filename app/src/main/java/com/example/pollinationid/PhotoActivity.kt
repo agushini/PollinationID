@@ -252,7 +252,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
 
     private fun outputGenerator(bitmap: Bitmap){
-        //declearing tensor flow lite model variable
+        //declaring tensor flow lite model variable
 
         val pollinatorModel = PollinatorModel.newInstance(this)
 

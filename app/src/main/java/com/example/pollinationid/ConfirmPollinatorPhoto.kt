@@ -25,6 +25,7 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
 
         val photoPollinator = intent.getIntExtra("PhotoSelectedPollinator",R.drawable.ic_black_camera_foreground)
         val userPredict = intent.getStringExtra("userPredict")
+        val techName = intent.getStringExtra("techName")
 
         val sharedPref = getSharedPreferences( "photoPref",MODE_PRIVATE)
         val modelPredict = sharedPref.getString("modelPredict","ERR:NOTSENT")

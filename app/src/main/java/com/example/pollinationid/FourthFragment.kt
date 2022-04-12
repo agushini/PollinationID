@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_fourth.*
 
 
+//Fourth Fragment >> List Adapter >> Explore Activity
+
 class FourthFragment:Fragment(R.layout.fragment_fourth) {
 
     private val fragmentInsectList = PollinatorInfo.newInstance().mInsectList

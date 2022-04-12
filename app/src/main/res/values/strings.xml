@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">PollinationID</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pollinator_id">Pollinator ID</string>
     <string name="hotel_id">Hotel ID</string>
@@ -90,11 +89,12 @@
     <string name="account">Account</string>
     <string name="info">Info</string>
     <string name="priv_policy_info">Please see the link below for more information regarding our Privicy Policy</string>
-    <string name="priv_policy_link"><a href="https://drive.google.com/file/d/1FXgs6MWDeqfwc4WW95Zl38Mbz34JAgeh/view?usp=drivesdk">Click here for our Privacy Policy</a></string>
+    <string name="priv_policy_link"><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:c5280dcd-c2a2-3ce7-bc08-fbf9ff9e000b">Click here for our Privacy Policy</a></string>
     <string name="back_to_menu"><![CDATA[< Menu]]></string>
     <string name="TC_info">Please see the link below for more information regarding our Terms and Conditions</string>
-    <string name="TC_Hyperlink"><a href="https://drive.google.com/file/d/1uuwdQQiwQnZZ3QMNLNNsx--n1KVVfTA9/view?usp=drivesdk">Click here for our Terms and Conditions</a></string>
+    <string name="TC_Hyperlink"><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f998e772-8be0-38e9-b0df-d013d52bd444">Click here for our Terms and Conditions</a></string>
     <string name="title_activity_contacts">ContactsActivity</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
