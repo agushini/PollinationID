@@ -13,7 +13,7 @@ class ShapeOfWingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shape_of_wings)
 
-        //different Wings button click to hairs pagefin
+        //different Wings button click to hairs page
         val differentWingsBttn = findViewById<ImageButton>(R.id.differentWingsButton)
         differentWingsBttn.setOnClickListener {
             val intent = Intent(this, HairActivity::class.java)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".IdFragment.HairOnSidesColorFragment">
+    tools:context=".IdFragment.HairOnSidesColorActivity">
 
     <TextView
         android:id="@+id/hairOnSideFragment"
@@ -77,11 +77,9 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="251dp"
-        android:layout_marginTop="413dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="120dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/dkhaironsides_blackwithpalehair" />
+        android:src="@drawable/dkhaironsides_blackwithpalehair"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="260dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

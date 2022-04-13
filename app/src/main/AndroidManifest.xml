@@ -14,6 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PollinationID">
         <activity
+            android:name=".IdFragment.HairUnderneathColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdFragment.HiarOnSidesColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdFragment.AlmostNoHairColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdFragment.HairOnSidesColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdFragment.FullHairColorActivity"
+            android:exported="false" />
+        <activity
             android:name=".IdFragment.NumberOfWingsActivity"
             android:exported="false" />
         <activity
