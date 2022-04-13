@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -15,14 +15,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="648dp"
         android:text="Hair"
         android:textColor="#306CB5"
         android:textSize="40sp"
-        android:textStyle="italic|bold" />
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
     <TextView
         android:id="@+id/hairQuestionText"
@@ -32,45 +34,50 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="540dp"
         android:text="Does it have hair and where?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="italic|bold" />
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairFragment"
+        app:layout_constraintVertical_bias="0.03" />
 
     <ImageButton
         android:id="@+id/noHairButton"
-        android:layout_width="158dp"
-        android:layout_height="157dp"
+        android:layout_width="156dp"
+        android:layout_height="149dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="213dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="361dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/dkhair_none" />
+        android:src="@drawable/dkhair_none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairQuestionText"
+        app:layout_constraintVertical_bias="0.031" />
 
     <ImageButton
         android:id="@+id/hairUnderneathButton"
-        android:layout_width="173dp"
-        android:layout_height="wrap_content"
+        android:layout_width="169dp"
+        android:layout_height="147dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="224dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="369dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/dkhair_abdomen" />
+        android:src="@drawable/dkhair_abdomen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairQuestionText"
+        app:layout_constraintVertical_bias="0.031" />
 
     <ImageButton
         android:id="@+id/hairOnSideButton"
@@ -80,12 +87,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="428dp"
-        android:layout_marginEnd="221dp"
-        android:layout_marginBottom="137dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/dkhair_sides" />
+        android:src="@drawable/dkhair_sides"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairQuestionText"
+        app:layout_constraintVertical_bias="0.637" />
 
     <ImageButton
         android:id="@+id/hairFullButton"
@@ -95,12 +104,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="227dp"
-        android:layout_marginTop="428dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="143dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/dkhair_full" />
+        android:src="@drawable/dkhair_full"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hairQuestionText"
+        app:layout_constraintVertical_bias="0.626" />
 
     <TextView
         android:id="@+id/noHiarText"
@@ -110,19 +121,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="378dp"
-        android:layout_marginEnd="227dp"
-        android:layout_marginBottom="326dp"
         android:text="Almost No Hair"
         android:textColor="#306CB5"
         android:textSize="20sp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/noHairButton"
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
         android:id="@+id/HairUnderneathText"
@@ -132,19 +140,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="236dp"
-        android:layout_marginTop="377dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="327dp"
         android:text="Hair Underneath"
         android:textColor="#306CB5"
         android:textSize="20sp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/hairUnderneathButton"
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/HairOnSidesText"
@@ -154,19 +159,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="607dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginBottom="97dp"
         android:text="Hair On Sides"
         android:textColor="#306CB5"
         android:textSize="20sp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/hairOnSideButton"
+        app:layout_constraintVertical_bias="0.177" />
 
     <TextView
         android:id="@+id/HairFullText"
@@ -176,18 +178,15 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="265dp"
-        android:layout_marginTop="607dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="97dp"
         android:text="Full Hair"
         android:textColor="#306CB5"
         android:textSize="20sp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/hairFullButton"
+        app:layout_constraintVertical_bias="0.224" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
