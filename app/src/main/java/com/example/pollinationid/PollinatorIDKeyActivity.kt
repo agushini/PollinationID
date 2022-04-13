@@ -49,6 +49,7 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
                     .commit()
             }
             buttonOpen.visibility = View.GONE
+            dkTimeText.visibility = View.GONE
         }
 
         // date and time function
@@ -72,6 +73,7 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
             DatePickerDialog(this, this,year,month,day).show()
             dkDateAndTimeButton.visibility = View.GONE
+
         }
     }
 
