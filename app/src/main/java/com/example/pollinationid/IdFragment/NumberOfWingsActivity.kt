@@ -26,12 +26,14 @@ class NumberOfWingsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //TODO ("Eastern Calligrapher, Hoverflies, Margined Calligrapher, Scaly Bee Fly, Transverse-Banded Calligrapher")
+
         // one pair wings click to possible pollinators
-        /*val onPairWingBttn = findViewById<ImageButton>(R.id.onePairWingsButton)
+        val onPairWingBttn = findViewById<ImageButton>(R.id.onePairWingsButton)
         onPairWingBttn.setOnClickListener {
-            val intent = Intent(this, BodySegmentsActivity::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             startActivity(intent)
-        }*/
+        }
 
     }
 }

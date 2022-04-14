@@ -1,12 +1,34 @@
 package com.example.pollinationid.IdFragment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import com.example.pollinationid.R
+import kotlinx.android.synthetic.main.activity_dkpossible_pollinator.*
 
 class FullHairColorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_hair_color)
+
+        //TODO(" ")
+
+        //full hair black and yellow click to possible pollinators page
+        val fullHairBlackAndYellowBttn = findViewById<ImageButton>(R.id.fullHairBlackAndYellowButton)
+        fullHairBlackAndYellowBttn.setOnClickListener {
+            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            startActivity(intent)
+        }
+
+        //TODO(" ")
+
+        //full hair Black Amber or Brown click to possible pollinators page
+        val fullHairBlackAmberOrBrownBttn = findViewById<ImageButton>(R.id.fullHairBlackAmberOrBrownButton)
+        fullHairBlackAmberOrBrownBttn.setOnClickListener {
+            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            startActivity(intent)
+        }
+
     }
 }

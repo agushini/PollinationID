@@ -26,6 +26,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
+    <TextView
+        android:id="@+id/dkInstructionText"
+        android:layout_width="345dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="564dp"
+        android:text="Please tap the option that best fits the insect you see"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
     <ImageButton
         android:id="@+id/noWingsButton"
         android:layout_width="111dp"
@@ -37,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberOfWingsFragment"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.245" />
 
     <ImageButton
         android:id="@+id/onePairWingsButton"
@@ -47,10 +66,10 @@
         android:src="@drawable/dkwings_onepair"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberOfWingsFragment"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.246" />
 
     <ImageButton
         android:id="@+id/twoPairWingsButton"
@@ -62,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberOfWingsFragment"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <TextView
         android:id="@+id/noWingsText"
@@ -97,10 +116,10 @@
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onePairWingsButton"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <TextView
         android:id="@+id/twoPairWingsText"

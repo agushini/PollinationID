@@ -20,10 +20,29 @@ class ShapeOfWingsActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //TODO("Beetles, Lady Bugs")
+
         //rigid Wings button click to pollinators page
-        /*val rigidWingsBttn = findViewById<ImageButton>(R.id.rigidWingsButton)
+        val rigidWingsBttn = findViewById<ImageButton>(R.id.rigidWingsButton)
         rigidWingsBttn.setOnClickListener {
-            val intent = Intent (this, )
-        }*/
+            val intent = Intent (this, DKPossiblePollinatorActivity::class.java)
+        }
+
+        //TODO("Brown Lacewings, Brown Lacewings")
+
+        //roof like wings click to pollinators page
+        val roofLikeWingsBttn = findViewById<ImageButton>(R.id.roofLikeWingsButton)
+        roofLikeWingsBttn.setOnClickListener {
+            val intent = Intent (this, DKPossiblePollinatorActivity::class.java)
+        }
+
+        //TODO("Common Barklice")
+
+        //bark lice wings click to pollinators
+        val barkLiceBttn = findViewById<ImageButton>(R.id.barkLiceButton)
+        barkLiceBttn.setOnClickListener {
+            val intent = Intent (this, DKPossiblePollinatorActivity::class.java)
+        }
+
     }
 }
