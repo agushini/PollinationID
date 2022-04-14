@@ -28,8 +28,8 @@
 
     <ImageButton
         android:id="@+id/rigidWingsButton"
-        android:layout_width="152dp"
-        android:layout_height="124dp"
+        android:layout_width="144dp"
+        android:layout_height="126dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -39,10 +39,10 @@
         android:src="@drawable/dkwings_rigid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shapeOfWingsFragment"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <ImageButton
         android:id="@+id/roofLikeWingsButton"
@@ -62,8 +62,8 @@
 
     <ImageButton
         android:id="@+id/barkLiceButton"
-        android:layout_width="177dp"
-        android:layout_height="125dp"
+        android:layout_width="166dp"
+        android:layout_height="126dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -73,15 +73,14 @@
         android:src="@drawable/dkbarklice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rigidWingsButton"
-        app:layout_constraintVertical_bias="0.417" />
+        app:layout_constraintTop_toBottomOf="@+id/rigidWingsButton" />
 
     <ImageButton
         android:id="@+id/differentWingsButton"
-        android:layout_width="168dp"
-        android:layout_height="162dp"
+        android:layout_width="153dp"
+        android:layout_height="149dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -90,9 +89,9 @@
         android:src="@drawable/dkwings_different"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintHorizontal_bias="0.837"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/roofLikeWingsButton"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.148" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
