@@ -12,7 +12,7 @@ class FullHairColorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_hair_color)
 
-        //TODO(" ")
+        //TODO("Bufflehead Mason Bee, Common Eastern Bumblebee, Eastern Carpenter Bee")
 
         //full hair black and yellow click to possible pollinators page
         val fullHairBlackAndYellowBttn = findViewById<ImageButton>(R.id.fullHairBlackAndYellowButton)
@@ -21,7 +21,7 @@ class FullHairColorActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //TODO(" ")
+        //TODO("Western Honeybee")
 
         //full hair Black Amber or Brown click to possible pollinators page
         val fullHairBlackAmberOrBrownBttn = findViewById<ImageButton>(R.id.fullHairBlackAmberOrBrownButton)
