@@ -16,33 +16,30 @@
         <activity
             android:name=".IdFragment.DKPossiblePollinatorActivity"
             android:exported="false" />
-        <activity
+        <!--<activity
             android:name=".IdFragment.HairUnderneathColorActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IdFragment.HiarOnSidesColorActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+        <!--<activity
             android:name=".IdFragment.AlmostNoHairColorActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+        <!--<activity
             android:name=".IdFragment.HairOnSidesColorActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+       <!-- <activity
             android:name=".IdFragment.FullHairColorActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+        <!--<activity
             android:name=".IdFragment.NumberOfWingsActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+        <!--<activity
             android:name=".IdFragment.HairActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+       <!-- <activity
             android:name=".IdFragment.ShapeOfWingsActivity"
-            android:exported="false" />
-        <activity
+            android:exported="false" />-->
+        <!--<activity
             android:name=".IdFragment.BodySegmentsActivity"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".PolinationProjectActivity"
             android:exported="false"
@@ -162,6 +159,72 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name=".IdFragment.NumberOfWingsActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PollinatorIDKeyActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.ShapeOfWingsActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.NumberOfWingsActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.BodySegmentsActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.NumberOfWingsActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.HairActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.ShapeOfWingsActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.AlmostNoHairColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.HairUnderneathColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.HairOnSidesColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.FullHairColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+
+
     </application>
 
 </manifest>

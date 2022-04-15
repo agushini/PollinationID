@@ -34,7 +34,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="564dp"
         android:text="Please tap the option that best fits the insect you see"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -43,7 +42,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toBottomOf="@+id/numberOfWingsFragment"
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageButton
         android:id="@+id/noWingsButton"

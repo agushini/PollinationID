@@ -52,7 +52,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="96dp"sax
+        android:layout_marginTop="96dp"
         android:scaleType="fitCenter"
         android:src="@drawable/dkwings_rooflike"
         app:layout_constraintEnd_toEndOf="parent"
