@@ -8,6 +8,9 @@ import com.example.pollinationid.R
 import kotlinx.android.synthetic.main.activity_dkpossible_pollinator.*
 
 class FullHairColorActivity : AppCompatActivity() {
+
+    val DKoutputList : ArrayList<String> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_hair_color)
@@ -18,6 +21,9 @@ class FullHairColorActivity : AppCompatActivity() {
         val fullHairBlackAndYellowBttn = findViewById<ImageButton>(R.id.fullHairBlackAndYellowButton)
         fullHairBlackAndYellowBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Bufflehead Mason Bee","Common Eastern Bumblebee", "Eastern Carpenter Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -27,6 +33,9 @@ class FullHairColorActivity : AppCompatActivity() {
         val fullHairBlackAmberOrBrownBttn = findViewById<ImageButton>(R.id.fullHairBlackAmberOrBrownButton)
         fullHairBlackAmberOrBrownBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Western Honeybee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
