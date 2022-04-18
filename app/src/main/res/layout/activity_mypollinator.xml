@@ -23,7 +23,7 @@
         android:layout_width="125dp"
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
-        android:text="@string/key_chars"
+        android:text="Key Traits"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

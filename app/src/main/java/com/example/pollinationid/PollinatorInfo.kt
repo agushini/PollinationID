@@ -553,7 +553,7 @@ public class PollinatorInfo {
                     "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
         Insect("Cuckoo Bees", "(Sphecodes spp.)",
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
-            "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside the while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
+            "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
                     "\n" +
                     "The range of the Cuckoo Bee extends around the world, especially in North America and Europe(2). Cuckoo Bees are found throughout the United States(2).\n" +
                     "\n" +
@@ -1010,7 +1010,7 @@ public class PollinatorInfo {
                     "• Pale yellow body with three long stripes down back",
             "The House Centipede is a predaceous arthropod and can typically be found in moist habitats (basements,\n" +
                     "underneath rocks, leaf litter, etc.) with a higher activity at night."),
-        Insect("Hoverflies", "(Family: Syrphidae)", //TODO: Not in the model it should be added
+        Insect("Hoverflies", "(Family: Syrphidae)", //TODO: Not in the model it should be added, could Named Flower Flies instead
             R.drawable.hoverflies_1,R.drawable.hoverflies_2,R.drawable.hoverflies_3,R.drawable.hoverflies_4,
             "Hoverflies (also known as Flower Flies) is a family of over 6,000 fly species that visit flowers for nectar and pollen as adults(1). A vast majority of Hoverflies mimic the patterns and behaviors of bees and wasps. This is known as batesian mimicry. The untrained eye can sometimes mistake them for a bee or wasp, though Hoverflies can be distinguished from Hymenoptera (bees and wasps) by their single pair of wings, large eyes, short antennae, and extra wing vein (spurious vein). Hoverflies are often overlooked as a group despite playing an indispensable role as “bio-control agents of plant pests, recyclers of dead plant and animal matter, pests of some ornamental plants, and pollinators”(1). Larvae can be found in a wide range of habitats and have a varied diet, though most are predators of other arthropods including aphids(1,2). \n" +
                     "\n" +
