@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pollinationid" >
+    package="com.example.pollinationid">
     <!-- Below are the permissions required for the app to run. It requests permissions though. -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -12,12 +12,38 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/theicon_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PollinationID" >
-
+        android:theme="@style/Theme.PollinationID">
+        <activity
+            android:name=".IdFragment.DKPossiblePollinatorActivity"
+            android:exported="false" />
+        <!--<activity
+            android:name=".IdFragment.HairUnderneathColorActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".IdFragment.AlmostNoHairColorActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".IdFragment.HairOnSidesColorActivity"
+            android:exported="false" />-->
+       <!-- <activity
+            android:name=".IdFragment.FullHairColorActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".IdFragment.NumberOfWingsActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".IdFragment.HairActivity"
+            android:exported="false" />-->
+       <!-- <activity
+            android:name=".IdFragment.ShapeOfWingsActivity"
+            android:exported="false" />-->
+        <!--<activity
+            android:name=".IdFragment.BodySegmentsActivity"
+            android:exported="false" />-->
         <activity
             android:name=".PolinationProjectActivity"
             android:exported="false"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -27,7 +53,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.pollinationid"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/providerfile" />
@@ -36,7 +62,7 @@
         <activity
             android:name=".ContactsActivity"
             android:exported="false"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -44,7 +70,7 @@
         <activity
             android:name=".TermsConditionsActivity"
             android:exported="false"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -52,21 +78,21 @@
         <activity
             android:name=".PrivacyPolicyActivity"
             android:exported="false"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".ForgotPasswordActivity"
-            android:exported="true" >
+            android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,7 +102,7 @@
         <activity
             android:name=".RegestrationActivity"
             android:exported="true"
-            android:label="Sign Up" >
+            android:label="Sign Up">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
@@ -88,7 +114,7 @@
         <activity
             android:name=".ExploreActivity"
             android:label="Explore More"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -96,7 +122,7 @@
         <activity
             android:name=".PhotoActivity"
             android:label="Photo ID"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -104,12 +130,11 @@
         <activity
             android:name=".PhotoPossiblePollinators"
             android:label="Possible Pollinators"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PhotoActivity" />
         </activity>
-
         <activity
             android:name=".PossiblePhotoPollinatorActivity"
             android:label="Possible Pollinators"
@@ -126,7 +151,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PossiblePhotoPollinatorActivity" />
         </activity>
-
         <activity
             android:name=".PollinatorIDKeyActivity"
             android:label="Classifying Pollinator"
@@ -135,6 +159,71 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name=".IdFragment.NumberOfWingsActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PollinatorIDKeyActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.ShapeOfWingsActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.NumberOfWingsActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.BodySegmentsActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.NumberOfWingsActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.HairActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.ShapeOfWingsActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.AlmostNoHairColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.HairUnderneathColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.HairOnSidesColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+        <activity
+            android:name=".IdFragment.FullHairColorActivity"
+            android:label="Classifying Pollinator"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.HairActivity" />
+        </activity>
+
 
     </application>
 
