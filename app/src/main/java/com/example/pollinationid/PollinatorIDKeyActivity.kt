@@ -50,8 +50,8 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
             val intent = Intent(this, NumberOfWingsActivity::class.java)
             startActivity(intent)
 
-            buttonOpen.visibility = View.GONE
-            dkTimeText.visibility = View.GONE
+            //buttonOpen.visibility = View.GONE
+            //dkTimeText.visibility = View.GONE
         }
 
         // date and time function
