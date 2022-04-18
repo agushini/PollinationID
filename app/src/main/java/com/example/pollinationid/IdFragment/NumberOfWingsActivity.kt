@@ -8,6 +8,9 @@ import com.example.pollinationid.R
 import kotlinx.android.synthetic.main.activity_number_of_wings.*
 
 class NumberOfWingsActivity : AppCompatActivity() {
+
+    val DKoutputList : ArrayList<String> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number_of_wings)
@@ -32,6 +35,9 @@ class NumberOfWingsActivity : AppCompatActivity() {
         val onPairWingBttn = findViewById<ImageButton>(R.id.onePairWingsButton)
         onPairWingBttn.setOnClickListener {
             val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
+            DKoutputList.addAll(listOf("Eastern Calligrapher", "Hoverflies", "Margined Calligrapher", "Scaly Bee Fly", "Transverse-Banded Calligrapher"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
