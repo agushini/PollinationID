@@ -97,7 +97,7 @@ class RegestrationActivity : AppCompatActivity() {
 
         auth.createUserWithEmailAndPassword(email, pass,).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
+
 
                 val uid = auth.currentUser!!.uid;
 
@@ -120,6 +120,7 @@ class RegestrationActivity : AppCompatActivity() {
 
 
                 //once successful creating account open up the main activity
+                Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
