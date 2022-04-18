@@ -25,10 +25,15 @@ import java.util.*
 
 class ConfirmPollinatorPhoto : AppCompatActivity() {
 
+    companion object{
+        private lateinit var photoUrl : String
+    }
+
     //database variables
     private var auth: FirebaseAuth = Firebase.auth
     private val db = Firebase.firestore
     private val uid = auth.currentUser!!.uid
+
 
     @RequiresApi(Build.VERSION_CODES.O)
     @SuppressLint("SetTextI18n")
@@ -53,24 +58,10 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
 
         //decode encoded image to prepare to send it to the database
         val imageBytes = Base64.decode(encodedImage, Base64.DEFAULT)
-        var photoUrl = ""
+
 
         val fileName = UUID.randomUUID().toString() +".jpg"
         val refStorage = FirebaseStorage.getInstance().reference.child("pollinators/$fileName")
-
-        refStorage.putBytes(imageBytes)
-            .addOnSuccessListener { taskSnapshot ->
-                taskSnapshot.storage.downloadUrl.addOnSuccessListener {
-
-                    photoUrl = it.toString()
-                    Log.i("CONFIRMPOLLINATOR", "Successfully to uploaded photo $photoUrl")
-                }
-            }
-
-            .addOnFailureListener { e ->
-                print(e.message)
-                Log.e("CONFIRMPOLLINATOR", "Failed to upload photo")
-            }
 
 
         //display the information they are about to submit
@@ -84,63 +75,80 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
             val dialogBuilder = AlertDialog.Builder(this)
             Log.i("CONFIRMPOLLINATOR","Submit Pollinator btn clicked")
 
-            //log stuff to the database
+            refStorage.putBytes(imageBytes)
+                .addOnSuccessListener { taskSnapshot ->
+                    taskSnapshot.storage.downloadUrl.addOnSuccessListener {
 
-            val polDBInfo  = hashMapOf(
-                "date_created" to LocalDateTime.now().toString(), //this is formatted differently than the dates given by IOS in the database
-                "date_seen" to dateLog,  //this is formatted differently than the dates given by IOS in the database
-                "genus_species" to techName,
-                "hotel_seen" to hotelId,
-                "indent_type" to "photo_id",
-                "photo_from_user" to photoUrl,
-                "pollinatorID" to userPredict,
-            )
+                        photoUrl = it.toString()
+                        Log.i("CONFIRMPOLLINATOR", "Successfully to uploaded photo $photoUrl")
 
-            db.collection("Users").document(uid).collection("PollinatorRecord").document()
-                .set(polDBInfo)
-                .addOnSuccessListener {
-                    Log.d(ContentValues.TAG, "DocumentSnapshot added with ID: $uid")
+                        //log stuff to the database
 
-                    dialogBuilder.setMessage("Thank you for your submission")
-                        // if the dialog is cancelable
-                        .setCancelable(false)
-                        // positive button text and action
-                        .setPositiveButton("Done!") { _, _ ->
-                            val mainActIntent = Intent(this, MainActivity::class.java)
-                            startActivity(mainActIntent)
-                            finish()
-                        }
+                        val polDBInfo  = hashMapOf(
+                            "date_created" to LocalDateTime.now().toString(), //this is formatted differently than the dates given by IOS in the database
+                            "date_seen" to dateLog,  //this is formatted differently than the dates given by IOS in the database
+                            "genus_species" to techName,
+                            "hotel_seen" to hotelId,
+                            "indent_type" to "photo_id",
+                            "photo_from_user" to photoUrl,
+                            "pollinatorID" to userPredict,
+                        )
 
-                    // create dialog box
-                    val alert = dialogBuilder.create()
-                    // set title for alert dialog box
-                    alert.setTitle("Pollinator Sent!")
-                    // show alert dialog
-                    alert.show()
+                        db.collection("Users").document(uid).collection("PollinatorRecord").document()
+                            .set(polDBInfo)
+                            .addOnSuccessListener {
+                                Log.d(ContentValues.TAG, "DocumentSnapshot added with ID: $uid")
+
+
+                                dialogBuilder.setMessage("Thank you for your submission")
+                                    // if the dialog is cancelable
+                                    .setCancelable(false)
+                                    // positive button text and action
+                                    .setPositiveButton("Done!") { _, _ ->
+                                        val mainActIntent = Intent(this, MainActivity::class.java)
+                                        startActivity(mainActIntent)
+                                        finish()
+                                    }
+
+                                // create dialog box
+                                val alert = dialogBuilder.create()
+                                // set title for alert dialog box
+                                alert.setTitle("Pollinator Sent!")
+                                // show alert dialog
+                                alert.show()
+                            }
+                            .addOnFailureListener { e ->
+                                Log.w(ContentValues.TAG, "Error adding document", e)
+
+                                dialogBuilder.setMessage("Error, Something went wrong. Please try again later.")
+                                    // if the dialog is cancelable
+                                    .setCancelable(false)
+                                    // positive button text and action
+                                    .setPositiveButton("Okay") { _, _ ->
+                                        val photoActIntent = Intent(this, PhotoActivity::class.java)
+                                        startActivity(photoActIntent)
+                                        finish()
+                                    }
+
+                                // create dialog box
+                                val alert = dialogBuilder.create()
+                                // set title for alert dialog box
+                                alert.setTitle("Uh oh...")
+                                // show alert dialog
+                                alert.show()
+                            }
+                            .addOnFailureListener { e ->
+                                Log.w(ContentValues.TAG, "Error adding document", e)
+                            }
+                    }
                 }
+
                 .addOnFailureListener { e ->
-                    Log.w(ContentValues.TAG, "Error adding document", e)
-
-                    dialogBuilder.setMessage("Error, Something went wrong. Please try again later.")
-                        // if the dialog is cancelable
-                        .setCancelable(false)
-                        // positive button text and action
-                        .setPositiveButton("Okay") { _, _ ->
-                            val photoActIntent = Intent(this, PhotoActivity::class.java)
-                            startActivity(photoActIntent)
-                            finish()
-                        }
-
-                    // create dialog box
-                    val alert = dialogBuilder.create()
-                    // set title for alert dialog box
-                    alert.setTitle("Uh oh...")
-                    // show alert dialog
-                    alert.show()
+                    print(e.message)
+                    Log.e("CONFIRMPOLLINATOR", "Failed to upload photo")
                 }
-                .addOnFailureListener { e ->
-                    Log.w(ContentValues.TAG, "Error adding document", e)
-                }
+
+
 
 
 
@@ -153,13 +161,6 @@ class ConfirmPollinatorPhoto : AppCompatActivity() {
                 startActivity(mainActIntent)
                 finish()
             }
-
-            // create dialog box
-            val alert = dialogBuilder.create()
-            // set title for alert dialog box
-            alert.setTitle("Pollinator Sent!")
-            // show alert dialog
-            alert.show()
         }
     }
 }

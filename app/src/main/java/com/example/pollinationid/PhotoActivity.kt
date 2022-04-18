@@ -92,13 +92,13 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 hotelRef.get().addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         val document = task.result
-                        if(document != null) {
+                        if(document !== null) {
                             if (document.exists()) {
                                 Log.i("PHOTO ACTIVITY", "Hotel exists.")
-                                if (displayDate.text != ""){ //if date entered
-                                    Log.i("PHOTO ACTIVITY","Date entered")
+                                if (displayDate.text != "") { //if date entered
+                                    Log.i("PHOTO ACTIVITY", "Date entered")
                                     Toast.makeText(
-                                        this,
+                                        this@PhotoActivity,
                                         "Valid Date and Hotel!",
                                         Toast.LENGTH_LONG
                                     ).show()
@@ -112,24 +112,29 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                                 }else{
                                     Log.i("Photo Activity", "Date not entered")
                                     Toast.makeText(
-                                        this,
+                                        this@PhotoActivity,
                                         "Please enter in a valid date",
                                         Toast.LENGTH_LONG
                                     ).show()
                                 }
                             } else {
-                                Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
+                                Toast.makeText(
+                                    this@PhotoActivity,
+                                    "Please enter in a valid hotel id",
+                                    Toast.LENGTH_LONG
+                                ).show()
                             }
                         }
-                    } else {
-                        Toast.makeText(
-                            this,
-                            "Please enter in a valid hotel id",
-                            Toast.LENGTH_LONG
-                        ).show()
+                    }
+                    else {
+                        Log.e(
+                            "Photo Activity",
+                            "Unexpected firebase input from documents. This message shouldn't show"
+                        )
                     }
                 }
-            }else{
+            }
+            else{
                 Toast.makeText(
                     this,
                     "Please enter in a valid hotel id",
@@ -238,7 +243,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     //for date picker
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         myDay = day
-        myMonth = month
+        myMonth = month + 1
         myYear = year
         val calendar: Calendar = Calendar.getInstance()
         hour = calendar.get(Calendar.HOUR)
@@ -252,7 +257,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         myHour = hourOfDay
         myMinute = minute
         textView.text =
-            "Year: $myYear\nMonth: $myMonth\nDay: $myDay\nHour: $myHour\nMinute: $myMinute"
+            "$myMonth $myDay, $myYear at $myHour:$myMinute" //changed to make it similar to the database
     }
 
 
@@ -283,16 +288,17 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
              outputList.add(outputs[i].label) //add the names of possible pollinators above 10%
         }
 
-        if (outputs.size < 1){ //if the list is empty after going through the first loop lower the required similarity
+        if (outputList.size < 1){ //if the list is empty after going through the first loop lower the required similarity
             for (i in outputs.indices){
-                if (outputs[i].score < .07){
+                if (outputs[i].score < .045){
                     //do nothing
                     break
                 }
-                outputList.add(outputs[i].label) //add the names of possible pollinators above 10%
+                outputList.add(outputs[i].label) //add the names of possible pollinators above 4.5%
             }
         }
 
+        //TODO: If the list is empty, right now it just shows an empty page, it should show a message, sorry this image isnt recognized
 
         //convert the image into a byte array so that it can be sent through shared prefrences and
         //uploaded to the firebase in the ConfirmPollinatorPhoto.kt file
