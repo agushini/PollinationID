@@ -12,7 +12,7 @@ public class PollinatorInfo {
     public val mInsectList = listOf(
         Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",
             R.drawable.alfalfa_leafcutter_bee_1,R.drawable.alfalfa_leafcutter_bee_2,R.drawable.alfalfa_leafcutter_bee_3,R.drawable.alfalfa_leafcutter_bee_4,
-            "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests1. The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season3. After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber4. She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larva before pupating in spring(3).\n" +
+            "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests1. The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season3. After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber4. She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larvae before pupating in spring(3).\n" +
                     "\n" +
                     "The Alfalfa Leafcutter Bee faces three distinct challenges: chalkbrood, parasitism, and pesticide exposure(4). Chalkbrood is a fungal infection that impacts brood (bee eggs, larva, and/or pupa)(4). The parasitic wasp Ptesomalus venustus is a common threat to the Alfalfa Leafcutter Bee(4). As the bee larva begins to spin its cocoon in preparation to pupate, a female P. venustus wasp will sting and paralyze the larva before depositing her own eggs onto it(4). The wasp larva hatch within a day or two and consume the bee larva(4). The Alfalfa Leafcutter Bee larva also faces possible predation by the Checkered Flower Beetle, T. ornatus, which invades the nest and eats the developing brood(3). Pesticides also challenge the Alfalfa Leafcutter Bee and pollinators in general. The toxins within pesticides do not discriminate between harmful and beneficial insects. Pollinators foraging in gardens or fields sprayed with chemicals can consume or carry the toxins back to their nests. This results in high mortality rates of bees and other pollinators that encounter these chemicals(5).\n" +
                     "\n" +
@@ -387,9 +387,9 @@ public class PollinatorInfo {
                     "CONSERVATION STATUS: Unknown\n" +
                     "\n" +
                     "Sources: \n" +
-                    "1Jennings, J. T. and A. R. Deans. (2005). Gasteruptiinae. Gasteruption. Version 06. Retrieved February 13, 2020 from http://tolweb.org/Gasteruption/25832/2005.05.06 in The Tree of Life Web Project, http://tolweb.org\n" +
-                    "2Balaban, J., Balaban, J., Nendick-Mason, H., Cotinis, Schusteff, A., Maxwell, J., and Belov, V. (2004). Genus Gasteruption. Retrieved February 13, 2020 from https://bugguide.net/node/view/7742\n" +
-                    "3Genus Gasteruption. (n.d.) Retrieved February 13, 2020 from https://www.inaturalist.org/taxa/250313-Gasteruption\n",
+                    "(1)Jennings, J. T. and A. R. Deans. (2005). Gasteruptiinae. Gasteruption. Version 06. Retrieved February 13, 2020 from http://tolweb.org/Gasteruption/25832/2005.05.06 in The Tree of Life Web Project, http://tolweb.org\n" +
+                    "(2)Balaban, J., Balaban, J., Nendick-Mason, H., Cotinis, Schusteff, A., Maxwell, J., and Belov, V. (2004). Genus Gasteruption. Retrieved February 13, 2020 from https://bugguide.net/node/view/7742\n" +
+                    "(3)Genus Gasteruption. (n.d.) Retrieved February 13, 2020 from https://www.inaturalist.org/taxa/250313-Gasteruption\n",
             "• Black hairless body\n" +
                     "• Long, narrow abdomen\n" +
                     "• Distinctive long tail",
@@ -894,11 +894,11 @@ public class PollinatorInfo {
                     "• Thin, long body\n" +
                     "• Large, transparent (clear) wings folded over body\n" +
                     "• (larvae) brown and white; “alligator-like”; large jaws",
-            "Common Green Lacewings are considered beneficial generalists and will typically be found near aphid-\n" +
+            "Common Green Lacewings are considered beneficial generalists and will typically be found near aphid-" +
                     "infested and/or flowering plants."),
         Insect("Harvestmen", "(Order: Opiliones)",
             R.drawable.harvestmen_1,R.drawable.harvestmen_2,R.drawable.harvestmen_3,R.drawable.harvestmen_4,
-            "Harvestmen, or “daddy-long-legs,” are non-venomous, normally solitary Arachnids more closely related to scorpions than spiders(1). They are easily distinguished from spiders by their long, spindly legs and the broad fusion of their two body segments(1). This gives them the appearance of only having one body segment. While spiders have eight eyes, harvestmen only have two(2). They also do not have silk glands and therefore do not spin webs.  \n" +
+            "Harvestmen, or “daddy-long-legs,” are non-venomous, normally solitary Arachnids. They are more closely related to scorpions than spiders(1). They are easily distinguished from spiders by their long, spindly legs and the broad fusion of their two body segments(1). This gives them the appearance of only having one body segment. While spiders have eight eyes, harvestmen only have two(2). They also do not have silk glands and therefore do not spin webs.  \n" +
                     "\n" +
                     "Harvestmen are beneficial members of a garden as they are generalist predators, eating both living and dead organisms, and help control pest populations(3). Some of the pests they eat include aphids, caterpillars, slugs, grasshoppers, psyllids, beetle larvae, and mites(3). They may be seen on or around an insect hotel looking for prey. Providing logs, mulch, and rocks in your garden will help prevent them from dehydrating in the sun(3).\n" +
                     "\n" +
@@ -915,7 +915,7 @@ public class PollinatorInfo {
             "• One body segment (actually two, but broadly fused together)\n" +
                     "• Very long, thin legs\n" +
                     "• Wandering; not on a web",
-            "Harvestmen are predators and are found in a multitude of habitats and media searching for their prey\n" +
+            "Harvestmen are predators and are found in a multitude of habitats and media searching for their prey " +
                     "items."),
         Insect("Hornets and Yellowjackets", "(Subfamily: Vespinae)",
             R.drawable.hornets_and_yellowjackets_1,R.drawable.hornets_and_yellowjackets_2,R.drawable.hornets_and_yellowjackets_3,R.drawable.hornets_and_yellowjackets_4,
@@ -947,7 +947,7 @@ public class PollinatorInfo {
                     "human dwelling where frequent encounters occur."),
         Insect("Hornfaced Bee", "(Osmia cornifrons)",
             R.drawable.hornfaced_bee_1,R.drawable.hornfaced_bee_2,R.drawable.hornfaced_bee_3,R.drawable.hornfaced_bee_4,
-            "The Horn-faced Bee was introduced to the U.S. from Japan sometime in the 1980s(1). This was done intentionally by USDA scientists to aid with apple crop pollination(2). Recently, scientists have begun looking at the Japanese Horn-faced Bee as a potential alternative pollinator for certain crops in Michigan(3). These bees exhibit a preference for fruit trees and can fly in cooler temperatures(3). Their foraging habits make them an effective pollinator which is why scientists now view them as a candidate for use as cherry tree pollinators in Michigan(3).\n" +
+            "The Horn-faced Bee was introduced to the U.S. from Japan sometime in the 1980s(1). This was done intentionally by USDA scientists to aid with apple crop pollination(2). Recently, scientists have begun looking at the Japanese Horn-faced Bee as an alternative pollinator for certain crops in Michigan(3). These bees exhibit a preference for fruit trees and can fly in cooler temperatures(3). This makes them a candidate for use as cherry tree pollinators in Michigan(3).\n" +
                     "\n" +
                     "The Horn-faced Bee becomes active in early spring(3). After mating, the female feeds for a couple days before searching out a suitable nest-cavity around 5/16-inches in diameter and 6 inches in length(3). The female will divide this cavity into multiple cells for her offspring. The Horn-faced Bee collects pollen and/or nectar using specialized hairs beneath her abdomen (scopa) and rolls it into a ball inside the first cell before laying an egg on it. She then seals the chamber with a mud wall and begins collecting more pollen and/or nectar for the next egg. She repeats this process up to five times before capping the nest entrance with a mud wall(3).\n" +
                     "\n" +
@@ -1008,7 +1008,7 @@ public class PollinatorInfo {
             "• 15 pairs of long legs\n" +
                     "• One leg-pair per body segment\n" +
                     "• Pale yellow body with three long stripes down back",
-            "The House Centipede is a predaceous arthropod and can typically be found in moist habitats (basements,\n" +
+            "The House Centipede is a predaceous arthropod and can typically be found in moist habitats (basements, "  +
                     "underneath rocks, leaf litter, etc.) with a higher activity at night."),
         Insect("Hoverflies", "(Family: Syrphidae)", //TODO: Not in the model it should be added, could Named Flower Flies instead
             R.drawable.hoverflies_1,R.drawable.hoverflies_2,R.drawable.hoverflies_3,R.drawable.hoverflies_4,
@@ -1060,7 +1060,7 @@ public class PollinatorInfo {
             "• Large front eyes\n" +
                     "• Small, compact shape\n" +
                     "• Agile movements and jumps",
-            "Jumping Spiders are hunter-stalkers, meaning they can be found in nearly any environment given that\n" +
+              "Jumping Spiders are hunter-stalkers, meaning they can be found in nearly any environment given that " +
                     "there are prey items around."),
         Insect("Lady Bugs", "(Family: Coccinellidae)",
             R.drawable.lady_bug_1,R.drawable.lady_bug_2,R.drawable.lady_bug_3,R.drawable.lady_bug_4,
@@ -1087,7 +1087,7 @@ public class PollinatorInfo {
             "Ladybugs are predacious insects and will be found on flowers that attract their prey items, namely aphids and scaly insects."),
         Insect("Leafcutter Bees", "(Megachile spp.)",
             R.drawable.leafcutter_bees_1,R.drawable.leafcutter_bees_2,R.drawable.leafcutter_bees_3,R.drawable.leafcutter_bees_4,
-            "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests. They are all solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa. Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch, consume the food bundle, and overwinter as mature larva before pupating in spring.\n" +
+            "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests. They are all solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa. Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch, consume the food bundle, and overwinter as mature larvae before pupating in spring.\n" +
                     "\n" +
                     "Leafcutter bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer. They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season.\n" +
                     "\n" +
@@ -1139,7 +1139,7 @@ public class PollinatorInfo {
                     "(1)Drummond, F. & Stubbs, C. (2003, June). 630 – Wild Bee Conservation for Wild Blueberry Fields. UMaine Extension No. 2111. Retrieved January 17, 2020, from https://extension.umaine.edu/blueberries/factsheets/bees/630-wild-bee-conservation-for-wild-blueberry-fields/ \n" +
                     "(2)Osmia atriventris. (2009). Retrieved January 17, 2020, from http://explorer.natureserve.org/servlet/NatureServe?searchName=Osmia+atriventris",
             "• Dark metallic blue, sometimes with green tint\n" +
-                    "• Mostly black hair: pale hairs are interspersed (very discreet\n" +
+                    "• Mostly black hair: pale hairs are interspersed (very discreet " +
                     "on abdomen)\n" +
                     "• Females collect pollen on black hairs beneath the abdomen (scopae)",
             "The Maine Blueberry Bee has been recorded on the following plants3\n" +
@@ -1208,12 +1208,11 @@ public class PollinatorInfo {
                     "• consistent yellow margin (middle-line) down abdomen\n" +
                     "• Large reddish-brown eyes\n" +
                     "• Hovers often around flowers",
-            "The Margined Calligrapher can be found near aphid-infested plants2\n" +
-                    "\n" +
-                    ". Adults visit a wide variety of flowers."),
+            "The Margined Calligrapher can be found near aphid-infested plants(2). " +
+                    "Adults visit a wide variety of flowers."),
         Insect("Mason Bees", "(Osmia spp.)",
             R.drawable.mason_bees_1,R.drawable.mason_bees_2,R.drawable.mason_bees_3,R.drawable.mason_bees_4,
-            "Mason bees can play a significant role in pollinating orchards in the Great Lakes and Northeast. These bees nest in cavities both above and below ground. When nesting above ground, they search for hollow plant stems, holes in standing dead trees, abandoned mud dauber wasp nests, and snail shells (O. conjuncta). After finding a suitable nesting site, a female will build multiple chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food and then seals off the chamber with chewed plants parts or mud (O. lignaria). She repeats this process three to five times before finally capping off the nest with mud or chewed leaves. The larvae will hatch, consume the food bundle, and normally overwinter as mature larva before pupating in spring and emerging as an adult bee.\n" +
+            "Mason bees can play a significant role in pollinating orchards in the Great Lakes and Northeast. These bees nest in cavities both above and below ground. When nesting above ground, they search for hollow plant stems, holes in standing dead trees, abandoned mud dauber wasp nests, and snail shells (O. conjuncta). After finding a suitable nesting site, a female will build multiple chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food and then seals off the chamber with chewed plants parts or mud (O. lignaria). She repeats this process three to five times before finally capping off the nest with mud or chewed leaves. The larvae will hatch, consume the food bundle, and normally overwinter as mature larvae before pupating in spring and emerging as an adult bee.\n" +
                     "\n" +
                     "SEASONALITY: Late March to September\n" +
                     "EASTERN US AND CANADA: 30 species \n" +
@@ -1242,7 +1241,7 @@ public class PollinatorInfo {
             R.drawable.metallic_bluish_green_cuckoo_wasp_1,R.drawable.metallic_bluish_green_cuckoo_wasp_2,R.drawable.metallic_bluish_green_cuckoo_wasp_3,R.drawable.metallic_bluish_green_cuckoo_wasp_4,
             "The Metallic Bluish Green Cuckoo Wasp can be mistaken for the Pure Green Sweat Bee (A. pura). However, the four teeth at the end of its abdomen and the ability to curl into a ball is what distinguishes the Metallic Bluish Green Cuckoo Wasp from A. pura. \n" +
                     "\n" +
-                    "This wasp parasitizes the larva of other bee and wasp species, including those in the Megachilidae (Leafcutter bee) family(1). An adult female will search for the nest of another bee or wasp and lay its own eggs inside. When the egg hatches into a larva, it will eat the resident bee or wasp larva and the remaining pollen/nectar reserves. Adult Metallic Bluish Green Cuckoo Wasps feed on nectar from a variety of plants(2).\n" +
+                    "This wasp parasitizes the larvae of other bee and wasp species, including those in the Megachilidae (Leafcutter bee) family(1). An adult female will search for the nest of another bee or wasp and lay its own eggs inside. When the egg hatches into a larva, it will eat the resident bee or wasp larva and the remaining pollen/nectar reserves. Adult Metallic Bluish Green Cuckoo Wasps feed on nectar from a variety of plants(2).\n" +
                     "\n" +
                     "The Metallic Bluish Green Cuckoo Wasp was introduced to the United States sometime during World War II, possibly via parasitized mud nests in machinery or returning aircraft(3). Its range now extends throughout the United States(4).\n" +
                     "\n" +
@@ -1263,7 +1262,7 @@ public class PollinatorInfo {
             R.drawable.mexican_grass_carrying_wasp_1,R.drawable.mexican_grass_carrying_wasp_2,R.drawable.mexican_grass_carrying_wasp_3,R.drawable.mexican_grass_carrying_wasp_4,
             "The Mexican Grass-carrying Wasp is a solitary species that spends its days gathering nectar from flowers and hunting insects (usually tree crickets)(1). Solitary Wasps, including the Grass-carrying Wasp, are not aggressive as they do not defend their nests(1). The Grass-Carrying Wasp nests in hollowed tubes or cavities in wood. Their nests are easy to spot because of the long blades of grass used to cap the cavity-entrance.\n" +
                     "\n" +
-                    "Before laying her eggs, the female first stocks the nest with paralyzed crickets that the larvae will eat once they hatch(1). After carrying enough back to the nest, the female will either make each cell individually with an egg, a grasshopper, and a grass wall, or creates a “communal area” where the larvae will feed and grow together(1).\n" +
+                    "Before laying her eggs, the female first stocks the nest with paralyzed crickets that the larvae will eat once they hatch(1). After carrying enough back to the nest, the female will either make each cell individually with an egg, a grasshopper, and a grass wall, or create a “communal area” where the larvae will feed and grow together(1).\n" +
                     "\n" +
                     "The range of the Mexican Grass-carrying Wasp extends throughout the United States though less observations have been reported throughout the interior states(2).\n" +
                     "\n" +
@@ -1278,11 +1277,11 @@ public class PollinatorInfo {
                     "• Narrow waist between thorax and abdomen\n" +
                     "• Often a brown spot between waist and first\n" +
                     "abdominal segment (T1)",
-            "SUMMER1\n" +
-                    "American Spikenard, Aralia racemose\n" +
+            "\nSUMMER\n" +
+                    "American Spikenard, Aralia racemosa\n" +
                     "Common Boneset, Eupatorium perfoliatum\n" +
                     "Rattlesnake Master, Eryngium yuccifolium\n" +
-                    "LATE SUMMER AND FALL1\n" +
+                    "\nLATE SUMMER AND FALL\n" +
                     "Goldenrod, Solidago spp."),
         Insect("Millipedes", "(Chrysis angolensis)",
             R.drawable.millipedes_1,R.drawable.millipedes_2,R.drawable.millipedes_3,R.drawable.millipedes_4,
@@ -1305,7 +1304,7 @@ public class PollinatorInfo {
             "• Armored body\n" +
                     "• Worm-like appearance; many body segments (25 – 100+)\n" +
                     "• Two leg-pairs per body segment",
-            "Millipedes are primarily detritivores and can typically be found in moist habitats (beneath rocks, leaf\n" +
+            "Millipedes are primarily detritivores and can typically be found in moist habitats (beneath rocks, leaf " +
                     "litter, etc.) with a higher activity at night."),
         Insect("Modest Masked Bee", "(Hylaeus modestus)",
             R.drawable.modest_masked_bee_1,R.drawable.modest_masked_bee_2,R.drawable.modest_masked_bee_3,R.drawable.modest_masked_bee_4,
@@ -1326,7 +1325,7 @@ public class PollinatorInfo {
             "• Hairless black body; yellow triangular markings on face\n" +
                     "• (male) Yellow clypeus (face)\n" +
                     "• Yellow spot or stripe on mid-leg",
-            "The Modest Masked Bee has been recorded on the following5\n" +
+            "The Modest Masked Bee has been recorded on the following(5)" +
                     ":\n" +
                     "\n" +
                     "Maples, Acer spp.\n" +
@@ -1338,11 +1337,6 @@ public class PollinatorInfo {
                     "Rockress, Arabis spp.\n" +
                     "Spikenard, Aralia spp.\n" +
                     "Goat’s Beard, Aruncus spp.\n" +
-                    "\n" +
-                    "H. modestus\n" +
-                    "4.5mm to\n" +
-                    "7 mm long\n" +
-                    "\n" +
                     "Rhododendron, Azalea spp.\n" +
                     "Dwarf Chestnut, Castanea pumila\n" +
                     "California Lilac, Ceanothus spp.\n" +
@@ -1446,7 +1440,7 @@ public class PollinatorInfo {
                     "• Pale bands that do not meet in middle on abdomen\n" +
                     "• Long, pale hair on hind legs\n" +
                     "• Pale face (males)",
-            "The Orange-tipped Wood-digger Bee has been recorded on the following4\n" +
+            "The Orange-tipped Wood-digger Bee has been recorded on the following(4)" +
                     ":\n" +
                     "\n" +
                     "Beabalms, Monarda spp.\n" +
@@ -1481,7 +1475,7 @@ public class PollinatorInfo {
                     "Hoary Vervain, Verbena stricta"),
         Insect("Pugnacious Leafcutter Bee", "(Megachile pugnata)",
             R.drawable.pugnacious_leafcutter_bee_1,R.drawable.pugnacious_leafcutter_bee_2,R.drawable.pugnacious_leafcutter_bee_3,R.drawable.pugnacious_leafcutter_bee_4,
-            "The Pugnacious Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their mandibles (bee teeth) for their nests. The defining characteristic of this species is their shortened clypeus (face plate). They are a solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a nesting suitable site, the female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with plant material.\n" +
+            "The Pugnacious Leafcutter Bee gets part of its name from their behavior of cutting leaf parts with their mandibles (bee teeth) for their nests. The defining characteristic of this species is their shortened clypeus (face plate). They are a solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a suitable nesting site, the female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with plant material.\n" +
                     "\n" +
                     "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(1). They immediately seek a mate and search for nesting sites to prepare the next generation, which will overwinter and emerge in the next season(1).\n" +
                     "\n" +
@@ -1500,7 +1494,7 @@ public class PollinatorInfo {
             "• Face (clypeus) extremely shortened\n" +
                     "• (female) entirely black body\n" +
                     "• (female) Pale yellow hairs underneath abdomen (scopa)",
-            "The Pugnacious Leafcutter Bee has been recorded on the following5\n" +
+            "The Pugnacious Leafcutter Bee has been recorded on the following(5)" +
                     ":\n" +
                     "\n" +
                     "Thistles, Cirsium spp.\n" +
@@ -1548,7 +1542,8 @@ public class PollinatorInfo {
                     "Aster, Symphyotrichum spp."),
         Insect("Pure Green Sweat Bee", "(Augochlora pura)",
             R.drawable.pure_green_sweat_bee_1,R.drawable.pure_green_sweat_bee_2,R.drawable.pure_green_sweat_bee_3,R.drawable.pure_green_sweat_bee_4,
-            "The Pure Green Sweat Bees is a small, typically iridescent green bee that visits a wide variety of flowers(1). The female makes her nest underneath bark or in pre-existing holes in rotting trees(1),(2). The female uses mud and debris found in or near the stumps to create her nest(1). She provisions the nest with pollen, nectar, and some of her saliva which may have antiseptic qualities(1). The eggs she lay develop and hatch in the summer before pupating and emerging as adults later in the summer or fall(1). Pure Green Sweat Bees mate in the fall(1). Males will die shortly after mating(1), but the females will continue to forage and prepare for overwintering in a rotten log or cavity in a wood stump(2). Overwintering females emerge in the spring and establish a nest shortly after. Pure Green Sweat Bees will have between two or three generations each year(2).\n" +
+            "The Pure Green Sweat Bee is a small, typically iridescent green bee that visits a wide variety of flowers(1). The female makes her nest underneath bark or in pre-existing holes in rotting trees(1),(2). She uses mud and debris found in or near the stumps to create her nest(1). She provisions the nest with pollen, nectar, and some of her saliva which may have antiseptic qualities(1). Her eggs will develop and hatch in the summer before pupating and emerging as adults later in the summer or fall(1). Pure Green Sweat Bees mate in the fall(1). " +
+                    "\nMales will die shortly after mating(1), but the females will continue to forage and prepare for overwintering in a rotten log or cavity in a wood stump(2). Overwintering females emerge in the spring and establish a nest shortly after. Pure Green Sweat Bees will have between two to three generations each year(2).\n" +
                     "\n" +
                     "The range of the Pure Green Sweat Bee covers the eastern United States and southeast Canada(3). While they do not use insect hotels, Pure Green Sweat Bees are important generalist pollinators in many habitats including eastern deciduous forests; they may also be one of the few pollinators of walnut4.\n" +
                     "\n" +
@@ -1568,10 +1563,6 @@ public class PollinatorInfo {
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS:\n" +
                     "\n" +
-                    "A. pura\n" +
-                    "5mm to\n" +
-                    "9mm long\n" +
-                    "\n" +
                     "SPRING\n" +
                     "Ragwort, Packera spp.\n" +
                     "Beardtongue, Penstemon spp.\n" +
@@ -1587,7 +1578,7 @@ public class PollinatorInfo {
                     "Sneezeweed, Helenium autumnale"),
         Insect("Scaly Bee Fly", "(Lepidophora lepidocera)",
             R.drawable.scaly_bee_fly_1,R.drawable.scaly_bee_fly_2,R.drawable.scaly_bee_fly_3,R.drawable.scaly_bee_fly_4,
-            "The Scaly Bee Fly is an early spring visitor that feeds on nectar as an adult(1). Adult females fly early in the season to find the tunnels of solitary bee nests that haven’t been sealed off yet(1). When the female bee or wasp leaves her burrow unattended, the female Scaly Bee Fly will hover in front of the burrow and deposit an egg by flicking her abdomen(1). The resulting larva will consume the bee or wasp larva(1),(2) and are thus considered parasitoids of cavity nesting bees and wasps. \n" +
+            "The Scaly Bee Fly is an early spring visitor that feeds on nectar as an adult(1). Adult females fly early in the season to find solitary bee nests that haven’t been sealed off yet(1). When the female bee or wasp leaves her burrow unattended, the female Scaly Bee Fly will hover in front of the burrow and deposit an egg by flicking her abdomen(1). The resulting larva will consume the bee or wasp larva(1),(2) and are thus considered parasitoids of cavity nesting bees and wasps. \n" +
                     "\n" +
                     "The range of the Scaly Bee Fly is scattered throughout the eastern United States(3).\n" +
                     "\n" +
@@ -1603,7 +1594,7 @@ public class PollinatorInfo {
                     "• Pale white or yellow scales\n" +
                     "• Dark wings\n" +
                     "• Fringe at end of abdomen",
-            "The Scaly Bee Fly has been recorded on the following2\n" +
+            "The Scaly Bee Fly has been recorded on the following(2)" +
                     ":\n" +
                     "Mountain Mint, Pycnanthemum virginianum\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
@@ -1695,7 +1686,7 @@ public class PollinatorInfo {
                     "viewed from side\n" +
                     "• (female) entirely black body\n" +
                     "• (female) Pale hairs underneath abdomen (scopa)",
-            "The Silver-tailed Petalcutter Bee has been recorded on the following3\n" +
+            "The Silver-tailed Petalcutter Bee has been recorded on the following(3)" +
                     ":\n" +
                     "\n" +
                     "Thistles, Cirsium spp.\n" +
@@ -1796,7 +1787,7 @@ public class PollinatorInfo {
                     "(3)Small Mason Bees (Genus Hoplitis). (n.d.) Retrieved January 23, 2020 from https://www.inaturalist.org/taxa/177785-Hoplitis",
             "• Black with few hairs on head and thorax\n" +
                     "• White hair bands on abdomen that do not meet in middle\n" +
-                    "• Light blue or green colored eyes (common)1",
+                    "• Light blue or green colored eyes (common)",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS\n" +
                     "SPRING/EARLY SUMMER\n" +
@@ -1919,7 +1910,7 @@ public class PollinatorInfo {
                     "• No pale bands on abdomen\n" +
                     "• Thin pale hair on first 2 abdominal segments (T1 &2); black hair" +
                     "on rest (T3 – 6)",
-            "The Small-handed Leafcutter Bee has been recorded on the following4\n" +
+            "The Small-handed Leafcutter Bee has been recorded on the following(4)" +
                     ":\n" +
                     "\n" +
                     "Indian Hemp, Apocynum spp.\n" +
@@ -1998,7 +1989,7 @@ public class PollinatorInfo {
             "• Horn or small projection on lower face (clypeus)\n" +
                     "• Red to orange hue on abdominal hair\n" +
                     "• Pale reddish-yellow hair beneath abdomen (scopa) on females",
-            "The Taurus Mason Bee has been seen on the following5\n" +
+            "The Taurus Mason Bee has been seen on the following(5)" +
                     ":\n" +
                     "\n" +
                     "Blueberry, Vaccinium corymbosum\n" +
@@ -2021,9 +2012,9 @@ public class PollinatorInfo {
                     "Viburnum, Viburnum spp."),
         Insect("Transverse-Banded Calligrapher", "(Eristalis transversa)", //TODO: This isnt in the model, it may be Transverse-Banded Flower Fly instead
             R.drawable.transverse_banded_calligrapher_1,R.drawable.transverse_banded_calligrapher_2,R.drawable.transverse_banded_calligrapher_3,R.drawable.transverse_banded_calligrapher_4,
-            "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larva can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
+            "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larvae can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                     "\n" +
-                    "In optimal environmental conditions, adult Transverse-Banded Calligrapher females will lay their eggs on plants infested with prey(1). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating resident pests(1). Unless overwintering, the larva will pupate and emerge 1 or 2 weeks later(1). There can be several generations each year depending on environmental conditions(1).\n" +
+                    "In optimal environmental conditions, adult Transverse-Banded Calligrapher females will lay their eggs on plants infested with prey(1). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating resident pests(1). Unless overwintering, the larvae will pupate and emerge 1 or 2 weeks later(1). There can be several generations each year depending on environmental conditions(1).\n" +
                     "\n" +
                     "Transverse-Banded Calligraphers have similar coloration to some bee and wasp species. This similarity in appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing organism to avoid predation. \n" +
                     "\n" +
@@ -2040,11 +2031,9 @@ public class PollinatorInfo {
                     "• Yellow and black patterned abdomen\n" +
                     "• Large reddish-brown eyes\n" +
                     "• Hovers often around flowers",
-            "The Transverse-Banded Calligrapher can be found near aphid-infested plants1\n" +
-                    "\n" +
-                    ". Adults visit a wide variety\n" +
-                    "\n" +
-                    "of flowers."),
+            "The Transverse-Banded Calligrapher can be found near aphid-infested plants(1)." +
+                    " Adults visit a wide variety " +
+                    " of flowers."),
         Insect("Unarmed Leafcutter Bee", "(Megachile inermis)",
             R.drawable.unarmed_leafcutter_bee_1,R.drawable.unarmed_leafcutter_bee_2,R.drawable.unarmed_leafcutter_bee_3,R.drawable.unarmed_leafcutter_bee_4,
             "Part of the Unarmed Leafcutter Bee’s name comes from their behavior of using their mandibles (bee teeth) to cut leaves for lining their nests. They are a large solitary bee that nests in pre-existing cavities in wood, rocks, or plant stems(1). After finding a suitable nesting site, the female uses her large mandibles to cut leaves and build chambers for each of her eggs, starting with the chamber the furthest away from the opening(1). She deposits a single egg atop a bundle of pollen (and sometimes nectar) that will feed the developing larva. The female then seals off the chamber and repeats this process, each time leaving one egg and food bundle per chamber and sealing it off with chewed leaves.\n" +
@@ -2066,8 +2055,8 @@ public class PollinatorInfo {
                     "• Gena (area between eyes) is wider than width of eye\n" +
                     "• (female) Pale hairs underneath abdomen (scopa)\n" +
                     "• 5 “teeth” on the mandible",
-            "The Unarmed Leafcutter Bee has been recorded on the following4\n" +
-                    ":\n" +
+            "The Unarmed Leafcutter Bee has been recorded on the following(4):" +
+                    "\n" +
                     "\n" +
                     "Thistles, Cirsium spp.\n" +
                     "Fleabane, Erigeron spp.\n" +
@@ -2117,7 +2106,7 @@ public class PollinatorInfo {
                     "\n" +
                     "This social species forms large nests with upwards to 80,000 members all working under the rule of a single queen. The workers are all sterile females that fulfill a number of tasks vital for the success of the hive including(3): foraging, guarding, propolizing*, honeycomb building, honey sealing, drone feeding, and fanning (to cool the hive).\n" +
                     "\n" +
-                    "The queen is the largest bee in the hive and the sole producer of eggs. Male honeybees’ (drones) main duty is to find and mate with queens. \n" +
+                    "The queen is the largest bee in the hive and the sole producer of eggs. A male honeybee's (drones) main duty is to find and mate with queens. \n" +
                     "\n" +
                     "A phenomenon known as Colony Collapse Disorder (CCD) has resulted in recent declines of hive populations. The exact cause of this disorder is still unknown, though many speculate it is due to pesticides, parasites, fewer food resources, or a combination of these. Since 1950, the U.S. has lost approximately 50% of managed honeybee hives(4).\n" +
                     "\n" +
