@@ -9,6 +9,9 @@ import com.example.pollinationid.R
 import kotlinx.android.synthetic.main.activity_shape_of_wings.*
 
 class ShapeOfWingsActivity : AppCompatActivity() {
+
+    val DKoutputList : ArrayList<String> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shape_of_wings)
@@ -26,14 +29,22 @@ class ShapeOfWingsActivity : AppCompatActivity() {
         val rigidWingsBttn = findViewById<ImageButton>(R.id.rigidWingsButton)
         rigidWingsBttn.setOnClickListener {
             val intent = Intent (this, DKPossiblePollinatorActivity::class.java)
+            DKoutputList.addAll(listOf("Beetles", "Lady Bugs"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
+            startActivity(intent)
         }
 
-        //TODO("Brown Lacewings, Brown Lacewings")
+        //TODO("Brown Lacewings, Green Lacewings")
 
         //roof like wings click to pollinators page
         val roofLikeWingsBttn = findViewById<ImageButton>(R.id.roofLikeWingsButton)
         roofLikeWingsBttn.setOnClickListener {
             val intent = Intent (this, DKPossiblePollinatorActivity::class.java)
+            DKoutputList.addAll(listOf("Brown Lacewings", "Green Lacewings"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
+            startActivity(intent)
         }
 
         //TODO("Common Barklice")
@@ -42,6 +53,10 @@ class ShapeOfWingsActivity : AppCompatActivity() {
         val barkLiceBttn = findViewById<ImageButton>(R.id.barkLiceButton)
         barkLiceBttn.setOnClickListener {
             val intent = Intent (this, DKPossiblePollinatorActivity::class.java)
+            DKoutputList.addAll(listOf("Common Barklice"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
+            startActivity(intent)
         }
 
     }

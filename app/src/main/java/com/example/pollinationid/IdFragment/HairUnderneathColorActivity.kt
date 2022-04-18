@@ -8,6 +8,9 @@ import com.example.pollinationid.R
 import kotlinx.android.synthetic.main.activity_dkpossible_pollinator.*
 
 class HairUnderneathColorActivity : AppCompatActivity() {
+
+    val DKoutputList : ArrayList<String> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hair_underneath_color)
@@ -18,6 +21,9 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         val hairUnderneathBlackPaleStripesBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackPaleStripesButton)
         hairUnderneathBlackPaleStripesBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Alfalfa Leafcutter Bee", "Apical Leafcutter Bee", "Bellflower Resin Bee", "Cuckoo Leafcutter Bee", "Flat-Tailed Leafcutter Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -27,6 +33,9 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         val hairUnderneathBlackYellowStripesBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackYellowStripesButton)
         hairUnderneathBlackYellowStripesBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Cuckoo Leafcutter Bee", "European Wool-Carder Bee", "Leafcutter Bees", "Oblong Wool-Carder Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -36,6 +45,9 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         val hairUnderneathBlackWithPaleBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackWithPaleButton)
         hairUnderneathBlackWithPaleBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Cuckoo Leafcutter Bee", "Leafcutter Bees", "Small-Handed Leafcutter Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
     }
