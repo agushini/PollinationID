@@ -20,7 +20,7 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         //hair underneath black pale stripes click to possible pollinators page
         val hairUnderneathBlackPaleStripesBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackPaleStripesButton)
         hairUnderneathBlackPaleStripesBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Alfalfa Leafcutter Bee", "Apical Leafcutter Bee", "Bellflower Resin Bee", "Cuckoo Leafcutter Bee", "Flat-Tailed Leafcutter Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
@@ -32,7 +32,7 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         //hair underneath black and yellow stripes click to possible pollinators page
         val hairUnderneathBlackYellowStripesBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackYellowStripesButton)
         hairUnderneathBlackYellowStripesBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Cuckoo Leafcutter Bee", "European Wool-Carder Bee", "Leafcutter Bees", "Oblong Wool-Carder Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
@@ -44,7 +44,7 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         //hair underneath black and yellow stripes click to possible pollinators page
         val hairUnderneathBlackWithPaleBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackWithPaleButton)
         hairUnderneathBlackWithPaleBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Cuckoo Leafcutter Bee", "Leafcutter Bees", "Small-Handed Leafcutter Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
