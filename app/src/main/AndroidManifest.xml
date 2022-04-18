@@ -13,9 +13,6 @@
         android:roundIcon="@mipmap/theicon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PollinationID">
-        <activity
-            android:name=".IdFragment.DKPossiblePollinatorActivity"
-            android:exported="false" />
         <!--<activity
             android:name=".IdFragment.HairUnderneathColorActivity"
             android:exported="false" />-->
@@ -221,6 +218,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".IdFragment.HairActivity" />
+        </activity>
+
+        <activity
+            android:name=".IdFragment.DKPossiblePollinatorActivity"
+            android:label="Possible Pollinators"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".IdFragment.NumberOfWingsActivity" />
         </activity>
 
 

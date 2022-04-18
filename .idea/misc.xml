@@ -3,6 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_almost_no_hair_color.xml" value="0.1780821917808219" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_body_segments.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_contacts.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_dkpossible_pollinator.xml" value="0.2563405797101449" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_explore.xml" value="0.22291666666666668" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_full_hair_color.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_hair.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_hair_on_sides_color.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_hair_underneath_color.xml" value="0.35260416666666666" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_hiar_on_sides_color.xml" value="0.33" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_number_of_wings.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_pollinator_idactivity.xml" value="0.25317028985507245" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/activity_shape_of_wings.xml" value="0.33" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_almost_no_hair_color.xml" value="0.33" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_body_segments.xml" value="0.25317028985507245" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_fourth.xml" value="0.36666666666666664" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_full_hair_color.xml" value="0.2128623188405797" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_hair.xml" value="0.33" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_hair_on_sides_color.xml" value="0.2128623188405797" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_hair_underneath_color.xml" value="0.25317028985507245" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_number_of_wings.xml" value="0.33" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/fragment_shape_of_wings.xml" value="0.25317028985507245" />
+        <entry key="..\:/PollinationID/app/src/main/res/layout/photo_pollinators_possible.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Chris/Documents/GitHub/PollinationID/app/src/main/res/layout-w1240dp/activity_myPollinator.xml" value="0.12014725568942436" />
         <entry key="..\:/Users/Chris/Documents/GitHub/PollinationID/app/src/main/res/layout-w1240dp/activity_mypollinator.xml" value="0.12014725568942436" />
         <entry key="..\:/Users/Chris/Documents/GitHub/PollinationID/app/src/main/res/layout/activity_contacts.xml" value="0.161231884057971" />
@@ -28,6 +51,7 @@
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/font/lato_bold.xml" value="0.396875" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout-v23/card.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_dkpossible_pollinator.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_explore.xml" value="0.22" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_forgotpassword.xml" value="0.17561229807191245" />
         <entry key="..\:/Users/amaya/AndroidStudioProjects/PollinationID/app/src/main/res/layout/activity_login2.xml" value="0.1" />
@@ -60,10 +84,14 @@
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.12001811594202899" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/brend/OneDrive/Documents/PollinationID/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11666666666666667" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_forgotpassword.xml" value="0.21" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_login2.xml" value="0.22" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/activity_number_of_wings.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/activity_photo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/activity_pollinator_idactivity.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/activity_shape_of_wings.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/cammi/OneDrive/Desktop/PollinationID/app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_forgotpassword.xml" value="0.17" />
+        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_login2.xml" value="0.1" />
         <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_main.xml" value="0.1390625" />
-        <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_polination_project.xml" value="0.2" />
         <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_privacy_policy.xml" value="0.2" />
         <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/activity_regestration.xml" value="0.2" />
         <entry key="..\:/Users/sukun/Desktop/PollinationID/app/src/main/res/layout/fragment_fifth.xml" value="0.1390625" />
