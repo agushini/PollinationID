@@ -7,14 +7,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import kotlinx.android.synthetic.main.activity_mypollinator.*
-import kotlinx.android.synthetic.main.activity_photo.*
 
 
 class PossiblePhotoPollinatorActivity : AppCompatActivity() {
@@ -69,7 +63,7 @@ class PossiblePhotoPollinatorActivity : AppCompatActivity() {
             Log.i("POSSIBLE POLLINATORS","This is my Pollinator btn clicked")
             //TODO:send to confirm submission page which has the image along with the insect name, date, hotel, userPrediction and ModelPrediction
 
-            val confirmIntent = Intent(this,ConfirmPollinatorPhoto::class.java)
+            val confirmIntent = Intent(this,ConfirmPollinatorPhotoandDK::class.java)
 
             confirmIntent.putExtra("userPredict",navBarTitle)
             confirmIntent.putExtra("PhotoSelectedPollinator",eimg1)

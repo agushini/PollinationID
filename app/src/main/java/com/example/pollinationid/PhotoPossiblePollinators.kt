@@ -41,6 +41,11 @@ class PhotoPossiblePollinators : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@PhotoPossiblePollinators)
             // set the custom adapter to the RecyclerView
             adapter = ListAdapterPhoto(outputListRecycler)
+
+            val sharedPref = getSharedPreferences("dkOrphoto", MODE_PRIVATE)
+            val editor = sharedPref.edit()
+            editor.putString("whichSent","photo")
+            editor.apply()
         }
     }
 
