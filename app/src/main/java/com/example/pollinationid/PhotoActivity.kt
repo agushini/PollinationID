@@ -1,6 +1,6 @@
 package com.example.pollinationid
 
-
+//Connected to activity_photo.xml and it handles the tensorflow model as well as date and time and hotel choices
 //https://www.gbandroidblogs.com/2022/01/image-classification-android-app-with-tensorflow-lite.html helpful resource
 import android.Manifest
 import android.annotation.SuppressLint
@@ -14,15 +14,19 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.text.format.DateFormat
+import android.text.format.DateFormat.getBestDateTimePattern
 import android.util.Log
 import android.widget.*
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.toBitmap
 import com.example.pollinationid.ml.PollinatorModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_photo.*
 import org.tensorflow.lite.support.image.TensorImage
+import java.io.ByteArrayOutputStream
 import java.util.*
 
 
@@ -62,7 +66,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         setContentView(R.layout.activity_photo)
         imageView = findViewById(R.id.inputPhotoView)
-        val temp = intent.getIntExtra("MODE", 3)
+        val temp = intent.getIntExtra("MODE", 3) //gets the mode that was clicked on the previous page
 
         textView = findViewById(R.id.displayDate)
         dateButton = findViewById(R.id.pickDateBtn)
@@ -79,7 +83,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
 
         hotelButton.setOnClickListener{
-            hotel = HotelIDInputPhoto.text.toString().uppercase() //get the input from the hotel text field
+            hotel = HotelIDInputPhoto.text.toString().uppercase().trim() //get the input from the hotel text field
 
             if (hotel != ""){
                 val mFireStore = FirebaseFirestore.getInstance()
@@ -88,44 +92,49 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
                 hotelRef.get().addOnCompleteListener { task ->
                     if (task.isSuccessful) {
                         val document = task.result
-                        if(document != null) {
+                        if(document !== null) {
                             if (document.exists()) {
                                 Log.i("PHOTO ACTIVITY", "Hotel exists.")
-                                if (displayDate.text != ""){ //if date entered
-                                    Log.i("PHOTO ACTIVITY","Date entered")
+                                if (displayDate.text != "") { //if date entered
+                                    Log.i("PHOTO ACTIVITY", "Date entered")
                                     Toast.makeText(
-                                        this,
+                                        this@PhotoActivity,
                                         "Valid Date and Hotel!",
                                         Toast.LENGTH_LONG
                                     ).show()
 
-                                    Log.i("PHOTO ACTIVITY", "Before OuputGen Call")
 
+                                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                                        outputGenerator(bitmap)
+                                    }
 
-                                    outputGenerator(bitmap)
-                                    
 
                                 }else{
                                     Log.i("Photo Activity", "Date not entered")
                                     Toast.makeText(
-                                        this,
+                                        this@PhotoActivity,
                                         "Please enter in a valid date",
                                         Toast.LENGTH_LONG
                                     ).show()
                                 }
                             } else {
-                                Log.e("Photo Activity", "Unexpected firebase input from documents. This message shouldn't show")
+                                Toast.makeText(
+                                    this@PhotoActivity,
+                                    "Please enter in a valid hotel id",
+                                    Toast.LENGTH_LONG
+                                ).show()
                             }
                         }
-                    } else {
-                        Toast.makeText(
-                            this,
-                            "Please enter in a valid hotel id",
-                            Toast.LENGTH_LONG
-                        ).show()
+                    }
+                    else {
+                        Log.e(
+                            "Photo Activity",
+                            "Unexpected firebase input from documents. This message shouldn't show"
+                        )
                     }
                 }
-            }else{
+            }
+            else{
                 Toast.makeText(
                     this,
                     "Please enter in a valid hotel id",
@@ -215,6 +224,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == RESULT_OK && requestCode == CAMERA_REQUEST_CODE) {//if taking picture
@@ -233,7 +243,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     //for date picker
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         myDay = day
-        myMonth = month
+        myMonth = month + 1
         myYear = year
         val calendar: Calendar = Calendar.getInstance()
         hour = calendar.get(Calendar.HOUR)
@@ -247,12 +257,13 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         myHour = hourOfDay
         myMinute = minute
         textView.text =
-            "Year: $myYear\nMonth: $myMonth\nDay: $myDay\nHour: $myHour\nMinute: $myMinute"
+            "$myMonth $myDay, $myYear at $myHour:$myMinute" //changed to make it similar to the database
     }
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun outputGenerator(bitmap: Bitmap){
-        //declearing tensor flow lite model variable
+        //declaring tensor flow lite model variable
 
         val pollinatorModel = PollinatorModel.newInstance(this)
 
@@ -268,24 +279,42 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
 
         val outputList : ArrayList<String> = arrayListOf()
 
+        //checks the output list for comparisons that are greater than 10%
          for (i in outputs.indices){
              if (outputs[i].score < .10){
                  //do nothing
-                 //TODO: Maybe add something that handles if the outputList is empty to say not recognized
                  break
              }
              outputList.add(outputs[i].label) //add the names of possible pollinators above 10%
         }
+
+        if (outputList.size < 1){ //if the list is empty after going through the first loop lower the required similarity
+            for (i in outputs.indices){
+                if (outputs[i].score < .045){
+                    //do nothing
+                    break
+                }
+                outputList.add(outputs[i].label) //add the names of possible pollinators above 4.5%
+            }
+        }
+
+        //TODO: If the list is empty, right now it just shows an empty page, it should show a message, sorry this image isnt recognized
+
+        //convert the image into a byte array so that it can be sent through shared prefrences and
+        //uploaded to the firebase in the ConfirmPollinatorPhoto.kt file
+        val baos = ByteArrayOutputStream()
+        val bitmapToSend = imageView.drawable.toBitmap()
+        val encoder = Base64.getEncoder()
+        bitmapToSend.compress(Bitmap.CompressFormat.JPEG, 100, baos)
+        val encodedImage = encoder.encodeToString(baos.toByteArray())
 
         val sharedPref = getSharedPreferences("photoPref", MODE_PRIVATE)
         val editor = sharedPref.edit()
         editor.putString("modelPredict",outputs[0].label)
         editor.putString("hotelID", hotel)
         editor.putString("dateLog", displayDate.text as String?)
-        //editor.putInt("photoSend",bitmap)
+        editor.putString("encodedImage",encodedImage)
         editor.apply()
-
-
 
         pollinatorModel.close()
         val intent = Intent(this, PhotoPossiblePollinators::class.java)

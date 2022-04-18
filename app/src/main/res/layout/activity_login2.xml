@@ -16,17 +16,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <TextView
             android:id="@+id/tv_Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:textSize="40dp"
             android:layout_gravity="center_horizontal"
-            android:text="Login to Pollination"
+            android:layout_marginTop="25dp"
+            android:text="Login to PolliNation"
             android:textColor="@color/black"
-            />
-
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/etEmail"
@@ -38,9 +38,11 @@
             android:autofillHints="emailAddress"
             android:ems="10"
             android:hint="@string/email"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:textColorHint="#757575" />
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/etPassword"
@@ -53,8 +55,10 @@
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:minHeight="48dp"
-            android:textColorHint="#757575" />
+            android:textColorHint="@color/black" />
 
 
 
@@ -66,6 +70,8 @@
             android:background="#16B2FF"
             app:backgroundTint="#16B2FF"
             android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
             android:text="@string/login" />
 
 
@@ -76,8 +82,9 @@
             android:layout_marginRight="15dp"
             android:gravity="right"
             android:text="@string/forgot_password"
-            android:textColor="#18206F"
-            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:clickable="true"
             android:focusable="true" />
 
@@ -89,8 +96,9 @@
             android:layout_margin="15dp"
             android:gravity="center_horizontal"
             android:text="@string/create_account"
-            android:textColor="#18206F"
-            android:textSize="16sp" />
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp" />
 
     </LinearLayout>
 

@@ -1,10 +1,10 @@
 package com.example.pollinationid
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.content.SharedPreferences
-import android.nfc.Tag
 import android.os.Bundle
-import android.preference.PreferenceManager
+import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
@@ -120,24 +120,47 @@ if (user==null) {
         finish()
 
     }
+
     private fun login() {
 
-        val email = etEmail.text.toString()
-        val pass = etPass.text.toString()
+        val email = etEmail.text.toString().trim()
+        val pass = etPass.text.toString().trim()
         // calling signInWithEmailAndPassword(email, pass)
         // function using Firebase auth object
         // On successful response Display a Toast
+
+            if(TextUtils.isEmpty(email))
+            {
+                Toast.makeText(this, "Please write Email...", Toast.LENGTH_SHORT).show();
+            }
+            if(TextUtils.isEmpty(pass))
+            {
+                Toast.makeText(this, "Please write Password...", Toast.LENGTH_SHORT).show();
+            }
+
+else {
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_SHORT).show()
+                Log.d(TAG, "signInWithEmail:success")
                 val user = auth.currentUser
                 updateUI(user)
+                Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_SHORT).show()
 
                 //once successful open up the main activity
 
-            } else
-                Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+            } else {
+                Log.w(TAG, "signInWithEmail:failure", it.exception)
+                Toast.makeText(
+                    baseContext, "Authentication failed.",
+                    Toast.LENGTH_SHORT
+                ).show()
+                updateUI(null)
+            }
         }
+        }
+
+
+
 
 
 
@@ -156,3 +179,7 @@ if (user==null) {
 
     }
 }
+
+
+
+

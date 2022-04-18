@@ -26,7 +26,6 @@ class PhotoPossiblePollinators : AppCompatActivity() {
         val outputListRecycler : MutableList<Insect> = arrayListOf()
         val resultsList = intent.getStringArrayListExtra("Results")
         if (resultsList != null) {
-
             for(i in resultsList.indices){
                 for(j in photoInsectList.indices){
                     if (resultsList[i] == photoInsectList[j].title){
@@ -42,6 +41,11 @@ class PhotoPossiblePollinators : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@PhotoPossiblePollinators)
             // set the custom adapter to the RecyclerView
             adapter = ListAdapterPhoto(outputListRecycler)
+
+            val sharedPref = getSharedPreferences("dkOrphoto", MODE_PRIVATE)
+            val editor = sharedPref.edit()
+            editor.putString("whichSent","photo")
+            editor.apply()
         }
     }
 

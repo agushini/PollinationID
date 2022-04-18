@@ -33,7 +33,7 @@ public class PollinatorInfo {
             "• Black or gray with white/pale cream banding on abdomen\n" +
                     "• Females have rows of pale hair beneath abdomen (scopa)\n" +
                     "• Males with creamy white or yellow spots at end of abdomen",
-            "The following species attract members from the genus Megachile. Information obtained from Bees: An" +
+            "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
@@ -103,7 +103,7 @@ public class PollinatorInfo {
                     "(terga 5 & 6)\n" +
                     "• Black body with pale hair bands on abdomen\n" +
                     "• Pale facial hair",
-            "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
                     "Tick Trefoils, Desmodium spp.\n" +
@@ -290,7 +290,7 @@ public class PollinatorInfo {
                     "\n" +
                     "Pansy, Viola spp.\n" +
                     "Rue/Citrus, Zanthoxylurn spp.\n" +
-                    "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -361,7 +361,7 @@ public class PollinatorInfo {
                     "Thistles, Cirsium spp.\n" +
                     "Toothwort, Dentaria spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -395,7 +395,7 @@ public class PollinatorInfo {
                     "• Distinctive long tail",
             "Carrot-wasps are generalists and visit a wide variety of flowers. True to their name, they show a\n" +
                     "preference for flowers in the carrot or parsley family (Apiaceae)2"),
-        Insect("Centipedes", "(Class: Chilopoda)", //TODO: This isnt in the AI photo model we should look into that
+        Insect("Centipedes", "(Class: Chilopoda)",
             R.drawable.centipedes_1,R.drawable.centipedes_2,R.drawable.centipedes_3,R.drawable.centipedes_4,
             "Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and will catch and eat any invertebrate their size or smaller, like insects and spiders(1). The smallest Centipedes are around an inch while the largest tropical species can grow well over six inches. The largest North American species is the Giant Desert Centipede (Scolopendra heros) which on average grows to be around 6.5” (though some eye-witness accounts have reported up to 12”)(2). By far the most common species in North America is the House Centipede (Scutigera coleoptera).\n" +
                     "\n" +
@@ -551,7 +551,7 @@ public class PollinatorInfo {
                     "• Curls into ball when threatened",
             "The Common Pill Woodlouse is a detritivore and can be found in a large variety of habitats with different\n" +
                     "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
-        Insect("Cuckoo Bees", "(Sphecodes spp.)", //TODO: This said Cuckoo or Blood Bees this should be changed in the model files
+        Insect("Cuckoo Bees", "(Sphecodes spp.)",
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
             "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside the while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
                     "\n" +
@@ -566,7 +566,7 @@ public class PollinatorInfo {
             "• Black bees with distinct red abdomen (males are sometimes " +
                     "all black)\n" +
                     "• Black wings",
-            "The following species attract members from the genus Sphecodes. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Sphecodes. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING\n" +
                     "Goat’s Beard, Aruncus dioicus\n" +
@@ -597,7 +597,7 @@ public class PollinatorInfo {
                     "• Black body with white bands at the end of (apical) each abdominal segment\n" +
                     "• No abdominal scopae (pollen-collecting hairs)\n" +
                     "• (male) “Teeth” common at end of abdomen or thorax",
-            "The following species attract members from the genus Coelyoxsys. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Coelyoxsys. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS\n" +
                     "EARLY SUMMER\n" +
@@ -675,7 +675,7 @@ public class PollinatorInfo {
                     "Lesser Periwinkle, Vinca minor\n" +
                     "Prickly Ash, Zanthoxylum spp.\n" +
                     "Zizia, Zizia spp.\n" +
-                    "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -816,7 +816,7 @@ public class PollinatorInfo {
                     "Deerberry, Vaccinium stamineum\n" +
                     "... the full list can be viewed found in the Discover Life link in the source list.\n" +
                     "\n" +
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
                     "Tick Trefoils, Desmodium spp.\n" +
@@ -977,7 +977,7 @@ public class PollinatorInfo {
                     "Leatherleaf, Chamaedaphne calyculata\n" +
                     "Common Gypsyweed, Veronica officinalis\n" +
                     "Raspberries – Blackberries -Dewberries, Rubus spp.\n" +
-                    "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -1085,7 +1085,7 @@ public class PollinatorInfo {
                     "• Red ladybugs with black spots most common; many colors and patterns\n" +
                     "• (larvae) soft-bodied, flattened, and elongated",
             "Ladybugs are predacious insects and will be found on flowers that attract their prey items, namely aphids and scaly insects."),
-        Insect("Leafcutter Bees", "(Megachile spp.)", //TODO: Not in the model needs to be added
+        Insect("Leafcutter Bees", "(Megachile spp.)",
             R.drawable.leafcutter_bees_1,R.drawable.leafcutter_bees_2,R.drawable.leafcutter_bees_3,R.drawable.leafcutter_bees_4,
             "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests. They are all solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa. Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch, consume the food bundle, and overwinter as mature larva before pupating in spring.\n" +
                     "\n" +
@@ -1172,7 +1172,7 @@ public class PollinatorInfo {
                     "Vetch, Vicia spp.\n" +
                     "Pansy, Viola spp.\n" +
                     "Golden Alexanders, Zizia aurea\n" +
-                    "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -1224,7 +1224,7 @@ public class PollinatorInfo {
             "• Dark blue or green with metallic sheen\n" +
                     "• Moderately hairy head, thorax, and abdomen\n" +
                     "• Females collect pollen on hairs beneath the abdomen (scopae)",
-            "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -1375,7 +1375,7 @@ public class PollinatorInfo {
                     "Pimpernels, Taenidia spp.\n" +
                     "Thaspium, Thaspium spp.\n" +
                     "Zizia, Zizia spp.\n" +
-                    "The following species attract members from the genus Hylaeus. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Hylaeus. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON FORAGE PLANTS\n" +
                     "SPRING\n" +
@@ -1411,7 +1411,7 @@ public class PollinatorInfo {
             "• Black with distinct yellow pattern\n" +
                     "• Yellow jaws (mandibles) and legs\n" +
                     "• Orange tegula (the plate where wings connect to body)",
-            "The following species attract members from the genus Anthidium. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Anthidium. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "EARLY SUMMER\n" +
                     "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material)\n" +
@@ -1462,7 +1462,7 @@ public class PollinatorInfo {
                     "Wallflower, Erysimum spp.\n" +
                     "Wood mint, Blephilia spp.\n" +
                     "\n" +
-                    "The following species attract members from the genus Anthophora. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Anthophora. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS\n" +
                     "SPRING\n" +
@@ -1512,7 +1512,7 @@ public class PollinatorInfo {
                     "Deerberry, Vaccinium stamineum\n" +
                     "... the full list can be viewed found in the Discover Life link in the source list.\n" +
                     "\n" +
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
                     "Tick Trefoils, Desmodium spp.\n" +
@@ -1642,7 +1642,7 @@ public class PollinatorInfo {
                     "Perovskia, Perovskia spp.\n" +
                     "Purple Loosestrife, Lythrum salicaria L.\n" +
                     "\n" +
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
                     "Tick trefoils, Desmodium spp.\n" +
@@ -1704,7 +1704,7 @@ public class PollinatorInfo {
                     "Sunflower, Helianthus spp.\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "... the full list can be viewed found in the Discover Life link in the source list.\n"+
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
                     "Tick Trefoils, Desmodium spp.\n" +
@@ -1756,7 +1756,7 @@ public class PollinatorInfo {
             "• Hourglass shape\n" +
                     "• Metallic, relatively hairless body\n" +
                     "• Barrel abdomen that narrows to a near point",
-            "The following species attract members from the genus Ceratina. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Ceratina. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS\n" +
                     "SPRING\n" +
@@ -1943,7 +1943,7 @@ public class PollinatorInfo {
                     "Vetch, Vicia spp.\n" +
                     "... the full list can be viewed found in the Discover Life link in the source list.\n" +
                     "\n" +
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
                     "Tick Trefoils, Desmodium spp.\n" +
@@ -2005,7 +2005,7 @@ public class PollinatorInfo {
                     "Fawn Lilies, Erythronium\n" +
                     "Heathers, Ericaceae\n" +
                     "\n" +
-                    "The following species attract members from the genus Osmia. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
@@ -2076,7 +2076,7 @@ public class PollinatorInfo {
                     "Goldenrod, Solidago spp.\n" +
                     "... the full list can be viewed found in the Discover Life link in the source list.\n" +
                     "\n" +
-                    "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+                    "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
