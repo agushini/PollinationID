@@ -32,7 +32,7 @@ public class PollinatorInfo {
                     "(7)Alfalfa Leafcutter Bee (Fabricius, 1787). (n.d.). Retrieved January 17, 2020, from https://www.inaturalist.org/taxa/47219-Apis-melliferahttps://www.discoverlife.org/20/q?search=Megachile+rotundata",
             "• Black or gray with white/pale cream banding on abdomen\n" +
                     "• Females have rows of pale hair beneath abdomen (scopa)\n" +
-                    "• Males with creamy white or yellow spots at end of abdomen",
+                    "• Males with creamy white or yellow spots at end of abdomen\n\n",
             "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "\n" +
@@ -102,7 +102,7 @@ public class PollinatorInfo {
                     "becomes black on the last two abdominal segments" +
                     "(terga 5 & 6)\n" +
                     "• Black body with pale hair bands on abdomen\n" +
-                    "• Pale facial hair",
+                    "• Pale facial hair\n\n",
             "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
@@ -211,7 +211,7 @@ public class PollinatorInfo {
                     "Coneflowers, Rudbeckia spp.\n" +
                     "Fuzzy Bean, Strophostyles spp.\n" +
                     "Snowberry, Symphoricarpus spp.\n" +
-                    "Vervain, Verbena spp.\n" +
+                    "Vervain, Verbena spp.\n\n" +
                     "The following species attract members from the genus Megachile. Information obtained from Bees:\n" +
                     "An Identification and Native Plant Forage Guide (Holm 2017)\n\n" +
                     "SPRING\n" +
@@ -256,7 +256,7 @@ public class PollinatorInfo {
                     "(3)Osmia lignaria Say, 1837. (n.d.). Retrieved January 17, 2020, from https://www.discoverlife.org/mp/20q?search=Osmia+lignaria",
             "• Dark metallic blue, sometimes with green tint\n" +
                     "• Mostly black hair; pale hairs are interspersed\n" +
-                    "• Females collect pollen on hairs beneath the abdomen (scopa)",
+                    "• Females collect pollen on hairs beneath the abdomen (scopa)\n\n",
             "The Blue Orchard Mason Bee has been recorded on the following species3\n" +
                     ":\n" +
                     "\n" +
@@ -289,7 +289,7 @@ public class PollinatorInfo {
                     "Vetch, Vicia spp.\n" +
                     "\n" +
                     "Pansy, Viola spp.\n" +
-                    "Rue/Citrus, Zanthoxylurn spp.\n" +
+                    "Rue/Citrus, Zanthoxylurn spp.\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
@@ -360,7 +360,7 @@ public class PollinatorInfo {
                     "Packera, Packera spp.\n" +
                     "Thistles, Cirsium spp.\n" +
                     "Toothwort, Dentaria spp.\n" +
-                    "Wild Geranium, Geranium maculatum\n" +
+                    "Wild Geranium, Geranium maculatum\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
@@ -393,7 +393,7 @@ public class PollinatorInfo {
             "• Black hairless body\n" +
                     "• Long, narrow abdomen\n" +
                     "• Distinctive long tail",
-            "Carrot-wasps are generalists and visit a wide variety of flowers. True to their name, they show a\n" +
+            "Carrot-wasps are generalists and visit a wide variety of flowers. True to their name, they show a " +
                     "preference for flowers in the carrot or parsley family (Apiaceae)2"),
         Insect("Centipedes", "(Class: Chilopoda)",
             R.drawable.centipedes_1,R.drawable.centipedes_2,R.drawable.centipedes_3,R.drawable.centipedes_4,
@@ -442,7 +442,7 @@ public class PollinatorInfo {
             "• Large head with chewing mouth parts\n" +
                     "• Tent-like wings (cover entire body)\n" +
                     "• Long antennae",
-            "Oaks and pecans are common hosts, though any tree with lichen or algae growth has the potential to\n" +
+            "Oaks and pecans are common hosts, though any tree with lichen or algae growth has the potential to " +
                     "support Common Barklice3"),
         Insect("Common Eastern Bumblebee", "(Bombus impatiens)",
             R.drawable.common_eastern_bumblebee_1,R.drawable.common_eastern_bumblebee_2,R.drawable.common_eastern_bumblebee_3,R.drawable.common_eastern_bumblebee_4,
@@ -464,7 +464,7 @@ public class PollinatorInfo {
                     "(3)Common Eastern Bumble Bee (Bombus impatiens). (n.d.). Retrieved January 17, 2020, from https://www.inaturalist.org/taxa/118970-Bombus-impatiens",
             "• Pale yellow hair on thorax and first abdominal segment.\n" +
                     "• Black spot in middle of thorax\n" +
-                    "• Abdomen covered in black hair",
+                    "• Abdomen covered in black hair\n\n",
             "The following species attract members from the genus Bombus. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n" +
                     " \n\n" +
                     "COMMON FORAGE PLANTS  \n" +
@@ -549,7 +549,7 @@ public class PollinatorInfo {
                     "• Trapezoidal endplate\n" +
                     "• Dark grey body\n" +
                     "• Curls into ball when threatened",
-            "The Common Pill Woodlouse is a detritivore and can be found in a large variety of habitats with different\n" +
+            "The Common Pill Woodlouse is a detritivore and can be found in a large variety of habitats with different " +
                     "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
         Insect("Cuckoo Bees", "(Sphecodes spp.)",
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
@@ -565,7 +565,7 @@ public class PollinatorInfo {
                     "(2)Blood Bees (Genus Sphecodes). (n.d.). Retrieved March 5, 2020 from https://www.inaturalist.org/taxa/61891-Sphecodes",
             "• Black bees with distinct red abdomen (males are sometimes " +
                     "all black)\n" +
-                    "• Black wings",
+                    "• Black wings\n\n",
             "The following species attract members from the genus Sphecodes. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING\n" +
@@ -596,7 +596,7 @@ public class PollinatorInfo {
             "• Pointed abdomen\n" +
                     "• Black body with white bands at the end of (apical) each abdominal segment\n" +
                     "• No abdominal scopae (pollen-collecting hairs)\n" +
-                    "• (male) “Teeth” common at end of abdomen or thorax",
+                    "• (male) “Teeth” common at end of abdomen or thorax\n\n",
             "The following species attract members from the genus Coelyoxsys. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS\n" +
@@ -625,7 +625,7 @@ public class PollinatorInfo {
                     "(2)Osmia pumila Cresson, 1864. (n.d.). Retrieved January 17, 2020, from https://www.discoverlife.org/20/q?search=Osmia+pumila\n",
             "• Blue with black legs\n" +
                     "• White to yellowish hair; white scopa\n" +
-                    "• Noticeably pitted (like a golfball)",
+                    "• Noticeably pitted (like a golfball)\n\n",
             "The Dwarf Mason Bee has been recorded on the following species2\n" +
                     ":\n" +
                     "\n" +
@@ -674,7 +674,7 @@ public class PollinatorInfo {
                     "Vetch, Vicia spp.\n" +
                     "Lesser Periwinkle, Vinca minor\n" +
                     "Prickly Ash, Zanthoxylum spp.\n" +
-                    "Zizia, Zizia spp.\n" +
+                    "Zizia, Zizia spp.\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
@@ -766,7 +766,7 @@ public class PollinatorInfo {
             "• Black and yellow; distinct black “V” on abdomen\n" +
                     "• Yellow mandibles (jaws) and legs\n" +
                     "• Black tegula (plate where wings connect to body)",
-            "The European Wool Carder Bee is a generalist bee and visits a wide variety of flowers.  \n" +
+            "The European Wool Carder Bee is a generalist bee and visits a wide variety of flowers. \n\n" +
                     "The following species attract members from the genus Anthidium. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
                     "EARLY SUMMER \n" +
                     "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material) Beardtongue, Penstemon spp. \n" +
@@ -976,7 +976,7 @@ public class PollinatorInfo {
                     "Garlic Mustard, Alliaria petiolate\n" +
                     "Leatherleaf, Chamaedaphne calyculata\n" +
                     "Common Gypsyweed, Veronica officinalis\n" +
-                    "Raspberries – Blackberries -Dewberries, Rubus spp.\n" +
+                    "Raspberries – Blackberries -Dewberries, Rubus spp.\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
@@ -1099,7 +1099,7 @@ public class PollinatorInfo {
                     "Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.",
             "• Females have rows of pale scopa beneath abdomen\n" +
                     "• Grey or black bees with pale bands on abdomen\n" +
-                    "• Males with long hairs on forelegs",
+                    "• Males with long hairs on forelegs\n\n",
             "The following species attract members from the genus Megachile. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
                     "SPRING \n" +
                     "Golden Alexanders, Zizia aurea \n" +
@@ -1171,7 +1171,7 @@ public class PollinatorInfo {
                     "Berry Tree, Vaccinium spp.\n" +
                     "Vetch, Vicia spp.\n" +
                     "Pansy, Viola spp.\n" +
-                    "Golden Alexanders, Zizia aurea\n" +
+                    "Golden Alexanders, Zizia aurea\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
@@ -1223,7 +1223,7 @@ public class PollinatorInfo {
                     "Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.",
             "• Dark blue or green with metallic sheen\n" +
                     "• Moderately hairy head, thorax, and abdomen\n" +
-                    "• Females collect pollen on hairs beneath the abdomen (scopae)",
+                    "• Females collect pollen on hairs beneath the abdomen (scopae)\n\n",
             "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "SPRING - PERENNIALS\n" +
@@ -1374,7 +1374,7 @@ public class PollinatorInfo {
                     "Snowberry, Symphoricarpos spp.\n" +
                     "Pimpernels, Taenidia spp.\n" +
                     "Thaspium, Thaspium spp.\n" +
-                    "Zizia, Zizia spp.\n" +
+                    "Zizia, Zizia spp.\n\n" +
                     "The following species attract members from the genus Hylaeus. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON FORAGE PLANTS\n" +
@@ -1410,7 +1410,7 @@ public class PollinatorInfo {
                     "(1)Burrows, S., Ritner, C., Christman, M., Spears, L., Smith-Pardo, A., Price, S., … Redford, A. (2018, August). Anthidium oblongatum. Retrieved January 17, 2020, from http://idtools.org/id/bees/exotic/factsheet.php?name=16916",
             "• Black with distinct yellow pattern\n" +
                     "• Yellow jaws (mandibles) and legs\n" +
-                    "• Orange tegula (the plate where wings connect to body)",
+                    "• Orange tegula (the plate where wings connect to body)\n\n",
             "The following species attract members from the genus Anthidium. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "EARLY SUMMER\n" +
@@ -1703,7 +1703,7 @@ public class PollinatorInfo {
                     "Gumwood, Grindelia spp.\n" +
                     "Sunflower, Helianthus spp.\n" +
                     "Goldenrod, Solidago spp.\n" +
-                    "... the full list can be viewed found in the Discover Life link in the source list.\n"+
+                    "... the full list can be viewed found in the Discover Life link in the source list.\n\n"+
                     "The following species attract members from the genus Megachile. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
@@ -1755,7 +1755,7 @@ public class PollinatorInfo {
                     "(3)Small Carpenter Bees (Genus Ceratina). (n.d.). Retrieved February 27, 2020 from https://www.inaturalist.org/taxa/155108-Ceratina",
             "• Hourglass shape\n" +
                     "• Metallic, relatively hairless body\n" +
-                    "• Barrel abdomen that narrows to a near point",
+                    "• Barrel abdomen that narrows to a near point\n\n",
             "The following species attract members from the genus Ceratina. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "COMMON FORAGE PLANTS\n" +
