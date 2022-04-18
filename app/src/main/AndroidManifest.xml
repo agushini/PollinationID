@@ -140,7 +140,7 @@
                 android:value=".PhotoPossiblePollinators" />
         </activity>
         <activity
-            android:name=".ConfirmPollinatorPhoto"
+            android:name=".ConfirmPollinatorPhotoandDK"
             android:label="Confirm Pollinator"
             android:launchMode="singleTop">
             <meta-data
