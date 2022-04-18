@@ -8,6 +8,9 @@ import com.example.pollinationid.R
 import kotlinx.android.synthetic.main.activity_dkpossible_pollinator.*
 
 class HairOnSidesColorActivity : AppCompatActivity() {
+
+    val DKoutputList : ArrayList<String> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hair_on_sides_color)
@@ -18,6 +21,9 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         val hairOnSideBlackAndAuburnBttn = findViewById<ImageButton>(R.id.hairOnSideBlackAndAuburnButton)
         hairOnSideBlackAndAuburnBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Hornfaced Bee","Sculptured Resin Bee", "Taurus Mason Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -27,6 +33,9 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         val hairOnSideBlackAndYellowBttn = findViewById<ImageButton>(R.id.hairOnSideBlackAndYellowButton)
         hairOnSideBlackAndYellowBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("European Wool-Carder Bee","Oblong Wool-Carder Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -36,6 +45,9 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         val hairOnSideBlueBttn = findViewById<ImageButton>(R.id.hairOnSideBlueButton)
         hairOnSideBlueBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Blue Orchard Mason Bee","Dwarf Mason Bee", "Maine Blueberry Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -45,6 +57,9 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         val hairOnSideBlackPaleBttn = findViewById<ImageButton>(R.id.hairOnSideBlackPaleButton)
         hairOnSideBlackPaleBttn.setOnClickListener {
             val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            DKoutputList.addAll(listOf("Blue Orchard Mason Bee","Bufflehead Mason Bee", "Dwarf Mason Bee", "Hornfaced Bee", "Mason Bees", "Orange-Tipped Wood Digger Bee", "Small Mason Bees", "Taurus Mason Bee"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 

@@ -7,6 +7,9 @@ import android.widget.ImageButton
 import com.example.pollinationid.R
 
 class BodySegmentsActivity : AppCompatActivity() {
+
+    val DKoutputList : ArrayList<String> = arrayListOf()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_body_segments)
@@ -17,6 +20,9 @@ class BodySegmentsActivity : AppCompatActivity() {
         val twoSegmentsBttn = findViewById<ImageButton>(R.id.twoSegmentsButton)
         twoSegmentsBttn.setOnClickListener {
             val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
+            DKoutputList.addAll(listOf("American Grass Spiders","Harvestmen", "Jumping Spiders"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
 
@@ -26,6 +32,9 @@ class BodySegmentsActivity : AppCompatActivity() {
         val twoPlusSegmentsBttn = findViewById<ImageButton>(R.id.twoPlusSegmentsButton)
         twoPlusSegmentsBttn.setOnClickListener {
             val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
+            DKoutputList.addAll(listOf("Bark Centipede","Centipedes", "Common Pill Woodlouse", "House Centipede", "Millipedes"))
+            intent.putStringArrayListExtra("DKResults",DKoutputList)
+
             startActivity(intent)
         }
     }
