@@ -395,7 +395,7 @@ public class PollinatorInfo {
                     "• Distinctive long tail",
             "Carrot-wasps are generalists and visit a wide variety of flowers. True to their name, they show a\n" +
                     "preference for flowers in the carrot or parsley family (Apiaceae)2"),
-        Insect("Centipedes", "(Class: Chilopoda)", //TODO: This isnt in the AI photo model we should look into that
+        Insect("Centipedes", "(Class: Chilopoda)",
             R.drawable.centipedes_1,R.drawable.centipedes_2,R.drawable.centipedes_3,R.drawable.centipedes_4,
             "Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and will catch and eat any invertebrate their size or smaller, like insects and spiders(1). The smallest Centipedes are around an inch while the largest tropical species can grow well over six inches. The largest North American species is the Giant Desert Centipede (Scolopendra heros) which on average grows to be around 6.5” (though some eye-witness accounts have reported up to 12”)(2). By far the most common species in North America is the House Centipede (Scutigera coleoptera).\n" +
                     "\n" +
@@ -551,7 +551,7 @@ public class PollinatorInfo {
                     "• Curls into ball when threatened",
             "The Common Pill Woodlouse is a detritivore and can be found in a large variety of habitats with different\n" +
                     "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
-        Insect("Cuckoo Bees", "(Sphecodes spp.)", //TODO: This said Cuckoo or Blood Bees this should be changed in the model files
+        Insect("Cuckoo Bees", "(Sphecodes spp.)",
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
             "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside the while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
                     "\n" +
@@ -1085,7 +1085,7 @@ public class PollinatorInfo {
                     "• Red ladybugs with black spots most common; many colors and patterns\n" +
                     "• (larvae) soft-bodied, flattened, and elongated",
             "Ladybugs are predacious insects and will be found on flowers that attract their prey items, namely aphids and scaly insects."),
-        Insect("Leafcutter Bees", "(Megachile spp.)", //TODO: Not in the model needs to be added
+        Insect("Leafcutter Bees", "(Megachile spp.)",
             R.drawable.leafcutter_bees_1,R.drawable.leafcutter_bees_2,R.drawable.leafcutter_bees_3,R.drawable.leafcutter_bees_4,
             "Leafcutter bees get their name from using their mandibles (bee teeth) to cut leaf parts for their nests. They are all solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests. After finding a suitable site, a female will build chambers starting from the furthest from the opening. The females collect pollen using specialized hairs underneath their abdomen known as scopa. Using her scopa, she will collect enough pollen to feed her developing young and deposits it along with a single egg in the first chamber. The female then uses her large mandibles to cut petals and/or leaves from plants to seal off the chamber. She repeats this process, each time leaving one egg and pollen ball per chamber and sealing it off with plant material to protect her brood (offspring). The larvae will hatch, consume the food bundle, and overwinter as mature larva before pupating in spring.\n" +
                     "\n" +

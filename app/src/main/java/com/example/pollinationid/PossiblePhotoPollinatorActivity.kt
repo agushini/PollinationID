@@ -61,7 +61,6 @@ class PossiblePhotoPollinatorActivity : AppCompatActivity() {
 
         myPollinatorButton.setOnClickListener{
             Log.i("POSSIBLE POLLINATORS","This is my Pollinator btn clicked")
-            //TODO:send to confirm submission page which has the image along with the insect name, date, hotel, userPrediction and ModelPrediction
 
             val confirmIntent = Intent(this,ConfirmPollinatorPhotoandDK::class.java)
 
