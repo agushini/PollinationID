@@ -14,7 +14,7 @@ public class PollinatorInfo {
             R.drawable.alfalfa_leafcutter_bee_1,R.drawable.alfalfa_leafcutter_bee_2,R.drawable.alfalfa_leafcutter_bee_3,R.drawable.alfalfa_leafcutter_bee_4,
             "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests1. The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season3. After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber4. She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larva before pupating in spring(3).\n" +
                     "\n" +
-                    "The Alfalfa Leafcutter Bee faces three distinct challenges: chalkbrood, parasitism, and pesticide exposure(4). Chalkbrood is a fungal infection that impacts brood (bee eggs, larva, and/or pupa)(4). The parasitic wasp Ptesomalus venustus is a common threat to the Alfalfa Leafcutter Bee(4). As the bee larva begins to spin its cocoon in preparation to pupate, a female P. venustus wasp will sting and paralyze the larva before depositing her own eggs onto it(4). The wasp larva hatch within a day or two and consume the bee larva(4). The Alfalfa Leafcutter Bee larva also faces possible predation by the Checkered Flower Beetle, T. ornatus, which invades the nest and eats the developing brood(3). Pesticides and insecticides also challenge the Alfalfa Leafcutter Bee and pollinators in general. The toxins within pesticides do not discriminate between harmful and beneficial insects. Pollinators foraging in gardens or fields sprayed with chemicals can consume or carry the toxins back to their nests. This results in high mortality rates of bees and other pollinators that encounter these chemicals(5).\n" +
+                    "The Alfalfa Leafcutter Bee faces three distinct challenges: chalkbrood, parasitism, and pesticide exposure(4). Chalkbrood is a fungal infection that impacts brood (bee eggs, larva, and/or pupa)(4). The parasitic wasp Ptesomalus venustus is a common threat to the Alfalfa Leafcutter Bee(4). As the bee larva begins to spin its cocoon in preparation to pupate, a female P. venustus wasp will sting and paralyze the larva before depositing her own eggs onto it(4). The wasp larva hatch within a day or two and consume the bee larva(4). The Alfalfa Leafcutter Bee larva also faces possible predation by the Checkered Flower Beetle, T. ornatus, which invades the nest and eats the developing brood(3). Pesticides also challenge the Alfalfa Leafcutter Bee and pollinators in general. The toxins within pesticides do not discriminate between harmful and beneficial insects. Pollinators foraging in gardens or fields sprayed with chemicals can consume or carry the toxins back to their nests. This results in high mortality rates of bees and other pollinators that encounter these chemicals(5).\n" +
                     "\n" +
                     "While the Alfalfa Leafcutter Bee is not native to the U.S., it has been recognized as an important pollinator despite its range being limited to agricultural settings(6). \n" +
                     "\n" +
@@ -33,7 +33,7 @@ public class PollinatorInfo {
             "• Black or gray with white/pale cream banding on abdomen\n" +
                     "• Females have rows of pale hair beneath abdomen (scopa)\n" +
                     "• Males with creamy white or yellow spots at end of abdomen",
-            "The following species attract members from the genus Megachile. Information obtained from Bees: An\n" +
+            "The following species attract members from the genus Megachile. Information obtained from Bees: An" +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
                     "\n" +
                     "COMMON PLANTS USED FOR NESTING MATERIAL\n" +
@@ -88,7 +88,7 @@ public class PollinatorInfo {
                     "\n" +
                     "Leafcutter Bees in the Midwest and Northeast U.S. typically emerge in late spring or early summer(2). They immediately seek a mate and search for nesting sites to prepare the next generation which will overwinter and emerge in the next season(2).\n" +
                     "\n" +
-                    "The range of the Apical Leafcutter Bee extends throughout Europe, though since its introduction into the U.S. it has been documented on both the northeast and northwestern states(4).\n" +
+                    "The range of the Apical Leafcutter Bee extends throughout Europe, though since its introduction into the U.S. it has been documented in both the northeast and northwestern states(4).\n" +
                     "\n" +
                     "SEASONALITY: May to July(3)\n" +
                     "STATUS: non-native\n" +
@@ -174,7 +174,7 @@ public class PollinatorInfo {
                     "(4)Beetles (Order Coleoptera). (n.d.) Retrieved March 7, 2020 from https://www.inaturalist.org/taxa/47208-Coleoptera",
             "• Hard outer wings typically meeting in middle (elytra) when at rest\n" +
                     "• Chewing mouthparts",
-            "Beetles can be found in nearly every habitat on the planet and are commonly encountered outdoors. As a" +
+            "Beetles can be found in nearly every habitat on the planet and are commonly encountered outdoors. As a " +
                     "result, there is a large list of plants that serve as attractants and hosts to both them and their food items."),
         Insect("Bellflower Resin Bee", "(Megachile campanulae)",
             R.drawable.bellflower_resin_bee_1,R.drawable.bellflower_resin_bee_2,R.drawable.bellflower_resin_bee_3,R.drawable.bellflower_resin_bee_4,
