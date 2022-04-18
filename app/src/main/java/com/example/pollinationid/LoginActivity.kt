@@ -144,6 +144,7 @@ else {
                 Log.d(TAG, "signInWithEmail:success")
                 val user = auth.currentUser
                 updateUI(user)
+                Toast.makeText(this, "Successfully Logged In", Toast.LENGTH_SHORT).show()
 
                 //once successful open up the main activity
 
