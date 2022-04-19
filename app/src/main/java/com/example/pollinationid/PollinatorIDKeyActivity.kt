@@ -20,16 +20,8 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
     //variables for date and time
 
-    var savedDay = 0
-    var savedMonth = 0
-    var savedYear = 0
-    var savedHour = 0
-    var savedMinute = 0
-
     lateinit var textView: TextView
     private lateinit var dateButton: Button
-    lateinit var hotelButton: Button
-    lateinit var hotel: String
     private var day = 0
     var month: Int = 0
     var year: Int = 0
@@ -91,7 +83,7 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         myDay = day
-        myMonth = month
+        myMonth = month + 1
         myYear = year
         val calendar: Calendar = Calendar.getInstance()
         hour = calendar.get(Calendar.HOUR)
@@ -104,6 +96,6 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
     override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
         myHour = hourOfDay
         myMinute = minute
-        textView.text = "Year: $myYear\nMonth: $myMonth\nDay: $myDay\nHour: $myHour\nMinute: $myMinute"
+        textView.text =  "$myMonth $myDay, $myYear at $myHour:$myMinute"
     }
 }
