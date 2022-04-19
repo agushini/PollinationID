@@ -12,7 +12,7 @@ public class PollinatorInfo {
     public val mInsectList = listOf(
         Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",
             R.drawable.alfalfa_leafcutter_bee_1,R.drawable.alfalfa_leafcutter_bee_2,R.drawable.alfalfa_leafcutter_bee_3,R.drawable.alfalfa_leafcutter_bee_4,
-            "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests1. The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season3. After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber4. She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larvae before pupating in spring(3).\n" +
+            "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests(1). The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season(3). After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber(4). She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larva before pupating in spring(3).\n" +
                     "\n" +
                     "The Alfalfa Leafcutter Bee faces three distinct challenges: chalkbrood, parasitism, and pesticide exposure(4). Chalkbrood is a fungal infection that impacts brood (bee eggs, larva, and/or pupa)(4). The parasitic wasp Ptesomalus venustus is a common threat to the Alfalfa Leafcutter Bee(4). As the bee larva begins to spin its cocoon in preparation to pupate, a female P. venustus wasp will sting and paralyze the larva before depositing her own eggs onto it(4). The wasp larva hatch within a day or two and consume the bee larva(4). The Alfalfa Leafcutter Bee larva also faces possible predation by the Checkered Flower Beetle, T. ornatus, which invades the nest and eats the developing brood(3). Pesticides also challenge the Alfalfa Leafcutter Bee and pollinators in general. The toxins within pesticides do not discriminate between harmful and beneficial insects. Pollinators foraging in gardens or fields sprayed with chemicals can consume or carry the toxins back to their nests. This results in high mortality rates of bees and other pollinators that encounter these chemicals(5).\n" +
                     "\n" +
@@ -42,7 +42,7 @@ public class PollinatorInfo {
                     "St. John’s wort, Hypericum spp.\n" +
                     "Ash, Fraxinus spp.\n" +
                     "Eastern redbud, Cercis canadensis\n" +
-                    "SPRING\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -50,7 +50,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -63,7 +63,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("American Grass Spiders", "(Agelenopsis spp.)",
@@ -73,7 +73,7 @@ public class PollinatorInfo {
                     "The range of the American Grass Spiders extends throughout the United States and Canada and can be found in some parts of Europe, Australia, and South America(2). \n" +
                     "\n" +
                     "SEASONALITY: April to November(2)\n" +
-                    "EASTERN US AND CANADA: 13(1)\n" +
+                    "EASTERN US AND CANADA: 13 species(1)\n" +
                     "\n" +
                     "Sources:\n" +
                     "(1)Bartlett, T., Cotinis, McLeod, R., Elliott, L., Hunt, C., Entz, C., Howe, M., & P., L. (2004). Family Agelenidae – Funnel Weavers. Retrieved March 7, 2020 from https://bugguide.net/node/view/1974\n" +
@@ -98,7 +98,7 @@ public class PollinatorInfo {
                     "(2)Holm, H. (2017). Bees: An Identification and Native Plant Forage Guide. Minnetonka, MN: Pollination Press LLC.\n" +
                     "(3)Apical Leaf-cutter Bee (Megachile apicalis). (n.d.). Retrieved February 27, 2020 from https://www.inaturalist.org/taxa/335714-Megachile-apicalis\n" +
                     "(4)Megachile apicalis Spinola, 1808. (n.d.) Retrieved February 29, 2020 from https://www.discoverlife.org/20/q?search=Megachile+apicalis",
-            "• (females) white scopa (hair beneath abdomen) that" +
+            "• (females) white scopa (hair beneath abdomen) that " +
                     "becomes black on the last two abdominal segments" +
                     "(terga 5 & 6)\n" +
                     "• Black body with pale hair bands on abdomen\n" +
@@ -112,8 +112,8 @@ public class PollinatorInfo {
                     "Ash, Fraxinus spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -135,7 +135,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Bark Centipede", "(Scoloprcryptops sexspinosus)",
@@ -178,7 +178,7 @@ public class PollinatorInfo {
                     "result, there is a large list of plants that serve as attractants and hosts to both them and their food items."),
         Insect("Bellflower Resin Bee", "(Megachile campanulae)",
             R.drawable.bellflower_resin_bee_1,R.drawable.bellflower_resin_bee_2,R.drawable.bellflower_resin_bee_3,R.drawable.bellflower_resin_bee_4,
-            "The Bellflower Resin Bee is considered a solitary mason bee. The female makes her nest in hollow plant stems or abandoned tunnels in pieces of wood. Once she has identified an ideal site, the female uses her mandibles (jaws) to collect natural resins from plants and trees(1). This material will line the individual cells for her eggs. As she builds the chambers, she starts with the cell furthest from the opening, deposits a single egg with a bundle of pollen (and sometimes nectar) for food, and then seals off the cell with plant resin1. This helps protect the eggs from pathogens, parasites, and the elements(2). The female will repeat this process, each time leaving one egg and food bundle per cell.\n" +
+            "The Bellflower Resin Bee is considered a solitary mason bee. The female makes her nest in hollow plant stems or abandoned tunnels in pieces of wood. Once she has identified an ideal site, the female uses her mandibles (jaws) to collect natural resins from plants and trees(1). This material will line the individual cells for her eggs. As she builds the chambers, she starts with the cell furthest from the opening, deposits a single egg with a bundle of pollen (and sometimes nectar) for food, and then seals off the cell with plant resin(1). This helps protect the eggs from pathogens, parasites, and the elements(2). The female will repeat this process, each time leaving one egg and food bundle per cell.\n" +
                     "\n" +
                     "The Bellflower Resin Bee’s range extends from the New England states to Minnesota, Nebraska and Texas(3). It is native to the southern Ontario region and pollinates a large diversity of plants(1).\n" +
                     "\n" +
@@ -214,7 +214,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n\n" +
                     "The following species attract members from the genus Megachile. Information obtained from Bees:\n" +
                     "An Identification and Native Plant Forage Guide (Holm 2017)\n\n" +
-                    "SPRING\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -222,7 +222,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -235,12 +235,12 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Blue Orchard Mason Bee", "(Osmia lignaria)",
             R.drawable.blue_orchard_mason_bee_1,R.drawable.blue_orchard_mason_bee_2,R.drawable.blue_orchard_mason_bee_3,R.drawable.blue_orchard_mason_bee_4,
-            "The Blue Orchard Mason Bee is named as such because of its role in pollinating fruiting trees(1). As soon as they emerge as adults, both males and females search for a mate. After mating, the female begins the search for a suitable nesting site1. These sites can include insect hotels, paper straws, reeds, and holes in wood. A female Blue Orchard Mason Bee uses mud to build a back wall for her nest if one isn’t already present. She then collects pollen and nectar and rolls it into a ball inside the nest before depositing a single egg on top of it1. The female then seals off this chamber with mud. She repeats this process five to eight times before finally capping the closure of the nest with a thicker layer mud1. Interestingly enough, the larvae closest to the entrance will develop into males; the cells furthest from the entrance house larvae that will emerge as females1.This is believed to give males an advantage in emerging first and preparing to mate with emerging females. A secondary advantage could be to protect the female brood from parasitism since the first cells are the most vulnerable(1).\n" +
+            "The Blue Orchard Mason Bee is named as such because of its role in pollinating fruiting trees(1). As soon as they emerge as adults, both males and females search for a mate. After mating, the female begins the search for a suitable nesting site1. These sites can include insect hotels, paper straws, reeds, and holes in wood. A female Blue Orchard Mason Bee uses mud to build a back wall for her nest if one isn’t already present. She then collects pollen and nectar and rolls it into a ball inside the nest before depositing a single egg on top of it(1). The female then seals off this chamber with mud. She repeats this process five to eight times before finally capping the closure of the nest with a thicker layer mud(1). Interestingly enough, the larvae closest to the entrance will develop into males; the cells furthest from the entrance house larvae that will emerge as females(1).This is believed to give males an advantage in emerging first and preparing to mate with emerging females. A secondary advantage could be to protect the female brood from parasitism since the first cells are the most vulnerable(1).\n" +
                     "\n" +
                     "To attract O. lignaria, leave a small patch of mud (silty-clay) nearby available nesting sites (insect hotels, paper tubes, reeds, etc.) and plenty of foraging plants. \n" +
                     "\n" +
@@ -257,8 +257,7 @@ public class PollinatorInfo {
             "• Dark metallic blue, sometimes with green tint\n" +
                     "• Mostly black hair; pale hairs are interspersed\n" +
                     "• Females collect pollen on hairs beneath the abdomen (scopa)\n\n",
-            "The Blue Orchard Mason Bee has been recorded on the following species3\n" +
-                    ":\n" +
+            "The Blue Orchard Mason Bee has been recorded on the following species:(3)\n" +
                     "\n" +
                     "Wild Hyacinth, Camassia spp.\n" +
                     "Bittercress/Toothwort, Cardamine spp.\n" +
@@ -292,14 +291,14 @@ public class PollinatorInfo {
                     "Rue/Citrus, Zanthoxylurn spp.\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
@@ -311,7 +310,7 @@ public class PollinatorInfo {
                     "The range of Brown Lacewings extends around the globe and throughout the United States(3).\n" +
                     "\n" +
                     "SEASONALITY: April to November(3)\n" +
-                    "EASTERN US AND CANADA: >60(1)\n" +
+                    "EASTERN US AND CANADA: >60 species (1)\n" +
                     "\n" +
                     "Sources: \n" +
                     "(1)Cotinis, Beatriz, M., Wisch, H., smccann27, Schusteff, A., Belov, V. (2004). Family Hemerobiidae - Brown Lacewings. Retrieved February 27, 2020 from https://bugguide.net/node/view/3577\n" +
@@ -320,10 +319,9 @@ public class PollinatorInfo {
                     "• Long antennae\n" +
                     "• Large, rounded, brown to transparent (clear) wings folded over body\n" +
                     "• (larvae) brown and white; “alligator-like”; large jaws",
-            "Brown Lacewings are beneficial controls on pest populations and will typically be found near aphid-\n" +
-                    "infested plants in woodland habitats1\n" +
-                    "\n" +
-                    "."),
+            "Brown Lacewings are beneficial controls on pest populations and will typically be found near aphid-" +
+                    "infested plants in woodland habitats(1)\n" +
+                    "\n"),
         Insect("Bufflehead Mason Bee", "(Osmia bucephala)",
             R.drawable.bufflehead_mason_bee_1,R.drawable.bufflehead_mason_bee_2,R.drawable.bufflehead_mason_bee_3,R.drawable.bufflehead_mason_bee_4,
             "The Bufflehead Mason Bee looks like the Common Eastern Bumblebee (B. impatiens); however, it is not as stocky as B. impatiens and lacks a pollen-basket on its hind-leg (corbicula). Like other bees in the Megachilidae family, Bufflehead Mason Bee females carry pollen on modified hairs beneath the abdomen known as scopa. They nest in wood cavities and use chewed leaves combined with wood and/or pith (a type of soft tissue inside vascular plant stems) to separate each chamber(1). After finding a suitable nesting site, the female will collect pollen and/or nectar using her scopa and return to the nest. She will roll the food into a ball inside the first cell before laying an egg on it. She then seals of the chamber with plant material and begins collecting more pollen and/or nectar for the next egg. She will repeat this process before capping the nest entrance with more plant material.\n" +
@@ -342,8 +340,7 @@ public class PollinatorInfo {
             "• Black with a bluish tint on head and thorax\n" +
                     "• Pale hair on head, thorax, and first abdominal segment (T1)\n" +
                     "• Black abdominal hair",
-            "The Bufflehead Mason Bee has been recorded on the following4\n" +
-                    ":\n" +
+            "The Bufflehead Mason Bee has been recorded on the following:4\n" +
                     "\n" +
                     "Astragalus, Astragalus spp.\n" +
                     "Balsam roots, Balsamorhiza spp.\n" +
@@ -363,14 +360,14 @@ public class PollinatorInfo {
                     "Wild Geranium, Geranium maculatum\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
@@ -383,7 +380,7 @@ public class PollinatorInfo {
                     "As adults, Carrot-wasps spend their days foraging nectar from a wide variety of flowers(1). Their range extends throughout the United States and Canada(2).\n" +
                     "\n" +
                     "SEASONALITY: May and October(3)\n" +
-                    "EASTERN US AND CANADA: 15\n" +
+                    "EASTERN US AND CANADA: 15 species\n" +
                     "CONSERVATION STATUS: Unknown\n" +
                     "\n" +
                     "Sources: \n" +
@@ -394,7 +391,7 @@ public class PollinatorInfo {
                     "• Long, narrow abdomen\n" +
                     "• Distinctive long tail",
             "Carrot-wasps are generalists and visit a wide variety of flowers. True to their name, they show a " +
-                    "preference for flowers in the carrot or parsley family (Apiaceae)2"),
+                    "preference for flowers in the carrot or parsley family (Apiaceae)(2)"),
         Insect("Centipedes", "(Class: Chilopoda)",
             R.drawable.centipedes_1,R.drawable.centipedes_2,R.drawable.centipedes_3,R.drawable.centipedes_4,
             "Centipedes are fast moving arthropods with multiple body segments. They have one leg-pair per body segment (Millipedes have two leg-pairs per segment) and a flat shape. They are active hunters and will catch and eat any invertebrate their size or smaller, like insects and spiders(1). The smallest Centipedes are around an inch while the largest tropical species can grow well over six inches. The largest North American species is the Giant Desert Centipede (Scolopendra heros) which on average grows to be around 6.5” (though some eye-witness accounts have reported up to 12”)(2). By far the most common species in North America is the House Centipede (Scutigera coleoptera).\n" +
@@ -425,7 +422,7 @@ public class PollinatorInfo {
                     "\n" +
                     "Common Barklice larvae go through four to six developmental stages and resemble tiny wingless adults before fully maturing(3).\n" +
                     "\n" +
-                    "Some species of Common Barklice have glands in their mouths that let them spin delicate webs(1). It is thought that these webs protect the adults and offspring from predators. While they are unlikely to use an insect hotel, they may be encountered on nearby trees or woody plants. A they are beneficial backyard insects, there is no need to control or manage them. The best practice is to let them be.\n" +
+                    "Some species of Common Barklice have glands in their mouths that let them spin delicate webs(1). It is thought that these webs protect the adults and offspring from predators. While they are unlikely to use an insect hotel, they may be encountered on nearby trees or woody plants. Since they are beneficial backyard insects, there is no need to control or manage them. The best practice is to let them be.\n" +
                     "\n" +
                     "Common Barklice can be found throughout the Eastern and Southern states, though they are also found along the West coast and down throughout Mexico(4).\n" +
                     "\n" +
@@ -443,7 +440,7 @@ public class PollinatorInfo {
                     "• Tent-like wings (cover entire body)\n" +
                     "• Long antennae",
             "Oaks and pecans are common hosts, though any tree with lichen or algae growth has the potential to " +
-                    "support Common Barklice3"),
+                    "support Common Barklice(3)"),
         Insect("Common Eastern Bumblebee", "(Bombus impatiens)",
             R.drawable.common_eastern_bumblebee_1,R.drawable.common_eastern_bumblebee_2,R.drawable.common_eastern_bumblebee_3,R.drawable.common_eastern_bumblebee_4,
             "The Common Eastern Bumblebee is a frequent backyard visitor to flowering gardens. Due to their extensive hair, bumblebees are able to fly in cooler temperatures which makes them an important early Spring pollinator(1). They shake large quantities of pollen out of a single flower by buzz-pollinating (sonication)(1). Like honeybees, the Common Eastern Bumblebee is a social species. A gyne (inseminated female) will overwinter in an insulated location until the spring(1). As temperatures warm, the gyne emerges and begins looking for a suitable nesting site – typically a hole in the ground, a pile of plant debris, a shed, or other insulated area(1). Once the nest is secure, the gyne collects pollen and nectar into a ball and begins laying eggs. The first generation will take roughly a month to fully develop from egg to worker and will most likely consist of all females(1).\n" +
@@ -467,7 +464,7 @@ public class PollinatorInfo {
                     "• Abdomen covered in black hair\n\n",
             "The following species attract members from the genus Bombus. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n" +
                     " \n\n" +
-                    "COMMON FORAGE PLANTS  \n" +
+                    "\nCOMMON FORAGE PLANTS  \n" +
                     "ANNUALS AND PERENNIALS \n" +
                     "Anise Hyssop, Agastache foeniculum \n" +
                     "Prairie Onion, Allium stellatum \n" +
@@ -550,7 +547,7 @@ public class PollinatorInfo {
                     "• Dark grey body\n" +
                     "• Curls into ball when threatened",
             "The Common Pill Woodlouse is a detritivore and can be found in a large variety of habitats with different " +
-                    "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content3"),
+                    "floral and tree species, though they prefer soils with a neutral or alkaline pH and high organic content(3)."),
         Insect("Cuckoo Bees", "(Sphecodes spp.)",
             R.drawable.cuckoo_bees_1,R.drawable.cuckoo_bees_2,R.drawable.cuckoo_bees_3,R.drawable.cuckoo_bees_4,
             "Cuckoo Bees are commonly called “Blood Bees” because of their red abdomens. The adults feed on nectar from flowers and can be seen foraging throughout the season until autumn(1). These solitary bees are cleptoparasites, meaning they steal the nests of other bees (typically the ground-nesting species of Lasioglassum, Colletes, Andrena, and Halictus)(1). Once they find another bee’s nest, the female Cuckoo Bee enters and lays her own egg inside while destroying the host bee’s egg/larvae(1). Since Cuckoo Bees search for the nests of ground-dwelling bees, they may or may not be found around an insect hotel.\n" +
@@ -568,19 +565,19 @@ public class PollinatorInfo {
                     "• Black wings\n\n",
             "The following species attract members from the genus Sphecodes. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING\n" +
+                    "\nSPRING\n" +
                     "Goat’s Beard, Aruncus dioicus\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Fleabane, Erigeron spp.\n" +
                     "Boneset, Eupatorium perfoliatum\n" +
                     "Common Yarrow, Achillea millefolium\n" +
                     "Wild Quinine, Parthenium integrifolium\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Cuckoo Leafcutter Bee", "(Coelioxys spp.)",
             R.drawable.cuckoo_leaf_cutter_bees_1,R.drawable.cuckoo_leaf_cutter_bees_2,R.drawable.cuckoo_leaf_cutter_bees_3,R.drawable.cuckoo_leaf_cutter_bees_4,
-            "Cuckoo Leafcutter Bees are specialists that steal nests. They are cleptoparasites of Leafcutter Bees (Megachile spp.)(1). Females look for unattended nests and will use her pointed abdomen to poke through the nest covering and lay her own eggs inside(1). Her larvae tend to develop more quickly than the host (original) bee(1). After the Cuckoo Leafcutter Bee larvae’s third instar (developmental stage), it uses its mandibles (bee teeth) to get rid of the host and any competing siblings(1). \n" +
+            "Cuckoo Leafcutter Bees are specialists that steal nests. They are cleptoparasites of Leafcutter Bees (Megachile spp.)(1). Females look for unattended nests and will use their pointed abdomen to poke through the nest covering and lay their own eggs inside(1). Her larvae tend to develop more quickly than the host (original) bee(1). After the Cuckoo Leafcutter Bee larvae’s third instar (developmental stage), it uses its mandibles (bee teeth) to get rid of the host and any competing siblings(1). \n" +
                     "\n" +
                     "While the larvae steals the food of Leafcutter Bees, the adult Cuckoo Leafcutter Bee feeds on nectar from flowers(2). \n" +
                     "\n" +
@@ -599,15 +596,15 @@ public class PollinatorInfo {
                     "• (male) “Teeth” common at end of abdomen or thorax\n\n",
             "The following species attract members from the genus Coelyoxsys. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "EARLY SUMMER\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "EARLY \nSUMMER\n" +
                     "Tickseed, Coreopsis spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Vervain, Verbena spp.\n" +
                     "Milkweed, Asclepias spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Black-Eyed Susan, Rudbeckia hirta\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Sneezeweed, Helenium autumnale"),
         Insect("Dwarf Mason Bee", "(Osmia pumila)",
@@ -626,8 +623,7 @@ public class PollinatorInfo {
             "• Blue with black legs\n" +
                     "• White to yellowish hair; white scopa\n" +
                     "• Noticeably pitted (like a golfball)\n\n",
-            "The Dwarf Mason Bee has been recorded on the following species2\n" +
-                    ":\n" +
+            "The Dwarf Mason Bee has been recorded on the following species:(2)\n" +
                     "\n" +
                     "Butterfly Milkweed, Asclepias tuberosa\n" +
                     "Astragalus, Astragalus spp.\n" +
@@ -677,14 +673,14 @@ public class PollinatorInfo {
                     "Zizia, Zizia spp.\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
@@ -708,15 +704,15 @@ public class PollinatorInfo {
                     "(4)Xylocopa virginica. (n.d.). Retrieved January 22, 2020 from http://explorer.natureserve.org/servlet/NatureServe?searchName=Xylocopa+virginica",
             "• Black with pale hairs on thorax and first abdominal segment\n" +
                     "• Black and bald abdomen; glossy\n" +
-                    "• Wings held outward at 45̊angle when foraging\n" +
+                    "• Wings held outward at 45 ̊ angle when foraging\n" +
                     "• Males have white patch on face",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Beardtongue, Penstemon spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "Northern Catalpa, Catalpa speciosa\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Milkweed, Asclepias spp.\n" +
                     "Thistle, Cirsium spp.\n" +
                     "Ironweed, Veronia spp.\n" +
@@ -724,7 +720,7 @@ public class PollinatorInfo {
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Smooth Oxeye, Heliopsis helianthoides\n" +
                     "Coneflower, Echinacea spp.\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Eastern Calligrapher", "(Toxomerus geminatus)",
@@ -749,12 +745,13 @@ public class PollinatorInfo {
                     "• Yellow margin (middle-line) outlined in black down abdomen\n" +
                     "• Large reddish-brown eyes\n" +
                     "• Hovers often around flowers",
-            "The Eastern Calligrapher can be found near aphid-infested plants2\n" +
+            "The Eastern Calligrapher can be found near aphid-infested plants.(2)\n" +
                     "\n" +
-                    ". Adults visit a wide variety of flowers."),
+                    "Adults visit a wide variety of flowers."),
         Insect("European Wool-Carder Bee", "(Anthidium manicatum)",
             R.drawable.european_wool_carder_bee_1,R.drawable.european_wool_carder_bee_2,R.drawable.european_wool_carder_bee_3,R.drawable.european_wool_carder_bee_4,
-            "The European Wool Carder Bee can often be mistaken for wasps due to their bright yellow and black patterns. Their name comes from their behavior of scraping hairs from plants for nest materials, a process likened to wool carding. Plants like Lamb’s Ear (Stachys byzantina), Spiderwort (Tradescentia spp.), and Sagewort (Artemesia spp.) attract the females of this species due to their hairy parts. Male European Wool Carder Bees are substantially larger than females and behave aggressively towards other males. They defend their territory using modified “teeth” at the end of their abdomens to fight off other bees. This often maims or kills native bees as they have not evolved any defense against this(1). The European Wool Carder Bee nests in pre-existing holes in wood or hollow plant stems and seems to inhabit mostly urban landscapes(1). \n" +
+            "The European Wool Carder Bee can often be mistaken for wasps due to their bright yellow and black patterns. Their name comes from their behavior of scraping hairs from plants for nest materials, a process likened to wool carding. Plants like Lamb’s Ear (Stachys byzantina), Spiderwort (Tradescentia spp.), and Sagewort (Artemesia spp.) attract the females of this species due to their hairy parts.\n" +
+                    "Male European Wool Carder Bees are substantially larger than females and behave aggressively towards other males. They defend their territory using modified “teeth” at the end of their abdomens to fight off other bees. This often maims or kills native bees as they have not evolved any defense against this(1). The European Wool Carder Bee nests in pre-existing holes in wood or hollow plant stems and seems to inhabit mostly urban landscapes(1). \n" +
                     "\n" +
                     "While first introduced in the northeastern U.S. in the 1960s, these bees can now be found throughout Canada, the U.S., and South America(1).\n" +
                     "\n" +
@@ -768,17 +765,17 @@ public class PollinatorInfo {
                     "• Black tegula (plate where wings connect to body)",
             "The European Wool Carder Bee is a generalist bee and visits a wide variety of flowers. \n\n" +
                     "The following species attract members from the genus Anthidium. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
-                    "EARLY SUMMER \n" +
+                    "EARLY \nSUMMER \n" +
                     "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material) Beardtongue, Penstemon spp. \n" +
                     "Coneflower, Echincaea spp. \n" +
                     "Scurfy Pea, Psoralea spp. \n" +
                     "Milkvetch, Astragalus spp. \n\n" +
-                    "SUMMER \n" +
+                    "\nSUMMER \n" +
                     "Anise Hyssop, Agastache foeniculum \n" +
                     "Sagewort, Artemesia spp. (hairs from this plant are used as nesting material) \n" +
                     "Vervain, Verbena spp. \n" +
                     "Tickseed, Coreopsis spp. \n\n" +
-                    "AUTUMN \n" +
+                    "\nAUTUMN \n" +
                     "Goldenrod, Solidago and Euthamia spp. \n" +
                     "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Flat-Tailed Leafcutter Bee", "(Megachile mendica)",
@@ -800,7 +797,7 @@ public class PollinatorInfo {
                     "(4)Megachile mendica Cresson, 1878. (n.d.). Retrieved February 29, 2020 from https://www.discoverlife.org/mp/20q?search=Megachile+mendica",
             "• Black bee with white abdominal stripes\n" +
                     "• (female) pale yellow hairs underneath abdomen (scopa)\n" +
-                    "• Last abdominal segment (T6) is straight and" +
+                    "• Last abdominal segment (T6) is straight and " +
                     "flattened when viewed laterally (from the side)",
             "The Flat-tailed Leafcutter Bee has been recorded on the following:\n" +
                     "Coastal Plain Honeycombhead, Balduina angustifolia\n" +
@@ -825,8 +822,8 @@ public class PollinatorInfo {
                     "Ash, Fraxinus spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -848,7 +845,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Four-Toothed Mason Wasp", "(Monobia quadridens)",
@@ -876,7 +873,7 @@ public class PollinatorInfo {
             "N/A"),
         Insect("Green Lacewings", "(Chrysoperla spp.)",
             R.drawable.green_lacewing_1,R.drawable.green_lacewing_2,R.drawable.green_lacewing_3,R.drawable.green_lacewing_4,
-            "Common Green Lacewings (like Brown Lacewings [Family: Hemerobiidae]) are a welcomed backyard and farm-field resident. Their larvae are prized biological controls on aphid populations and “spider mites (especially red mites), thrips, whiteflies, eggs of leafhoppers, moths, leafminers, small caterpillars, and beetle larvae”(1). The larvae are active hunters while the adults feed on pollen, nectar, and the honeydew excreted by adult aphids(2). Female Common Green Lacewings lay their light green eggs on silken strands(1) attached to leaves – like tiny balloons. \n" +
+            "Common Green Lacewings (like Brown Lacewings [Family: Hemerobiidae]) are a welcomed backyard and farm-field resident. Their larvae are prized biological controls on aphid populations, “spider mites (especially red mites), thrips, whiteflies, eggs of leafhoppers, moths, leafminers, small caterpillars, and beetle larvae”(1). The larvae are active hunters while the adults feed on pollen, nectar, and the honeydew excreted by adult aphids(2). Female Common Green Lacewings lay their light green eggs on silken strands(1) attached to leaves – like tiny balloons. \n" +
                     "\n" +
                     "Common Green Lacewing larvae are prone to drying out and need a source of moisture(1). Adults rely on nectar and aphid honeydew to stay hydrated. To promote the presence of Common Green Lacewings, a nearby supply of flowering plants and a small population of aphids should be tolerated(1).\n" +
                     "\n" +
@@ -928,7 +925,7 @@ public class PollinatorInfo {
                     "The range of the Hornet and Yellowjacket subfamily extends around the globe and are commonly found throughout the United States(5).\n" +
                     "\n" +
                     "SEASONALITY: March to November(5)\n" +
-                    "EASTERN US AND CANADA: 22(4)\n" +
+                    "EASTERN US AND CANADA: 22 species(4)\n" +
                     "\n" +
                     "Sources: \n" +
                     "(1)Persson, S. (2015). Phylogeny and taxonomy of the subfamily Vespinae (Hymenoptera: Vespidae), based on five molecular markers. Retrieved March 5, 2020 from https://bioenv.gu.se/digitalAssets/1536/1536726_suzanna-persson.pdf\n" +
@@ -970,23 +967,22 @@ public class PollinatorInfo {
                     "• Small horn in lower (apical)\n" +
                     "• Pale yellow hair on head, thorax, and abdomen\n" +
                     "• Reddish-brown hairs beneath abdomen (scopa)",
-            "The Hornfaced Bee has been recorded on the following6\n" +
-                    ":\n" +
+            "The Hornfaced Bee has been recorded on the following:(6)\n" +
                     "\n" +
-                    "Garlic Mustard, Alliaria petiolate\n" +
+                    "Garlic Mustard, Alliaria petiolata\n" +
                     "Leatherleaf, Chamaedaphne calyculata\n" +
                     "Common Gypsyweed, Veronica officinalis\n" +
                     "Raspberries – Blackberries -Dewberries, Rubus spp.\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
@@ -1019,7 +1015,7 @@ public class PollinatorInfo {
                     "The range of the Hoverfly family extends throughout North America and are found worldwide(2).\n" +
                     "\n" +
                     "SEASONALITY: April to November(3)\n" +
-                    "EASTERN US AND CANADA: approximately 800(2)\n" +
+                    "EASTERN US AND CANADA: approximately 800 species(2)\n" +
                     "\n" +
                     "Sources:\n" +
                     "(1)Welcome to Syrphidae Community Website. (n.d.). Retrieved February 23, 2020 from  http://syrphidae.myspecies.info/\n" +
@@ -1032,9 +1028,9 @@ public class PollinatorInfo {
                     "• Presence of extra wing vein (spurious)\n" +
                     "• Bee or wasp look-alike (common)",
             "Hoverflies are said to be attracted to white or yellow flowers with easy-to-access nectar and\n" +
-                    "pollen4\n" +
-                    ". Some floral attractants include4\n" +
-                    ":\n" +
+                    "pollen.(4)\n" +
+                    "Some floral attractants include:(4)\n" +
+                    "\n" +
                     "Sweet Alyssum, Lobularia maritima\n" +
                     "Parsley, Petroselinum crispum\n" +
                     "Dill, Anethum graveolens\n" +
@@ -1060,7 +1056,7 @@ public class PollinatorInfo {
             "• Large front eyes\n" +
                     "• Small, compact shape\n" +
                     "• Agile movements and jumps",
-              "Jumping Spiders are hunter-stalkers, meaning they can be found in nearly any environment given that " +
+            "Jumping Spiders are hunter-stalkers, meaning they can be found in nearly any environment given that " +
                     "there are prey items around."),
         Insect("Lady Bugs", "(Family: Coccinellidae)",
             R.drawable.lady_bug_1,R.drawable.lady_bug_2,R.drawable.lady_bug_3,R.drawable.lady_bug_4,
@@ -1101,7 +1097,7 @@ public class PollinatorInfo {
                     "• Grey or black bees with pale bands on abdomen\n" +
                     "• Males with long hairs on forelegs\n\n",
             "The following species attract members from the genus Megachile. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
-                    "SPRING \n" +
+                    "\nSPRING \n" +
                     "Golden Alexanders, Zizia aurea \n" +
                     "Harebell, Campanula rotundifolia \n" +
                     "Wild Indigo, Baptisia spp. \n" +
@@ -1109,7 +1105,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp. \n" +
                     "Canada Anemone, Anemone canadensis \n" +
                     "Balsam Ragwort, Packera paupercula \n\n" +
-                    "SUMMER \n" +
+                    "\nSUMMER \n" +
                     "Yellow Coneflower, Ratibida pinnata \n" +
                     "Black-eyed Susan, Rudbeckia hirta \n" +
                     "Milkweed, Asclepias spp. \n" +
@@ -1122,7 +1118,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp. \n" +
                     "Prairie Clover, Dalea spp. \n" +
                     "Leadplant, Amorpha canescens \n\n" +
-                    "AUTUMN \n" +
+                    "\nAUTUMN \n" +
                     "Goldenrod, Solidago spp. \n" +
                     "Aster, Symphyotrichum spp. "),
         Insect("Maine Blueberry Bee", "(Osmia atriventris)",
@@ -1142,8 +1138,7 @@ public class PollinatorInfo {
                     "• Mostly black hair: pale hairs are interspersed (very discreet " +
                     "on abdomen)\n" +
                     "• Females collect pollen on black hairs beneath the abdomen (scopae)",
-            "The Maine Blueberry Bee has been recorded on the following plants3\n" +
-                    ":\n" +
+            "The Maine Blueberry Bee has been recorded on the following plants:(3)\n" +
                     "\n" +
                     "Rockcress, Arabis spp.\n" +
                     "Astragalus, Astragalus spp.\n" +
@@ -1174,14 +1169,14 @@ public class PollinatorInfo {
                     "Golden Alexanders, Zizia aurea\n\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
@@ -1225,14 +1220,14 @@ public class PollinatorInfo {
                     "• Females collect pollen on hairs beneath the abdomen (scopae)\n\n",
             "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
@@ -1371,12 +1366,12 @@ public class PollinatorInfo {
                     "Zizia, Zizia spp.\n\n" +
                     "The following species attract members from the genus Hylaeus. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizea aurea\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Dogwood, Cornus spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Swamp Milkweed, Asclepias incarnata\n" +
                     "Boneset, Eupatorium perfoliatum\n" +
                     "Rattlesnake Master, Eryngium yuccifolium\n" +
@@ -1389,7 +1384,7 @@ public class PollinatorInfo {
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Quinine, Parthenium integrifolium\n" +
                     "Large-leaved Aster, Eurybia macrophylla\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Stiff Goldenrod, Solidago rigida\n" +
                     "Blue Lobelia, Lobelia siphilitica\n" +
                     "Lindley’s Aster, Symphyotrichum ciliolatum"),
@@ -1407,18 +1402,18 @@ public class PollinatorInfo {
                     "• Orange tegula (the plate where wings connect to body)\n\n",
             "The following species attract members from the genus Anthidium. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "EARLY SUMMER\n" +
+                    "EARLY \nSUMMER\n" +
                     "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material)\n" +
                     "Beardtongue, Penstemon spp.\n" +
                     "Coneflower, Echincaea spp.\n" +
                     "Scurfy Pea, Psoralea spp.\n" +
                     "Milkvetch, Astragalus spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Anise Hyssop, Agastache foeniculum\n" +
                     "Sagewort, Artemesia spp. (hairs from this plant are used as nesting material)\n" +
                     "Vervain, Verbena spp.\n" +
                     "Tickseed, Coreopsis spp.\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago and Euthamia spp.\n" +
                     "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Orange-Tipped Wood Digger Bee", "(Anthophora terminalis)",
@@ -1458,13 +1453,13 @@ public class PollinatorInfo {
                     "\n" +
                     "The following species attract members from the genus Anthophora. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Virginia Waterleaf, Hydrophyllum virginianum\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Beardtongue, Pentstemon spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Wild Bergamot, Monarda fistulosa\n" +
                     "Blue Lobelia, Lobelia siphilitica\n" +
                     "Monkey Flower, Mimulus ringens\n" +
@@ -1515,8 +1510,8 @@ public class PollinatorInfo {
                     "Ash, Fraxinus spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -1537,7 +1532,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Pure Green Sweat Bee", "(Augochlora pura)",
@@ -1561,18 +1556,18 @@ public class PollinatorInfo {
                     "(plate where wing connects to body)\n" +
                     "• Curved basal vein in forewing*",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS:\n" +
+                    "\nCOMMON FORAGE PLANTS:\n" +
                     "\n" +
                     "SPRING\n" +
                     "Ragwort, Packera spp.\n" +
                     "Beardtongue, Penstemon spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Milkweed, Asclepias spp.\n" +
                     "Smooth Oxeye, Heliopsis helianthoides\n" +
                     "Black-Eyed Susan, Rudbeckia spp.\n" +
                     "Purple Prairie Clower, Dalea purpurea\n" +
                     "Common Yarrow, Achillea millefolium\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Aster, Symphyotrichum spp.\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Sneezeweed, Helenium autumnale"),
@@ -1642,7 +1637,7 @@ public class PollinatorInfo {
                     "St. John’s wort, Hypericum spp.\n" +
                     "Ash, Fraxinus spp.\n" +
                     "Eastern redbud, Cercis canadensis\n" +
-                    "SPRING\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -1650,7 +1645,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -1663,7 +1658,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Silver-Tailed Petalcutter Bee", "(Megachile montivaga)",
@@ -1704,8 +1699,8 @@ public class PollinatorInfo {
                     "Ash, Fraxinus spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -1726,7 +1721,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Small Carpenter Bees", "(Ceratina spp.)",
@@ -1749,8 +1744,8 @@ public class PollinatorInfo {
                     "• Barrel abdomen that narrows to a near point\n\n",
             "The following species attract members from the genus Ceratina. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Wild Geranium, Geranium maculatum\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Hepatica, Anemone spp.\n" +
@@ -1762,12 +1757,12 @@ public class PollinatorInfo {
                     "Wild Rose, Rosa spp.\n" +
                     "Ragwort, Packera spp.\n" +
                     "Willow, Salix spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Vervain, Verbena spp.\n" +
                     "Butterfly Milkweed, Asclepias tuberosa\n" +
                     "Leadplant, Amorpha canescens\n" +
                     "Blue Lobelia, Lobelia siphilitica\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp.\n" +
                     "Sneezeweed, Helenium autumnale"),
@@ -1789,12 +1784,12 @@ public class PollinatorInfo {
                     "• White hair bands on abdomen that do not meet in middle\n" +
                     "• Light blue or green colored eyes (common)",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING/EARLY SUMMER\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING/EARLY \nSUMMER\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Beardtongue, Penstemon spp.\n" +
                     "Wild rose, Rosa spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Leadplant, Amorpha canescens\n" +
                     "Hoary Vervain, Verbena stricta\n" +
                     "Wild Bergamot, Monarda fistulosa"),
@@ -1815,10 +1810,10 @@ public class PollinatorInfo {
                     "• Coarsely-pitted thorax and abdomen (like a golf ball)\n" +
                     "• (males) end of abdomen rounded downward",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "EARLY SUMMER\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "EARLY \nSUMMER\n" +
                     "Tickseed, Coreopsis spp.\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Wild Bergamot, Monarda fistulosa\n" +
                     "Milkweed, Asclepias spp.\n" +
                     "New Jersey Tea, Ceanothus americanus\n" +
@@ -1852,8 +1847,8 @@ public class PollinatorInfo {
                     "• (subgenus Dialictus) dark brown, gray, black, or metallic\n" +
                     "• (some species) prominent white basal (base of) abdominal hair bands",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Bloodroot, Sanguinaria canadensis\n" +
                     "Wild Geranium, Geranium maculatum\n" +
                     "Bishop’s Cap, Mitella diphylla\n" +
@@ -1870,7 +1865,7 @@ public class PollinatorInfo {
                     "American Plum, Prunus Americana\n" +
                     "Prickly Ash, Zanthoxylum americanum\n" +
                     "Lance-leaf Figwort, Scrophularia lanceolate\n" +
-                    "SUMMER\n" +
+                    "\nSUMMER\n" +
                     "Spotted Beebalm, Monarda punctata\n" +
                     "Culver’s Root, Veronicasturm virginicum\n" +
                     "Boneset, Eupatorium perfoliatum\n" +
@@ -1884,7 +1879,7 @@ public class PollinatorInfo {
                     "Obedient Plant, Physostegia virginiana\n" +
                     "Smooth Sumac, Rhus glabra\n" +
                     "Bush Honeysuckle, Diervilla lonicera\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago and Euthamia spp.\n" +
                     "Aster, Symphyotrichum and Eurybia spp."),
         Insect("Small-Handed Leafcutter Bee", "(Megachile gemula)",
@@ -1943,8 +1938,8 @@ public class PollinatorInfo {
                     "Ash, Fraxinus spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -1965,7 +1960,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Taurus Mason Bee", "(Osmia taurus)",
@@ -1998,14 +1993,14 @@ public class PollinatorInfo {
                     "\n" +
                     "The following species attract members from the genus Osmia. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "SPRING - PERENNIALS\n" +
+                    "\nSPRING - PERENNIALS\n" +
                     "Wild Lupine, Lupinus perennis\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Spiderwort, Tradescantia spp.\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Waterleaf, Hydrophyllum spp.\n" +
                     "Wild Geranium, Geranium maculatum\n" +
-                    "SPRING - TREES AND SHRUBS\n" +
+                    "\nSPRING - TREES AND SHRUBS\n" +
                     "American Plum, Prunus americana\n" +
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
@@ -2075,8 +2070,8 @@ public class PollinatorInfo {
                     "Ash, Fraxinus spp.\n" +
                     "Eastern Redbud, Cercis canadensis\n" +
                     "\n" +
-                    "COMMON FORAGE PLANTS\n" +
-                    "SPRING\n" +
+                    "\nCOMMON FORAGE PLANTS\n" +
+                    "\nSPRING\n" +
                     "Golden Alexanders, Zizia aurea\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Wild Indigo, Baptisia spp.\n" +
@@ -2097,7 +2092,7 @@ public class PollinatorInfo {
                     "Vervain, Verbena spp.\n" +
                     "Prairie Clover, Dalea spp.\n" +
                     "Leadplant, Amorpha canescens\n" +
-                    "AUTUMN\n" +
+                    "\nAUTUMN\n" +
                     "Goldenrod, Solidago spp.\n" +
                     "Aster, Symphyotrichum spp."),
         Insect("Western Honeybee", "(Apis mellifera)",
