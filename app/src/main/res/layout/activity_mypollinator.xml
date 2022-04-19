@@ -148,6 +148,7 @@
         android:id="@+id/myPollinatorButton"
         android:layout_width="378dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="64dp"
         android:backgroundTint="#FF306CB5"
         android:text="@string/this_is_my_pollinator"
         android:textColor="@color/white"
