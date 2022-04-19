@@ -41,10 +41,10 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
         //Button click to Number of Wings page
         val buttonOpen: Button = findViewById(R.id.wingTypeButton)
+
         buttonOpen.setOnClickListener {
 
             val intent = Intent(this, NumberOfWingsActivity::class.java)
-            startActivity(intent)
 
             if (dkTimeText.text != "") { //if date entered
                 Log.i("Pollinator ID Key Activity", "Date entered")
