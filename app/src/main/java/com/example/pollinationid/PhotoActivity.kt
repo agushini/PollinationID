@@ -82,7 +82,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             datePickerDialog.show()
         }
 
-        hotelButton.setOnClickListener{
+        hotelButton.setOnClic Listener{
             hotel = HotelIDInputPhoto.text.toString().uppercase().trim() //get the input from the hotel text field
 
             if (hotel != ""){

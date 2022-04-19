@@ -75,7 +75,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:text="@tools:sample/date/ddmmyy"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
