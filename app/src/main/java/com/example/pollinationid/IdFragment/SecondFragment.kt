@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.pollinationid.PollinatorIDKeyActivity
 import com.example.pollinationid.R
@@ -33,7 +34,7 @@ class SecondFragment:Fragment(R.layout.fragment_second) {
         //button click to date and time page
         val bind = FragmentSecondBinding.inflate(layoutInflater)
         bind.dateAndTimeButton.setOnClickListener {
-            Log.e("Second Fragment", "Check 3")
+            Log.e("Second Fragment", "Check")
             val intent =
                 Intent(this@SecondFragment.requireContext(), PollinatorIDKeyActivity::class.java)
 
@@ -51,13 +52,18 @@ class SecondFragment:Fragment(R.layout.fragment_second) {
                         val document = task.result
                         if (document != null) {
                             if (document.exists()) {
-                                startActivity(intent)
+
                                 Log.i("Second Fragment", "Hotel exists.")
                                 Toast.makeText(
                                     getActivity(),
                                     "Valid Hotel!",
                                     Toast.LENGTH_LONG
                                 ).show()
+
+                                Log.i("Second Fragment", "$hotel")
+                                intent.putExtra("dkHotel", hotel)
+
+                                startActivity(intent)
 
                             } else {
                                 Toast.makeText(

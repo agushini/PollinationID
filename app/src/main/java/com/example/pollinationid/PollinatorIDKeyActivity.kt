@@ -50,9 +50,18 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
                 Log.i("Pollinator ID Key Activity", "Date entered")
                 Toast.makeText(
                     this@PollinatorIDKeyActivity,
-                    "Valid Date and Hotel!",
+                    "Valid Date and Time!",
                     Toast.LENGTH_LONG
                 ).show()
+
+                val sharedPref = getSharedPreferences("DkPref", MODE_PRIVATE)
+                val editor = sharedPref.edit()
+                val hotel = intent.getStringExtra("dkHotel").toString()
+                Log.i("Pollinator ID Key Activity Hotel", hotel.toString())
+                editor.putString("DKdateLog", dkTimeText.text as String?)
+                editor.putString("DKhotelID", hotel)
+                editor.apply()
+
                 startActivity(intent)
 
             }else{
@@ -98,4 +107,7 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
         myMinute = minute
         textView.text =  "$myMonth $myDay, $myYear at $myHour:$myMinute"
     }
+
+
+
 }
