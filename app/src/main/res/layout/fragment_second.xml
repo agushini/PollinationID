@@ -43,6 +43,8 @@
             android:id="@+id/DKHotelIDInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
             android:hint="@string/hotel_id" />
     </com.google.android.material.textfield.TextInputLayout>
 

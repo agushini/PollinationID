@@ -32,7 +32,7 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         //hair on sides black and yellow click to possible pollinators page
         val hairOnSideBlackAndYellowBttn = findViewById<ImageButton>(R.id.hairOnSideBlackAndYellowButton)
         hairOnSideBlackAndYellowBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("European Wool-Carder Bee","Oblong Wool-Carder Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
@@ -44,7 +44,7 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         //hair on sides blue click to possible pollinators page
         val hairOnSideBlueBttn = findViewById<ImageButton>(R.id.hairOnSideBlueButton)
         hairOnSideBlueBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Blue Orchard Mason Bee","Dwarf Mason Bee", "Maine Blueberry Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
@@ -56,7 +56,7 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         //hair underneath black and yellow stripes click to possible pollinators page
         val hairOnSideBlackPaleBttn = findViewById<ImageButton>(R.id.hairOnSideBlackPaleButton)
         hairOnSideBlackPaleBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Blue Orchard Mason Bee","Bufflehead Mason Bee", "Dwarf Mason Bee", "Hornfaced Bee", "Mason Bees", "Orange-Tipped Wood Digger Bee", "Small Mason Bees", "Taurus Mason Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 

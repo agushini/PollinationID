@@ -47,16 +47,16 @@
 
     <ImageButton
         android:id="@+id/noWingsButton"
-        android:layout_width="111dp"
-        android:layout_height="160dp"
+        android:layout_width="142dp"
+        android:layout_height="163dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/dkharvestmen"
+        android:src="@drawable/dk__no_wings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberOfWingsFragment"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintVertical_bias="0.246" />
 
     <ImageButton
         android:id="@+id/onePairWingsButton"
@@ -83,24 +83,6 @@
         app:layout_constraintTop_toBottomOf="@+id/numberOfWingsFragment"
         app:layout_constraintVertical_bias="0.729" />
 
-    <TextView
-        android:id="@+id/noWingsText"
-        android:layout_width="92dp"
-        android:layout_height="26dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:text="No Wings"
-        android:textColor="#306CB5"
-        android:textSize="20sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/noWingsButton"
-        app:layout_constraintVertical_bias="0.085" />
 
     <TextView
         android:id="@+id/onePairWingsText"

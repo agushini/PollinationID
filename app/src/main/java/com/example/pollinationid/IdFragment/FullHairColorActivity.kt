@@ -20,7 +20,7 @@ class FullHairColorActivity : AppCompatActivity() {
         //full hair black and yellow click to possible pollinators page
         val fullHairBlackAndYellowBttn = findViewById<ImageButton>(R.id.fullHairBlackAndYellowButton)
         fullHairBlackAndYellowBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Bufflehead Mason Bee","Common Eastern Bumblebee", "Eastern Carpenter Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
@@ -32,7 +32,7 @@ class FullHairColorActivity : AppCompatActivity() {
         //full hair Black Amber or Brown click to possible pollinators page
         val fullHairBlackAmberOrBrownBttn = findViewById<ImageButton>(R.id.fullHairBlackAmberOrBrownButton)
         fullHairBlackAmberOrBrownBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Western Honeybee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
