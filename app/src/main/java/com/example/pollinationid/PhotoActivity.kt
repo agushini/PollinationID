@@ -298,8 +298,6 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
             }
         }
 
-        //TODO: If the list is empty, right now it just shows an empty page, it should show a message, sorry this image isnt recognized
-
         //convert the image into a byte array so that it can be sent through shared prefrences and
         //uploaded to the firebase in the ConfirmPollinatorPhoto.kt file
         val baos = ByteArrayOutputStream()
@@ -308,6 +306,7 @@ class PhotoActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         bitmapToSend.compress(Bitmap.CompressFormat.JPEG, 100, baos)
         val encodedImage = encoder.encodeToString(baos.toByteArray())
 
+        //send the data that is needed later to be submitted to the database. This is later retrieved in the confirm pollinator section
         val sharedPref = getSharedPreferences("photoPref", MODE_PRIVATE)
         val editor = sharedPref.edit()
         editor.putString("modelPredict",outputs[0].label)

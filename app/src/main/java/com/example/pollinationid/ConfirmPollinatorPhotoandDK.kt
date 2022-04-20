@@ -1,3 +1,5 @@
+//this page displays the information that is about to be sent to the database before the user submits it
+
 package com.example.pollinationid
 
 import android.annotation.SuppressLint
@@ -22,8 +24,6 @@ import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.pollinator_confirm_photo.*
 import java.time.LocalDateTime
 import java.util.*
-
-
 
 class ConfirmPollinatorPhotoandDK : AppCompatActivity() {
 

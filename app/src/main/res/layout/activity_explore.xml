@@ -23,7 +23,7 @@
         android:layout_width="125dp"
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
-        android:text="Key Traits"
+        android:text="@string/key_traits"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/exploreimage2"
@@ -73,7 +74,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/exploreimage1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/exploreimage3"
@@ -83,7 +85,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/exploreimage2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/exploreimage4"
@@ -95,7 +98,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/exploreimage3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -107,7 +111,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:scrollbars="vertical"
         android:text="@string/description"

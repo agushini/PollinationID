@@ -1,15 +1,17 @@
 package com.example.pollinationid
 
+//This is where all of the information is saved for the application information. It is refrenced for all of the pages. Any typo changes must happen here.
+
 data class Insect(val title: String, val description: String, val img1: Int, val img2: Int, val img3: Int, val img4: Int,
                   val about: String, val keyChar: String, val plants: String)
 
-public class PollinatorInfo {
+class PollinatorInfo {
 
     companion object{
         fun newInstance(): PollinatorInfo = PollinatorInfo()
     }
 
-    public val mInsectList = listOf(
+    val mInsectList = listOf(
         Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",
             R.drawable.alfalfa_leafcutter_bee_1,R.drawable.alfalfa_leafcutter_bee_2,R.drawable.alfalfa_leafcutter_bee_3,R.drawable.alfalfa_leafcutter_bee_4,
             "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests(1). The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season(3). After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber(4). She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larva before pupating in spring(3).\n" +

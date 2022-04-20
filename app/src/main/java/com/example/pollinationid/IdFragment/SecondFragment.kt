@@ -24,20 +24,17 @@ class SecondFragment:Fragment(R.layout.fragment_second) {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         //inflater.inflate(R.layout.fragment_second, container, false)
 
         //lateinit var hotelButton: Button
-        lateinit var hotel: String
+        var hotel = ""
 
         //button click to date and time page
         val bind = FragmentSecondBinding.inflate(layoutInflater)
         bind.dateAndTimeButton.setOnClickListener {
             Log.e("Second Fragment", "Check")
-            val intent =
-                Intent(this@SecondFragment.requireContext(), PollinatorIDKeyActivity::class.java)
-
             Log.e("Second Fragment", "Button Clicked")
 
             hotel = DKHotelIDInput.text.toString().uppercase() //get the input from the hotel text field
@@ -60,7 +57,9 @@ class SecondFragment:Fragment(R.layout.fragment_second) {
                                     Toast.LENGTH_LONG
                                 ).show()
 
-                                Log.i("Second Fragment", "$hotel")
+                                Log.i("Second Fragment", hotel)
+
+                                val intent = Intent(this@SecondFragment.requireContext(), PollinatorIDKeyActivity::class.java)
                                 intent.putExtra("dkHotel", hotel)
 
                                 startActivity(intent)

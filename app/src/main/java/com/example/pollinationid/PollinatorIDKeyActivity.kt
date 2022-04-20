@@ -41,6 +41,7 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
         //Button click to Number of Wings page
         val buttonOpen: Button = findViewById(R.id.wingTypeButton)
+        val hotel = intent.getStringExtra("dkHotel")
 
         buttonOpen.setOnClickListener {
 
@@ -56,8 +57,8 @@ class PollinatorIDKeyActivity : AppCompatActivity(), DatePickerDialog.OnDateSetL
 
                 val sharedPref = getSharedPreferences("DkPref", MODE_PRIVATE)
                 val editor = sharedPref.edit()
-                val hotel = intent.getStringExtra("dkHotel").toString()
-                Log.i("Pollinator ID Key Activity Hotel", hotel.toString())
+
+                Log.i("Pollinator ID Key Activity Hotel", "$hotel")
                 editor.putString("DKdateLog", dkTimeText.text as String?)
                 editor.putString("DKhotelID", hotel)
                 editor.apply()
