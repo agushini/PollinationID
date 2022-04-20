@@ -2005,7 +2005,7 @@ public class PollinatorInfo {
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
                     "Viburnum, Viburnum spp."),
-        Insect("Transverse-Banded Calligrapher", "(Eristalis transversa)", //TODO: This isnt in the model, it may be Transverse-Banded Flower Fly instead
+        Insect("Transverse-Banded Flower Fly", "(Eristalis transversa)",
             R.drawable.transverse_banded_calligrapher_1,R.drawable.transverse_banded_calligrapher_2,R.drawable.transverse_banded_calligrapher_3,R.drawable.transverse_banded_calligrapher_4,
             "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larvae can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                     "\n" +

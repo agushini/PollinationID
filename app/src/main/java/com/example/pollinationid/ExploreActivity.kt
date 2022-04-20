@@ -1,6 +1,7 @@
 package com.example.pollinationid
 //this connects to the fourth fragment and handles the clicks for each entry in the encyclopedia
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +14,11 @@ class ExploreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_explore)
-        //get the intents that were sent over from the main activity
+
+        val textDesc: TextView = findViewById(R.id.ExploreDescription_textView)
+        textDesc.movementMethod = ScrollingMovementMethod()
+
+        //get the intents that were sent over from the main activity ExploreDescription_textView
 
         //set the nav bar to the correct name
         val navBarTitle = intent.getStringExtra(bugInsectViewHolder.NAV_BAR_KEY)

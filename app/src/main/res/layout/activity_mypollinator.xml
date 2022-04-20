@@ -23,7 +23,7 @@
         android:layout_width="125dp"
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
-        android:text="Key Traits"
+        android:text="@string/key_traits"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,60 +102,52 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
 
-    <ScrollView
-        android:id="@+id/myPoliscrollView2"
+
+    <TextView
+        android:id="@+id/myPoliExploreDescription_textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/myPollinatorButton"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:scrollbars="vertical"
+        android:text="@string/description"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4MyPolli"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myPolihorizontalScrollView">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/myPolilinearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/myPoliExploreDescription_textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:text="@string/description"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@id/myPolihorizontalScrollView" />
 
     <TextView
         android:id="@+id/myPoliExplore_technicalName_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:text="@string/technical_name"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/myPollinatorButton"
-        android:layout_width="378dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="64dp"
-        android:backgroundTint="#FF306CB5"
-        android:text="@string/this_is_my_pollinator"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myPoliscrollView2" />
+        app:layout_constraintTop_toBottomOf="@+id/myPollinatorButton" />
+
+    <Button
+        android:id="@+id/myPollinatorButton"
+        android:layout_width="300dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#FF306CB5"
+        android:text="@string/this_is_my_pollinator"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4MyPolli" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4MyPolli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

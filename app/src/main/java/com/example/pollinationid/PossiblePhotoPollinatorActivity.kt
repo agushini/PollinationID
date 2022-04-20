@@ -4,6 +4,7 @@ package com.example.pollinationid
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
@@ -18,6 +19,10 @@ class PossiblePhotoPollinatorActivity : AppCompatActivity() {
 
         //Copied from explore activity
         setContentView(R.layout.activity_mypollinator)
+
+        val textDesc: TextView = findViewById(R.id.myPoliExploreDescription_textView)
+        textDesc.movementMethod = ScrollingMovementMethod()
+
         //get the intents that were sent over from the activity
 
         //set the nav bar to the correct name
