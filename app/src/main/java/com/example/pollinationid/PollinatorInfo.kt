@@ -597,7 +597,7 @@ public class PollinatorInfo {
             "The following species attract members from the genus Coelyoxsys. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "\nCOMMON FORAGE PLANTS\n" +
-                    "EARLY \nSUMMER\n" +
+                    "\nEARLY SUMMER\n" +
                     "Tickseed, Coreopsis spp.\n" +
                     "\nSUMMER\n" +
                     "Vervain, Verbena spp.\n" +
@@ -765,7 +765,7 @@ public class PollinatorInfo {
                     "• Black tegula (plate where wings connect to body)",
             "The European Wool Carder Bee is a generalist bee and visits a wide variety of flowers. \n\n" +
                     "The following species attract members from the genus Anthidium. Information obtained from Bees: An  Identification and Native Plant Forage Guide (Holm 2017) \n\n" +
-                    "EARLY \nSUMMER \n" +
+                    "\nEARLY SUMMER \n" +
                     "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material) Beardtongue, Penstemon spp. \n" +
                     "Coneflower, Echincaea spp. \n" +
                     "Scurfy Pea, Psoralea spp. \n" +
@@ -1402,7 +1402,7 @@ public class PollinatorInfo {
                     "• Orange tegula (the plate where wings connect to body)\n\n",
             "The following species attract members from the genus Anthidium. Information obtained from Bees: An " +
                     "Identification and Native Plant Forage Guide (Holm 2017)\n" +
-                    "EARLY \nSUMMER\n" +
+                    "\nEARLY SUMMER\n" +
                     "Spiderwort, Tradescantia spp. (hairs from this plant are used as nesting material)\n" +
                     "Beardtongue, Penstemon spp.\n" +
                     "Coneflower, Echincaea spp.\n" +
@@ -1785,7 +1785,7 @@ public class PollinatorInfo {
                     "• Light blue or green colored eyes (common)",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "\nCOMMON FORAGE PLANTS\n" +
-                    "\nSPRING/EARLY \nSUMMER\n" +
+                    "\nSPRING/EARLY SUMMER\n" +
                     "Harebell, Campanula rotundifolia\n" +
                     "Beardtongue, Penstemon spp.\n" +
                     "Wild rose, Rosa spp.\n" +
@@ -1811,7 +1811,7 @@ public class PollinatorInfo {
                     "• (males) end of abdomen rounded downward",
             "Information obtained from Bees: An Identification and Native Plant Forage Guide (Holm 2017):\n" +
                     "\nCOMMON FORAGE PLANTS\n" +
-                    "EARLY \nSUMMER\n" +
+                    "\nEARLY SUMMER\n" +
                     "Tickseed, Coreopsis spp.\n" +
                     "\nSUMMER\n" +
                     "Wild Bergamot, Monarda fistulosa\n" +
