@@ -39,12 +39,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/DKHotelIDInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:textColor="@color/black"
+            android:inputType="text"
             android:hint="@string/hotel_id" />
     </com.google.android.material.textfield.TextInputLayout>
 

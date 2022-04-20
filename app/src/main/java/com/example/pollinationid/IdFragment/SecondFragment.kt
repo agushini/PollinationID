@@ -26,9 +26,6 @@ class SecondFragment:Fragment(R.layout.fragment_second) {
         savedInstanceState: Bundle?
     ): View {
 
-        //inflater.inflate(R.layout.fragment_second, container, false)
-
-        //lateinit var hotelButton: Button
         var hotel = ""
 
         //button click to date and time page

@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_third.*
 import kotlinx.android.synthetic.main.photo_pollinators_possible.*
 import java.util.ArrayList
 
-//equivalent to the fourth fragment
+//equivalent to the fourth fragment but is for the photo AI instead
 
 class PhotoPossiblePollinators : AppCompatActivity() {
 
