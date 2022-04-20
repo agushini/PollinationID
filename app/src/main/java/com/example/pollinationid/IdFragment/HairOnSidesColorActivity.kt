@@ -20,7 +20,7 @@ class HairOnSidesColorActivity : AppCompatActivity() {
         //hair on sides black and auburn click to possible pollinators page
         val hairOnSideBlackAndAuburnBttn = findViewById<ImageButton>(R.id.hairOnSideBlackAndAuburnButton)
         hairOnSideBlackAndAuburnBttn.setOnClickListener {
-            val intent = Intent(this, dkPossiblePollinatorsRecycler::class.java)
+            val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
             DKoutputList.addAll(listOf("Hornfaced Bee","Sculptured Resin Bee", "Taurus Mason Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
