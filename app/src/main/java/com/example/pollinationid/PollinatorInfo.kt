@@ -121,7 +121,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "FALL\n" +
+                    "\nFALL\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -340,7 +340,7 @@ public class PollinatorInfo {
             "• Black with a bluish tint on head and thorax\n" +
                     "• Pale hair on head, thorax, and first abdominal segment (T1)\n" +
                     "• Black abdominal hair",
-            "The Bufflehead Mason Bee has been recorded on the following:4\n" +
+            "The Bufflehead Mason Bee has been recorded on the following:(4)\n" +
                     "\n" +
                     "Astragalus, Astragalus spp.\n" +
                     "Balsam roots, Balsamorhiza spp.\n" +
@@ -1519,7 +1519,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "FALL\n" +
+                    "\nFALL\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -1617,8 +1617,7 @@ public class PollinatorInfo {
                     "• Black, hairless abdomen with noticeable pits (like a golfball)\n" +
                     "• Dark transparent wings\n" +
                     "• Large jaw (mandibles)",
-            "The Sculptured Resin Bee has been found to forage on the following(4)\n" +
-                    ":\n" +
+            "The Sculptured Resin Bee has been found to forage on the following:" +
                     "\n" +
                     "Broad-Leaved Everlasting-Pea, Lathyrus latifolius L.\n" +
                     "Butterfly Bush, Buddleia spp.\n" +
@@ -1708,7 +1707,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "FALL\n" +
+                    "\nFALL\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -1947,7 +1946,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "FALL\n" +
+                    "\nFALL\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
@@ -2079,7 +2078,7 @@ public class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "FALL\n" +
+                    "\nFALL\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
