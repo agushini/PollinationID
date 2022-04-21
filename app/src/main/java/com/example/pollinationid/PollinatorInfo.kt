@@ -1,15 +1,17 @@
 package com.example.pollinationid
 
+//This is where all of the information is saved for the application information. It is referenced for all of the pages. Any typo changes must happen here.
+
 data class Insect(val title: String, val description: String, val img1: Int, val img2: Int, val img3: Int, val img4: Int,
                   val about: String, val keyChar: String, val plants: String)
 
-public class PollinatorInfo {
+class PollinatorInfo {
 
     companion object{
         fun newInstance(): PollinatorInfo = PollinatorInfo()
     }
 
-    public val mInsectList = listOf(
+    val mInsectList = listOf(
         Insect("Alfalfa Leafcutter Bee", "(Megachile rotundata)",
             R.drawable.alfalfa_leafcutter_bee_1,R.drawable.alfalfa_leafcutter_bee_2,R.drawable.alfalfa_leafcutter_bee_3,R.drawable.alfalfa_leafcutter_bee_4,
             "The Alfalfa Leafcutter Bee was introduced to the U.S. before the 1940s to pollinate alfalfa and carrots(1). They are a solitary species that nest both above and below the ground in cavities. Above ground nesting sites include hollow plant stems, holes in standing dead trees, rock cavities, and abandoned mud dauber wasp nests(1). The females seem to prefer tunnels with a diameter between 4mm and 6mm(2) and lay eggs after the June/July mating season(3). After finding a suitable nesting site, a female Alfalfa Leafcutter Bee will build chambers starting with a cell furthest from the opening. She deposits a single egg with a bundle of pollen (and sometimes nectar) for food. The female then uses her large mandibles (bee teeth) to cut oval leaves from plants to seal off each chamber(4). She repeats this process up to 24 times(3) depending on the size of the tunnel before sealing off the nest entrance with leaves. The larvae will hatch in early winter, consume the food bundle, and overwinter as mature larva before pupating in spring(3).\n" +
@@ -257,7 +259,7 @@ public class PollinatorInfo {
             "• Dark metallic blue, sometimes with green tint\n" +
                     "• Mostly black hair; pale hairs are interspersed\n" +
                     "• Females collect pollen on hairs beneath the abdomen (scopa)\n\n",
-            "The Blue Orchard Mason Bee has been recorded on the following species:(3)\n" +
+            "The Blue Orchard Mason Bee has been recorded on the following species:\n" +
                     "\n" +
                     "Wild Hyacinth, Camassia spp.\n" +
                     "Bittercress/Toothwort, Cardamine spp.\n" +
@@ -340,7 +342,7 @@ public class PollinatorInfo {
             "• Black with a bluish tint on head and thorax\n" +
                     "• Pale hair on head, thorax, and first abdominal segment (T1)\n" +
                     "• Black abdominal hair",
-            "The Bufflehead Mason Bee has been recorded on the following:(4)\n" +
+            "The Bufflehead Mason Bee has been recorded on the following:\n" +
                     "\n" +
                     "Astragalus, Astragalus spp.\n" +
                     "Balsam roots, Balsamorhiza spp.\n" +
@@ -623,7 +625,7 @@ public class PollinatorInfo {
             "• Blue with black legs\n" +
                     "• White to yellowish hair; white scopa\n" +
                     "• Noticeably pitted (like a golfball)\n\n",
-            "The Dwarf Mason Bee has been recorded on the following species:(2)\n" +
+            "The Dwarf Mason Bee has been recorded on the following species:\n" +
                     "\n" +
                     "Butterfly Milkweed, Asclepias tuberosa\n" +
                     "Astragalus, Astragalus spp.\n" +
@@ -967,7 +969,7 @@ public class PollinatorInfo {
                     "• Small horn in lower (apical)\n" +
                     "• Pale yellow hair on head, thorax, and abdomen\n" +
                     "• Reddish-brown hairs beneath abdomen (scopa)",
-            "The Hornfaced Bee has been recorded on the following:(6)\n" +
+            "The Hornfaced Bee has been recorded on the following:\n" +
                     "\n" +
                     "Garlic Mustard, Alliaria petiolata\n" +
                     "Leatherleaf, Chamaedaphne calyculata\n" +
@@ -1029,7 +1031,7 @@ public class PollinatorInfo {
                     "• Bee or wasp look-alike (common)",
             "Hoverflies are said to be attracted to white or yellow flowers with easy-to-access nectar and\n" +
                     "pollen.(4)\n" +
-                    "Some floral attractants include:(4)\n" +
+                    "Some floral attractants include:\n" +
                     "\n" +
                     "Sweet Alyssum, Lobularia maritima\n" +
                     "Parsley, Petroselinum crispum\n" +
@@ -1138,7 +1140,7 @@ public class PollinatorInfo {
                     "• Mostly black hair: pale hairs are interspersed (very discreet " +
                     "on abdomen)\n" +
                     "• Females collect pollen on black hairs beneath the abdomen (scopae)",
-            "The Maine Blueberry Bee has been recorded on the following plants:(3)\n" +
+            "The Maine Blueberry Bee has been recorded on the following plants:\n" +
                     "\n" +
                     "Rockcress, Arabis spp.\n" +
                     "Astragalus, Astragalus spp.\n" +
@@ -1489,7 +1491,7 @@ public class PollinatorInfo {
             "• Face (clypeus) extremely shortened\n" +
                     "• (female) entirely black body\n" +
                     "• (female) Pale yellow hairs underneath abdomen (scopa)",
-            "The Pugnacious Leafcutter Bee has been recorded on the following(5)" +
+            "The Pugnacious Leafcutter Bee has been recorded on the following" +
                     ":\n" +
                     "\n" +
                     "Thistles, Cirsium spp.\n" +
@@ -1617,7 +1619,7 @@ public class PollinatorInfo {
                     "• Black, hairless abdomen with noticeable pits (like a golfball)\n" +
                     "• Dark transparent wings\n" +
                     "• Large jaw (mandibles)",
-            "The Sculptured Resin Bee has been found to forage on the following:" +
+              "The Sculptured Resin Bee has been found to forage on the following:" +
                     "\n" +
                     "Broad-Leaved Everlasting-Pea, Lathyrus latifolius L.\n" +
                     "Butterfly Bush, Buddleia spp.\n" +
@@ -2004,15 +2006,15 @@ public class PollinatorInfo {
                     "Willow, Salix spp.\n" +
                     "Red Maple, Acer rubrum\n" +
                     "Viburnum, Viburnum spp."),
-        Insect("Transverse-Banded Calligrapher", "(Eristalis transversa)", //TODO: This isnt in the model, it may be Transverse-Banded Flower Fly instead
+        Insect("Transverse-Banded Flower Fly", "(Eristalis transversa)",
             R.drawable.transverse_banded_calligrapher_1,R.drawable.transverse_banded_calligrapher_2,R.drawable.transverse_banded_calligrapher_3,R.drawable.transverse_banded_calligrapher_4,
-            "The Transverse-Banded Calligrapher is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Calligrapher and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larvae can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
+            "The Transverse-Banded Flower Fly is a hover fly in the Syrphid family and commonly found throughout the eastern United States. While typically not found in insect hotels, the slug-like larvae of the Transverse-Banded Flower Fly and other syrphid flies are important natural controls on pest populations and eat aphids, thrips, and small caterpillars(1). An abundance of syrphid larvae can reduce aphid populations by 70 to 100%(1), making them a welcomed occupant in gardens and agricultural fields.\n" +
                     "\n" +
-                    "In optimal environmental conditions, adult Transverse-Banded Calligrapher females will lay their eggs on plants infested with prey(1). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating resident pests(1). Unless overwintering, the larvae will pupate and emerge 1 or 2 weeks later(1). There can be several generations each year depending on environmental conditions(1).\n" +
+                    "In optimal environmental conditions, adult Transverse-Banded Flower Fly females will lay their eggs on plants infested with prey(1). The eggs will hatch around 3 days later and develop over a period of 1 to 3 weeks, all the while eating resident pests(1). Unless overwintering, the larvae will pupate and emerge 1 or 2 weeks later(1). There can be several generations each year depending on environmental conditions(1).\n" +
                     "\n" +
-                    "Transverse-Banded Calligraphers have similar coloration to some bee and wasp species. This similarity in appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing organism to avoid predation. \n" +
+                    "Transverse-Banded Flower Fly have similar coloration to some bee and wasp species. This similarity in appearance is a tactic known as batesian mimicry, where an organism imitates another toxic or non-appetizing organism to avoid predation. \n" +
                     "\n" +
-                    "The range of the Transverse-Banded Calligrapher extends from some parts of south-east Canada down throughout the eastern U.S. It has been recorded as far west as Texas, Oklahoma, Kansas, Nebraska and South Dakota(2).\n" +
+                    "The range of the Transverse-Banded Flower Fly extends from some parts of south-east Canada down throughout the eastern U.S. It has been recorded as far west as Texas, Oklahoma, Kansas, Nebraska and South Dakota(2).\n" +
                     "\n" +
                     "SEASONALITY: April to November(2)\n" +
                     "CONSERVATION STATUS: Unknown\n" +
@@ -2025,7 +2027,7 @@ public class PollinatorInfo {
                     "• Yellow and black patterned abdomen\n" +
                     "• Large reddish-brown eyes\n" +
                     "• Hovers often around flowers",
-            "The Transverse-Banded Calligrapher can be found near aphid-infested plants(1)." +
+            "The Transverse-Banded Flower Fly can be found near aphid-infested plants(1)." +
                     " Adults visit a wide variety " +
                     " of flowers."),
         Insect("Unarmed Leafcutter Bee", "(Megachile inermis)",

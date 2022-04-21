@@ -1,3 +1,5 @@
+//this page displays the information that is about to be sent to the database before the user submits it
+
 package com.example.pollinationid
 
 import android.annotation.SuppressLint
@@ -22,8 +24,6 @@ import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.pollinator_confirm_photo.*
 import java.time.LocalDateTime
 import java.util.*
-
-
 
 class ConfirmPollinatorPhotoandDK : AppCompatActivity() {
 
@@ -56,6 +56,10 @@ class ConfirmPollinatorPhotoandDK : AppCompatActivity() {
         val hotelId = sharedPref.getString("hotelID", "ERR:NOTSENT")
         val dateLog = sharedPref.getString("dateLog", "ERR:NOTSENT")
         val encodedImage = sharedPref.getString("encodedImage", "ERR:NOTSENT")
+
+        val DksharedPref = getSharedPreferences("DkPref", MODE_PRIVATE)
+        val DKhotelId = DksharedPref.getString("DKhotelID", "ERR:NOTSENTDK")
+        val DkdateLog = DksharedPref.getString("DKdateLog", "ERR:NOTSENTDK")
 
         val sharedPref2 = getSharedPreferences("dkOrphoto", MODE_PRIVATE) //get which mode was use to id
         val whichSent = sharedPref2.getString("whichSent", "ERR:NOTSENT")
@@ -172,8 +176,8 @@ class ConfirmPollinatorPhotoandDK : AppCompatActivity() {
             //display the information they are about to submit
             selectedPollinatorInfoTextView.text =
                         "Pollinator: $userPredict\n" +
-                        "Date and Time: $dateLog\n" +
-                        "Sighted At: $hotelId"
+                        "Date and Time: $DkdateLog\n" +
+                        "Sighted At: $DKhotelId"
 
             submitPollinatorPhotoButton.setOnClickListener {
                 val dialogBuilder = AlertDialog.Builder(this)
@@ -182,9 +186,9 @@ class ConfirmPollinatorPhotoandDK : AppCompatActivity() {
 
                 val polDBInfo = hashMapOf(
                     "date_created" to LocalDateTime.now().toString(), //this is formatted differently than the dates given by IOS in the database
-                    "date_seen" to dateLog,  //this is formatted differently than the dates given by IOS in the database
+                    "date_seen" to DkdateLog,  //this is formatted differently than the dates given by IOS in the database
                     "genus_species" to techName,
-                    "hotel_seen" to hotelId,
+                    "hotel_seen" to DKhotelId,
                     "ident_type" to "pollinator_key",
                     "pollinatorID" to userPredict,
                 )

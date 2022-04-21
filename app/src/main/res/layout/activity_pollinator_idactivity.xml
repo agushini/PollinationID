@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  This is the Pollinator Date and Time page  -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayoutPollinatorID"
@@ -29,24 +28,21 @@
 
     <Button
         android:id="@+id/wingTypeButton"
-        android:layout_width="383dp"
-        android:layout_height="wrap_content"
+        android:layout_width="291dp"
+        android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginEnd="16dp"
         android:backgroundTint="#FF306CB5"
         android:backgroundTintMode="@color/black"
         android:text="Next"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintTop_toBottomOf="@+id/dkTimeText"
+        app:layout_constraintVertical_bias="0.172" />
 
     <Button
         android:id="@+id/dkDateAndTimeButton"

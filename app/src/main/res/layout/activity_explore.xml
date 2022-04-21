@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/black"
+    tools:context=".ExploreActivity">
 
     <Button
         android:id="@+id/aboutButton"
@@ -22,7 +23,7 @@
         android:layout_width="125dp"
         android:layout_height="90dp"
         android:backgroundTint="#FF306CB5"
-        android:text="Key Traits"
+        android:text="@string/key_traits"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +63,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/exploreimage2"
@@ -72,7 +74,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/exploreimage1"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/exploreimage3"
@@ -82,7 +85,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/exploreimage2"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/exploreimage4"
@@ -94,44 +98,30 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/exploreimage3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_black_camera_foreground" />
+                app:srcCompat="@drawable/ic_black_camera_foreground"
+                tools:ignore="ContentDescription" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+
+    <TextView
+        android:id="@+id/ExploreDescription_textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:scrollbars="vertical"
+        android:text="@string/description"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
-        app:layout_constraintVertical_bias="0.043">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/ExploreDescription_textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="5dp"
-                android:text="@string/description"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Explore_technicalName_textview"
@@ -149,6 +139,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="50dp" />
+        app:layout_constraintGuide_percent="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

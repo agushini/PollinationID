@@ -15,13 +15,15 @@ class HairUnderneathColorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hair_underneath_color)
 
-        //TODO("Alfalfa Leafcutter Bee, Apical Leafcutter Bee, Bellflower Resin Bee, Cuckoo Leafcutter Bee, Flat-Tailed Leafcutter Bee, ")
+        //TODO("Alfalfa Leafcutter Bee, Apical Leafcutter Bee, Bellflower Resin Bee, Cuckoo Leafcutter Bee, Flat-Tailed Leafcutter Bee, Leafcutter Bees, Pugnacious Leafcutter Bee,
+        // Sculptured Resin Bee, Silver-Tailed Petalcutter Bee, Small Mason Bees, Small Resin Bees, Small-Handed Leafcutter Bee, Unarmed Leafcutter Bee)
 
         //hair underneath black pale stripes click to possible pollinators page
         val hairUnderneathBlackPaleStripesBttn = findViewById<ImageButton>(R.id.hairUnderneathBlackPaleStripesButton)
         hairUnderneathBlackPaleStripesBttn.setOnClickListener {
             val intent = Intent(this, DKPossiblePollinatorActivity::class.java)
-            DKoutputList.addAll(listOf("Alfalfa Leafcutter Bee", "Apical Leafcutter Bee", "Bellflower Resin Bee", "Cuckoo Leafcutter Bee", "Flat-Tailed Leafcutter Bee"))
+            DKoutputList.addAll(listOf("Alfalfa Leafcutter Bee", "Apical Leafcutter Bee", "Bellflower Resin Bee", "Cuckoo Leafcutter Bee", "Flat-Tailed Leafcutter Bee",
+                "Leafcutter Bees", "Pugnacious Leafcutter Bee", "Sculptured Resin Bee", "Silver-Tailed Petalcutter Bee", "Small Mason Bees", "Small Resin Bees", "Small-Handed Leafcutter Bee", "Unarmed Leafcutter Bee"))
             intent.putStringArrayListExtra("DKResults",DKoutputList)
 
             startActivity(intent)
