@@ -1521,7 +1521,7 @@ class PollinatorInfo {
                     "Beardtongue, Penstemon spp.\n" +
                     "Canada Anemone, Anemone canadensis\n" +
                     "Balsam Ragwort, Packera paupercula\n" +
-                    "FALL\n" +
+                    "\nFALL\n" +
                     "Yellow Coneflower, Ratibida pinnata\n" +
                     "Black-eyed Susan, Rudbeckia hirta\n" +
                     "Milkweed, Asclepias spp.\n" +
