@@ -13,30 +13,6 @@
         android:roundIcon="@mipmap/theicon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PollinationID">
-        <!--<activity
-            android:name=".IdFragment.HairUnderneathColorActivity"
-            android:exported="false" />-->
-        <!--<activity
-            android:name=".IdFragment.AlmostNoHairColorActivity"
-            android:exported="false" />-->
-        <!--<activity
-            android:name=".IdFragment.HairOnSidesColorActivity"
-            android:exported="false" />-->
-       <!-- <activity
-            android:name=".IdFragment.FullHairColorActivity"
-            android:exported="false" />-->
-        <!--<activity
-            android:name=".IdFragment.NumberOfWingsActivity"
-            android:exported="false" />-->
-        <!--<activity
-            android:name=".IdFragment.HairActivity"
-            android:exported="false" />-->
-       <!-- <activity
-            android:name=".IdFragment.ShapeOfWingsActivity"
-            android:exported="false" />-->
-        <!--<activity
-            android:name=".IdFragment.BodySegmentsActivity"
-            android:exported="false" />-->
         <activity
             android:name=".PolinationProjectActivity"
             android:exported="false"
