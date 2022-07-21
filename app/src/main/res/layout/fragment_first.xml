@@ -77,7 +77,6 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/apicalBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/apical_leafcutter_bee"
@@ -108,7 +107,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/Bees_title" />
 
                     <TextView
-                        android:id="@+id/alfafaBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/alfalfa_leafcutter_bee"
@@ -129,7 +127,6 @@
                         app:layout_constraintTop_toTopOf="@+id/apicalBee" />
 
                     <TextView
-                        android:id="@+id/BellflowerResinBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/bellflower_resin_bee"
@@ -149,7 +146,6 @@
                         app:layout_constraintTop_toTopOf="@+id/BellflowerResinBee" />
 
                     <TextView
-                        android:id="@+id/BlueOrchardMasonBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/blue_orchard_mason_bee"
@@ -169,7 +165,6 @@
                         app:layout_constraintTop_toTopOf="@+id/BlueOrchardMasonBee" />
 
                     <TextView
-                        android:id="@+id/BuffleheadMasonBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/bufflehead_mason_bee"
@@ -189,7 +184,6 @@
                         app:layout_constraintTop_toTopOf="@+id/BuffleheadMasonBee" />
 
                     <TextView
-                        android:id="@+id/CommonEasterBumblebee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/common_eastern_bumblebee"
@@ -209,7 +203,6 @@
                         app:layout_constraintTop_toTopOf="@+id/CommonEasterBumblebee" />
 
                     <TextView
-                        android:id="@+id/CuckooBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cuckoo_bees"
@@ -229,7 +222,6 @@
                         app:layout_constraintTop_toTopOf="@+id/CuckooBees" />
 
                     <TextView
-                        android:id="@+id/CuckooLeafcutterBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cuckoo_leafcutter_bees"
@@ -249,7 +241,6 @@
                         app:layout_constraintTop_toTopOf="@+id/CuckooLeafcutterBees" />
 
                     <TextView
-                        android:id="@+id/DwarfMasonBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/dwarf_mason_bee"
@@ -269,7 +260,6 @@
                         app:layout_constraintTop_toTopOf="@+id/DwarfMasonBee" />
 
                     <TextView
-                        android:id="@+id/EasternCarpenterBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/eastern_carpenter_bee"
@@ -289,7 +279,6 @@
                         app:layout_constraintTop_toTopOf="@+id/EasternCarpenterBee" />
 
                     <TextView
-                        android:id="@+id/EuropeanWoolCarderbee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/european_wool_carder_bee"
@@ -309,7 +298,6 @@
                         app:layout_constraintTop_toTopOf="@+id/EuropeanWoolCarderbee" />
 
                     <TextView
-                        android:id="@+id/FlatTailedLeafcutterBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/flat_tailed_leafcutter_bee"
@@ -329,7 +317,6 @@
                         app:layout_constraintTop_toTopOf="@+id/FlatTailedLeafcutterBee" />
 
                     <TextView
-                        android:id="@+id/HornfacedBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/hornfaced_bee"
@@ -349,7 +336,6 @@
                         app:layout_constraintTop_toTopOf="@+id/HornfacedBee" />
 
                     <TextView
-                        android:id="@+id/LeafcutterBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/leafcutter_bees"
@@ -369,7 +355,6 @@
                         app:layout_constraintTop_toTopOf="@+id/LeafcutterBees" />
 
                     <TextView
-                        android:id="@+id/MaineBlueberryBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/maine_blueberry_bee"
@@ -389,7 +374,6 @@
                         app:layout_constraintTop_toTopOf="@+id/MaineBlueberryBee" />
 
                     <TextView
-                        android:id="@+id/MasonBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/mason_bees"
@@ -409,7 +393,6 @@
                         app:layout_constraintTop_toTopOf="@+id/MasonBees" />
 
                     <TextView
-                        android:id="@+id/ModestMaskedBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/modest_masked_bee"
@@ -429,7 +412,6 @@
                         app:layout_constraintTop_toTopOf="@+id/ModestMaskedBee" />
 
                     <TextView
-                        android:id="@+id/OblongWoolCarderBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/oblong_wool_carder_bee"
@@ -449,7 +431,6 @@
                         app:layout_constraintTop_toTopOf="@+id/OblongWoolCarderBee" />
 
                     <TextView
-                        android:id="@+id/OrangeTippedWoodDiggerBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/orange_tipped_wood_digger_bee"
@@ -469,7 +450,6 @@
                         app:layout_constraintTop_toTopOf="@+id/OrangeTippedWoodDiggerBee" />
 
                     <TextView
-                        android:id="@+id/PugnaciousLeafcutterBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/pugnacious_leafcutter_bee"
@@ -489,7 +469,6 @@
                         app:layout_constraintTop_toTopOf="@+id/PugnaciousLeafcutterBee" />
 
                     <TextView
-                        android:id="@+id/PureGreenSweatBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/pure_green_sweat_bee"
@@ -509,7 +488,6 @@
                         app:layout_constraintTop_toTopOf="@+id/PureGreenSweatBee" />
 
                     <TextView
-                        android:id="@+id/SculpturedResinBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/sculptured_resin_bee"
@@ -529,7 +507,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SculpturedResinBee" />
 
                     <TextView
-                        android:id="@+id/SilverTailedPetalCutterBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/silver_tailed_petalcutter_bee"
@@ -549,7 +526,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SilverTailedPetalCutterBee" />
 
                     <TextView
-                        android:id="@+id/SmallCarpenterBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/small_carpenter_bees"
@@ -569,7 +545,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SmallCarpenterBees" />
 
                     <TextView
-                        android:id="@+id/SmallMasonBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/small_mason_bees"
@@ -589,7 +564,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SmallMasonBees" />
 
                     <TextView
-                        android:id="@+id/SmallResinBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/small_resin_bees"
@@ -609,7 +583,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SmallResinBees" />
 
                     <TextView
-                        android:id="@+id/SmallSweatBees_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/small_sweat_bees"
@@ -629,7 +602,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SmallSweatBees" />
 
                     <TextView
-                        android:id="@+id/SmallHandedLeafCutterBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/small_handed_leafcutter_bee"
@@ -649,7 +621,6 @@
                         app:layout_constraintTop_toTopOf="@+id/SmallHandedLeafCutterBee" />
 
                     <TextView
-                        android:id="@+id/TaurusMasonBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/taurus_mason_bee"
@@ -669,7 +640,6 @@
                         app:layout_constraintTop_toTopOf="@+id/TaurusMasonBee" />
 
                     <TextView
-                        android:id="@+id/UnarmedLeafcutterBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/unarmed_leafcutter_bee"
@@ -689,7 +659,6 @@
                         app:layout_constraintTop_toTopOf="@+id/UnarmedLeafcutterBee" />
 
                     <TextView
-                        android:id="@+id/WesternHoneyBee_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/western_honey_bee"
@@ -726,7 +695,6 @@
                         app:layout_constraintVertical_bias="0.0" />
 
                     <TextView
-                        android:id="@+id/beatles_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Beetles"
@@ -759,7 +727,6 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/ladybug_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/lady_bug"
@@ -805,7 +772,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/CentipedesAndMillipedes" />
 
                     <TextView
-                        android:id="@+id/barkCentipedes_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -829,7 +795,6 @@
                         app:layout_constraintTop_toTopOf="@+id/barkCentipede" />
 
                     <TextView
-                        android:id="@+id/Centipedes_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -852,7 +817,6 @@
                         app:layout_constraintTop_toTopOf="@+id/Centipedes" />
 
                     <TextView
-                        android:id="@+id/CommonPillWoodlouse_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -876,7 +840,6 @@
                         app:layout_constraintTop_toTopOf="@+id/CommonPillWoodlouse" />
 
                     <TextView
-                        android:id="@+id/houseCentipede_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -900,7 +863,6 @@
                         app:layout_constraintTop_toTopOf="@+id/HouseCentipede" />
 
                     <TextView
-                        android:id="@+id/Millipedes_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -951,7 +913,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/FliesTitle" />
 
                     <TextView
-                        android:id="@+id/EasternCalligrapher_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -975,7 +936,6 @@
                         app:layout_constraintTop_toTopOf="@+id/EasternCalligrapher" />
 
                     <TextView
-                        android:id="@+id/Hoverflies_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -999,7 +959,6 @@
                         app:layout_constraintTop_toTopOf="@+id/Hoverflies" />
 
                     <TextView
-                        android:id="@+id/MarginedCalligrapher_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1023,7 +982,6 @@
                         app:layout_constraintTop_toTopOf="@+id/MarginedCalligrapher" />
 
                     <TextView
-                        android:id="@+id/ScalyBeeFly_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1047,7 +1005,6 @@
                         app:layout_constraintTop_toTopOf="@+id/ScalyBeeFly" />
 
                     <TextView
-                        android:id="@+id/TransverseBandedFlowerFly_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1097,7 +1054,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/OthersTitle" />
 
                     <TextView
-                        android:id="@+id/BrownLaceWings_Caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1121,7 +1077,6 @@
                         app:layout_constraintTop_toTopOf="@+id/BrownLaceWings" />
 
                     <TextView
-                        android:id="@+id/CommonBarklice_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1145,7 +1100,6 @@
                         app:layout_constraintTop_toTopOf="@+id/CommonBarklice" />
 
                     <TextView
-                        android:id="@+id/GreenLacewings_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1195,7 +1149,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/SpiderTitle" />
 
                     <TextView
-                        android:id="@+id/AmericanGrassSpider_Caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1219,7 +1172,6 @@
                         app:layout_constraintTop_toTopOf="@+id/AmericanGrassSpider" />
 
                     <TextView
-                        android:id="@+id/harvestmen_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1243,7 +1195,6 @@
                         app:layout_constraintTop_toTopOf="@+id/Harvestmen" />
 
                     <TextView
-                        android:id="@+id/JumpingSpiders_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1293,7 +1244,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/WaspsTitle" />
 
                     <TextView
-                        android:id="@+id/CarrotWasps_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1317,7 +1267,6 @@
                         app:layout_constraintTop_toTopOf="@+id/CarrotWasps" />
 
                     <TextView
-                        android:id="@+id/FourToothedMasonWasps_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1341,7 +1290,6 @@
                         app:layout_constraintTop_toTopOf="@+id/FourToothedMasonWasps" />
 
                     <TextView
-                        android:id="@+id/HornetsandYellowjackets_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1365,7 +1313,6 @@
                         app:layout_constraintTop_toTopOf="@+id/HornetsandYellowjackets" />
 
                     <TextView
-                        android:id="@+id/MetallicBluishGreenCucukooWasp_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1389,7 +1336,6 @@
                         app:layout_constraintTop_toTopOf="@+id/MetallicBluishGreenCucukooWasp" />
 
                     <TextView
-                        android:id="@+id/MexicanGrassCarryingWasp_caption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -1405,7 +1351,6 @@
             </HorizontalScrollView>
 
             <View
-                android:id="@+id/HomePageSpacer"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -1,6 +1,7 @@
 package com.example.pollinationid
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.pollinationid.IdFragment.SecondFragment
@@ -55,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             commit()
         }
 
+    fun signout(view: View) {}
 
 
 }

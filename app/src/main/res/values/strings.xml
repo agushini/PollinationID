@@ -1,13 +1,11 @@
 <resources>
     <string name="app_name">PollinationID</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pollinator_id">Pollinator ID</string>
     <string name="hotel_id">Hotel ID</string>
     <string name="pollinator_categories">Pollinator Categories</string>
     <string name="alfalfa_leafcutter_bee">Alfalfa LeafCutter Bee</string>
     <string name="bees">Bees</string>
     <string name="apical_leafcutter_bee">Apical LeafCutter Bee</string>
-    <string name="beatles">Beatles</string>
     <string name="beetles">Beetles</string>
     <string name="lady_bug">Lady Bug</string>
     <string name="bark_centipede">Bark Centipede</string>
@@ -20,7 +18,6 @@
     <string name="textview">TextView</string>
     <string name="recycler_1_title_text">Recycler 1 Title Text</string>
     <string name="scaly_bee_fly">Scaly Bee Fly</string>
-    <string name="margined_calligrapher">Margined Calligrapher</string>
     <string name="common_barklice">Common Barklice</string>
     <string name="brown_lacewings">Brown Lacewings</string>
     <string name="green_lacewings">Green Lacewings</string>
@@ -31,7 +28,6 @@
     <string name="jumping_spiders">Jumping Spiders</string>
     <string name="carrot_wasps">Carrot Wasps</string>
     <string name="four_toothed_mason_wasp">Four-Toothed Mason Wasp</string>
-    <string name="metallic_bluish_green_cucukoo_wasp">Metallic Bluish Green Cucukoo Wasp</string>
     <string name="mexican_grass_carrying_wasp">Mexican Grass-Carrying Wasp</string>
     <string name="bellflower_resin_bee">Bellflower Resin Bee</string>
     <string name="blue_orchard_mason_bee">Blue Orchard Mason Bee</string>
@@ -69,13 +65,10 @@
     <string name="western_honey_bee">Western Honey Bee</string>
     <string name="menu">Menu</string>
     <string name="about">About</string>
-    <string name="key_chars">Key Chars</string>
     <string name="plants">Plants</string>
     <string name="description">Description</string>
     <string name="technical_name">Technical Name</string>
     <string name="email">Email</string>
-    <string name="FirstName">First Name</string>
-    <string name="LastName">Last Name</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
     <string name="sign_into_existing_account">Sign into Existing Account</string>
@@ -86,21 +79,12 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_and_conditions">Terms and Conditions</string>
     <string name="contact">Contact</string>
-    <string name="account">Account</string>
-    <string name="info">Info</string>
     <string name="priv_policy_info">Please see the link below for more information regarding our Privicy Policy</string>
     <string name="priv_policy_link"><a href=" https://drive.google.com/file/d/1FXgs6MWDeqfwc4WW95Zl38Mbz34JAgeh/view?usp=drivesdk">Click here for our Privacy Policy</a></string>
-    <string name="back_to_menu"><![CDATA[< Menu]]></string>
     <string name="TC_info">Please see the link below for more information regarding our Terms and Conditions</string>
     <string name="TC_Hyperlink"><a href="https://drive.google.com/file/d/1uuwdQQiwQnZZ3QMNLNNsx--n1KVVfTA9/view?usp=drivesdk">Click here for our Terms and Conditions</a></string>
-    <string name="title_activity_contacts">ContactsActivity</string>
 
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="previous">Previous</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="contacts_info">Students from the University of Michigan-Dearborn created, developed, and currently run the PolliNation Project. If you have any questions regarding the app or the PolliNation Project, please email:</string>
     <string name="contacts_hyperlink"><a href="PollinationProject@umich.edu">PollinationProject@umich.edu</a></string>
     <string name="camera">Camera</string>
@@ -109,16 +93,13 @@
     <string name="photo_id">Photo ID</string>
     <string name="pick_date">Pick Date</string>
     <string name="where_did_you_see_the_pollinator">Where did you see the pollinator?</string>
-    <string name="next">Next</string>
     <string name="enter_hotel">Enter Hotel</string>
     <string name="title_forgot_password">RESET PASSWORD</string>
     <string name="forgot_password_title_description">Please enter E-mail and link will be sent to reset the password</string>
     <string name="btn_lbl_submit">Submit</string>
-    <string name="et_hint_email_id">Enter E-mail</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="password">Password</string>
     <string name="create_account">Create Account</string>
-    <string name="login__pollination">Login to Pollination </string>
     <string name="PoliProjectInfo1">Bees and other pollinators are disappearing around the globe. Major threats to pollinators include habitat loss and fragmentation, pollution and pesticides, and the spread of invasive species and diseases.</string>
     <string name="PoliProjectInfo2">Over the past 70 years, the United States has experienced a dramatic decline in honey bee colonies from about 5.9 million in 1947 to just 2.7 million in 2017—a 55% reduction. A surveyor from Michigan State University found population numbers for half of Michigan’s bumblebee species have declined by 50% or more.</string>
     <string name="PoliProjectInfo3">Pollinators, such as bees, birds, beetles, and butterflies, are vital organisms for pollination of wild plant species and crops, such as apples, blueberries, and almonds. In fact, it is estimated that one out of every three bites of food we eat and nearly 90% of Earth’s flowering plants depend on insect pollination. In the US alone, honeybees are responsible for pollinating $10 billion worth of crops annually.</string>
@@ -127,9 +108,7 @@
     <string name="PoliProjectHyperLink2">Download our sister app, <a href="https://play.google.com/store/apps/details?id=edu.umich.PolliNationHotels">PolliNation Hotels</a> to upload and view information about pollinators visiting southeast MI insect hotels.</string>
     <string name="place_holder">PLACE HOLDER</string>
     <string name="this_is_my_pollinator">This is my Pollinator</string>
-    <string name="title_activity_possible_photo_pollinator">PossiblePhotoPollinatorActivity</string>
     <string name="submit_pollinator">Submit Pollinator</string>
-    <string name="model_predict">modelPredict</string>
     <string name="metallic_bluish_green_cucukoo_nwasp">Metallic Bluish Green Cucukoo\nWasp</string>
     <string name="key_traits">Key Traits</string>
     <string name="hornets_and_yellowjackets">Hornets and Yellowjackets</string>
