@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:940573694662:android:d3427ca4fae4543c67d5c7",
         "android_client_info": {
-          "package_name": "com.example.pollinationid"
+          "package_name": "edu.umich.pollinationid"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "940573694662-h3a4vcr67acelvbc0af2t816t5h8tq0n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.pollinationid",
+            "package_name": "edu.umich.pollinationid",
             "certificate_hash": "9fdc742ba64cfe927d6ed7dab8991e3738e92b83"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "940573694662-l6vcr6raioku4mbpb0hcf8kcd3sf2up1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.pollinationid",
+            "package_name": "edu.umich.pollinationid",
             "certificate_hash": "49a4ee9635d20906cdc624fb52191e9d805d93f7"
           }
         },
@@ -63,7 +63,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:940573694662:android:7f4dec88676195a567d5c7",
         "android_client_info": {
-          "package_name": "com.umich.PolliNationInsectHotels"
+          "package_name": "edu.umich.PolliNationInsectHotels"
         }
       },
       "oauth_client": [
@@ -100,7 +100,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:940573694662:android:430ebee5bd59241a67d5c7",
         "android_client_info": {
-          "package_name": "com.umich.pollinationid"
+          "package_name": "edu.umich.pollinationid"
         }
       },
       "oauth_client": [
@@ -108,7 +108,7 @@
           "client_id": "940573694662-7uhgf9j1p7jvuuugedq3hm8bhfe0c2ku.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.umich.pollinationid",
+            "package_name": "edu.umich.pollinationid",
             "certificate_hash": "c3ee37ab8c291510a50dff1c4fc720924c3ee07c"
           }
         },
